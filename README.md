@@ -37,8 +37,8 @@ Journal:
 
 [paypal](paypal.me/LordYao)
 
-<image alt="alipay" src="source/images/支付宝收款码.jpg" width="200"/><br>
-<image alt="alipay" src="source/images/支付宝红包码.jpg" width="200"/><br>
-<image alt="wechat" src="source/images/微信收款码.png" width="200"/><br>
-<image alt="wechat" src="source/images/微信打赏码.png" width="200"/>
+<image alt="alipay" src="images/支付宝收款码.jpg" width="200"/><br>
+<image alt="alipay" src="images/支付宝红包码.jpg" width="200"/><br>
+<image alt="wechat" src="images/微信收款码.png" width="200"/><br>
+<image alt="wechat" src="images/微信打赏码.png" width="200"/>
 
