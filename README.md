@@ -1,4 +1,4 @@
-# yaoqs.github.com
+# [yaoqs.github.com](https://yaoqs.github.com)
 
 Journal:
 
@@ -35,10 +35,10 @@ Journal:
 
 ## Donate
 
-[paypal捐赠](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=243292490@qq.com&currency_code=USD&amount=1&return=http://yaoqs.github.com/about.html&item_name=LordYao%27s%20Blog&undefined_quantity=1) <https://www.paypal.me/LordYao>
+[paypal捐赠 paypal.me/LordYao](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=243292490@qq.com&currency_code=USD&amount=1&return=http://yaoqs.github.com/about.html&item_name=LordYao%27s%20Blog&undefined_quantity=1)
 
-<image alt="alipay" src="images/支付宝收款码.jpg" width="200"/><br>
-<image alt="alipay" src="images/支付宝红包码.jpg" width="200"/><br>
-<image alt="wechat" src="images/微信收款码.png" width="200"/><br>
-<image alt="wechat" src="images/微信打赏码.png" width="200"/>
+<image alt="alipay" src="https://yaoqs.github.io/images/支付宝收款码.jpg" width="200"/><br>
+<image alt="alipay" src="https://yaoqs.github.io/images/支付宝红包码.jpg" width="200"/><br>
+<image alt="wechat" src="https://yaoqs.github.io/images/微信收款码.png" width="200"/><br>
+<image alt="wechat" src="https://yaoqs.github.io/images/微信打赏码.png" width="200"/>
 
