@@ -1,4 +1,4 @@
-# yaoqs.github.io
+# yaoqs.github.com
 
 Journal:
 
@@ -35,7 +35,7 @@ Journal:
 
 ## Donate
 
-[paypal](paypal.me/LordYao)
+[paypal捐赠](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=243292490@qq.com&currency_code=USD&amount=1&return=http://yaoqs.github.com/about.html&item_name=LordYao%27s%20Blog&undefined_quantity=1) <https://www.paypal.me/LordYao>
 
 <image alt="alipay" src="images/支付宝收款码.jpg" width="200"/><br>
 <image alt="alipay" src="images/支付宝红包码.jpg" width="200"/><br>
