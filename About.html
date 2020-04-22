@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head></head>
+<body>
+<!-- tctip 支付赞赏/打赏 -->
+        <div id="zanzhu" >
+          <script type="text/javascript" src="http://static.tctip.com/tctip-1.0.0.min.js"></script>
+              <script type="text/javascript">
+                  new tctip({
+                      top: '20%',
+                      button: {
+                          id: 9,
+                          type: 'zanzhu',
+                      },
+                      list: [
+                          {
+                              type: 'alipay',
+                              qrImg: '../images/支付宝收款码.jpg'//替换成自己的支付宝付款码
+                          }, 
+                          {
+                            type:'alipay',
+                            qrImg:'../images/支付宝红包码.jpg'
+                          },
+                          {
+                              type: 'wechat',
+                              qrImg: '../images/微信收款码.png' //替换成自己的微信付款码
+                          },
+                          {
+                            type:'wechat',
+                            qrImg:'../images/微信打赏码.png'
+                          }
+                      ]
+                  }).init()
+              </script>
+            
+      </div>
+
+</body>
+</html>

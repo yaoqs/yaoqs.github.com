@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!---->
+    <head>
+        
+		
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A scholar magazine/journal like blog">
+        <link rel="shortcut icon" href="/images/githubavatar.png"/>
+        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+        <title>编程规范(C++) | Scholar</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/future.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        
+    </head>
+    <header id="header">
+        <div id="fork_me_on_github"></div>
+        <script text="script/javascript">
+          //以下函数返回 min（包含）～ max（包含）之间的数字：
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          var id=getRndInteger(0,5);
+          var color='red_aa0000'
+          switch(id)
+          {
+            default:
+            color='red_aa0000';
+            break;
+            case 1:
+            color='darkblue_121621'
+            break;
+            case 2:
+            color='orange_ff7600'
+            break;
+            case 3:
+            color='gray_6d6d6d'
+            break;
+            case 4:
+            color='white_ffffff'
+          }
+          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+          
+          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
+          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
+      
+        </script>
+        
+        
+        <a id="avatar" href="/"><img src="/images/avatar_sx.png" alt="Scholar" /></a>
+        
+        <h1><a id="author" href="/">LordYao</a></h1>        
+                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
+                
+      <div id="follow-icons">
+        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+                  <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  </div>
+
+        <span id="donate">Slogan: 解放思想，发展生产力</span>
+        <h6><a href="/about.html">About</a>
+                    &middot;
+          <a href="/resume.html">Resume</a>
+                              &middot;
+          <a href="/Lab.html">Lab</a>
+                  </h6>
+        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
+        
+        <footer>
+          <section id="footer-message">&copy;  
+          2019 - 
+                    2020          
+          LordYao.<br/>
+                    
+          BY-NC-SA .
+           
+           All rights reserved. <br/>
+          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/scholar-hexo-theme" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
+        </footer>
+        <div id="Statistics">
+    
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+
+</div>
+
+      </header>
+   <!---->   
+      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
+    
+<!--
+      <div class="post-template">
+        -->
+          
+      
+        <main id="content">
+        
+        
+
+<hr id="topline"/>
+<div id="DOI"> November 27, 2019 <br>https://yaoqs.github.io/2019/11/27/%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83-C/</div>
+<article class="post">
+ 
+  <h1 class="post-title">编程规范(C++)</h1>
+  <section id="post-author">Yao Qing-sheng <br/>Department of Natural Philosophy & Infomation Sciences, CHINA</section>
+  <section class="post-content article-entry">
+    <section id="Abstract">
+    <hr id="Abstract"/>
+    <span id="Abstract">Abstract
+        
+    </span>    
+    <span id="Abstract-content">
+        
+        
+    </span>
+    
+    
+    <span id="Abstract">Keywords
+        <span id="keywords-content">
+                  
+              
+              
+                Reprint
+                
+                                    &comma;
+                
+                
+              
+                Draft
+                
+                                    &comma;
+                
+                
+              
+                C/c++
+                
+                                    &comma;
+                
+                
+              
+            
+        </span>
+    </span>
+    <hr id="Abstract"/>
+
+    <span id="Abstract">Citation
+        <span id="keywords-content">
+            Yao Qing-sheng&period;&nbsp; 编程规范(C++)&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83-C/
+        </span>
+    </span> 
+
+    <hr id="Abstract"/>
+    </section>
+
+
+
+    <p>编程规范(C++)</p>
+<p>目 录 </p>
+<p>1、 编写代码 3</p>
+<p>1．1 空行 3</p>
+<p>1．2 代码行 3</p>
+<p>1．3 代码行内的空格 4</p>
+<p>1．4 对齐 5</p>
+<p>1．5 长行拆分 6</p>
+<p>1．6 注释 6</p>
+<p>2、 命名规则 8</p>
+<p>2.1 共性规则 8</p>
+<p>2.2 简单的Windows应用程序命名规则 9</p>
+<p>3、 表达式和基本语句 11</p>
+<p>3.1 运算符的优先级 11</p>
+<p>3.2 复合表达式 11</p>
+<p>3.3 if 语句 12</p>
+<p>3.3.1 布尔变量与零值比较 12</p>
+<p>3.3.2 整型变量与零值比较 12</p>
+<p>3.3.3 浮点变量与零值比较 13</p>
+<p>3.3.4 对if语句的补充说明 13</p>
+<p>3.4 循环语句的效率 13</p>
+<p>3.5 for 语句的循环控制变量 14</p>
+<p>3.6 switch语句 15</p>
+<p>3.7 goto语句 15</p>
+<p>4、 函数设计 17</p>
+<p>4.1 函数注释 17</p>
+<p>4.2 参数的规则 17</p>
+<p>5、 目录结构 18</p>
+<p>6、 其它编程经验 19</p>
+<p>6.1 使用const提高函数的健壮性 19</p>
+<p>6.2 提高程序的效率 19</p>
+<p>6.3 一些有益的建议 20</p>
+<p>1、 编写代码</p>
+<p>1．1 空行</p>
+<p>空行起着分隔程序段落的作用。空行得体（不过多也不过少）将使程序的布局更加清晰。空行不会浪费内存，虽然打印含有空行的程序是会多消耗一些纸张，但是值得。所以不要舍不得用空行。</p>
+<p>l 【规则1】在每个类声明之后、每个函数定义结束之后都要加空行。参见示例1-1（a）</p>
+<p>l 【规则2】在一个函数体内，逻揖上密切相关的语句之间不加空行，其它地方应加空行分隔。参见示例1-1（b ）</p>
+<p>// 空行</p>
+<p>void Function1(…)</p>
+<p>{</p>
+<p>  …</p>
+<p>}</p>
+<p>// 空行</p>
+<p>void Function2(…)</p>
+<p>{</p>
+<p>  …</p>
+<p>}</p>
+<p>// 空行</p>
+<p>void Function3(…)</p>
+<p>{</p>
+<p>  …</p>
+<p>}</p>
+<p>// 空行</p>
+<p>while (condition)</p>
+<p>{</p>
+<p>statement1;</p>
+<p>// 空行</p>
+<p>if (condition) </p>
+<p>{</p>
+<p>statement2;</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>statement3;</p>
+<p>}</p>
+<p>// 空行</p>
+<p>statement4;</p>
+<p>}  </p>
+<p>示例1-1(a) 函数之间的空行                   示例1-1(b) 函数内部的空行</p>
+<p>1．2 代码行</p>
+<p>l 【规则1】一行代码只做一件事情，如只定义一个变量，或只写一条语句。这样的代码容易阅读，并且方便于写注释。</p>
+<p>l 【规则2】if、for、while、do等语句自占一行，执行语句不得紧跟其后。不论执行语句有多少都要加{}。这样可以防止书写失误（该规则作为建议）。</p>
+<p>示例1-2（a）为风格良好的代码行，示例1-2（b）为风格不良的代码行。</p>
+<p>int width; // 宽度</p>
+<p>int height; // 高度</p>
+<p>int depth; // 深度</p>
+<p>int width, height, depth; // 宽度高度深度</p>
+<p>x = a + b;</p>
+<p>y = c + d;</p>
+<p>z = e + f;</p>
+<p>X ＝ a + b;   y = c + d;  z = e + f;</p>
+<p>if (width &lt; height) </p>
+<p>{</p>
+<p>dosomething();</p>
+<p>}</p>
+<p>if (width &lt; height) dosomething();</p>
+<p>for (initialization; condition; update)</p>
+<p>{</p>
+<p>dosomething();</p>
+<p>}</p>
+<p>// 空行</p>
+<p>other();</p>
+<p>for (initialization; condition; update)</p>
+<pre><code>dosomething();</code></pre><p>other();</p>
+<p>示例1-2(a) 风格良好的代码行                 示例1-2(b) 风格不良的代码行</p>
+<p>² 【建议】尽可能在定义变量的同时初始化该变量（就近原则）</p>
+<p>如果变量的引用处和其定义处相隔比较远，变量的初始化很容易被忘记。如果引用了未被初始化的变量，可能会导致程序错误。本建议可以减少隐患。例如</p>
+<p>int width = 10;  // 定义并初绐化width </p>
+<p>int height = 10; // 定义并初绐化height </p>
+<p>int depth = 10;  // 定义并初绐化depth </p>
+<p>1．3 代码行内的空格</p>
+<p>l 【规则1】关键字之后要留空格。象const、virtual、case 等关键字之后至少要留一个空格，否则无法辨析关键字。象if、for、while等关键字之后应留一个空格再跟左括号‘（’，以突出关键字。</p>
+<p>l 【规则2】函数名之后不要留空格，紧跟左括号‘（’，以与关键字区别。</p>
+<p>l 【规则3】‘（’向后紧跟，‘）’、‘，’、‘;’向前紧跟，紧跟处不留空格。</p>
+<p>l 【规则4】‘，’之后要留空格，如Function(x, y, z)。如果‘;’不是一行的结束符号，其后要留空格，如for (initialization; condition; update)。</p>
+<p>l 【规则5】赋值操作符、比较操作符、算术操作符、逻辑操作符、位域操作符，如“=”、“+=” “&gt;=”、“&lt;=”、“+”、“*”、“%”、“&amp;&amp;”、“||”等操作符的前后应当加空格。</p>
+<p>l 【规则6】一元操作符如“!”、“++”、“–”等前后不加空格。</p>
+<p>l 【规则7】象“［］”、“.”、“-&gt;”这类操作符前后不加空格。</p>
+<p>² 【建议】对于表达式比较长的for语句和if语句，为了紧凑起见可以适当地去掉一些空格，如for (i=0; i&lt;10; i++)和if ((a&lt;=b) &amp;&amp; (c&lt;=d))</p>
+<p>void Func1(int x, int y, int z);          // 良好的风格</p>
+<p>void Func1 (int x,int y,int z);           // 不良的风格</p>
+<p>if (year &gt;= 2000)                         // 良好的风格</p>
+<p>if(year&gt;=2000)                            // 不良的风格</p>
+<p>if ((a&gt;=b) &amp;&amp; (c&lt;=d))                     // 良好的风格</p>
+<p>if(a&gt;=b&amp;&amp;c&lt;=d)                            // 不良的风格</p>
+<p>for (i=0; i&lt;10; i++)                      // 良好的风格</p>
+<p>for(i=0;i&lt;10;i++)                         // 不良的风格</p>
+<p>for (i = 0; I &lt; 10; i ++)                 // 过多的空格</p>
+<p>x = a &lt; b ? a : b;                        // 良好的风格</p>
+<p>x=a&lt;b?a:b;                                // 不好的风格</p>
+<p>int *x = &y;                              // 良好的风格  </p>
+<p>int * x = &amp; y;                            // 不良的风格  </p>
+<p>array[5] = 0;                             // 不要写成 array [ 5 ] = 0;</p>
+<p>a.Function();                             // 不要写成 a . Function();</p>
+<p>b-&gt;Function();                            // 不要写成 b -&gt; Function();</p>
+<p>示例1-3 代码行内的空格</p>
+<p>1．4 对齐</p>
+<p>l 【规则1】程序的分界符‘{’和‘}’应独占一行并且位于同一列，同时与引用它们的语句左对齐。</p>
+<p>l 【规则2】{ }之内的代码块在‘{’右边数格处左对齐。</p>
+<p>示例2-4（a）为风格良好的对齐，示例2-4（b）为风格不良的对齐。</p>
+<p>void Function(int x)</p>
+<p>{</p>
+<p>… // program code</p>
+<p>}</p>
+<p>void Function(int x){</p>
+<p>… // program code</p>
+<p>}</p>
+<p>if (condition)</p>
+<p>{</p>
+<p>… // program code</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>… // program code</p>
+<p>}</p>
+<p>if (condition){</p>
+<p>… // program code</p>
+<p>}</p>
+<p>else {</p>
+<p>… // program code</p>
+<p>}</p>
+<p>for (initialization; condition; update)</p>
+<p>{</p>
+<p>… // program code</p>
+<p>}</p>
+<p>for (initialization; condition; update){</p>
+<p>… // program code</p>
+<p>}</p>
+<p>While (condition)</p>
+<p>{</p>
+<p>… // program code</p>
+<p>}</p>
+<p>while (condition){</p>
+<p>… // program code</p>
+<p>}</p>
+<p>如果出现嵌套的｛｝，则使用缩进对齐，如：</p>
+<p>{</p>
+<p>   …</p>
+<p> {</p>
+<p>   …</p>
+<p> }</p>
+<p>  …</p>
+<p>}</p>
+<p>示例1-4(a) 风格良好的对齐                       示例1-4(b) 风格不良的对齐</p>
+<p>1．5 长行拆分</p>
+<p>l 【规则1】代码行最大长度宜控制在70至80个字符以内。代码行不要过长，否则眼睛看不过来，也不便于打印。</p>
+<p>l 【规则2】长表达式要在低优先级操作符处拆分成新行，操作符放在新行之首（以便突出操作符）。拆分出的新行要进行适当的缩进，使排版整齐，语句可读。</p>
+<p>if ((very_longer_variable1 &gt;= very_longer_variable12)</p>
+<p>&amp;&amp; (very_longer_variable3 &lt;= very_longer_variable14)</p>
+<p>&amp;&amp; (very_longer_variable5 &lt;= very_longer_variable16))</p>
+<p>{</p>
+<pre><code>dosomething();</code></pre><p>}</p>
+<p>virtual CMatrix CMultiplyMatrix (CMatrix leftMatrix,</p>
+<pre><code>CMatrix rightMatrix);</code></pre><p>for (very_longer_initialization;</p>
+<p> very_longer_condition;</p>
+<p> very_longer_update)</p>
+<p>{</p>
+<p>dosomething();</p>
+<p>}</p>
+<p>示例1-5 长行的拆分</p>
+<p>1．6 注释</p>
+<p>程序块的注释常采用“/<em>…</em>/”，行注释一般采用“//…”。注释通常用于：</p>
+<p>（1）版本、版权声明；</p>
+<p>（2）函数接口说明；</p>
+<p>（3）重要的代码行或段落提示。</p>
+<p>虽然注释有助于理解代码，但注意不可过多地使用注释。</p>
+<p>l 【规则1】注释是对代码的“提示”，而不是文档。程序中的注释不可喧宾夺主，注释太多了会让人眼花缭乱。注释的花样要少。</p>
+<p>l 【规则2】如果代码本来就是清楚的，则不必加注释。否则多此一举，令人厌烦。例如 </p>
+<p>i++;  // i 加 1，多余的注释</p>
+<p>l 【规则3】边写代码边注释，修改代码同时修改相应的注释，以保证注释与代码的一致性。不再有用的注释要删除。</p>
+<p>l 【规则4】注释应当准确、易懂，防止注释有二义性。错误的注释不但无益反而有害。</p>
+<p>l 【规则5】尽量避免在注释中使用缩写，特别是不常用缩写。</p>
+<p>l 【规则6】注释的位置应与被描述的代码相邻，可以放在代码的上方或右方，不可放在下方。</p>
+<p>l 【规则7】当代码比较长，特别是有多重嵌套时，应当在一些段落的结束处加注释，便于阅读。</p>
+<p>/*</p>
+<ul>
+<li><p>函数介绍：</p>
+</li>
+<li><p>输入参数：</p>
+</li>
+<li><p>输出参数：</p>
+</li>
+<li><p>返回值  ：</p>
+</li>
+</ul>
+<p>*/</p>
+<p>void Function(float x, float y, float z)</p>
+<p>{</p>
+<p>  …</p>
+<p>}</p>
+<p>if (…)</p>
+<p>{</p>
+<p>  …</p>
+<p>  while (…)</p>
+<p>  {</p>
+<p>…</p>
+<p>} // end of while</p>
+<p>…</p>
+<p>} // end of if</p>
+<p>示例1-6 程序的注释</p>
+<p>2、 命名规则</p>
+<p>2.1 共性规则</p>
+<p>l 【规则1】标识符应当直观且可以拼读，可望文知意，不必进行“解码”。</p>
+<p>标识符最好采用英文单词或其组合，便于记忆和阅读。程序中的英文单词一般不会太复杂，用词应当准确。例如不要把CurrentValue写成NowValue。</p>
+<p>l 【规则2】标识符的长度应当符合“min-length &amp;&amp; max-information”原则。</p>
+<p>一般来说，长名字能更好地表达含义，所以函数名、变量名、类名长达十几个字符不足为怪。那么名字是否越长约好？不见得! 例如变量名maxval就比maxValueUntilOverflow好用。单字符的名字也是有用的，常见的如i,j,k,m,n,x,y,z等，它们通常可用作函数内的局部变量。</p>
+<p>l 【规则3】程序中不要出现仅靠大小写区分的相似的标识符。</p>
+<p>例如：</p>
+<p>int  x,  X; // 变量x 与 X 容易混淆</p>
+<p>void foo(int x); // 函数foo 与FOO容易混淆</p>
+<p>void FOO(float x);</p>
+<p>l 【规则4】程序中不要出现标识符完全相同的局部变量和全局变量，尽管两者的作用域不同而不会发生语法错误，但会使人误解。</p>
+<p>l 【规则5】变量的名字应当使用“名词”或者“形容词＋名词”。</p>
+<p>例如：</p>
+<p>float  value;</p>
+<p>float  oldValue;</p>
+<p>float  newValue;</p>
+<p>l 【规则6】全局函数的名字应当使用“动词”或者“动词＋名词”（动宾词组）。类的成员函数应当只使用“动词”，被省略掉的名词就是对象本身。</p>
+<p>例如：</p>
+<p>DrawBox(); // 全局函数</p>
+<p>box-&gt;Draw(); // 类的成员函数</p>
+<p>l 【规则7】用正确的反义词组命名具有互斥意义的变量或相反动作的函数等。</p>
+<p>例如：</p>
+<p>int minValue;</p>
+<p>int maxValue;</p>
+<p>int SetValue(…);</p>
+<p>int GetValue(…);</p>
+<p>² 【建议】尽量避免名字中出现数字编号，如Value1,Value2等，除非逻辑上的确需要编号。这是为了防止程序员偷懒，不肯为命名动脑筋而导致产生无意义的名字（因为用数字编号最省事）。</p>
+<p>2.2 简单的Windows应用程序命名规则</p>
+<p>【规则1】类名和函数名用大写字母开头的单词组合而成。</p>
+<p>例如：</p>
+<p>class Node; // 类名</p>
+<p>class LeafNode; // 类名</p>
+<p>void  Draw(void); // 函数名</p>
+<p>void  SetValue(int value); // 函数名</p>
+<p>l 【规则2】变量和参数用小写字母开头的单词组合而成。</p>
+<p>例如：</p>
+<p>BOOL flag;</p>
+<p>int  drawMode;</p>
+<p>l 【规则3】常量全用大写的字母，用下划线分割单词。</p>
+<p>例如：</p>
+<p>const int MAX = 100;</p>
+<p>const int MAX_LENGTH = 100;</p>
+<p>l 【规则4】静态变量加前缀s_（表示static）。</p>
+<p>例如：</p>
+<p>void Init(…)</p>
+<p>{</p>
+<p>static int s_initValue; // 静态变量</p>
+<p>…</p>
+<p>}</p>
+<p>l 【规则5】如果不得已需要全局变量，则使全局变量加前缀g_（表示global）。</p>
+<p>例如：</p>
+<p>int g_howManyPeople; // 全局变量</p>
+<p>int g_howMuchMoney; // 全局变量</p>
+<p>l 【规则6】类的数据成员加前缀m_（表示member），这样可以避免数据成员与成员函数的参数同名。</p>
+<p>例如：</p>
+<p>void Object::SetValue(int width, int height)</p>
+<p>{</p>
+<p>m_width = width;</p>
+<p>m_height = height;</p>
+<p>}</p>
+<p>l 【规则7】为了防止某一软件库中的一些标识符和其它软件库中的冲突，可以为各种标识符加上能反映软件性质的前缀。例如三维图形标准OpenGL的所有库函数均以gl开头，所有常量（或宏定义）均以GL开头。</p>
+<p>3、 表达式和基本语句</p>
+<p>3.1 运算符的优先级</p>
+<p>优先级</p>
+<p>运算符</p>
+<p>结合律</p>
+<p>从</p>
+<p>高</p>
+<p>到</p>
+<p>低</p>
+<p>排</p>
+<p>列</p>
+<p>( )  [ ]  -&gt;  .</p>
+<p>从左至右</p>
+<p>!  ~  ++  –  （类型） sizeof</p>
+<ul>
+<li><ul>
+<li><ul>
+<li>&amp;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>从右至左</p>
+<ul>
+<li>/  %</li>
+</ul>
+<p>从左至右</p>
+<ul>
+<li>-</li>
+</ul>
+<p>从左至右</p>
+<p>&lt;&lt;  &gt;&gt;</p>
+<p>从左至右</p>
+<p>&lt;   &lt;=   &gt;  &gt;=</p>
+<p>从左至右</p>
+<p>==  !=</p>
+<p>从左至右</p>
+<p>&amp;</p>
+<p>从左至右</p>
+<p>^</p>
+<p>从左至右</p>
+<p>|</p>
+<p>从左至右</p>
+<p>&amp;&amp;</p>
+<p>从左至右</p>
+<p>||</p>
+<p>从右至左</p>
+<p>?:</p>
+<p>从右至左</p>
+<p>=  +=  -=  *=  /=  %=  &amp;=  ^=</p>
+<p>|=  &lt;&lt;=  &gt;&gt;=</p>
+<p>从左至右</p>
+<p>表3-1 运算符的优先级与结合律</p>
+<p>l 【规则1】如果代码行中的运算符比较多，用括号确定表达式的操作顺序，避免使用默认的优先级。</p>
+<p>由于将表3-1熟记是比较困难的，为了防止产生歧义并提高可读性，应当用括号确定表达式的操作顺序。例如：</p>
+<p>word = (high &lt;&lt; 8) | low</p>
+<p>if ((a | b) &amp;&amp; (a &amp; c))</p>
+<p>3.2 复合表达式</p>
+<p>如 a = b = c = 0这样的表达式称为复合表达式。允许复合表达式存在的理由是：（1）书写简洁；（2）可以提高编译效率。但要防止滥用复合表达式。</p>
+<p>l 【规则1】不要编写太复杂的复合表达式。</p>
+<p>例如：</p>
+<p>  i = a &gt;= b &amp;&amp; c &lt; d &amp;&amp; c + f &lt;= g + h ; // 复合表达式过于复杂</p>
+<p>l 【规则2】不要有多用途的复合表达式。</p>
+<p>例如：</p>
+<p>d = (a = b + c) + r ; </p>
+<p>该表达式既求a值又求d值。应该拆分为两个独立的语句：</p>
+<p>a = b + c;</p>
+<p>d = a + r;</p>
+<p>l 【规则3】不要把程序中的复合表达式与“真正的数学表达式”混淆。</p>
+<p>例如：</p>
+<p>if (a &lt; b &lt; c) // a &lt; b &lt; c是数学表达式而不是程序表达式</p>
+<p>并不表示</p>
+<p>if ((a&lt;b) &amp;&amp; (b&lt;c))</p>
+<p>而是成了令人费解的</p>
+<p>if ( (a&lt;b)&lt;c )</p>
+<p>3.3 if 语句</p>
+<p>3.3.1 布尔变量与零值比较</p>
+<p>l 【规则4-3-1】不可将布尔变量直接与TRUE、FALSE或者1、0进行比较。</p>
+<p>根据布尔类型的语义，零值为“假”（记为FALSE），任何非零值都是“真”（记为TRUE）。TRUE的值究竟是什么并没有统一的标准。例如Visual C++ 将TRUE定义为1，而Visual Basic则将TRUE定义为-1。</p>
+<p>假设布尔变量名字为flag，它与零值比较的标准if语句如下：</p>
+<p>if (flag) // 表示flag为真</p>
+<p>if (!flag) // 表示flag为假</p>
+<p>其它的用法都属于不良风格，例如：</p>
+<p>if (flag == TRUE)</p>
+<p>if (flag == 1 )</p>
+<p>if (flag == FALSE)  </p>
+<p>if (flag == 0)</p>
+<p>3.3.2 整型变量与零值比较</p>
+<p>l 【规则1】应当将整型变量用“==”或“！=”直接与0比较。</p>
+<p>假设整型变量的名字为value，它与零值比较的标准if语句如下：</p>
+<p>if (value == 0)  </p>
+<p>if (value != 0)</p>
+<p>不可模仿布尔变量的风格而写成</p>
+<p>if (value) // 会让人误解 value是布尔变量</p>
+<p>if (!value) </p>
+<p>3.3.3 浮点变量与零值比较</p>
+<p>l 【规则1】不可将浮点变量用“==”或“！=”与任何数字比较。</p>
+<p>千万要留意，无论是float还是double类型的变量，都有精度限制。所以一定要避免将浮点变量用“==”或“！=”与数字比较，应该设法转化成“&gt;=”或“&lt;=”形式。</p>
+<p>假设浮点变量的名字为x，应当将</p>
+<p>if (x == 0.0)  // 隐含错误的比较</p>
+<p>转化为 </p>
+<p>if ((x&gt;=-EPSINON) &amp;&amp; (x&lt;=EPSINON))</p>
+<p>其中EPSINON是允许的误差（即精度）。</p>
+<p>3.3.4 对if语句的补充说明</p>
+<p>有时候我们可能会看到 if (NULL == p) 这样古怪的格式。不是程序写错了，是程序员为了防止将 if (p == NULL) 误写成 if (p = NULL)，而有意把p和NULL颠倒。编译器认为 if (p = NULL) 是合法的，但是会指出 if (NULL = p)是错误的，因为NULL不能被赋值。</p>
+<p>程序中有时会遇到if/else/return的组合，应该将如下不良风格的程序</p>
+<p>if (condition)</p>
+<p>return x;</p>
+<p>return y;</p>
+<p>改写为</p>
+<p>if (condition)</p>
+<p>{</p>
+<p>return x;</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>return y;</p>
+<p>}</p>
+<p>或者改写成更加简练的 </p>
+<p>return (condition ? x : y);</p>
+<p>3.4 循环语句的效率</p>
+<p>在循环语句中，for语句使用频率最高，while语句其次，do语句很少用。本节重点论述循环体的效率。提高循环体效率的基本办法是降低循环体的复杂性。</p>
+<p>l 【建议1】在多重循环中，如果有可能，应当将最长的循环放在最内层，最短的循环放在最外层，以减少CPU跨切循环层的次数。例如示例3-4(b)的效率比示例3-4(a)的高。</p>
+<p>for (row=0; row&lt;100; row++)</p>
+<p>{</p>
+<p>for ( col=0; col&lt;5; col++ )</p>
+<p>{</p>
+<p>sum = sum + a[row][col];</p>
+<p>}</p>
+<p>}</p>
+<p>for (col=0; col&lt;5; col++ )</p>
+<p>{</p>
+<p>for (row=0; row&lt;100; row++)</p>
+<p>{</p>
+<pre><code>sum = sum + a[row][col];</code></pre><p>}</p>
+<p>}</p>
+<p>示例3-4(a) 低效率：长循环在最外层           示例3-4(b) 高效率：长循环在最内层</p>
+<p>l 【建议2】如果循环体内存在逻辑判断，并且循环次数很大，宜将逻辑判断移到循环体的外面。示例3-4(c)的程序比示例3-4(d)多执行了N-1次逻辑判断。并且由于前者老要进行逻辑判断，打断了循环“流水线”作业，使得编译器不能对循环进行优化处理，降低了效率。如果N非常大，最好采用示例3-4(d)的写法，可以提高效率。如果N非常小，两者效率差别并不明显，采用示例3-4(c)的写法比较好，因为程序更加简洁。</p>
+<p>for (i=0; i&lt;N; i++)</p>
+<p>{</p>
+<p>if (condition)</p>
+<pre><code>DoSomething();</code></pre><p>else</p>
+<pre><code>DoOtherthing();</code></pre><p>}</p>
+<p>if (condition)</p>
+<p>{</p>
+<p>for (i=0; i&lt;N; i++)</p>
+<pre><code>DoSomething();</code></pre><p>}</p>
+<p>else</p>
+<p>{</p>
+<pre><code>for (i=0; i&lt;N; i++)
+
+DoOtherthing();</code></pre><p>}</p>
+<p>表3-4(c) 效率低但程序简洁                表3-4(d) 效率高但程序不简洁</p>
+<p>3.5 for 语句的循环控制变量</p>
+<p>l 【规则1】不可在for 循环体内修改循环变量，防止for 循环失去控制。</p>
+<p>l 【建议2】建议for语句的循环控制变量的取值采用“半开半闭区间”写法。</p>
+<p>示例3-5(a)中的x值属于半开半闭区间“0 =&lt; x &lt; N”，起点到终点的间隔为N，循环次数为N。</p>
+<p>示例3-5(b)中的x值属于闭区间“0 =&lt; x &lt;= N-1”，起点到终点的间隔为N-1，循环次数为N。</p>
+<p>相比之下，示例3-5(a)的写法更加直观，尽管两者的功能是相同的。</p>
+<p>for (int x=0; x&lt;N; x++)</p>
+<p>{</p>
+<p>…</p>
+<p>}</p>
+<p>for (int x=0; x&lt;=N-1; x++)</p>
+<p>{</p>
+<p>…</p>
+<p>}</p>
+<p>示例3-5(a) 循环变量属于半开半闭区间           示例3-5(b) 循环变量属于闭区间</p>
+<p>3.6 switch语句</p>
+<p>有了if语句为什么还要switch语句？</p>
+<p>switch是多分支选择语句，而if语句只有两个分支可供选择。虽然可以用嵌套的if语句来实现多分支选择，但那样的程序冗长难读。这是switch语句存在的理由。</p>
+<p>switch语句的基本格式是：</p>
+<p>switch (variable)</p>
+<p>{</p>
+<p>case value1 :  … </p>
+<p>break;</p>
+<p>case value2 :  … </p>
+<p>break;</p>
+<p>…</p>
+<p>default :   … </p>
+<p>break;</p>
+<p>}</p>
+<p>l 【规则1】每个case语句的结尾不要忘了加break，否则将导致多个分支重叠（除非有意使多个分支重叠）。</p>
+<p>l 【规则2】不要忘记最后那个default分支。即使程序真的不需要default处理，也应该保留语句 default : break; 这样做并非多此一举，而是为了防止别人误以为你忘了default处理。</p>
+<p>3.7 goto语句</p>
+<p>自从提倡结构化设计以来，goto就成了有争议的语句。首先，由于goto语句可以灵活跳转，如果不加限制，它的确会破坏结构化设计风格。其次，goto语句经常带来错误或隐患。它可能跳过了某些对象的构造、变量的初始化、重要的计算等语句，例如：</p>
+<p>goto state;</p>
+<p>String s1, s2; // 被goto跳过</p>
+<p>int sum = 0; // 被goto跳过</p>
+<p>…</p>
+<p>state:</p>
+<p>…</p>
+<p>如果编译器不能发觉此类错误，每用一次goto语句都可能留下隐患。</p>
+<p>很多人建议废除goto语句，以绝后患。但实事求是地说，错误是程序员自己造成的，不是goto的过错。goto 语句至少有一处可显神通，它能从多重循环体中咻地一下子跳到外面，用不着写很多次的break语句; 例如</p>
+<p>{ …</p>
+<p>{ …</p>
+<p>{ …</p>
+<p>goto error;</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>error:</p>
+<p>…</p>
+<p>就象楼房着火了，来不及从楼梯一级一级往下走，可从窗口跳出火坑。所以我们主张少用、慎用goto语句，而不是禁用。</p>
+<p>4、 函数设计</p>
+<p>4.1 函数接口注释</p>
+<p>样例如下</p>
+<p>/<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<ul>
+<li><p>功能     ：分割字符串</p>
+</li>
+<li><p>格式     ：int SplitStr(const char * source ,char **dest,const char spchar,int &amp;count)</p>
+</li>
+<li><p>输入参数 ：</p>
+</li>
+<li><p>：const char *source   原字符串</p>
+</li>
+<li><p>：const char spchar    分割符</p>
+</li>
+<li><p>：int &amp;count          最多拆分的个数，为零时可任意拆分</p>
+</li>
+<li><p>输出参数 ：</p>
+</li>
+<li><p>：char ** dest        被拆分后的字符串数组</p>
+</li>
+<li><p>：int &amp;count         拆分后字符串个数</p>
+</li>
+<li><p>返回值   ：拆分后字符串个数</p>
+</li>
+<li><p>作者     ：张三</p>
+</li>
+<li><p>日期     ：李四</p>
+</li>
+<li><p>摘要     ：</p>
+</li>
+</ul>
+<p><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/</p>
+<p>4.2 参数的规则</p>
+<p>l 【规则1】参数的书写要完整，不要贪图省事只写参数的类型而省略参数名字。如果函数没有参数，则用void填充。</p>
+<p>例如：</p>
+<p>void SetValue(int width, int height); // 良好的风格</p>
+<p>void SetValue(int, int); // 不良的风格</p>
+<p>float GetValue(void); // 良好的风格</p>
+<p>float GetValue(); // 不良的风格</p>
+<p>l 【规则2】参数命名要恰当，顺序要合理。</p>
+<p>例如编写字符串拷贝函数StringCopy，它有两个参数。如果把参数名字起为str1和str2，例如</p>
+<p>void StringCopy(char str1, char str2);</p>
+<p>那么我们很难搞清楚究竟是把str1拷贝到str2中，还是刚好倒过来。</p>
+<p>可以把参数名字起得更有意义，如叫strSource和strDestination。这样从名字上就可以看出应该把strSource拷贝到strDestination。</p>
+<p>还有一个问题，这两个参数那一个该在前那一个该在后？参数的顺序要遵循程序员的习惯。一般地，应将目的参数放在前面，源参数放在后面。</p>
+<p>如果将函数声明为：</p>
+<p>void StringCopy(char strSource, char strDestination);</p>
+<p>别人在使用时可能会不假思索地写成如下形式：</p>
+<p>char str[20];</p>
+<p>StringCopy(str, “Hello World”); // 参数顺序颠倒</p>
+<p>l 【规则3】如果输入参数以值传递的方式传递对象，则宜改用“const &amp;”方式来传递，这样可以省去临时对象的构造和析构过程，从而提高效率。</p>
+<p>² 【建议】避免函数有太多的参数，参数个数尽量控制在5个以内。如果参数太多，在使用时容易将参数类型或顺序搞错。</p>
+<p>5、 目录结构</p>
+<p>在大型项目里需要遵从固定的目录结构，工程文件/makefile可放在顶层目录：</p>
+<p>bin</p>
+<p>必备</p>
+<p>bin_debug</p>
+<p>必备</p>
+<p>config</p>
+<p>可选</p>
+<p>配置文件</p>
+<p>doc</p>
+<p>必备</p>
+<p>example</p>
+<p>必备</p>
+<p>include</p>
+<p>必备</p>
+<p>发布的公共头文件</p>
+<p>make</p>
+<p>可选</p>
+<p>工程文件</p>
+<p>lib</p>
+<p>必备</p>
+<p>obj</p>
+<p>可选</p>
+<p>编译过程中产生的中间文件，可增加子目录</p>
+<p>src</p>
+<p>必备</p>
+<p>test</p>
+<p>可选</p>
+<p>测试目录</p>
+<p>6、 其它编程经验</p>
+<p>6.1 使用const提高函数的健壮性</p>
+<p>看到const关键字，程序员首先想到的可能是const常量。这可不是良好的条件反射。如果只知道用const定义常量，那么相当于把火药仅用于制作鞭炮。const更大的魅力是它可以修饰函数的参数、返回值，甚至函数的定义体。</p>
+<p>const是constant的缩写，“恒定不变”的意思。被const修饰的东西都受到强制保护，可以预防意外的变动，能提高程序的健壮性。所以很多C++程序设计书籍建议：“Use const whenever you need”。</p>
+<p>任何不会修改数据成员的函数都应该声明为const类型。如果在编写const成员函数时，不慎修改了数据成员，或者调用了其它非const成员函数，编译器将指出错误，这无疑会提高程序的健壮性。</p>
+<p>以下程序中，类stack的成员函数GetCount仅用于计数，从逻辑上讲GetCount应当为const函数。编译器将指出GetCount函数中的错误。</p>
+<p>class Stack</p>
+<p>{</p>
+<p>  public:</p>
+<p>void  Push(int elem);</p>
+<p>int  Pop(void);</p>
+<p>int GetCount(void)  const; // const成员函数</p>
+<p>  private:</p>
+<p>int m_num;</p>
+<p>int m_data[100];</p>
+<p>};</p>
+<p>int Stack::GetCount(void)  const</p>
+<p>{<br>++ m_num; // 编译错误，企图修改数据成员m_num</p>
+<p>Pop(); // 编译错误，企图调用非const函数</p>
+<p>return m_num;</p>
+<p>}</p>
+<p>const成员函数的声明看起来怪怪的：const关键字只能放在函数声明的尾部，大概是因为其它地方都已经被占用了。</p>
+<p>6.2 提高程序的效率</p>
+<p>程序的时间效率是指运行速度，空间效率是指程序占用内存或者外存的状况。</p>
+<p>全局效率是指站在整个系统的角度上考虑的效率，局部效率是指站在模块或函数角度上考虑的效率。</p>
+<p>l 【规则1】不要一味地追求程序的效率，应当在满足正确性、可靠性、健壮性、可读性等质量因素的前提下，设法提高程序的效率。</p>
+<p>l 【规则2】以提高程序的全局效率为主，提高局部效率为辅。</p>
+<p>l 【规则3】在优化程序的效率时，应当先找出限制效率的“瓶颈”，不要在无关紧要之处优化。</p>
+<p>l 【规则4】先优化数据结构和算法，再优化执行代码。</p>
+<p>l 【规则5】有时候时间效率和空间效率可能对立，此时应当分析那个更重要，作出适当的折衷。例如多花费一些内存来提高性能。</p>
+<p>l 【规则6】不要追求紧凑的代码，因为紧凑的代码并不能产生高效的机器码。</p>
+<p>6.3 一些有益的建议</p>
+<p>² 【建议1】当心那些视觉上不易分辨的操作符发生书写错误。</p>
+<p>我们经常会把“＝＝”误写成“＝”，象“||”、“&amp;&amp;”、“&lt;=”、“&gt;=”这类符号也很容易发生“丢1”失误。然而编译器却不一定能自动指出这类错误。</p>
+<p>² 【建议2】变量被创建之后应当及时把它们初始化，以防止把未被初始化的变量当成右值使用。</p>
+<p>² 【建议3】当心变量的初值、缺省值错误，或者精度不够。</p>
+<p>² 【建议4】当心数据类型转换发生错误。尽量使用显式的数据类型转换（让人们知道发生了什么事），避免让编译器轻悄悄地进行隐式的数据类型转换。</p>
+<p>² 【建议5】当心忘记编写错误处理程序，当心错误处理程序本身有误。</p>
+<p>² 【建议6】当心文件I/O有错误。</p>
+<p>² 【建议7】避免编写技巧性很高代码。</p>
+<p>² 【建议8】不要设计面面俱到、非常灵活的数据结构。</p>
+<p>² 【建议9】如果原有的代码质量比较好，尽量复用它。但是不要修补很差劲的代码，应当重新编写。</p>
+<p>² 【建议10】尽量使用标准库函数，不要“发明”已经存在的库函数。</p>
+<p>² 【建议11】尽量不要使用与具体硬件或软件环境关系密切的变量。</p>
+<p>² 【建议12】把编译器的选择项设置为最严格状态。</p>
+
+    
+    <section id="References">
+      <span id="References">References</span>
+      <span id="References-content">
+        <ol id="list">
+          <li>
+              Yao Qing-sheng&period;&nbsp; 编程规范(C++)&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83-C/
+          </li>
+          <li>
+            版权声明：本文为「LordYao」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。 <br/>
+            原文链接： https://yaoqs.github.io/2019/11/27/%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83-C/
+        </li>
+        </ol>
+      </span>
+
+    </section>
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+  <footer class="post-footer">
+    
+    <hr id="footerline"/>
+    <section class="author"><br/>
+      *Corresponding author: Yao Qing-sheng &lt;Email: <a href="mailto:350788415@qq.com" target="_blank" rel="noopener" title="350788415@qq.com">350788415@qq.com</a>&gt; 
+                
+        BY-NC-SA .
+         
+      <p></p>
+    </section>
+    
+  </footer>
+  <script text="script/javascript">//复制加版权
+    jQuery(document).on('copy', function(e)
+        {
+          var selected = window.getSelection();
+          var selectedText = selected.toString().replace(/\n/g, '<br>');  // Solve the line breaks conversion issue 处理换行转换的问题
+          var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>' 
+                                + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+                                + '<br>作者：'+document.getElementById('author').innerText
+                                + '<br>复制时间: '+Date.now()
+                                + '<br>原文链接：' + document.location.href
+                                + '<br>© 版权声明：本文为「'+document.getElementById('author').innerText+'」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。';
+                                
+          var copyHolder = $('<div>', {id: 'temp', html: selectedText + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+          
+          $('body').append(copyHolder);
+          selected.selectAllChildren( copyHolder[0] );
+          window.setTimeout(function() {
+              copyHolder.remove();
+          },0);
+        });
+
+  </script>
+
+  <script text="script/javascript">//嵌入网页
+    
+
+  </script>
+</article>
+
+<nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2019/11/27/c%E8%AF%AD%E8%A8%80%E6%BA%90%E4%BB%A3%E7%A0%81/">
+        ← prev <!--c语言源代码-->
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2019/11/27/%E2%80%9C%E6%8B%96%E5%BB%B6%E7%97%87%E2%80%9D%E7%9A%84%E8%89%AF%E6%96%B9%E2%80%94%E2%80%94%E5%AF%B9%E4%BA%8E%E8%BF%BD%E6%B1%82%E5%AE%8C%E7%BE%8E%EF%BC%8C%E8%87%AA%E5%88%B6%E5%8A%9B%E5%B7%AE%EF%BC%8C%E6%83%85%E7%BB%AA%E5%8C%96%E7%9A%84%E4%BA%BA%E5%BE%88%E5%8F%97%E7%94%A8/">
+        <!--“拖延症”的良方——对于追求完美，自制力差，情绪化的人很受用--> next →
+    </a>
+    
+    <a id="toTop" href="#top" title="回顶部" style="float: right;">Top</a>
+</nav>
+
+
+        </main>
+        
+
+<!--</div>-->
+</html>
+
+

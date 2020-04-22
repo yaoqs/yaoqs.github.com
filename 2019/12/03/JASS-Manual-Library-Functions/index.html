@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!---->
+    <head>
+        
+		
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A scholar magazine/journal like blog">
+        <link rel="shortcut icon" href="/images/githubavatar.png"/>
+        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+        <title>JASS Manual: Library Functions | Scholar</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/future.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        
+    </head>
+    <header id="header">
+        <div id="fork_me_on_github"></div>
+        <script text="script/javascript">
+          //以下函数返回 min（包含）～ max（包含）之间的数字：
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          var id=getRndInteger(0,5);
+          var color='red_aa0000'
+          switch(id)
+          {
+            default:
+            color='red_aa0000';
+            break;
+            case 1:
+            color='darkblue_121621'
+            break;
+            case 2:
+            color='orange_ff7600'
+            break;
+            case 3:
+            color='gray_6d6d6d'
+            break;
+            case 4:
+            color='white_ffffff'
+          }
+          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+          
+          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
+          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
+      
+        </script>
+        
+        
+        <a id="avatar" href="/"><img src="/images/avatar_sx.png" alt="Scholar" /></a>
+        
+        <h1><a id="author" href="/">LordYao</a></h1>        
+                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
+                
+      <div id="follow-icons">
+        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+                  <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  </div>
+
+        <span id="donate">Slogan: 解放思想，发展生产力</span>
+        <h6><a href="/about.html">About</a>
+                    &middot;
+          <a href="/resume.html">Resume</a>
+                              &middot;
+          <a href="/Lab.html">Lab</a>
+                  </h6>
+        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
+        
+        <footer>
+          <section id="footer-message">&copy;  
+          2019 - 
+                    2020          
+          LordYao.<br/>
+                    
+          BY-NC-SA .
+           
+           All rights reserved. <br/>
+          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/scholar-hexo-theme" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
+        </footer>
+        <div id="Statistics">
+    
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+
+</div>
+
+      </header>
+   <!---->   
+      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
+    
+<!--
+      <div class="post-template">
+        -->
+          
+      
+        <main id="content">
+        
+        
+
+<hr id="topline"/>
+<div id="DOI"> December 3, 2019 <br>https://yaoqs.github.io/2019/12/03/JASS-Manual-Library-Functions/</div>
+<article class="post">
+ 
+  <h1 class="post-title">JASS Manual: Library Functions</h1>
+  <section id="post-author">Yao Qing-sheng <br/>Department of Natural Philosophy & Infomation Sciences, CHINA</section>
+  <section class="post-content article-entry">
+    <section id="Abstract">
+    <hr id="Abstract"/>
+    <span id="Abstract">Abstract
+        
+    </span>    
+    <span id="Abstract-content">
+        
+        
+    </span>
+    
+    
+    <span id="Abstract">Keywords
+        <span id="keywords-content">
+                  
+              
+              
+                Reprint
+                
+                                    &comma;
+                
+                
+              
+                Draft
+                
+                                    &comma;
+                
+                
+              
+                Dota
+                
+                                    &comma;
+                
+                
+              
+                Jass
+                
+                                    &comma;
+                
+                
+              
+            
+        </span>
+    </span>
+    <hr id="Abstract"/>
+
+    <span id="Abstract">Citation
+        <span id="keywords-content">
+            Yao Qing-sheng&period;&nbsp; JASS Manual: Library Functions&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1203&comma;&nbsp; https://yaoqs.github.io/2019/12/03/JASS-Manual-Library-Functions/
+        </span>
+    </span> 
+
+    <hr id="Abstract"/>
+    </section>
+
+
+
+    <p>Library Functions</p>
+<p>Many native functions and constants are declared in common.j, common.ai, and Blizzard.j. This section will descibe several functions that are of note. Obviously, this section is incomplete; if you have written or have found a more thorough description of the native API, I would be happy to link it here. See the API Browser section for a listing of the API.</p>
+<p>Important Note: Others have observed that the following functions in common.j do not function correctly when used in AI scripts:</p>
+<p>native functions that return string.<br>native functions that take callbacks (code, trigger, boolexpr, etc.) as arguments such as triggers and enumerators (ForGroup, etc.).<br>ExecuteFunc.<br>These functions work normally in map scripts. Also be aware that native functions declared in common.ai are obviously not available to map scripts.<br>There are 3 common.ai functions that work for map scripts, once you manually add them to common.j , those functions are GetUnitGoldCost , GetUnitWoodCost and GetUnitBuildTime</p>
+<p>The current list of topics are:</p>
+<p>Threads<br>Triggers<br>Inter-Script Communication<br>Enumerations<br>Filters<br>Threads</p>
+<p>Usually only a single thread of execution is started for the AI. New threads can be started in an AI script with the function declared in common.ai:</p>
+<p>Map scripts, can simply use ExecuteFunc to create another thread.</p>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">native StartThread takes code <span class="function"><span class="keyword">func</span> <span class="title">returns</span> <span class="title">nothing</span></span></span><br></pre></td></tr></table></figure>
+<p>Calling this function via the statement call StartThread(function my_func) causes a new thread to begin execution starting at the beginning of the my_func function.</p>
+<p>There are 6 thread slots per player. This includes the “main” thread, so there is a slot for the main script and 5 extra slots. If you have filled all 6 thread slots then further calls to StartThread() are ignored. Thread slots are not recycled. Once you have created 5 threads of your own, all slots are used and you can’t start more threads for the same player.</p>
+<p>When a new thread is created, it receives time immediately. When the new thread yields (gives up the interpreter), the thread that created it resumes.</p>
+<p>Threads can yield in the following ways:</p>
+<p>There is an opcode execution limit; when a thread runs more opcodes than the limit it is put to sleep automatically for 1 second.<br>When a thread calls the Sleep(N) function, it is put to sleep and will resume after N seconds.<br>Threads can terminate in the following ways:</p>
+<p>If there was no main function (e.g., it was null), the thread is terminated.<br>When the thread’s main function returns, it exits.<br>If a thread uses a variable that was not set before it was used, then it is terminated. (All variables must be set before they are used.)<br>If a thread executes a divide by 0, it is terminated.<br>You should never let the main thread (the one that is started by the game automatically) exit. For example, you can call SleepForever() at the end of the main function to avoid exiting.</p>
+<p>All threads for a single AI player share global state, so if you modify a global variable in one thread, the change will be visible in other threads in the same script. You can not start new threads in map scripts.</p>
+<p>Triggers</p>
+<p>A trigger, used in a map script, is a callback; that is, it an event handler that is installed to execute when a particular event(s) occur. Triggers do not function properly in AI scripts. A trigger is of type trigger which is a subtype of handle (hence it is just a pointer to some in game data-structure).</p>
+<p>New triggers are created with the function (in common.j):</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">native CreateTrigger takes <span class="keyword">nothing</span> <span class="keyword">returns</span> <span class="type">trigger</span></span><br></pre></td></tr></table></figure>
+<p>The actual trigger contains conditions and actions. The conditions are a set of boolexprs. These are handle types which encapsulate functions that return booleans. A condition boolexpr can be created with the following function. The argument function should have the signature takes nothing returns boolean. (conditionfunc is a subtype of boolexpr)</p>
+<p>native Condition takes code func returns conditionfunc<br>A condition is added to a trigger with the function:</p>
+<p>native TriggerAddCondition takes trigger whichTrigger,<br>                                 boolexpr condition returns triggercondition<br>It returns a handle to the condition which can be used later in other trigger related functions (e.g., if you want to remove the condition from the trigger).</p>
+<p>Actions are just functions which execute when the event occurs and the conditions are satisfied. They should have the signature takes nothing returns nothing.</p>
+<p>native TriggerAddAction takes trigger whichTrigger,<br>                              code actionFunc returns triggeraction<br>Again, the function returns a handle to the action, in case it must be refered to later.</p>
+<p>Once a trigger is created, it is must be registered with a game event(s) which indicate when it will be executed. This is accomplished using the functions that look like this in common.j:</p>
+<p>native TriggerRegister*Event takes trigger whichTrigger, … returns event<br>There are many other trigger manipulation functions in common.j that can help trigger management.</p>
+<p>Inter-Script Communication</p>
+<p>During a game, there will be several independent JASS scripts executing; one for the map trigger script, and one AI script for each computer player. The global variables in each of these scripts are not shared, so setting a global value in one AI script will not affect the same global variable in another computer’s AI script.</p>
+<p>The map script and AI scripts can communicate with each other using commands. A command is a pair of integer values, a command value and a data value. To send a command to a particular AI script, use the function (declared in common.j):</p>
+<p>native CommandAI takes player num, integer command, integer data returns nothing<br>Each computer player has a command stack onto which new commands sent to them are placed. To determine how many commands are waiting on the stack, use the following function (declared in common.ai):</p>
+<p>native CommandsWaiting takes nothing returns integer<br>To look at the command at the top of the stack, use the following functions:</p>
+<p>native GetLastCommand takes nothing returns integer<br>native GetLastData takes nothing returns integer<br>Which return the latest command and data values sent, respectively. These functions merely look at the command at the top of the stack; they do not remove it. To remove the command at the top of the stack, use:</p>
+<p>native PopLastCommand takes nothing returns nothing<br>Remember that adding a new element to a stack places it on top, while popping an element off the stack also removes the first from the top.</p>
+<p>Enumerations</p>
+<p>Although defining custom data structures in JASS is impossible due to the lack of first class pointers, the native API does provide a crude implementation of sets for certain handle types. A set of units is called a group; a set of players is called a force; you can also work with a set of destructables (doodads that can be destroyed), but there is no type that names the set.</p>
+<p>The API for managing custom groups and forces is similar. For example, to create, add an element, and remove an element to a group and force respectively:</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// <span class="keyword">group</span> management</span><br><span class="line">native CreateGroup takes <span class="keyword">nothing</span> <span class="keyword">returns</span> <span class="keyword">group</span></span><br><span class="line">native GroupAddUnit takes <span class="keyword">group</span> whichGroup, unit whichUnit <span class="keyword">returns</span> <span class="keyword">nothing</span></span><br><span class="line">native GroupRemoveUnit takes <span class="keyword">group</span> whichGroup, unit whichUnit <span class="keyword">returns</span> <span class="keyword">nothing</span></span><br><span class="line"></span><br><span class="line">// force management</span><br><span class="line">native CreateForce takes <span class="keyword">nothing</span> <span class="keyword">returns</span> force</span><br><span class="line">native ForceAddPlayer takes force whichForce, player whichPlayer <span class="keyword">returns</span> <span class="keyword">nothing</span></span><br><span class="line">native ForceRemovePlayer takes force whichForce, player whichPlayer <span class="keyword">returns</span> <span class="keyword">nothing</span></span><br></pre></td></tr></table></figure>
+<p>A common design pattern used with a set is an iterator or enumeration. An enumeration is an interface that allows you to retrieve each element from the set and operate it. Usually, you want to express the notion “for each element in the set, do something to it” in the same way you would iterate through an array. For example, the standard way to process each element in a set in Java (and similarly in C++) is:</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// <span class="meta">While</span> the <span class="keyword">iterator </span>of <span class="string">'set'</span> has more elements in <span class="keyword">it</span></span><br><span class="line"><span class="keyword">for </span>(<span class="keyword">Iterator </span><span class="keyword">iter </span>= set.<span class="keyword">iterator(); </span><span class="keyword">iter.hasNext(); </span>) &#123;</span><br><span class="line">      // Retreive the next element from the <span class="keyword">iterator</span></span><br><span class="line"><span class="keyword"> </span>     Object element = <span class="keyword">iter.next();</span></span><br><span class="line"><span class="keyword"> </span>     // Do something with <span class="keyword">it...</span></span><br><span class="line"><span class="keyword"> </span>     processElement(element)<span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>In JASS, there is no way* to “look inside” a group or force directly, so the native API relies on callbacks to achieve the same functionality. To process each element in a group and force respectively, use the following functions. The callback function has the signature takes nothing returns nothing.</p>
+<p>// For each unit in ‘whichGroup’ call the ‘callback’ function<br>native ForGroup takes group whichGroup, code callback returns nothing</p>
+<p>// For each player in ‘whichForce’ call the ‘callback’ function<br>native ForForce takes force whichForce, code callback returns nothing<br>A similar function exists to process each element in a destructable set that consists of all destructables in a certain rect (a rectangular region of the map). See the subsection on Filters for more information on the boolexpr. * One way to get around this apparent limitation is by using the FirstOfGroup() and GroupRemoveUnitSimple() functions to iterate through a temporary group (see this for an example). This is useful in AI scripts where callbacks do not work.</p>
+<p>// For each destructable in ‘r’ that satisfies ‘filter’, call the ‘actionFunc’ function<br>native EnumDestructablesInRect takes rect r, boolexpr filter, code actionFunc returns nothing<br>Within the callback function, you retreive the next element to process with the functions (for groups, forces, destructable sets, respectively):</p>
+<p>constant native GetEnumUnit         takes nothing returns unit<br>constant native GetEnumPlayer       takes nothing returns player<br>constant native GetEnumDestructable takes nothing returns destructable<br>(These enumerators to not work correctly in AI scripts so only use them in map scripts) For example, suppose you wanted to kill all the units in a group. You could use the following callback function:</p>
+<p>function KillGroupCallback takes nothing returns nothing<br>     // Get the next unit to process<br>     local unit nextUnit = GetEnumUnit()<br>     // Kill it<br>     call KillUnit(nextUnit)<br>endfunction<br>Then you can kill all the units in a group with the following statement:</p>
+<pre><code>call ForGroup(groupToKill, function KillGroupCallback)</code></pre><p>Another common operation is to find the element(s) in a set that satisfies certain conditions in relation to the other elements in the set. For example, you might want to find the unit with the most life in a group. Unfortunately, because JASS relies on callbacks to process each element, the only way to maintain state across all the elements in a set is to use a global variable. For example, to find the unit with the most life in a group, you could use the code:</p>
+<p>globals<br>     real mostLifeSoFar<br>     unit unitWithMostLifeSoFar<br>endglobals</p>
+<p>function MostLifeCallback takes nothing returns nothing<br>     local unit nextUnit = GetEnumUnit()<br>     local real life = GetUnitState(nextUnit, UNIT_STATE_LIFE)</p>
+<pre><code>if life &gt; mostLifeSoFar then
+     set mostLifeSoFar = life
+     set unitWithMostLifeSoFar = nextUnit
+endif</code></pre><p>endfunction</p>
+<p>…<br>     // Initialize variables to find unit with max life in ‘myGroup’<br>     set mostLifeSoFar = 0<br>     set unitWithMostLifeSoFar = null<br>     // Process each element in ‘myGroup’<br>     call ForGroup(myGroup, function MostLifeCallback)<br>     // Now ‘unitWithMostLifeSoFar’ refers to the desired unit,<br>     // or null if the group was empty<br>…<br>Finally, you should note that you can achieve most of the same functionality with arrays instead of groups and forces, since an array can be viewed as a set. The drawbacks are that an array always uses up a certain amount of storage (see Types), you will end up with “holes” in your set if you remove elements in the middle of the array, and you can not use the filter functions described in the Filters subsection directly to create array sets (though you can use them to first create a group, then use enumeration callbacks to fill your array). In addition, you can not have an array of arrays, whereas you can have an array of groups or forces.</p>
+<p>Filters</p>
+<p>The Enumerations subsection described one way to create sets (groups and forces), but sometimes it is desirable to dynamically create a set containing all elements with particular properties. For example, you might want to create a group containing all the units with less than 20 mana (then you can use ForGroup(…) to do something to each of them).</p>
+<p>There are several native functions that facilitate this. For example, the following functions can be used to fill groups. They take a group as an argument and add all units that satisfy a certain property to the group.</p>
+<p>// Add all units that are of type ‘unitname’ and satisfy the ‘filter’<br>native GroupEnumUnitsOfType takes group whichGroup, string unitname,<br>  boolexpr filter returns nothing</p>
+<p>// Add all units that belong to ‘whichPlayer’ and satisfy the ‘filter’<br>native GroupEnumUnitsOfPlayer takes group whichGroup, player whichPlayer,<br>  boolexpr filter returns nothing</p>
+<p>// Add up to ‘countLimit’ units of type ‘unitname’ that satisty the ‘filter’<br>native GroupEnumUnitsOfTypeCounted takes group whichGroup, string unitname,<br>  boolexpr filter, integer countLimit returns nothing</p>
+<p>// Add all units that are in the rectable ‘r’ and satisfy ‘filter’<br>native GroupEnumUnitsInRect takes group whichGroup, rect r, boolexpr filter<br>  returns nothing</p>
+<p>// Add up to ‘countLimit’ of units that are in ‘r’ and satisfy ‘filter’<br>native GroupEnumUnitsInRectCounted takes group whichGroup, rect r,<br>  boolexpr filter, integer countLimit returns nothing</p>
+<p>// Add all units that are within ‘radius’ of the point (‘x’,’y’) and<br>// satisfy ‘filter’<br>native GroupEnumUnitsInRange takes group whichGroup, real x, real y,<br>  real radius, boolexpr filter returns nothing</p>
+<p>// Add all units that are within ‘radius’ of the point ‘location’ and<br>// satisfy ‘filter’<br>native GroupEnumUnitsInRangeOfLoc takes group whichGroup,<br>  location whichLocation, real radius, boolexpr filter returns nothing</p>
+<p>// Add up to ‘countLimit’ units that are within ‘radius’ of the<br>// point (‘x’,’y’) and satisfy ‘filter’<br>native GroupEnumUnitsInRangeCounted takes group whichGroup, real x, real y,<br>  real radius, boolexpr filter, integer countLimit returns nothing</p>
+<p>// Add up to ‘countLimit’ units that are within ‘radius’ of the point<br>// ‘location’ and satisfy ‘filter’<br>native GroupEnumUnitsInRangeOfLocCounted takes group whichGroup,<br>  location whichLocation, real radius, boolexpr filter,<br>  integer countLimit returns nothing</p>
+<p>// Add all units that are selected by ‘whichPlayer’ and satisfy ‘filter’<br>native GroupEnumUnitsSelected takes group whichGroup, player whichPlayer,<br>  boolexpr filter returns nothing<br>A similar set of functions exist for adding players to forces:</p>
+<p>// Add all players that satisfy ‘filter’<br>native ForceEnumPlayers takes force whichForce, boolexpr filter returns nothing</p>
+<p>// Add up to ‘countLimit’ players that satisfy ‘filter’<br>native ForceEnumPlayersCounted takes force whichForce, boolexpr filter,<br>  integer countLimit returns nothing</p>
+<p>// Add all units that are allies of ‘whichPlayer’ that satisfy ‘filter’<br>native ForceEnumAllies takes force whichForce, player whichPlayer,<br>  boolexpr filter returns nothing</p>
+<p>// Add all units that are enemies of ‘whichPlayer’ that satisfy ‘filter’<br>native ForceEnumEnemies takes force whichForce, player whichPlayer,<br>  boolexpr filter returns nothing<br>Each of these functions takes a boolexpr which is also used for conditions in triggers (see the Triggers subsection). In particular, you will usually pass in a filterfunc (which is nearly identical to a conditionfunc). A filterfunc encapsulates a boolean function just like a conditionfunc. To create a filterfunc use:</p>
+<p>native Filter takes code func returns filterfunc<br>The argument’s function signature should be takes nothing returns boolean. The filter serves as an additional condition that each element must satisfy before being added to the group or force. Filters work like enumerations; when one of the above functions are used to add elements to sets, each element that satisfies the initial property (all units in a region, all players allied with some player, etc.) is “passed” to the filter function. If the filter function returns true, then the element is added, otherwise it is not. In the filter callback, you can retrieve the next unit, player, and destructable doodad to examine with the following functions, respectively:</p>
+<p>constant native GetFilterUnit         takes nothing returns unit<br>constant native GetFilterPlayer       takes nothing returns player<br>constant native GetFilterDestructable takes nothing returns destructable<br>For example, if I wanted to create a filter that is only satisfied by units with less than 20 mana, I can use the following callback funtion:</p>
+<p>function LessThan20ManaCallback takes nothing returns boolean<br>     // Get the next unit to examine<br>     local unit nextUnit = GetFilterUnit()<br>     // Check to see if it satisfies our condition<br>     return GetUnitState(nextUnit, UNIT_STATE_MANA) &lt; 20<br>endfunction<br>Then, I can use the following statements to add all units that are in a particular region and have less than 20 mana into my group:</p>
+<pre><code>// Create the filter
+local filterfunc myFilter = Filter(function LessThan20ManaCallback)
+// Add all satisfying units in &apos;someRect&apos; into &apos;myGroup&apos;
+call GroupEnumUnitsInRect(myGroup, someRect, myFilter)
+// Destroy the filter if we are not going to use it again
+call DestroyFilter(myFilter)</code></pre><p>Note that we destroy the filter after we are done with it so there is not a memory leak.</p>
+<p>If no additional condition is required, then you can pass in the value null instead of an actual filterfunc.</p>
+<p>Copyright (c) 2003 Jeff Pang<br>Not affiliated or endorsed by Blizzard Entertainment     SourceForge.net Logo   </p>
+
+    
+    <section id="References">
+      <span id="References">References</span>
+      <span id="References-content">
+        <ol id="list">
+          <li>
+              Yao Qing-sheng&period;&nbsp; JASS Manual: Library Functions&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1203&comma;&nbsp; https://yaoqs.github.io/2019/12/03/JASS-Manual-Library-Functions/
+          </li>
+          <li>
+            版权声明：本文为「LordYao」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。 <br/>
+            原文链接： https://yaoqs.github.io/2019/12/03/JASS-Manual-Library-Functions/
+        </li>
+        </ol>
+      </span>
+
+    </section>
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+  <footer class="post-footer">
+    
+    <hr id="footerline"/>
+    <section class="author"><br/>
+      *Corresponding author: Yao Qing-sheng &lt;Email: <a href="mailto:350788415@qq.com" target="_blank" rel="noopener" title="350788415@qq.com">350788415@qq.com</a>&gt; 
+                
+        BY-NC-SA .
+         
+      <p></p>
+    </section>
+    
+  </footer>
+  <script text="script/javascript">//复制加版权
+    jQuery(document).on('copy', function(e)
+        {
+          var selected = window.getSelection();
+          var selectedText = selected.toString().replace(/\n/g, '<br>');  // Solve the line breaks conversion issue 处理换行转换的问题
+          var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>' 
+                                + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+                                + '<br>作者：'+document.getElementById('author').innerText
+                                + '<br>复制时间: '+Date.now()
+                                + '<br>原文链接：' + document.location.href
+                                + '<br>© 版权声明：本文为「'+document.getElementById('author').innerText+'」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。';
+                                
+          var copyHolder = $('<div>', {id: 'temp', html: selectedText + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+          
+          $('body').append(copyHolder);
+          selected.selectAllChildren( copyHolder[0] );
+          window.setTimeout(function() {
+              copyHolder.remove();
+          },0);
+        });
+
+  </script>
+
+  <script text="script/javascript">//嵌入网页
+    
+
+  </script>
+</article>
+
+<nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2019/12/06/GitHub%E5%AE%9E%E7%94%A8%E7%A7%98%E7%B1%8D/">
+        ← prev <!--GitHub实用秘籍-->
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2019/12/03/%E5%8E%86%E5%8F%B2%E4%B8%8A%E7%BB%88%E8%BA%AB%E6%9C%AA%E5%A9%9A21%E4%B8%AA%E5%90%8D%E4%BA%BA/">
+        <!--历史上终身未婚21个名人--> next →
+    </a>
+    
+    <a id="toTop" href="#top" title="回顶部" style="float: right;">Top</a>
+</nav>
+
+
+        </main>
+        
+
+<!--</div>-->
+</html>
+
+

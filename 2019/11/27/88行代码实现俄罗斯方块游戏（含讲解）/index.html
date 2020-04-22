@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!---->
+    <head>
+        
+		
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A scholar magazine/journal like blog">
+        <link rel="shortcut icon" href="/images/githubavatar.png"/>
+        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+        <title>88行代码实现俄罗斯方块游戏（含讲解） | Scholar</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/future.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        
+    </head>
+    <header id="header">
+        <div id="fork_me_on_github"></div>
+        <script text="script/javascript">
+          //以下函数返回 min（包含）～ max（包含）之间的数字：
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          var id=getRndInteger(0,5);
+          var color='red_aa0000'
+          switch(id)
+          {
+            default:
+            color='red_aa0000';
+            break;
+            case 1:
+            color='darkblue_121621'
+            break;
+            case 2:
+            color='orange_ff7600'
+            break;
+            case 3:
+            color='gray_6d6d6d'
+            break;
+            case 4:
+            color='white_ffffff'
+          }
+          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+          
+          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
+          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
+      
+        </script>
+        
+        
+        <a id="avatar" href="/"><img src="/images/avatar_sx.png" alt="Scholar" /></a>
+        
+        <h1><a id="author" href="/">LordYao</a></h1>        
+                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
+                
+      <div id="follow-icons">
+        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+                  <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  </div>
+
+        <span id="donate">Slogan: 解放思想，发展生产力</span>
+        <h6><a href="/about.html">About</a>
+                    &middot;
+          <a href="/resume.html">Resume</a>
+                              &middot;
+          <a href="/Lab.html">Lab</a>
+                  </h6>
+        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
+        
+        <footer>
+          <section id="footer-message">&copy;  
+          2019 - 
+                    2020          
+          LordYao.<br/>
+                    
+          BY-NC-SA .
+           
+           All rights reserved. <br/>
+          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/scholar-hexo-theme" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
+        </footer>
+        <div id="Statistics">
+    
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+
+</div>
+
+      </header>
+   <!---->   
+      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
+    
+<!--
+      <div class="post-template">
+        -->
+          
+      
+        <main id="content">
+        
+        
+
+<hr id="topline"/>
+<div id="DOI"> November 27, 2019 <br>https://yaoqs.github.io/2019/11/27/88%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97%E6%B8%B8%E6%88%8F%EF%BC%88%E5%90%AB%E8%AE%B2%E8%A7%A3%EF%BC%89/</div>
+<article class="post">
+ 
+  <h1 class="post-title">88行代码实现俄罗斯方块游戏（含讲解）</h1>
+  <section id="post-author">Yao Qing-sheng <br/>Department of Natural Philosophy & Infomation Sciences, CHINA</section>
+  <section class="post-content article-entry">
+    <section id="Abstract">
+    <hr id="Abstract"/>
+    <span id="Abstract">Abstract
+        
+    </span>    
+    <span id="Abstract-content">
+        
+        
+    </span>
+    
+    
+    <span id="Abstract">Keywords
+        <span id="keywords-content">
+                  
+              
+              
+                Draft
+                
+                                    &comma;
+                
+                
+              
+                Code Snippets
+                
+                                    &comma;
+                
+                
+              
+                C/c++
+                
+                                    &comma;
+                
+                
+              
+            
+        </span>
+    </span>
+    <hr id="Abstract"/>
+
+    <span id="Abstract">Citation
+        <span id="keywords-content">
+            Yao Qing-sheng&period;&nbsp; 88行代码实现俄罗斯方块游戏（含讲解）&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/88%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97%E6%B8%B8%E6%88%8F%EF%BC%88%E5%90%AB%E8%AE%B2%E8%A7%A3%EF%BC%89/
+        </span>
+    </span> 
+
+    <hr id="Abstract"/>
+    </section>
+
+
+
+    <p>来源：<a href="http://misaka.blog.com/p/8" target="_blank" rel="noopener">http://misaka.blog.com/p/8</a> </p>
+<p>在正式阅读本文之前，请你记得你应该用娱乐的心态来看，<br>本代码所使用到的技巧，在工作了的人眼里会觉得很纠结，很蛋疼，很不可理喻，很丑，<br>注意，是你蛋疼，不关我的事 </p>
+<p>通常，写一个俄罗斯方块，往往动不动就几百行，甚至上千行，而这里只有88行<br>正所谓头脑风暴，打破常规。这里将使用很多不平常的手段来减少代码</p>
+<p>但为了能更通用，一份控制台版本的代码，同样是88行，直接复制到VC即可编译：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;windows.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;conio.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt; </span></span></span><br><span class="line"><span class="keyword">char</span> gcText[] = <span class="string">" 1LJTSZ#"</span>; </span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">tetris</span> &#123;</span> </span><br><span class="line">    <span class="keyword">int</span> _pool[<span class="number">16</span>][<span class="number">32</span>], (*pool)[<span class="number">32</span>], tmap[<span class="number">8</span>][<span class="number">4</span>][<span class="number">16</span>]; </span><br><span class="line">    <span class="keyword">int</span> x, y, s, st, t; </span><br><span class="line">&#125;gt; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">trsInit</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> sp[<span class="number">8</span>][<span class="number">4</span>] = &#123;&#123;<span class="number">15</span>,<span class="number">4369</span>&#125;,&#123;<span class="number">23</span>,<span class="number">785</span>,<span class="number">116</span>,<span class="number">547</span>&#125;,&#123;<span class="number">71</span>,<span class="number">275</span>,<span class="number">113</span>,<span class="number">802</span>&#125;, </span><br><span class="line">        &#123;<span class="number">39</span>,<span class="number">305</span>,<span class="number">114</span>,<span class="number">562</span>&#125;,&#123;<span class="number">54</span>,<span class="number">561</span>&#125;,&#123;<span class="number">99</span>,<span class="number">306</span>&#125;,&#123;<span class="number">51</span>,<span class="number">51</span>&#125;,&#123;<span class="number">-1</span>&#125;&#125;; </span><br><span class="line">    <span class="keyword">int</span> *p, i, j, b; </span><br><span class="line">    <span class="keyword">for</span> (p = sp[<span class="number">0</span>]; *p &gt;= <span class="number">0</span>; ++p) <span class="keyword">if</span> ( *p == <span class="number">0</span> ) *p = p[<span class="number">-2</span>]; </span><br><span class="line">    gt.pool = &amp;gt._pool[<span class="number">4</span>]; </span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; <span class="number">7</span>; ++j) </span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">4</span>; ++i) </span><br><span class="line">            <span class="keyword">for</span> (b = <span class="number">0</span>; b &lt; <span class="number">16</span>; ++b) </span><br><span class="line">                gt.tmap[j+<span class="number">1</span>][i][b] = (sp[j][i] &amp; <span class="number">1</span>) * (j + <span class="number">1</span>), </span><br><span class="line">                sp[j][i] &gt;&gt;= <span class="number">1</span>; </span><br><span class="line">    <span class="built_in">memset</span>(gt._pool, <span class="number">-1</span>, <span class="keyword">sizeof</span>(gt._pool)); </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i) </span><br><span class="line">        <span class="built_in">memset</span>(&amp;gt.pool[i], <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>[<span class="number">21</span>])); </span><br><span class="line">    <span class="keyword">return</span> ; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">trsCopy</span><span class="params">(<span class="keyword">int</span> sp[], <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> c)</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> i, cx, cy; </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">16</span>; ++i) <span class="keyword">if</span> (sp[i]) &#123; </span><br><span class="line">        cx = x + (i &amp; <span class="number">3</span>), cy = y + (i &gt;&gt; <span class="number">2</span>); </span><br><span class="line">        <span class="keyword">if</span> (gt.pool[cx][cy]) </span><br><span class="line">            <span class="keyword">if</span> (c == <span class="number">2</span>) gt.pool[cx][cy] = <span class="number">0</span>; <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">if</span> (c==<span class="number">1</span>) gt.pool[cx][cy] = sp[i]; </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">trsScene</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> x, y = <span class="number">0</span>; </span><br><span class="line">    COORD pos = &#123;<span class="number">0</span>&#125;; </span><br><span class="line">    gt.s = rand() % <span class="number">7</span> + <span class="number">1</span>, gt.st = gt.t = <span class="number">0</span>; </span><br><span class="line">    gt.x = <span class="number">3</span>, gt.y = <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">for</span> (--gt.t; ; Sleep(<span class="number">1</span>), --gt.t) &#123; </span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">while</span> (kbhit()) &#123; </span><br><span class="line">            k = getch(); </span><br><span class="line">            <span class="keyword">if</span> (k == <span class="number">27</span>) <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">            <span class="keyword">if</span> (k == <span class="string">'A'</span> || k == <span class="string">'a'</span>) &#123; </span><br><span class="line">                <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][gt.st], gt.x<span class="number">-1</span>, gt.y, <span class="number">0</span>)) --gt.x; </span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="string">'D'</span> || k == <span class="string">'d'</span>) &#123; </span><br><span class="line">                <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][gt.st], gt.x+<span class="number">1</span>, gt.y, <span class="number">0</span>)) ++gt.x; </span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="string">'W'</span> || k == <span class="string">'w'</span>) &#123; </span><br><span class="line">                <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][(gt.st+<span class="number">1</span>) % <span class="number">4</span>], gt.x, gt.y, <span class="number">0</span>)) </span><br><span class="line">                    gt.st = (gt.st+<span class="number">1</span>) % <span class="number">4</span>; </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">if</span> (k == <span class="string">'S'</span> || k == <span class="string">'s'</span> || gt.t &lt; <span class="number">0</span>) &#123; </span><br><span class="line">            <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y+<span class="number">1</span>, <span class="number">0</span>))++gt.y,gt.t=<span class="number">50</span>; </span><br><span class="line">            <span class="keyword">else</span> &#123; </span><br><span class="line">                trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y, <span class="number">1</span>); </span><br><span class="line">                <span class="keyword">for</span> (--y; y &gt; <span class="number">0</span>; --y) &#123; </span><br><span class="line">                    <span class="keyword">for</span> (x = <span class="number">0</span>; gt.pool[x][y] &gt; <span class="number">0</span>; ++x); </span><br><span class="line">                    <span class="keyword">if</span> (gt.pool[x][y] &lt; <span class="number">0</span>) </span><br><span class="line">                        <span class="keyword">for</span> (k = y++; k &gt; <span class="number">0</span>; --k) </span><br><span class="line">                            <span class="keyword">for</span> (x = <span class="number">0</span>; gt.pool[x][<span class="number">0</span>] &gt;= <span class="number">0</span>; ++x) </span><br><span class="line">                                gt.pool[x][k] = gt.pool[x][k<span class="number">-1</span>]; </span><br><span class="line">                &#125; </span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span>; </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y, <span class="number">1</span>); </span><br><span class="line">        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos); </span><br><span class="line">        <span class="keyword">for</span> (y = <span class="number">1</span>; gt.pool[<span class="number">0</span>][y] &gt;= <span class="number">0</span>; ++y,<span class="built_in">putchar</span>(<span class="number">10</span>)) &#123; </span><br><span class="line">            <span class="keyword">for</span> (x = <span class="number">0</span>; gt.pool[x][<span class="number">0</span>] &gt;= <span class="number">0</span>; ++x) &#123; </span><br><span class="line">                <span class="built_in">putchar</span>(gcText[gt.pool[x][y]]); </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y, <span class="number">2</span>); </span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    srand((<span class="keyword">unsigned</span>)time(<span class="literal">NULL</span>)); </span><br><span class="line">    <span class="keyword">for</span> (trsInit(); trsScene(); ); </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>======================================华丽的分割线========================================<br>以下是对代码的压缩方法进行分析 </p>
+<p>首先，通常我们需要准备7种方块，4个方向的形状表，相当多的俄罗斯方块程序就是在开头写了这样一个很长的数组定义，<br>有的光这个定义就直接超100行了，这个程序是怎么实现的呢？ </p>
+<p>其实这个程序，同样是使用一个7<em>4</em>16的数组来保存这个形状表，但是，它没有直接初始化，见这个数组的定义： </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> sp[<span class="number">8</span>][<span class="number">4</span>] = &#123;&#123;<span class="number">15</span>,<span class="number">4369</span>&#125;,&#123;<span class="number">23</span>,<span class="number">785</span>,<span class="number">116</span>,<span class="number">547</span>&#125;,&#123;<span class="number">71</span>,<span class="number">275</span>,<span class="number">113</span>,<span class="number">802</span>&#125;, </span><br><span class="line">        &#123;<span class="number">39</span>,<span class="number">305</span>,<span class="number">114</span>,<span class="number">562</span>&#125;,&#123;<span class="number">54</span>,<span class="number">561</span>&#125;,&#123;<span class="number">99</span>,<span class="number">306</span>&#125;,&#123;<span class="number">51</span>,<span class="number">51</span>&#125;,&#123;<span class="number">-1</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
+<p>这个莫名其妙的数组的值是什么意思呢？其实很好猜的，我们尝试把这些数化为二进制：<br>15 = 1111<br>4369 = 1000100010001 </p>
+<p>合理地四位四位拆开，从低位到高位，从左到右，从上到下排列一下：<br>1111<br>0000<br>0000<br>0000 </p>
+<p>1000<br>1000<br>1000<br>1000 </p>
+<p>你终于发现，这就是长条方块的两个形状<br>后面类似 </p>
+<p>然后你会发现，这个数组并不完整，有的只定义了两个形状，有的是四个形状，没定义的数会默认置0的，这个怎么解释？<br>看这个数组定义的下面第二行： </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (p = sp[<span class="number">0</span>]; *p &gt;= <span class="number">0</span>; ++p) <span class="keyword">if</span> ( *p == <span class="number">0</span> ) *p = p[<span class="number">-2</span>];</span><br></pre></td></tr></table></figure>
+<p>意思是找出这个数组为0的元素，用它前面的元素值填上即*p = p[-2]<br>而数组中最后一个元素值-1起监督头的作用，用于让这个循环跳出<br>虽然可以把这些常数全直接写在数组里，但常数太多显得不太好，就这样写了 </p>
+<p>之后你看到这行代码：<br>gt.pool = &amp;gt._pool[4];<br>为什么定义两个pool呢？因为我们需要在原来的pool的界外用-1值填充，以便后面做碰撞检测减少不必要的代码<br>但如果直接用原来的_pool，那每次访问都要加上一个偏移常数，不美观且显得代码长，就用另一个指针直接指向开始的位置 </p>
+<p>然后，后面的三重循环就是解开那个位压缩数组以初始化gt.tmap数组，这个数组就是记录7*4种形状的数组<br>再下面三行，就是初始化pool，游戏区为0，界外为-1<br>而其中，i &lt; 10决定了游戏池的宽度为10，sizeof(int[21])决定了游戏池的高度是20 （0我们不使用，这一行有特殊作用，后文会讲）<br>用memset也是为了免写二重循环而已。整个初始化流程就到这里了 </p>
+<p>然后，是一个trsCopy函数，这个函数综合了碰撞检测，复制到游戏池和反复制，行为由参数c （是control缩写字母）控制<br>c为0就单纯的碰撞检测，c为1是复制，c为2就是反复制，细心分析一下，这个函数功能就清楚了，这里不详细展开 </p>
+<p>好了，到了trsScene函数，整个游戏的主逻辑流程就在这里了<br>我们先看第75行的那个二重循环，只有那个地方是根据pool保存的值来输出<br>所以，这个时候，你应该明白为什么trsCopy函数还要复制和反复制了，<br>它把你正在控制的方块，复制到pool里，统一输出，这样就不需要另加一个函数来绘画你的控制块了 </p>
+<p>而绘图之前，就是键盘处理等的逻辑控制，这里就没有什么复杂难懂的代码了，<br>唯一要讲讲的是，if (k == ‘S’ || k == ‘s’ || gt.t &lt; 0)<br>这一段是判断下落键的按下，和是否到时间强制下落<br>里面for (–y; y &gt; 0; –y)开始是消行计算<br>你可能会奇怪这个y没有明显的初始值，直接就来一个 –y，初始从哪里来？<br>其实就在之前讲的输出绘画那个循环里，循环结束后，y的值一定是最后一行+1<br>所以我们只要–y就得到最底下一行，因为消行计算，从下往上，只要一次就解决了，代码较少 </p>
+<p>好了，现在解释之前说的，为什么不是从0，而是从1开始<br>消行计算这里，每消除一行，最顶的一行就应该用0填充，但如果你因为这个多写一个for循环就不值得了<br>我们改成从1开始，那么把第0行的内容复制到第一行，就完成0填充了，就可以少写一个for </p>
+<p>好了，差不多接近尾声了，最后说说trsScene的返回值<br>trsScene返回值的意思很简单，如果是1就继续循环，如果是0就退出<br>所以你可以在代码里看到，当按下ESC(值为27)的时候才返回0<br>而方块落下一个的时候，返回1，让主函数重新调用它，就能再次初始化当前控制块的位置和形状了，<br>达到免除状态管理的代码的作用 </p>
+<p>最后，在主循环除了初始化，只要华丽的一行for (trsInit(); trsScene(); ); 就可以玩这个游戏了 </p>
+<p>看不懂？说明你也是个正常人<br>看得懂？说明你已经脑殘了。。。</p>
+<p>PS: 成年人不要乱学未成年人的东西。。。</p>
+<p>以下是Win-TC可以成功编译并执行的代码（代码保证单行长度不超过80字符，如果你是Win7系统，那请看后文）：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"graphics.h"</span> </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;conio.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt; </span></span></span><br><span class="line"><span class="keyword">int</span> gcW = <span class="number">20</span>, gcColor[] = &#123;DARKGRAY, LIGHTBLUE, LIGHTGREEN, LIGHTCYAN, </span><br><span class="line">    LIGHTRED, LIGHTMAGENTA,MAGENTA, YELLOW&#125;; </span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">tetris</span> &#123;</span> </span><br><span class="line">    <span class="keyword">int</span> _pool[<span class="number">16</span>][<span class="number">32</span>], (*pool)[<span class="number">32</span>], tmap[<span class="number">8</span>][<span class="number">4</span>][<span class="number">16</span>]; </span><br><span class="line">    <span class="keyword">int</span> x, y, s, st, t; </span><br><span class="line">&#125;gt; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">trsInit</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> sp[<span class="number">8</span>][<span class="number">4</span>] = &#123;&#123;<span class="number">15</span>,<span class="number">4369</span>&#125;,&#123;<span class="number">23</span>,<span class="number">785</span>,<span class="number">116</span>,<span class="number">547</span>&#125;,&#123;<span class="number">71</span>,<span class="number">275</span>,<span class="number">113</span>,<span class="number">802</span>&#125;, </span><br><span class="line">        &#123;<span class="number">39</span>,<span class="number">305</span>,<span class="number">114</span>,<span class="number">562</span>&#125;,&#123;<span class="number">54</span>,<span class="number">561</span>&#125;,&#123;<span class="number">99</span>,<span class="number">306</span>&#125;,&#123;<span class="number">51</span>,<span class="number">51</span>&#125;,&#123;<span class="number">-1</span>&#125;&#125;; </span><br><span class="line">    <span class="keyword">int</span> *p, i, j, b; </span><br><span class="line">    <span class="keyword">for</span> (p = sp[<span class="number">0</span>]; *p &gt;= <span class="number">0</span>; ++p) <span class="keyword">if</span> ( *p == <span class="number">0</span> ) *p = p[<span class="number">-2</span>]; </span><br><span class="line">    gt.pool = &amp;gt._pool[<span class="number">4</span>]; </span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; <span class="number">7</span>; ++j) </span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">4</span>; ++i) </span><br><span class="line">            <span class="keyword">for</span> (b = <span class="number">0</span>; b &lt; <span class="number">16</span>; ++b) </span><br><span class="line">                gt.tmap[j+<span class="number">1</span>][i][b] = (sp[j][i] &amp; <span class="number">1</span>) * (j + <span class="number">1</span>), </span><br><span class="line">                sp[j][i] &gt;&gt;= <span class="number">1</span>; </span><br><span class="line">    <span class="built_in">memset</span>(gt._pool, <span class="number">-1</span>, <span class="keyword">sizeof</span>(gt._pool)); </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i) </span><br><span class="line">        <span class="built_in">memset</span>(&amp;gt.pool[i], <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>[<span class="number">21</span>])); </span><br><span class="line">    <span class="keyword">return</span> ; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">trsCopy</span><span class="params">(<span class="keyword">int</span> sp[], <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> c)</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> m[] = &#123;<span class="number">0</span>,<span class="number">32</span>,<span class="number">64</span>,<span class="number">96</span>,<span class="number">1</span>,<span class="number">33</span>,<span class="number">65</span>,<span class="number">97</span>,<span class="number">2</span>,<span class="number">34</span>,<span class="number">66</span>,<span class="number">98</span>,<span class="number">3</span>,<span class="number">35</span>,<span class="number">67</span>,<span class="number">99</span>&#125;, i, cx, cy; </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">16</span>; ++i) <span class="keyword">if</span> (sp[i]) &#123; </span><br><span class="line">        cx = x + (m[i] &gt;&gt; <span class="number">5</span>), cy = y + (m[i] &amp; <span class="number">31</span>); </span><br><span class="line">        <span class="keyword">if</span> (gt.pool[cx][cy]) <span class="keyword">if</span> (c == <span class="number">2</span>) gt.pool[cx][cy] = <span class="number">0</span>; <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">if</span> (c==<span class="number">1</span>) gt.pool[cx][cy] = sp[i]; </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">trsScene</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> x, y = <span class="number">0</span>; </span><br><span class="line">    gt.s = random(<span class="number">7</span>) + <span class="number">1</span>, gt.st = gt.t = <span class="number">0</span>; </span><br><span class="line">    gt.x = <span class="number">4</span>, gt.y = <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">for</span> (--gt.t ; ; delay(<span class="number">10</span>), --gt.t) &#123; </span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">while</span> (kbhit()) &#123; </span><br><span class="line">            k = getch(); </span><br><span class="line">            <span class="keyword">if</span> (k == <span class="number">27</span>) <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">            <span class="keyword">if</span> (k == <span class="string">'A'</span> || k == <span class="string">'a'</span>) &#123; </span><br><span class="line">                <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][gt.st], gt.x<span class="number">-1</span>, gt.y, <span class="number">0</span>)) --gt.x; </span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="string">'D'</span> || k == <span class="string">'d'</span>) &#123; </span><br><span class="line">                <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][gt.st], gt.x+<span class="number">1</span>, gt.y, <span class="number">0</span>)) ++gt.x; </span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="string">'W'</span> || k == <span class="string">'w'</span>) &#123; </span><br><span class="line">                <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][(gt.st+<span class="number">1</span>) % <span class="number">4</span>], gt.x, gt.y, <span class="number">0</span>)) </span><br><span class="line">                    gt.st = (gt.st+<span class="number">1</span>) % <span class="number">4</span>; </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">if</span> (k == <span class="string">'S'</span> || k == <span class="string">'s'</span> || gt.t &lt; <span class="number">0</span>) &#123; </span><br><span class="line">            <span class="keyword">if</span> (trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y+<span class="number">1</span>, <span class="number">0</span>))++gt.y,gt.t=<span class="number">50</span>; </span><br><span class="line">            <span class="keyword">else</span> &#123; </span><br><span class="line">                trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y, <span class="number">1</span>); </span><br><span class="line">                <span class="keyword">for</span> (--y; y &gt; <span class="number">0</span>; --y) &#123; </span><br><span class="line">                    <span class="keyword">for</span> (x = <span class="number">0</span>; gt.pool[x][y] &gt; <span class="number">0</span>; ++x); </span><br><span class="line">                    <span class="keyword">if</span> (gt.pool[x][y] &lt; <span class="number">0</span>) </span><br><span class="line">                        <span class="keyword">for</span> (k = y++; k &gt; <span class="number">0</span>; --k) </span><br><span class="line">                            <span class="keyword">for</span> (x = <span class="number">0</span>; gt.pool[x][<span class="number">0</span>] &gt;= <span class="number">0</span>; ++x) </span><br><span class="line">                                gt.pool[x][k] = gt.pool[x][k<span class="number">-1</span>]; </span><br><span class="line">                &#125; </span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span>; </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y, <span class="number">1</span>); </span><br><span class="line">        <span class="keyword">for</span> (x = <span class="number">0</span>; gt.pool[x][<span class="number">0</span>] &gt;= <span class="number">0</span>; ++x) &#123; </span><br><span class="line">            <span class="keyword">for</span> (y = <span class="number">1</span>; gt.pool[x][y] &gt;= <span class="number">0</span>; ++y) &#123; </span><br><span class="line">                setfillstyle(<span class="number">1</span>, gcColor[gt.pool[x][y]]); </span><br><span class="line">                bar(<span class="number">201</span> + x*gcW, <span class="number">1</span> + y*gcW, <span class="number">200</span> + gcW + x*gcW, gcW + y*gcW); </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        trsCopy(gt.tmap[gt.s][gt.st], gt.x, gt.y, <span class="number">2</span>); </span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="keyword">int</span> g = DETECT, m = <span class="number">0</span>; </span><br><span class="line">    initgraph(&amp;g, &amp;m, <span class="string">""</span>); </span><br><span class="line">    randomize(); </span><br><span class="line">    trsInit(); </span><br><span class="line">    <span class="keyword">while</span> (trsScene()); </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果你没有Win-TC，或者你是Win7系统，可以用这个能用VC6编译的工程包： </p>
+<p>以上是图形界面版本，显示看起来好看一些</p>
+<p>一样都是88行</p>
+
+    
+    <section id="References">
+      <span id="References">References</span>
+      <span id="References-content">
+        <ol id="list">
+          <li>
+              Yao Qing-sheng&period;&nbsp; 88行代码实现俄罗斯方块游戏（含讲解）&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/88%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97%E6%B8%B8%E6%88%8F%EF%BC%88%E5%90%AB%E8%AE%B2%E8%A7%A3%EF%BC%89/
+          </li>
+          <li>
+            版权声明：本文为「LordYao」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。 <br/>
+            原文链接： https://yaoqs.github.io/2019/11/27/88%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97%E6%B8%B8%E6%88%8F%EF%BC%88%E5%90%AB%E8%AE%B2%E8%A7%A3%EF%BC%89/
+        </li>
+        </ol>
+      </span>
+
+    </section>
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+  <footer class="post-footer">
+    
+    <hr id="footerline"/>
+    <section class="author"><br/>
+      *Corresponding author: Yao Qing-sheng &lt;Email: <a href="mailto:350788415@qq.com" target="_blank" rel="noopener" title="350788415@qq.com">350788415@qq.com</a>&gt; 
+                
+        BY-NC-SA .
+         
+      <p></p>
+    </section>
+    
+  </footer>
+  <script text="script/javascript">//复制加版权
+    jQuery(document).on('copy', function(e)
+        {
+          var selected = window.getSelection();
+          var selectedText = selected.toString().replace(/\n/g, '<br>');  // Solve the line breaks conversion issue 处理换行转换的问题
+          var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>' 
+                                + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+                                + '<br>作者：'+document.getElementById('author').innerText
+                                + '<br>复制时间: '+Date.now()
+                                + '<br>原文链接：' + document.location.href
+                                + '<br>© 版权声明：本文为「'+document.getElementById('author').innerText+'」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。';
+                                
+          var copyHolder = $('<div>', {id: 'temp', html: selectedText + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+          
+          $('body').append(copyHolder);
+          selected.selectAllChildren( copyHolder[0] );
+          window.setTimeout(function() {
+              copyHolder.remove();
+          },0);
+        });
+
+  </script>
+
+  <script text="script/javascript">//嵌入网页
+    
+
+  </script>
+</article>
+
+<nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2019/11/27/%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hello%20world/">
+        ← prev <!--多语言实现hello world-->
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2019/11/27/c%E8%AF%AD%E8%A8%80%E6%BA%90%E4%BB%A3%E7%A0%81/">
+        <!--c语言源代码--> next →
+    </a>
+    
+    <a id="toTop" href="#top" title="回顶部" style="float: right;">Top</a>
+</nav>
+
+
+        </main>
+        
+
+<!--</div>-->
+</html>
+
+

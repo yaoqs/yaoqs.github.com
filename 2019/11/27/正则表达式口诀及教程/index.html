@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!---->
+    <head>
+        
+		
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A scholar magazine/journal like blog">
+        <link rel="shortcut icon" href="/images/githubavatar.png"/>
+        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+        <title>正则表达式口诀及教程 | Scholar</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/future.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        
+    </head>
+    <header id="header">
+        <div id="fork_me_on_github"></div>
+        <script text="script/javascript">
+          //以下函数返回 min（包含）～ max（包含）之间的数字：
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          var id=getRndInteger(0,5);
+          var color='red_aa0000'
+          switch(id)
+          {
+            default:
+            color='red_aa0000';
+            break;
+            case 1:
+            color='darkblue_121621'
+            break;
+            case 2:
+            color='orange_ff7600'
+            break;
+            case 3:
+            color='gray_6d6d6d'
+            break;
+            case 4:
+            color='white_ffffff'
+          }
+          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+          
+          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
+          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
+      
+        </script>
+        
+        
+        <a id="avatar" href="/"><img src="/images/avatar_sx.png" alt="Scholar" /></a>
+        
+        <h1><a id="author" href="/">LordYao</a></h1>        
+                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
+                
+      <div id="follow-icons">
+        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+                  <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  </div>
+
+        <span id="donate">Slogan: 解放思想，发展生产力</span>
+        <h6><a href="/about.html">About</a>
+                    &middot;
+          <a href="/resume.html">Resume</a>
+                              &middot;
+          <a href="/Lab.html">Lab</a>
+                  </h6>
+        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
+        
+        <footer>
+          <section id="footer-message">&copy;  
+          2019 - 
+                    2020          
+          LordYao.<br/>
+                    
+          BY-NC-SA .
+           
+           All rights reserved. <br/>
+          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/scholar-hexo-theme" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
+        </footer>
+        <div id="Statistics">
+    
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+
+</div>
+
+      </header>
+   <!---->   
+      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
+    
+<!--
+      <div class="post-template">
+        -->
+          
+      
+        <main id="content">
+        
+        
+
+<hr id="topline"/>
+<div id="DOI"> November 27, 2019 <br>https://yaoqs.github.io/2019/11/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%A3%E8%AF%80%E5%8F%8A%E6%95%99%E7%A8%8B/</div>
+<article class="post">
+ 
+  <h1 class="post-title">正则表达式口诀及教程</h1>
+  <section id="post-author">Yao Qing-sheng <br/>Department of Natural Philosophy & Infomation Sciences, CHINA</section>
+  <section class="post-content article-entry">
+    <section id="Abstract">
+    <hr id="Abstract"/>
+    <span id="Abstract">Abstract
+        
+    </span>    
+    <span id="Abstract-content">
+        
+        
+    </span>
+    
+    
+    <span id="Abstract">Keywords
+        <span id="keywords-content">
+                  
+              
+              
+                Draft
+                
+                                    &comma;
+                
+                
+              
+                Reprint
+                
+                                    &comma;
+                
+                
+              
+                正则表达式
+                
+                                    &comma;
+                
+                
+              
+            
+        </span>
+    </span>
+    <hr id="Abstract"/>
+
+    <span id="Abstract">Citation
+        <span id="keywords-content">
+            Yao Qing-sheng&period;&nbsp; 正则表达式口诀及教程&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%A3%E8%AF%80%E5%8F%8A%E6%95%99%E7%A8%8B/
+        </span>
+    </span> 
+
+    <hr id="Abstract"/>
+    </section>
+
+
+
+    <p>正则表达式口诀及教程(推荐)<br>正则其实也势利，削尖头来把钱揣； （指开始符号^和结尾符号$）<br>特殊符号认不了，弄个倒杠来引路； （指. *等特殊符号）<br>倒杠后面跟小w， 数字字母来表示； （\w跟数字字母;\d跟数字）<br>倒杠后面跟小d， 只有数字来表示；<br>倒杠后面跟小a， 报警符号嘀一声；<br>倒杠后面跟小b， 单词分界或退格；<br>倒杠后面跟小t， 制表符号很明了；<br>倒杠后面跟小r， 回车符号知道了；<br>倒杠后面跟小s， 空格符号很重要；<br>小写跟罢跟大写，多得实在不得了；<br>倒杠后面跟大W， 字母数字靠边站；<br>倒杠后面跟大S， 空白也就靠边站；<br>倒杠后面跟大D， 数字从此靠边站；<br>倒框后面跟大B， 不含开头和结尾；</p>
+<p>单个字符要重复，三个符号来帮忙； （* + ？）<br>0 星加1 到无穷，问号只管0 和1； （<em>表0-n;+表1-n;?表0-1次重复）<br>花括号里学问多，重复操作能力强； （{n} {n,} {n,m}）<br>若要重复字符串，园括把它括起来； （（abc）{3} 表示字符串“abc”重复3次 ）<br>特殊集合自定义，中括号来帮你忙；<br>转义符号行不通，一个一个来排队；<br>实在多得排不下，横杠请来帮个忙； （[1-5]）<br>尖头放进中括号，反义定义威力大； （[^a]指除“a”外的任意字符 ）<br>1竖作用可不小，两边正则互替换； （键盘上与“\”是同一个键）<br>1竖能用很多次，复杂定义很方便；<br>园括号，用途多；<br>反向引用指定组，数字排符对应它； （“\b(\w+)\b\s+\1\b”中的数字“1”引用前面的“(\w+)”）<br>支持组名自定义，问号加上尖括号； （“(?\w+)”中把“\w+”定义为组，组名为“Word”）<br>园括号，用途多，位置指定全靠它；<br>问号等号字符串，定位字符串前面； （“\b\w+(?=ing\b)”定位“ing”前面的字符串）<br>若要定位串后面，中间插个小于号； （“(?&lt;=\bsub)\w+\b”定位“sub”后面的字符串）<br>问号加个惊叹号，后面跟串字符串；<br>PHPer都知道， ！是取反的意思；<br>后面不跟这一串，统统符合来报到； （“\w</em>d(?!og)\w*”，“dog”不符合，“do”符合）<br>问号小于惊叹号，后面跟串字符串；<br>前面不放这一串，统统符合来报到；<br>点号星号很贪婪，加个问号不贪婪；<br>加号问号有保底，至少重复一次多；<br>两个问号老规矩，0次1次团团转；<br>花括号后跟个？，贪婪变成不贪婪；<br>还有很多装不下，等着以后来增加</p>
+<p>常用正则表达式</p>
+<p>1。^\d+$ //匹配非负整数（正整数 + 0）<br>2。^[0-9]<em>[1-9][0-9]</em>$ //匹配正整数<br>3。^((-\d+) ?(0+))$ //匹配非正整数（负整数 + 0）<br>4。^-[0-9]<em>[1-9][0-9]</em>$ //匹配负整数<br>5。^-?\d+$ //匹配整数<br>6。^\d+(.\d+)?$ //匹配非负浮点数（正浮点数 + 0）<br>7。^(([0-9]+.[0-9]<em>[1-9][0-9]</em>) ?([0-9]<em>[1-9][0-9]*.[0-9]+) ?([0-9]</em>[1-9][0-9]<em>))$ //匹配正浮点数<br>8。^((-\d+(.\d+)?) ?(0+(.0+)?))$ //匹配非正浮点数（负浮点数 + 0）<br>9。^(-(([0-9]+.[0-9]</em>[1-9][0-9]<em>) ?([0-9]</em>[1-9][0-9]<em>.[0-9]+) ?([0-9]</em>[1-9][0-9]<em>)))$ //匹配负浮点数<br>10。^(-?\d+)(.\d+)?$ //匹配浮点数<br>11。^[A-Za-z]+$ //匹配由26个英文字母组成的字符串<br>12。^[A-Z]+$ //匹配由26个英文字母的大写组成的字符串<br>13。^[a-z]+$ //匹配由26个英文字母的小写组成的字符串<br>14。^[A-Za-z0-9]+$ //匹配由数字和26个英文字母组成的字符串<br>15。^\w+$ //匹配由数字、26个英文字母或者下划线组成的字符串<br>16。^[\w-]+(.[\w-]+)</em>@[\w-]+(.[\w-]+)+$ //匹配email地址<br>17。^[a-zA-z]+://匹配(\w+(-\w+)<em>)(.(\w+(-\w+)</em>))<em>(?\S</em>)?$ //匹配url<br>18。匹配中文字符的正则表达式： [\u4e00-\u9fa5]<br>19。匹配双字节字符(包括汉字在内)：[^\x00-\xff]<br>20。应用：计算字符串的长度（一个双字节字符长度计2，ASCII字符计1）<br>String.prototype.len=function(){return this.replace([^\x00-\xff]/g,”aa”).length;}<br>21。匹配空行的正则表达式：\n[\s ? ]<em>\r<br>22。匹配HTML标记的正则表达式：/ &lt;(.</em>)&gt;.* &lt;/\1&gt; ? &lt;(.<em>) /&gt;/<br>23。匹配首尾空格的正则表达式：(^\s</em>) ?(\s*$) </p>
+<ul>
+<li>正则表达式用例 </li>
+<li>1、^\S+[a-z A-Z]$ 不能为空 不能有空格 只能是英文字母 </li>
+<li>2、\S{6,} 不能为空 六位以上 </li>
+<li>3、^\d+$ 不能有空格 不能非数字 </li>
+<li>4、(.*)(.jpg ?.bmp)$ 只能是jpg和bmp格式 </li>
+<li>5、^\d{4}-\d{1,2}-\d{1,2}$ 只能是2004-10-22格式 </li>
+<li>6、^0$ 至少选一项 </li>
+<li>7、^0{2,}$ 至少选两项 </li>
+<li>8、^[\s ?\S]{20,}$ 不能为空 二十字以上 </li>
+<li>9、^+?[a-z0-9](([-+.] ?[_]+)?[a-z0-9]+)*@([a-z0-9]+(. ?-))+[a-z]{2,6}$邮件 </li>
+<li>10、\w+([-+.]\w+)<em>@\w+([-.]\w+)*.\w+([-.]\w+)</em>([,;]\s<em>\w+([-+.]\w+)</em>@\w+([-.]\w+)<em>.\w+([-.]\w+)</em>)* 输入多个地址用逗号或空格分隔邮件 </li>
+<li>11、^(([0-9]+))?[0-9]{7,8}$电话号码7位或8位或前面有区号例如（022）87341628 </li>
+<li>12、^[a-z A-Z 0-9 _]+@[a-z A-Z 0-9 _]+(.[a-z A-Z 0-9 _]+)+(,[a-z A-Z 0-9 _]+@[a-z A-Z 0-9 _]+(.[a-z A-Z 0-9 _]+)+)*$ </li>
+<li>只能是字母、数字、下划线；必须有@和.同时格式要规范 邮件 </li>
+<li>13 ^\w+@\w+(.\w+)+(,\w+@\w+(.\w+)+)<em>$上面表达式也可以写成这样子，更精练。<br>14 ^\w+((-\w+) ?(.\w+))<em>@\w+((. &brvbar;-)\w+)</em>.\w+$<br>匹配中文字符的正则表达式： [\u4e00-\u9fa5]<br>评注：匹配中文还真是个头疼的事，有了这个表达式就好办了<br>匹配双字节字符(包括汉字在内)：[^\x00-\xff]<br>评注：可以用来计算字符串的长度（一个双字节字符长度计2，ASCII字符计1）<br>匹配空白行的正则表达式：\n\s*\r<br>评注：可以用来删除空白行<br>匹配HTML标记的正则表达式： &lt;(\S</em>?)[^&gt;]<em>&gt;.</em>? ? &lt;.<em>? /&gt;<br>评注：网上流传的版本太糟糕，上面这个也仅仅能匹配部分，对于复杂的嵌套标记依旧无能为力<br>匹配首尾空白字符的正则表达式：^\s</em> ?\s<em>$<br>评注：可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式<br>匹配Email地址的正则表达式：\w+([-+.]\w+)</em>@\w+([-.]\w+)<em>.\w+([-.]\w+)</em><br>评注：表单验证时很实用<br>匹配网址URL的正则表达式：[a-zA-z]+://[^\s]*<br>评注：网上流传的版本功能很有限，上面这个基本可以满足需求<br>匹配帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9_]{4,15}$<br>评注：表单验证时很实用<br>匹配国内电话号码：\d{3}-\d{8} ?\d{4}-\d{7}<br>评注：匹配形式如 0511-4405222 或 021-87888822<br>匹配腾讯QQ号：[1-9][0-9]{4,}<br>评注：腾讯QQ号从10000开始<br>匹配中国邮政编码：[1-9]\d{5}(?!\d)<br>评注：中国邮政编码为6位数字<br>匹配身份证：\d{15} ?\d{18}<br>评注：中国的身份证为15位或18位<br>匹配ip地址：\d+.\d+.\d+.\d+<br>评注：提取ip地址时有用<br>匹配特定数字：<br>^[1-9]\d<em>$ //匹配正整数<br>^-[1-9]\d</em>$ //匹配负整数<br>^-?[1-9]\d<em>$ //匹配整数<br>^[1-9]\d</em> &brvbar;0$ //匹配非负整数（正整数 + 0）<br>^-[1-9]\d* &brvbar;0$ //匹配非正整数（负整数 + 0）<br>^[1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em>$ //匹配正浮点数<br>^-([1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em>)$ //匹配负浮点数<br>^-?([1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em> &brvbar;0?.0+ &brvbar;0)$ //匹配浮点数<br>^[1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em> &brvbar;0?.0+ &brvbar;0$ //匹配非负浮点数（正浮点数 + 0）<br>^(-([1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em>)) &brvbar;0?.0+ &brvbar;0$ //匹配非正浮点数（负浮点数 + 0）<br>评注：处理大量数据时有用，具体应用时注意修正<br>匹配特定字符串：<br>^[A-Za-z]+$ //匹配由26个英文字母组成的字符串<br>^[A-Z]+$ //匹配由26个英文字母的大写组成的字符串<br>^[a-z]+$ //匹配由26个英文字母的小写组成的字符串<br>^[A-Za-z0-9]+$ //匹配由数字和26个英文字母组成的字符串<br>^\w+$ //匹配由数字、26个英文字母或者下划线组成的字符串<br>“^[\w-]+(\.[\w-]+)<em>@[\w-]+(\.[\w-]+)+<strong><em>FCKpd</em></strong>0quot; //email地址<br>“^[a-zA-z]+://(\w+(-\w+)</em>)(\.(\w+(-\w+)<em>))</em>(\?\S<em>)?<strong><em>FCKpd</em></strong>0quot; //url<br>匹配中文字符的正则表达式： [\u4e00-\u9fa5]<br>评注：匹配中文还真是个头疼的事，有了这个表达式就好办了<br>匹配双字节字符(包括汉字在内)：[^\x00-\xff]<br>评注：可以用来计算字符串的长度（一个双字节字符长度计2，ASCII字符计1）<br>匹配空白行的正则表达式：\n\s*\r<br>评注：可以用来删除空白行<br>匹配HTML标记的正则表达式： &lt;(\S</em>?)[^&gt;]<em>&gt;.</em>? ? &lt;.<em>? /&gt;<br>评注：网上流传的版本太糟糕，上面这个也仅仅能匹配部分，对于复杂的嵌套标记依旧无能为力<br>匹配首尾空白字符的正则表达式：^\s</em> ?\s<em>$<br>评注：可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式<br>匹配Email地址的正则表达式：\w+([-+.]\w+)</em>@\w+([-.]\w+)<em>.\w+([-.]\w+)</em><br>评注：表单验证时很实用<br>匹配网址URL的正则表达式：[a-zA-z]+://[^\s]*<br>评注：网上流传的版本功能很有限，上面这个基本可以满足需求<br>匹配帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9_]{4,15}$<br>评注：表单验证时很实用<br>匹配国内电话号码：\d{3}-\d{8} ?\d{4}-\d{7}<br>评注：匹配形式如 0511-4405222 或 021-87888822<br>匹配腾讯QQ号：[1-9][0-9]{4,}<br>评注：腾讯QQ号从10000开始<br>匹配中国邮政编码：[1-9]\d{5}(?!\d)<br>评注：中国邮政编码为6位数字<br>匹配身份证：\d{15} ?\d{18}<br>评注：中国的身份证为15位或18位<br>匹配ip地址：\d+.\d+.\d+.\d+<br>评注：提取ip地址时有用<br>匹配特定数字：<br>^[1-9]\d<em>$ //匹配正整数<br>^-[1-9]\d</em>$ //匹配负整数<br>^-?[1-9]\d<em>$ //匹配整数<br>^[1-9]\d</em> &brvbar;0$ //匹配非负整数（正整数 + 0）<br>^-[1-9]\d* &brvbar;0$ //匹配非正整数（负整数 + 0）<br>^[1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em>$ //匹配正浮点数<br>^-([1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em>)$ //匹配负浮点数<br>^-?([1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em> &brvbar;0?.0+ &brvbar;0)$ //匹配浮点数<br>^[1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em> &brvbar;0?.0+ &brvbar;0$ //匹配非负浮点数（正浮点数 + 0）<br>^(-([1-9]\d<em>.\d</em> &brvbar;0.\d<em>[1-9]\d</em>)) &brvbar;0?.0+ &brvbar;0$ //匹配非正浮点数（负浮点数 + 0）<br>评注：处理大量数据时有用，具体应用时注意修正<br>匹配特定字符串：<br>^[A-Za-z]+$ //匹配由26个英文字母组成的字符串<br>^[A-Z]+$ //匹配由26个英文字母的大写组成的字符串<br>^[a-z]+$ //匹配由26个英文字母的小写组成的字符串<br>^[A-Za-z0-9]+$ //匹配由数字和26个英文字母组成的字符串<br>^\w+$ //匹配由数字、26个英文字母或者下划线组成的字符串<br>“^[\w-]+(\.[\w-]+)<em>@[\w-]+(\.[\w-]+)+<strong><em>FCKpd</em></strong>0quot; //email地址<br>“^[a-zA-z]+://(\w+(-\w+)</em>)(\.(\w+(-\w+)<em>))</em>(\?\S*)?<strong><em>FCKpd</em></strong>0quot; //urlview plaincopy to clipboardprint? </li>
+</ul>
+<p>正则几个基本概念：<br>1.贪婪：+,<em>,?,{m,n}等默认是贪婪匹配，即尽可能多匹配，也叫最大匹配<br>如果后面加上?，就转化为非贪婪匹配，需要高版本支持<br>1.贪婪：+,</em>,?,{m,n}等默认是贪婪匹配，即尽可能多匹配，也叫最大匹配<br>如果后面加上?，就转化为非贪婪匹配，需要高版本支持view plaincopy to clipboardprint?<br>2.获取：默认用(x &brvbar;y)是获取匹配，很多时候只是测试，不一定要求得到所匹配的数据，尤其在嵌套匹配或大数据中就要用非获取匹配(?:x &brvbar;y)，这样提高了效率，优化了程序。<br>2.获取：默认用(x &brvbar;y)是获取匹配，很多时候只是测试，不一定要求得到所匹配的数据，尤其在嵌套匹配或大数据中就要用非获取匹配(?:x &brvbar;y)，这样提高了效率，优化了程序。view plaincopy to clipboardprint?<br>3.消耗：默认是消耗匹配，一般在预查中是非消耗匹配。<br>举个例子，2003-2-8要变为2003-02-08<br>如果用/-(\d)-/第二次匹配将从8开始，从而只替换第一个2，错误<br>如果用/-(\d)(?=-)/则第二次匹配从第二个-开始，即不消耗字符-<br>3.消耗：默认是消耗匹配，一般在预查中是非消耗匹配。<br>举个例子，2003-2-8要变为2003-02-08<br>如果用/-(\d)-/第二次匹配将从8开始，从而只替换第一个2，错误<br>如果用/-(\d)(?=-)/则第二次匹配从第二个-开始，即不消耗字符-view plaincopy to clipboardprint?<br>4.预查：js中分为正向预查和负向预查<br>如上面的(?=pattern)是正向预查，在任何匹配 pattern 的字符串开始处匹配查找字符串。还有 (?!pattern)是负向预查，在任何不匹配 pattern 的字符串开始处匹配查找字符串。负向预查有时会用在对[^]的扩充，[^]只是一些字符，而?!可以使整个字符串。<br>4.预查：js中分为正向预查和负向预查<br>如上面的(?=pattern)是正向预查，在任何匹配 pattern 的字符串开始处匹配查找字符串。还有 (?!pattern)是负向预查，在任何不匹配 pattern 的字符串开始处匹配查找字符串。负向预查有时会用在对[^]的扩充，[^]只是一些字符，而?!可以使整个字符串。view plaincopy to clipboardprint?<br>5.回调：一般用在替换上，即根据不用的匹配内容返回不用的替换值，从而简化了程序，需要高版本支持<br>5.回调：一般用在替换上，即根据不用的匹配内容返回不用的替换值，从而简化了程序，需要高版本支持view plaincopy to clipboardprint?<br>6.引用：\num 对所获取的第num个匹配的引用。<br>例如，’(.)\1\1′ 匹配AAA型。’(.)(.)\2\1′ 匹配ABBA型。<br>6.引用：\num 对所获取的第num个匹配的引用。<br>例如，’(.)\1\1′ 匹配AAA型。’(.)(.)\2\1′ 匹配ABBA型。view plaincopy to clipboardprint? </p>
+<p>正则表达式保留字<br>^ (carat)<br>. (period)<br>[ (left bracket}<br>$ (dollar sign)<br>( (left parenthesis)<br>) (right parenthesis)<br>? (pipe) </p>
+<ul>
+<li>(asterisk) </li>
+</ul>
+<ul>
+<li>(plus symbol)<br>? (question mark)<br>{ (left curly bracket, or left brace)<br>\ backslash<br>正则表达式保留字<br>^ (carat)<br>. (period)<br>[ (left bracket}<br>$ (dollar sign)<br>( (left parenthesis)<br>) (right parenthesis)<br>? (pipe) </li>
+</ul>
+<ul>
+<li>(asterisk) </li>
+</ul>
+<ul>
+<li>(plus symbol)<br>? (question mark)<br>{ (left curly bracket, or left brace)<br>\ backslash view plaincopy to clipboardprint?<br>构造 匹配于<br>构造 匹配于 view plaincopy to clipboardprint?<br>字符<br>x 字符 x<br>\ 反斜线字符<br>\0n 八进制值的字符0n (0 &lt;= n &lt;= 7)<br>\0nn 八进制值的字符 0nn (0 &lt;= n &lt;= 7)<br>\0mnn 八进制值的字符0mnn 0mnn (0 &lt;= m &lt;= 3, 0 &lt;= n &lt;= 7)<br>\xhh 十六进制值的字符0xhh<br>\uhhhh 十六进制值的字符0xhhhh<br>\t 制表符(‘\u0009’)<br>\n 换行符 (‘\u000A’)<br>\r 回车符 (‘\u000D’)<br>\f 换页符 (‘\u000C’)<br>\a 响铃符 (‘\u0007’)<br>\e 转义符 (‘\u001B’)<br>\cx T对应于x的控制字符 x<br>字符<br>x 字符 x<br>\ 反斜线字符<br>\0n 八进制值的字符0n (0 &lt;= n &lt;= 7)<br>\0nn 八进制值的字符 0nn (0 &lt;= n &lt;= 7)<br>\0mnn 八进制值的字符0mnn 0mnn (0 &lt;= m &lt;= 3, 0 &lt;= n &lt;= 7)<br>\xhh 十六进制值的字符0xhh<br>\uhhhh 十六进制值的字符0xhhhh<br>\t 制表符(‘\u0009’)<br>\n 换行符 (‘\u000A’)<br>\r 回车符 (‘\u000D’)<br>\f 换页符 (‘\u000C’)<br>\a 响铃符 (‘\u0007’)<br>\e 转义符 (‘\u001B’)<br>\cx T对应于x的控制字符 x view plaincopy to clipboardprint?<br>字符类<br>[abc] a, b, or c (简单类)<br>[^abc] 除了a、b或c之外的任意 字符（求反）<br>[a-zA-Z] a到z或A到Z ，包含（范围)<br>[a-z-[bc]] a到z，除了b和c ： [ad-z]（减去）<br>[a-z-[m-p]] a到z，除了m到 p： [a-lq-z]<br>[a-z-[^def]] d, e, 或 f<br>字符类<br>[abc] a, b, or c (简单类)<br>[^abc] 除了a、b或c之外的任意 字符（求反）<br>[a-zA-Z] a到z或A到Z ，包含（范围)<br>[a-z-[bc]] a到z，除了b和c ： [ad-z]（减去）<br>[a-z-[m-p]] a到z，除了m到 p： [a-lq-z]<br>[a-z-[^def]] d, e, 或 f view plaincopy to clipboardprint?<br>预定义的字符类<br>. 任意字符（也许能与行终止符匹配，也许不能）<br>\d 数字: [0-9]<br>\D 非数字: [^0-9]<br>\s 空格符: [ \t\n\x0B\f\r]<br>\S 非空格符: [^\s]<br>\w 单词字符: [a-zA-Z_0-9]<br>\W 非单词字符: [^\w]</li>
+</ul>
+
+    
+    <section id="References">
+      <span id="References">References</span>
+      <span id="References-content">
+        <ol id="list">
+          <li>
+              Yao Qing-sheng&period;&nbsp; 正则表达式口诀及教程&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%A3%E8%AF%80%E5%8F%8A%E6%95%99%E7%A8%8B/
+          </li>
+          <li>
+            版权声明：本文为「LordYao」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。 <br/>
+            原文链接： https://yaoqs.github.io/2019/11/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%A3%E8%AF%80%E5%8F%8A%E6%95%99%E7%A8%8B/
+        </li>
+        </ol>
+      </span>
+
+    </section>
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+  <footer class="post-footer">
+    
+    <hr id="footerline"/>
+    <section class="author"><br/>
+      *Corresponding author: Yao Qing-sheng &lt;Email: <a href="mailto:350788415@qq.com" target="_blank" rel="noopener" title="350788415@qq.com">350788415@qq.com</a>&gt; 
+                
+        BY-NC-SA .
+         
+      <p></p>
+    </section>
+    
+  </footer>
+  <script text="script/javascript">//复制加版权
+    jQuery(document).on('copy', function(e)
+        {
+          var selected = window.getSelection();
+          var selectedText = selected.toString().replace(/\n/g, '<br>');  // Solve the line breaks conversion issue 处理换行转换的问题
+          var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>' 
+                                + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+                                + '<br>作者：'+document.getElementById('author').innerText
+                                + '<br>复制时间: '+Date.now()
+                                + '<br>原文链接：' + document.location.href
+                                + '<br>© 版权声明：本文为「'+document.getElementById('author').innerText+'」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。';
+                                
+          var copyHolder = $('<div>', {id: 'temp', html: selectedText + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+          
+          $('body').append(copyHolder);
+          selected.selectAllChildren( copyHolder[0] );
+          window.setTimeout(function() {
+              copyHolder.remove();
+          },0);
+        });
+
+  </script>
+
+  <script text="script/javascript">//嵌入网页
+    
+
+  </script>
+</article>
+
+<nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2019/11/27/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D--DM%5B%20%E4%BD%8E%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%5D%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+        ← prev <!--数据恢复--DM[ 低级格式化]使用方法-->
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2019/11/27/%E4%BF%AE%E6%94%B9virtual%20PC%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84VMC%E6%96%87%E4%BB%B6%E8%83%BD%E5%AE%9E%E7%8E%B0%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E5%BC%82%E6%AD%A5/">
+        <!--修改virtual PC虚拟机的VMC文件能实现虚拟机与宿主机时间异步--> next →
+    </a>
+    
+    <a id="toTop" href="#top" title="回顶部" style="float: right;">Top</a>
+</nav>
+
+
+        </main>
+        
+
+<!--</div>-->
+</html>
+
+

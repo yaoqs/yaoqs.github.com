@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!---->
+    <head>
+        
+		
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A scholar magazine/journal like blog">
+        <link rel="shortcut icon" href="/images/githubavatar.png"/>
+        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+        <title>硬盘数据恢复实例全解 | Scholar</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/future.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        
+    </head>
+    <header id="header">
+        <div id="fork_me_on_github"></div>
+        <script text="script/javascript">
+          //以下函数返回 min（包含）～ max（包含）之间的数字：
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          var id=getRndInteger(0,5);
+          var color='red_aa0000'
+          switch(id)
+          {
+            default:
+            color='red_aa0000';
+            break;
+            case 1:
+            color='darkblue_121621'
+            break;
+            case 2:
+            color='orange_ff7600'
+            break;
+            case 3:
+            color='gray_6d6d6d'
+            break;
+            case 4:
+            color='white_ffffff'
+          }
+          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+          
+          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
+          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
+      
+        </script>
+        
+        
+        <a id="avatar" href="/"><img src="/images/avatar_sx.png" alt="Scholar" /></a>
+        
+        <h1><a id="author" href="/">LordYao</a></h1>        
+                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
+                
+      <div id="follow-icons">
+        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+                  <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  </div>
+
+        <span id="donate">Slogan: 解放思想，发展生产力</span>
+        <h6><a href="/about.html">About</a>
+                    &middot;
+          <a href="/resume.html">Resume</a>
+                              &middot;
+          <a href="/Lab.html">Lab</a>
+                  </h6>
+        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
+        
+        <footer>
+          <section id="footer-message">&copy;  
+          2019 - 
+                    2020          
+          LordYao.<br/>
+                    
+          BY-NC-SA .
+           
+           All rights reserved. <br/>
+          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/scholar-hexo-theme" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
+        </footer>
+        <div id="Statistics">
+    
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+
+</div>
+
+      </header>
+   <!---->   
+      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
+    
+<!--
+      <div class="post-template">
+        -->
+          
+      
+        <main id="content">
+        
+        
+
+<hr id="topline"/>
+<div id="DOI"> November 27, 2019 <br>https://yaoqs.github.io/2019/11/27/%E7%A1%AC%E7%9B%98%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E5%AE%9E%E4%BE%8B%E5%85%A8%E8%A7%A3/</div>
+<article class="post">
+ 
+  <h1 class="post-title">硬盘数据恢复实例全解</h1>
+  <section id="post-author">Yao Qing-sheng <br/>Department of Natural Philosophy & Infomation Sciences, CHINA</section>
+  <section class="post-content article-entry">
+    <section id="Abstract">
+    <hr id="Abstract"/>
+    <span id="Abstract">Abstract
+        
+    </span>    
+    <span id="Abstract-content">
+        
+        
+    </span>
+    
+    
+    <span id="Abstract">Keywords
+        <span id="keywords-content">
+                  
+              
+              
+                Draft
+                
+                                    &comma;
+                
+                
+              
+                Reprint
+                
+                                    &comma;
+                
+                
+              
+                数据恢复
+                
+                                    &comma;
+                
+                
+              
+            
+        </span>
+    </span>
+    <hr id="Abstract"/>
+
+    <span id="Abstract">Citation
+        <span id="keywords-content">
+            Yao Qing-sheng&period;&nbsp; 硬盘数据恢复实例全解&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E7%A1%AC%E7%9B%98%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E5%AE%9E%E4%BE%8B%E5%85%A8%E8%A7%A3/
+        </span>
+    </span> 
+
+    <hr id="Abstract"/>
+    </section>
+
+
+
+    <pre><code>第一卷 第一章
+------------------------</code></pre><p>  硬盘数据恢复实例全解<br>        难道在硬盘数据由于各种原因被破坏后，我们就只能自怨自艾？<br>        这篇实例全解，就是希望在不幸的情况发生的时候，读者能够快速找到对应的解决方案，不至于让自己辛勤劳动成果白费。<br>        当然，我们最大的期望还是——你永远不要用到下面的方法！因为再完备的事后解决方案，也不能保证所有数据的完好无缺。而要真正做到万无一失，更重要的工作还在于防患于未然。<br>        文件语删除<br>        一、症状<br>        这可能是最简单同时也是最常见的数据损坏，直接的表述就是一般删除文件后清空了回收站，或按住Shift键删除，要不然就是在“回收站”的“属性”中勾选了“删除时不将文件移入回收站，而是彻底删除”。<br>        二、解决方案<br>        既然是最常见的数据损坏，当然也就是最容易恢复的，下面就根据不同的操作系统给出相应的解决方案。<br>        1.Win9x/Me下的解决方案<br>        也就是FAT16/32分区下的文件误删除恢复，这应该是大部分恢复类软件的基本功能；而我们拿来作例子的软件Recover4all，所提供的功能仅为在Win9x/Me下恢复被误删除的文件——其实很多东西并不是一味求大求全就好，够用已足够，简单就是美。<br>        废话少说，我们需要先从Recover4all的主站点（<a href="http://www.recover4all.com）下载R4a.exe，这是一个自解压文件，你可以把其中的文件解压到软盘或硬盘的一个目录下（默认就是解压到软盘）。运行其中的rec4all.exe，会看见一个注册窗口，点击其中“To" target="_blank" rel="noopener">http://www.recover4all.com）下载R4a.exe，这是一个自解压文件，你可以把其中的文件解压到软盘或硬盘的一个目录下（默认就是解压到软盘）。运行其中的rec4all.exe，会看见一个注册窗口，点击其中“To</a> star the progam click”的按钮就能够进行试用（未注册版本只能恢复10KB以内的文件）。程序的主窗口下图所示，这是一个类似于“资源管理器”的窗口；你可以通过点击主菜单下方的盘符按钮来扫描相应分区下的被删除文件，然后在右边的窗口中选择需要恢复的文件，再点击主菜单下方的“Recover”按钮，并在新弹出的窗口中选择恢复文件的存放位置即可——Win9x/Me下的误删除文件恢复就这么简单。<br>        2.WinNT/2000下的解决方案<br>        换种说法，也就是如何恢复在NTFS分区下被误删除的文件。对于这种相对简单的需求，File Scavenger（<a href="http://www.quetek.com/）完全就可以胜任。当然，File" target="_blank" rel="noopener">http://www.quetek.com/）完全就可以胜任。当然，File</a> Scavenger是很具有针对性的——它只能在WinNT/2000系统下使用（同时必须以Administrator用户登录系统），而且只对NTFS格式的分区有效。不过它支持压缩过的NTFS分区或文件夹中文件的恢复，并对格式化过的NTFS分区中的文件也有效（注意:File Scavenger只可以对格式化过的分区中的文件进行恢复，并不能恢复整个被格式化过的分区）。<br>        File Scavenger目前有两种版本:硬盘安装版和软盘版（其下载的地址分别为:<a href="http://www.quetek.com/32fs140.exe和http://www.quetek.com/32fs140f.exe）。硬盘版的安装和一般软件类似，唯一需要注意的是——使用File" target="_blank" rel="noopener">http://www.quetek.com/32fs140.exe和http://www.quetek.com/32fs140f.exe）。硬盘版的安装和一般软件类似，唯一需要注意的是——使用File</a> Scavenger恢复文件的最安全方法就是在文件已经被删除之后安装File Scavenger（当然你不要将软件安装在删除文件所在的分区）。因为File Scavenger的功能比较单一，其执行文件加上所需的库文件一张1.44MB的软盘也可以装下，所以软盘版也许是大家使用得比较多的（你要把软盘版直接放在硬盘的一个目录下也照常可以使用）。下面的实例，我们就用软盘版来说明。<br>        一个非重要的文件Veryimportant.txt被误删除且清空了回收站；还好，你看过本篇“实例分析”而且也在软盘或硬盘上准备好了File Scavenger。OK，现在你运行其中的filescav.exe，你将会看见如下图的窗口。注意:其中的“搜索条件”可有多种格式（例如，<em>.doc、*、\data\</em>.txt等），根据你自己的需要填写最方便查找的；Exhaustive Sear复选框选择后会让你指定搜寻分区的簇大小以及搜索簇的范围，而指定之后File Scavenger会搜寻并显示所有存在的文件名称，不管是被删除的还是没有，因此没有特殊需要还是不用为好；在搜索结果窗口中可以通过点击“Filename”、“Size”、“Modified”等来为搜索结果排序，以方便寻找。<br>        现在我们已经找到了Veryimportant.txt，选择它并点击“Recover”按钮，如果文件能够被恢复，你就可以在先前指定的恢复文件存储路径中找到它（如果你是第一次使用File Scavenger，之前还会有一个窗口提醒你注册，如果不注册，你将只能恢复4KB以内的文件）。现在，还有什么可担心的？<br>        三、不可恢复的情况<br>        如果文件在删除之后，其存储的磁盘空间进行过写操作，那在通常情况下恢复的几率为0。因此，误删除文件可以恢复的重要前提就是不要在删除文件所在的分区进行写操作。<br>        病毒破坏<br>        一、症状<br>        现在使用电脑的人基本都是谈“毒”色变，病毒带来的数据破坏往往不可预见（包括分区表破坏、数据覆盖等；例如CIH病毒破坏的硬盘，其分区表已被彻底改写，用A盘启动也无法找到硬盘），由此病毒破坏硬盘数据的症状也不好描述，基本上大部分的数据损坏情况都有可能是病毒引起的，所以最稳妥的方法还是安装一个优秀的病毒防火墙。<br>        二、解决方案<br>        由于病毒破坏硬盘数据的方法各异，恢复的方案就需要对症下药。这里就以常见的CIH为例，因为它最普遍，也最容易判断（一般是在4月26日发作）。<br>        当用户的硬盘数据一旦被CIH病毒破坏后，使用KV3000的F10功能，可修复的程度如下:<br>        1.C盘容量为2.1G以上， 原FAT表是32位的，C分区的修复率为98%，D、E、F等分区的修复率为99%, 配合手工C、D、E、F等分区的修复率为100%。<br>        2.硬盘容量为2.1G以下，原FAT表是16位的，C分区的修复率为0%，D、E、F等分区的修复率为99%, 配合手工D、E、F盘的修复率为100%。<br>        因为原C盘是16位的短FAT表，所以C盘的FAT表和根目录下的文件目录都被CIH病毒乱码覆盖了。 KV3000可以把C盘找回来，虽然根目录的文件名字已被病毒乱码覆盖看不到了，但文件的内容影像还存储在C盘内的某些扇区上。推荐用KV3000找回C盘，再用文件修复软件TIRAMISU.EXE可将C盘内的部分文件影像找回来（需要了解这个软件的朋友可以访问Ontrack公司的主页<a href="http://www.ontrack.com……是不是在这个网站上找不到有关TIRAMISU的内容？呵呵，其实现在TIRAMISU已经被整合到Ontrack公司的旗舰产品——EasyRecovery中。相关的详细介绍可以参照本文的下一部分“分区表破坏”），如果原存放文件影像的簇是相连的，找回的文件就完整无损。" target="_blank" rel="noopener">http://www.ontrack.com……是不是在这个网站上找不到有关TIRAMISU的内容？呵呵，其实现在TIRAMISU已经被整合到Ontrack公司的旗舰产品——EasyRecovery中。相关的详细介绍可以参照本文的下一部分“分区表破坏”），如果原存放文件影像的簇是相连的，找回的文件就完整无损。</a><br>        但对于FAT16的C盘是不是中了CIH就没救呢？你还是可以尝试一下FIXMBR（<a href="ftp://www.newhua.com/fixmbr102a.zip），它可以通过全盘搜索，决定硬盘分区，并重新构造主引导扇区。由于软件只修改主引导扇区记录，对其它扇区不进行写操作，故一般不会带来不安全目录（如果修复得不理想，请DiskEdit等工具进行手工修复）。注意:FIXMBR是一个比较老的程序，对WinNT、Linux以及FAT32考虑得不多。" target="_blank" rel="noopener">ftp://www.newhua.com/fixmbr102a.zip），它可以通过全盘搜索，决定硬盘分区，并重新构造主引导扇区。由于软件只修改主引导扇区记录，对其它扇区不进行写操作，故一般不会带来不安全目录（如果修复得不理想，请DiskEdit等工具进行手工修复）。注意:FIXMBR是一个比较老的程序，对WinNT、Linux以及FAT32考虑得不多。</a><br>        三、不可恢复的情况<br>        由于病毒破坏硬盘的方式实在太多，而且大部分破坏都无法用一般软件轻易恢复（如果你喜欢使用DiskEdit等磁盘扇区编辑工具，对某些情况还有一线希望），所以……遇到病毒破坏硬盘的情况你就祈祷吧（由此看来，安装一个优秀的病毒防火墙绝对是有必要的）!<br>        分区表破坏<br>      “天有不测风云，人有旦夕祸福”，这句话可真没有说错，在用电脑的几年时间内，分区表破坏的情形也经历了好几次。想起当初的手足无措，到后来的才敢下手，一直到现在还是战战兢兢，不过所谓的“愚者千虑，必有一得”，经过这么长时间的折磨，也终于给我摸出来一丝门路，不敢独享，希望和遇到有困境的朋友们共享，也希望大家和我多交流（E-mail:<a href="mailto:clinuxer@yeah.net" target="_blank" rel="noopener">clinuxer@yeah.net</a>）……<br>        一、破坏原因及恢复可行性分析<br>        分区表破坏，可能是数据损坏中除了物理损坏之外最严重的一种灾难性破坏。究其原因，不外乎以下几种:<br>        1.个人误操作删除分区，只要没有进行其它的操作完全可以恢复。<br>        2.安装多系统引导软件或者采用第三方分区工具，有恢复的可能性。<br>        3.病毒破坏，可以部分或者全部恢复。<br>        4.利用Ghost克隆分区/硬盘破坏，只可以部分恢复或者不能恢复（用Ghost的朋友要小心了）。<br>        二、两点建议<br>        据国外的一个专业数据修复公司调查，数据损坏以后很大程度上是可以恢复的，之所以有很多不能恢复的实例存在，90%以上是由于用户在后来的恢复过程中有误操作，从而造成了更大的破坏。所以希望朋友们牢记以下两点:<br>        1.在硬盘数据出现丢失后，请立即关机，不要再对硬盘进行任何写操作，那样会增大修复的难度，也影响到修复的成功率.<br>        2.你的每一步操作都应该是可逆的（就像Norton Disk Doctor中的Undo功能）或者对故障硬盘是只读的（大名大名鼎鼎的EasyRecovery和Lost&amp;Found都是这种工作原理）。<br>        三、解决方案<br>        这个软件包含在Norton Utility系列工具中，功能十分强大，可以恢复分区记录、FAT表，需要注意的是它对硬盘的操作不是只读的，因此你需要每一步都做好Undo文件，这样即使误操作也可以恢复，Norton Disk Doctor配合DiskEdit在分区表不能恢复时也可以恢复部分文件，可惜Norton Disk Doctor不支持NTFS分区，这不能不说是它的一大遗憾之处……<br>        最专业的数据恢复公司出的软件，当然很有专业风范，EasyRecovery支持的文件系统格式很多FAT、NTFS都支持，并且有专门的For Novell版本。EasyRecovery对于分区破坏和硬盘意外被格式化都可安全的恢复，你所要做的就是将数据损坏硬盘挂到另外一台电脑上，尽情恢复就是了，不过EasyRecovery对于中文的文件名和目录名效果不是很好（一些乱码，但文章内容绝对是正确的）。<br>        由出品PartitionMagic的PowerQuest公司所出的，硬盘资料复原工具。它是一套恢复硬盘因病毒感染，意外格式化等因素所导致的资料损失工具软件，能将已删除的文件资料找出并恢复，也能找出已重新格式化的硬盘、被破坏的FAT分配表、启动扇区等等，几乎能找出及发现任何在硬盘上的资料（支持FAT16和FAT32及长文件名）。恢复回来的资料能选择在原来所在位置恢复或保存到其它可写入资料的硬盘，也提供了自动备份目录、文件和系统配置文件的功能，能在任何时间恢复）。要注意的一点是，尽量用一个很大的硬盘来装恢复的数据（最好挂双硬盘），如果目标盘的容量小于源盘的容量，下场会很惨！不过Lost&amp;Found却是基于DOS的一种软件，这在“瘟到死”横行的今天，市场只有越来越小！<br>        四、实战操作<br>        我的硬盘为IBM 9.44GB硬盘，分区情况如下:<br>        一天被朋友用Win2000自带的磁盘管理工具将所有分区完全删除，并且删除之后没有进行任何操作。恢复工具的选择上，因为四个分区三个是FAT16，一个是NTFS，我决定首先用Norton Disk Doctor恢复三个FAT16分区，不过由于Norton Disk Doctor不支持NTFS，故采用支持NTFS的EasyRecovery。<br>        1.FAT分区的恢复<br>        打开Norton Utility中的Norton Disk Doctor，NDD会自动为你检测硬盘分区情况，当检测到测盘2的分区表有问题时，跳出一个提示窗口，询问是否在访问磁盘2的过程中遇到麻烦，按下“Yes”按钮。<br>接下来的弹出窗口中提示Norton Disk Doctor没有在磁盘2上发现任何DOS分区，是否要Norton Disk Doctor搜索并重建DOS分区，当然选择“Yes”（是）。<br>        很快又一个“Partition Search”（分区搜索窗口）弹出，提示找到一个2039MB的DOS分区，是不是要恢复，当然是“Yes”。<br>        在接下来的询问是否搜索更多的DOS分区窗口中选择“Yes”，又发现一个DOS分区，一直回答“Yes”直到Norton Disk Doctor找到3个DOS分区，由于NTFS分区Norton Disk Doctor不支持，所以在找到3个分区后，如果磁盘搜索程序询问你是否搜索更多的DOS分区时，选择“No”，重新启动计算机，发现丢失的三个FAT分区完全恢复，并且WinMe仍可正常启动。<br>        2.NTFS的恢复<br>        NTFS分区的恢复我们是使用EasyRecovery来实现的，打开EasyRecovery，按下“Next”（下一步）进入磁盘选择窗口，选中我的IBM-DTTA-351010下的“Unknown File System Type（4.43GB）”，按下“Next”。<br>        在接下来的窗口中你可以设置该分区的起始扇区号（Start Sector）和中止扇区号（End Sector），不用管它，按下“Next”继续。<br>        现在到了选择分区文件格式窗口，在“File system Type”的下拉式菜单中选择“NTFS”（我这里的分区格式是NTFS，你应该选择和你的条件相符的，如果实在不知道分区格式也可以选择“RAW”进行全盘搜索），搜索方式选择“Typical Scan”（特定搜索）就可以了，按下“Next”/“Next”。<br>        硬盘一阵轰隆隆的狂响之后，搜索结果终于出现在我们面前，将你需要恢复的文件前面打上钩，然后在下边的Destination中输入你恢复文件的目的路径，按下“Next”恢复吧……<br>        3.分区格式化的恢复<br>        分区格式化之后，只要其中没有写入任何文件，理论上我们仍然可以恢复。工具吗？当然还是EasyRecovery了，不过需要说明一点的是:由于格式化程序将根目录完全破坏所以用EasyRecovery恢复以后，你会看到一些DIR0、DIR1等目录（不过目录中的文件名还是完整的）！<br>        启动故障<br>        我等电脑用家，如果某一天硬盘不能启动，轻则使你陷入手忙脚乱之中，重则丢失重要资料，我们这里从硬盘启动的整个历程来为你详解每个阶段可能出现的问题以及应该采取的措施，解决你的手足无措之苦……<br>        一、出错信息:“Non System disk or disk error, Replace and strike any key when ready”，用软盘启动后，在A:&gt;后键入C:，屏幕显示:“Invalid drive specification”，系统不认硬盘。<br>故障分析:造成该故障的原因一般是CMOS中的硬盘设置参数丢失或硬盘类型设置错误造成的。<br>        解决方案:进入CMOS，检查硬盘设置参数是否丢失或硬盘类型设置是否错误，如果确是该种故障，只需将硬盘设置参数恢复或修改过来即可。具体修改方式:进入CMOS设置，选择“HDD AUTO DETECTION”(硬盘自动检测)选项，即可自动检测出硬盘类型参数（由不同的BIOS而定，有的BIOS中可能是“IDE AUTO DETECTION”，只需针对自己的选项修改就是了）。若无此项，并且也没有备份的CMOS，你就只好打开机箱，查看硬盘表面标签上的硬盘参数，然后依样修改了。<br>        二、出错信息:开机后，屏幕上显示:“Invalid partition table”，硬盘不能启动，若从软盘启动则认C盘。<br>        故障分析:造成该故障的原因一般是硬盘主引导记录中的分区表有错误，当指定了多个活动分区(只能有一个活动分区)或病毒占用了分区表时，将有上述提示。<br>        主引导扇区位于0磁头0柱面1扇区，由Fdisk.exe对硬盘分区时生成。主引导扇区包括主引导程序（MBR）、分区表（DPT）和结束标志55AA三部分，共占一个扇区。主引导程序中含有检查硬盘分区表的程序代码和出错信息、出错处理等内容。当硬盘启动时，主引导程序将检查分区表中的活动标志。若某个分区为可活动分区(Active)，则有分区标志80H，否则为00H，并且对于DOS等操作系统只能有一个分区为活动分区，若分区表中含有多个活动标志时，主引导程序会给出“Invalid partition table”的错误提示。<br>        解决方案:解决方法很多:最简单的就是使用NDD来修复（由于不能进入Windows，我们当然使用的是DOS版本的NDD），它将自动为你检查分区表错误，并加以修复。需要注意的是，因为分区表破坏有很多种方式，因此我们需要在对分区表改动之前首先备份主引导扇区，这样即使恢复错误，我们也能返回错误之前的位置重新再来。　<br>        三、出错信息:系统自检正常，可自检之后只显示一行“Operation system not found”出错信息就不再引导，但是用软盘启动计算机后，可以看到硬盘上的任何内容。<br>        故障分析:这种问题一般是由于MBR在检查活动分区的时候出现的，和我们上一问题的出错比较类似，所不同的是一个是分区表中活动分区标志过多，而本例中是没有活动分区造成的。<br>        解决方案:用软盘启动计算机，然后执行分区程序Fdisk.exe，按下“2”来选择活动分区（Set active partition）。<br>        在接下来的选择活动分区窗口中，选择你自己想要启动的分区，我这里选择的是“1”——Primary DOS（主DOS分区），对应于我的DOS/Windows下的C:盘。<br>        四、出错信息:主机加点自检，自检完毕，硬盘指示灯闪亮，屏幕出现:“Operting system not found”错误信息，硬盘启动失败。用软盘启动成功，试图进故硬盘时，出现:“Invalid drive Specification”错误信息。<br>        故障分析:用Norton DiskEdit看磁盘的物理0扇区，发现分区结束标志55AA被破坏。<br>        解决方案:这种问题我们也利用NDD来加以修复，如果你没有NDD，也可以采用相应的磁盘编辑工具，直接将物理0扇区的最后两个字符改为16进制的55AA就可以了。<br>        五、出错信息:开机屏幕显示“Operting system not found”，用Win98启动以后有三条出错信息，在DOS下不能看到任何分区，用DiskEdit查看主引导扇区，发现已经被完全破坏。<br>故障分析:这种问题应该是分区表被严重破坏的表现，可能是病毒或者人为的误操作（比如使用Ghost恢复分区时选择了错误的选项）。<br>        解决方案:参照前面我们介绍的“分区表破坏”来进行恢复。<br>        六、出错信息:开机后屏幕上出现“Error loading operating system”或“Missing operating system”或者是“Disk I/O Error Replace the disk then press any key”的提示信息。<br>        故障分析:造成该故障的原因一般是DOS引导记录出现错误。DOS引导记录位于逻辑0扇区，是由高级格式化命令Format生成的。主引导程序在检查分区表正确之后，根据分区表中指出的活动分区的起始地址，读DOS引导记录，若连续读五次都失败，则给出“Error loading opearting system”的错误提示，若能正确读出DOS引导记录，主引导程序则会将DOS引导记录送入内存0:7C00h处，然后检查DOS引导记录的最后两个字节是否为55AAH，若不是这两个字节，则给出“Missing operation system”的提示。<br>        解决方案:对于以上这些问题都可以使用NDD来解决，不过根据不同的出错提示还有不同的解决方案:<br>        1.出错提示为“Invalid system disk，Replace the disk， and then press anykey”。这种情况一般是因为系统引导文件IO.sys被删除或者损坏，可以用“sys A: C:”将系统引导文件传送到C:盘。<br>        2.“Error loading system”错误提示。这种提示说明分区表中标明的活动分区的起始位置错误或者DOS引导记录出错，只能用NDD修复。<br>        3.“Missing operating system”出错提示。用DiskEdit编辑相应活动分区的引导区，并将最后分区结束标志改成55AA。<br>        对于以上几种出错信息，如果你的数据不是很重要，也可以考虑用Format来解决问题，不过我们强烈建议你采用NDD来修复，这样如果你改错了，还有后悔的余地（Undo），这也是我们前面告诫大家用NDD一定要做Undo的原因之所在。<br>        七、出错提示:机器加电自检以后可以出现“Starting MS DOS…”的提示符，但是最后却出现了“Bad or missing command interpret”这样的出错提示。<br>        故障分析:出现这种问题应该在DOS引导的后期，IO.SYS处理完MS.SYS后，要装入命令解释器Command.com却找不到。<br>        解决方案:很简单，软盘启动以后，将软盘上的Command.com拷贝到C:盘的根目录下。</p>
+
+    
+    <section id="References">
+      <span id="References">References</span>
+      <span id="References-content">
+        <ol id="list">
+          <li>
+              Yao Qing-sheng&period;&nbsp; 硬盘数据恢复实例全解&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E7%A1%AC%E7%9B%98%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E5%AE%9E%E4%BE%8B%E5%85%A8%E8%A7%A3/
+          </li>
+          <li>
+            版权声明：本文为「LordYao」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。 <br/>
+            原文链接： https://yaoqs.github.io/2019/11/27/%E7%A1%AC%E7%9B%98%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D%E5%AE%9E%E4%BE%8B%E5%85%A8%E8%A7%A3/
+        </li>
+        </ol>
+      </span>
+
+    </section>
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+  <footer class="post-footer">
+    
+    <hr id="footerline"/>
+    <section class="author"><br/>
+      *Corresponding author: Yao Qing-sheng &lt;Email: <a href="mailto:350788415@qq.com" target="_blank" rel="noopener" title="350788415@qq.com">350788415@qq.com</a>&gt; 
+                
+        BY-NC-SA .
+         
+      <p></p>
+    </section>
+    
+  </footer>
+  <script text="script/javascript">//复制加版权
+    jQuery(document).on('copy', function(e)
+        {
+          var selected = window.getSelection();
+          var selectedText = selected.toString().replace(/\n/g, '<br>');  // Solve the line breaks conversion issue 处理换行转换的问题
+          var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>' 
+                                + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+                                + '<br>作者：'+document.getElementById('author').innerText
+                                + '<br>复制时间: '+Date.now()
+                                + '<br>原文链接：' + document.location.href
+                                + '<br>© 版权声明：本文为「'+document.getElementById('author').innerText+'」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。';
+                                
+          var copyHolder = $('<div>', {id: 'temp', html: selectedText + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+          
+          $('body').append(copyHolder);
+          selected.selectAllChildren( copyHolder[0] );
+          window.setTimeout(function() {
+              copyHolder.remove();
+          },0);
+        });
+
+  </script>
+
+  <script text="script/javascript">//嵌入网页
+    
+
+  </script>
+</article>
+
+<nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2019/11/27/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/">
+        ← prev <!--数据恢复-->
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2019/11/27/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D--DM%5B%20%E4%BD%8E%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%5D%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+        <!--数据恢复--DM[ 低级格式化]使用方法--> next →
+    </a>
+    
+    <a id="toTop" href="#top" title="回顶部" style="float: right;">Top</a>
+</nav>
+
+
+        </main>
+        
+
+<!--</div>-->
+</html>
+
+

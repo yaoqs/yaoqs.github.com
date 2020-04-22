@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!---->
+    <head>
+        
+		
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A scholar magazine/journal like blog">
+        <link rel="shortcut icon" href="/images/githubavatar.png"/>
+        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+        <title>BitTorrent协议标准之数据包格式_PHPer | Scholar</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/future.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        
+    </head>
+    <header id="header">
+        <div id="fork_me_on_github"></div>
+        <script text="script/javascript">
+          //以下函数返回 min（包含）～ max（包含）之间的数字：
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          var id=getRndInteger(0,5);
+          var color='red_aa0000'
+          switch(id)
+          {
+            default:
+            color='red_aa0000';
+            break;
+            case 1:
+            color='darkblue_121621'
+            break;
+            case 2:
+            color='orange_ff7600'
+            break;
+            case 3:
+            color='gray_6d6d6d'
+            break;
+            case 4:
+            color='white_ffffff'
+          }
+          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+          
+          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
+          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
+      
+        </script>
+        
+        
+        <a id="avatar" href="/"><img src="/images/avatar_sx.png" alt="Scholar" /></a>
+        
+        <h1><a id="author" href="/">LordYao</a></h1>        
+                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
+                
+      <div id="follow-icons">
+        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+                  <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  </div>
+
+        <span id="donate">Slogan: 解放思想，发展生产力</span>
+        <h6><a href="/about.html">About</a>
+                    &middot;
+          <a href="/resume.html">Resume</a>
+                              &middot;
+          <a href="/Lab.html">Lab</a>
+                  </h6>
+        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
+        
+        <footer>
+          <section id="footer-message">&copy;  
+          2019 - 
+                    2020          
+          LordYao.<br/>
+                    
+          BY-NC-SA .
+           
+           All rights reserved. <br/>
+          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/scholar-hexo-theme" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
+        </footer>
+        <div id="Statistics">
+    
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+
+</div>
+
+      </header>
+   <!---->   
+      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
+    
+<!--
+      <div class="post-template">
+        -->
+          
+      
+        <main id="content">
+        
+        
+
+<hr id="topline"/>
+<div id="DOI"> November 27, 2019 <br>https://yaoqs.github.io/2019/11/27/BitTorrent%E5%8D%8F%E8%AE%AE%E6%A0%87%E5%87%86%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8C%85%E6%A0%BC%E5%BC%8F-PHPer/</div>
+<article class="post">
+ 
+  <h1 class="post-title">BitTorrent协议标准之数据包格式_PHPer</h1>
+  <section id="post-author">Yao Qing-sheng <br/>Department of Natural Philosophy & Infomation Sciences, CHINA</section>
+  <section class="post-content article-entry">
+    <section id="Abstract">
+    <hr id="Abstract"/>
+    <span id="Abstract">Abstract
+        
+    </span>    
+    <span id="Abstract-content">
+        
+        
+    </span>
+    
+    
+    <span id="Abstract">Keywords
+        <span id="keywords-content">
+                  
+              
+              
+                Reprint
+                
+                                    &comma;
+                
+                
+              
+                BitTorrent
+                
+                                    &comma;
+                
+                
+              
+                Draft
+                
+                                    &comma;
+                
+                
+              
+            
+        </span>
+    </span>
+    <hr id="Abstract"/>
+
+    <span id="Abstract">Citation
+        <span id="keywords-content">
+            Yao Qing-sheng&period;&nbsp; BitTorrent协议标准之数据包格式_PHPer&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/BitTorrent%E5%8D%8F%E8%AE%AE%E6%A0%87%E5%87%86%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8C%85%E6%A0%BC%E5%BC%8F-PHPer/
+        </span>
+    </span> 
+
+    <hr id="Abstract"/>
+    </section>
+
+
+
+    <p>BitTorrent协议标准之数据包格式<br>2008-04-22 13:37<br>BT中Peer和Peer之间交互的数据包的格式除了握手包之外都是:包长度(Int)+包体。<br>当两个Peer连接后，要首先向对方发送握手包，如果握手失败，连接将关闭。握手包的格式是：<br>字符串长度+字符串+保留字段+info_hash+peer_id<br>字符串长度:后面的字符串长度，1个Byte<br>字符串：标识协议的字符串。在1.0的bt协议中为”BitTorrent protocol”<br>保留字段：8个字节，用于协议扩展，无扩展的时候全为0，使用的时候从后向前开始使用。<br>info_hash:20个字节，就是用于向tracker请求的那个info_hash<br>peer_id:20个字节，各个BT软件对peer_id的命名方法不一样，大致有几种类型，这个以后再说。<br>当本地节点主动连接到远端节点后，就应当立即向远端节点发送握手包，远端节点接收连接后等等握手包的到来，当握手包接收后立即回应握手包。当远端节点接收 到握手包后，它会首先看info_hash字段所代表的任务是否存在，若不存在，那就应该关闭连接。当远端节点回应握手包后，本地节点应当判断该节点的 peer_id，如果它有从tracker那里得知远端节点的peer_id，若发现pere_id不符合，本地节点应当关闭连接。</p>
+<p>剩下的Peer之间的所有交互数据包格式是：包长度(Int，4个Byte长度)+包类型(1个Byte)+消息体，前面的包长度和包类型是定的，后面的消息体因包类型不同而具体格式不同。主要的包有下面几种：<br>keep-alive: &lt;len=0000&gt;<br>keep-alive包（保活/心跳包）就是一个包长度设置为0的包，也没有包类型字段，其内容就是0000，它的时间间隔是2分钟。<br>choke:&lt;len=0001&gt;&lt;type=0&gt;<br>把接收方阻塞<br>unchoke:&lt;len=0001&gt;&lt;type=1&gt;<br>把接收方取消阻塞<br>interested:&lt;len=0001&gt;&lt;type=2&gt;<br>关注接收方<br>not interested:&lt;len=0001&gt;&lt;type=3&gt;<br>取消关注接收方<br>have:&lt;len=0005&gt;&lt;type=4&gt;<piece index><br>告诉接收方的Peer，发送方拥有某一个piece的数据，piece的index是以0开始的<piece index><br>这个包是非常频繁的包，BT客户端的实现应该设计一些技巧在不减少信息发布的情况下减少这个包的传输。比如某个Peer已经有该piece了，显然就不应 该向它发送了。或者某个Peer它选择性下载，根本不需要下载这个piece，那也不要给它发送了。或者已经告诉过它一次了，就不要再告诉它了，等等。<br>bitfield:&lt;len=0001+X&gt;&lt;type=5&gt;<bitfield><br>bitfield包一般在两个节点完成握手之后就要发送，当然，如果节点一个piece都没有，就没有必要发送了。这个包是变长的，取决于有多少个 piece，X就是bitfield的长度，bitfield里第一个字节的高位bit就对应着第一个piece(index=0)。由于piece的个 数不一定能被8整除，所以最后可能有没有用到的bit，那些bit全设为0就行了。peer在接收到该包后，要判断bitfield是否合法，即 piece个数是否合法，不合法则要关闭连接。<br>request:&lt;len=0013&gt;&lt;type=6&gt;<index><begin><length><br>数据请求包，index:整型，表示piece index，begin:整型，表示offset in the piece。length:整型，表示请求的数据的长度。关于这个block的长度，众说纷纭，有的说16K，有的32K，有的说只要不超过128K就 好，等等，我觉得，这个得看实现BT协议的人，如果它的客户端做的就只支持16K，它有很多用户了，你再做BT客户端，你要跟它兼容，你就得支持16K， 所以我觉得，自己在程序中控制只要小于128K的请求都回应，向其他人发送request的时候，就根据它是什么客户端，默认就给它发个16K的这种就可 以了，整这么复杂干啥~<br>piece:&lt;len=0009+X&gt;&lt;type=7&gt;<index><begin><block><br>回应的Block数据，X便是block的长度，index是piece index，begin是block在piece中的offset，block便是二进制数据了。<br>cancel:&lt;len=0013&gt;&lt;type=8&gt;<index><begin><length><br>这个包跟request包一样，就是type不一样，它就表示把对应的那个request给取消掉。<br>port:&lt;len=0003&gt;&lt;type=9&gt;<listen port><br>port包，是用来告诉接收方节点，发送方节点支持DHT，并且DHT监听的端口是listen port。</p>
+
+    
+    <section id="References">
+      <span id="References">References</span>
+      <span id="References-content">
+        <ol id="list">
+          <li>
+              Yao Qing-sheng&period;&nbsp; BitTorrent协议标准之数据包格式_PHPer&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/BitTorrent%E5%8D%8F%E8%AE%AE%E6%A0%87%E5%87%86%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8C%85%E6%A0%BC%E5%BC%8F-PHPer/
+          </li>
+          <li>
+            版权声明：本文为「LordYao」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。 <br/>
+            原文链接： https://yaoqs.github.io/2019/11/27/BitTorrent%E5%8D%8F%E8%AE%AE%E6%A0%87%E5%87%86%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%8C%85%E6%A0%BC%E5%BC%8F-PHPer/
+        </li>
+        </ol>
+      </span>
+
+    </section>
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+  <footer class="post-footer">
+    
+    <hr id="footerline"/>
+    <section class="author"><br/>
+      *Corresponding author: Yao Qing-sheng &lt;Email: <a href="mailto:350788415@qq.com" target="_blank" rel="noopener" title="350788415@qq.com">350788415@qq.com</a>&gt; 
+                
+        BY-NC-SA .
+         
+      <p></p>
+    </section>
+    
+  </footer>
+  <script text="script/javascript">//复制加版权
+    jQuery(document).on('copy', function(e)
+        {
+          var selected = window.getSelection();
+          var selectedText = selected.toString().replace(/\n/g, '<br>');  // Solve the line breaks conversion issue 处理换行转换的问题
+          var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>' 
+                                + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+                                + '<br>作者：'+document.getElementById('author').innerText
+                                + '<br>复制时间: '+Date.now()
+                                + '<br>原文链接：' + document.location.href
+                                + '<br>© 版权声明：本文为「'+document.getElementById('author').innerText+'」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。';
+                                
+          var copyHolder = $('<div>', {id: 'temp', html: selectedText + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+          
+          $('body').append(copyHolder);
+          selected.selectAllChildren( copyHolder[0] );
+          window.setTimeout(function() {
+              copyHolder.remove();
+          },0);
+        });
+
+  </script>
+
+  <script text="script/javascript">//嵌入网页
+    
+
+  </script>
+</article>
+
+<nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2019/11/27/Ubuntu%E6%A1%8C%E9%9D%A2%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97%EF%BC%9ALinux%20%E7%9A%84%E5%93%B2%E5%AD%A6/">
+        ← prev <!--Ubuntu桌面生存指南：Linux 的哲学-->
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2019/11/27/eeggs/">
+        <!--eeggs--> next →
+    </a>
+    
+    <a id="toTop" href="#top" title="回顶部" style="float: right;">Top</a>
+</nav>
+
+
+        </main>
+        
+
+<!--</div>-->
+</html>
+
+

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!---->
+    <head>
+        
+		
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A scholar magazine/journal like blog">
+        <link rel="shortcut icon" href="/images/githubavatar.png"/>
+        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+        <title>多语言实现hello world | Scholar</title>
+        <meta name="description" content="{{meta_description}}">
+
+        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles/future.css">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        
+    </head>
+    <header id="header">
+        <div id="fork_me_on_github"></div>
+        <script text="script/javascript">
+          //以下函数返回 min（包含）～ max（包含）之间的数字：
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          var id=getRndInteger(0,5);
+          var color='red_aa0000'
+          switch(id)
+          {
+            default:
+            color='red_aa0000';
+            break;
+            case 1:
+            color='darkblue_121621'
+            break;
+            case 2:
+            color='orange_ff7600'
+            break;
+            case 3:
+            color='gray_6d6d6d'
+            break;
+            case 4:
+            color='white_ffffff'
+          }
+          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+          
+          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
+          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
+      
+        </script>
+        
+        
+        <a id="avatar" href="/"><img src="/images/avatar_sx.png" alt="Scholar" /></a>
+        
+        <h1><a id="author" href="/">LordYao</a></h1>        
+                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
+                
+      <div id="follow-icons">
+        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+                  <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
+            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  </div>
+
+        <span id="donate">Slogan: 解放思想，发展生产力</span>
+        <h6><a href="/about.html">About</a>
+                    &middot;
+          <a href="/resume.html">Resume</a>
+                              &middot;
+          <a href="/Lab.html">Lab</a>
+                  </h6>
+        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
+        
+        <footer>
+          <section id="footer-message">&copy;  
+          2019 - 
+                    2020          
+          LordYao.<br/>
+                    
+          BY-NC-SA .
+           
+           All rights reserved. <br/>
+          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/scholar-hexo-theme" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
+        </footer>
+        <div id="Statistics">
+    
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
+    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+
+</div>
+
+      </header>
+   <!---->   
+      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
+    
+<!--
+      <div class="post-template">
+        -->
+          
+      
+        <main id="content">
+        
+        
+
+<hr id="topline"/>
+<div id="DOI"> November 27, 2019 <br>https://yaoqs.github.io/2019/11/27/%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hello%20world/</div>
+<article class="post">
+ 
+  <h1 class="post-title">多语言实现Hello World</h1>
+  <section id="post-author">Yao Qing-sheng <br/>Department of Natural Philosophy & Infomation Sciences, CHINA</section>
+  <section class="post-content article-entry">
+    <section id="Abstract">
+    <hr id="Abstract"/>
+    <span id="Abstract">Abstract
+        
+    </span>    
+    <span id="Abstract-content">
+        
+        
+    </span>
+    
+    
+    <span id="Abstract">Keywords
+        <span id="keywords-content">
+                  
+              
+              
+                Draft
+                
+                                    &comma;
+                
+                
+              
+                C/c++
+                
+                                    &comma;
+                
+                
+              
+                Matlab
+                
+                                    &comma;
+                
+                
+              
+            
+        </span>
+    </span>
+    <hr id="Abstract"/>
+
+    <span id="Abstract">Citation
+        <span id="keywords-content">
+            Yao Qing-sheng&period;&nbsp; 多语言实现Hello World&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hello%20world/
+        </span>
+    </span> 
+
+    <hr id="Abstract"/>
+    </section>
+
+
+
+    <p>作为所有编程语言的起始阶段，HELLO WORLD占据着无法改变的地位，所有中/英/法/德/美……版本的编程教材中，HELLO WORLD总是作为第一个TEST记录于书本之中，所有的编程第一步就在于此了！经典之中的经典！HELLO WORLD！<br>　　这个例程是从Kernighan &amp; Ritchie 合著的《The C Programme Language》开始有的，因为它的简洁，实用，并包含了一个程序所应具有的一切，因此为后来的些类书的作者提供了范例，一直待续到今。<br>　　我们刚开始接触计算机语言大多从Hello world 开始，下面是各种语言的Hello world program：</p>
+<p>AKA 控制台:
+　　</p>
+<p>ABC语言的Hello World程序<br>　　WHILE (1=1) :<br>　　WRITE “Hello World “</p>
+<p>Ada语言的Hello World程序<br>　　with Ada.Text_Io; use Ada.Text_Io;<br>　　procedure Hello is<br>　　begin<br>　　Put_Line (“Hello, world!”);<br>　　end Hello;</p>
+<p>AmigaE语言的Hello World程序<br>　　PROC main()<br>　　WriteF(‘Hello, World!’)<br>　　ENDPROC</p>
+<p>APL语言的Hello World程序<br>　　‘Hello World’</p>
+<p>Assembly语言的Hello World程序<br>　　Accumulator-only architecture: DEC PDP-8, PAL-III assembler<br>　　See the Example section of the PDP-8 article.<br>　　Accumulator + index register machine: MOS 6502, CBM, ca65 asm<br>　　MSG: .ASCIIZ “Hello, world!”<br>　　LDX #0<br>　　LDA MSG,X ; load initial char<br>　　@LP: JSR $FFD2 ; CHROUT CBM KERNAL<br>　　INX<br>　　LDA MSG,X<br>　　BNE @LP<br>　　RTS<br>　　Accumulator/Index microcoded machine: Data General Nova, RDOS<br>　　See the example section of the Nova article.<br>　　Expanded accumulator machine: Intel x86, MS-DOS, TASM<br>　　MODEL SMALL<br>　　IDEAL<br>　　STACK 100H</p>
+<p>DATASEG语言的Hello World程序<br>　　MSG DB ‘Hello, world!$’</p>
+<p>CODESEG语言的Hello World程序<br>　　MOV AX, @data<br>　　MOV DS, AX<br>　　MOV DX, OFFSET MSG<br>　　MOV AH, 09H ; DOS: output ASCII$ string<br>　　INT 21H<br>　　MOV AX, 4C00H<br>　　INT 21H<br>　　END<br>　　General-purpose-register CISC: DEC PDP-11, RT-11, MACRO-11<br>　　.MCALL .REGDEF,.TTYOUT,.EXIT<br>　　.REGDEF<br>　　HELLO: MOV #MSG,R1<br>　　MOVB (R1),R0<br>　　LOOP: .TTYOUT<br>　　MOVB +(R1),R0<br>　　BNE LOOP<br>　　.EXIT<br>　　MSG: .ASCIZ /HELLO, WORLD!/<br>　　.END HELLO<br>　　CISC: VAX, VMS, MACRO32<br>　　.title hello<br>　　term_name: .ascid /SYS$INPUT/<br>　　term_chan: .blkw 1<br>　　out_iosb: .blkq 1<br>　　msg: .asciz /Hello, world!/<br>　　.entry start,0<br>　　; establish a channel for terminal I/O<br>　　$assign_s devnam=term_name,-<br>　　chan=term_chan<br>　　blbc r0,error<br>　　; queue the I/O request<br>　　$qio_s chan=term_chan,-<br>　　func=#io$_writevblk,-<br>　　iosb=out_iosb,-<br>　　p1=msg,-<br>　　p2=#13<br>　　blbc r0,error<br>　　$exit_s ; normal exit<br>　　error: halt ; error condition<br>　　.end start</p>
+<p>AWK语言的Hello World程序<br>　　BEGIN { print “Hello, world!” }</p>
+<p>BASIC语言的Hello World程序:<br>　　PRINT “HELLO WORLD”</p>
+<p>MS BASIC语言的Hello World程序<br>　　(traditional, unstructured)<br>　　10 PRINT “Hello, world!”<br>　　20 END</p>
+<p>TI-BASIC语言的Hello World程序<br>　　isp “Hello, world!”</p>
+<p>Structured BASIC语言的Hello World程序<br>　　print “Hello, world!”</p>
+<p>BCPL语言的Hello World程序<br>　　GET “LIBHDR”<br>　　LET START () BE<br>　　$(<br>　　WRITES (“Hello, world!*N”)<br>　　$)</p>
+<p>C语言的Hello World程序<br>　　#include &lt;stdio.h&gt;<br>　　int main(void)<br>　　{<br>　　printf(“Hello, world!\n”);<br>　　}
+　　</p>
+<p>C++语言的Hello World程序<br>　　#include <iostream><br>　　using namespace std;<br>　　int main()<br>　　{<br>　　cout &lt;&lt; “Hello, world!” &lt;&lt; endl;<br>　　return 0;<br>　　}</p>
+<p>C#语言的Hello World程序<br>　　class HelloWorldApp {<br>　　public static void Main() {<br>　　System.Console.WriteLine(“Hello, world!”);<br>　　}<br>　　}</p>
+<p>Clean语言的Hello World程序<br>　　module hello<br>　　Start :: String<br>　　Start = “Hello, world”</p>
+<p>CLIST语言的Hello World程序<br>　　PROC 0<br>　　WRITE Hello, World!</p>
+<p>COBOL语言的Hello World程序<br>　　IDENTIFICATION DIVISION.<br>　　PROGRAM-ID. HELLO-WORLD.<br>　　ENVIRONMENT DIVISION.<br>　　DATA DIVISION.<br>　　PROCEDURE DIVISION.<br>　　DISPLAY “Hello, world!”.<br>　　STOP RUN.</p>
+<p>Common Lisp语言的Hello World程序<br>　　(format t “Hello world!~%”)</p>
+<p>Eiffel语言的Hello World程序<br>　　class HELLO_WORLD<br>　　creation<br>　　make<br>　　feature<br>　　make is<br>　　local<br>　　io:BASIC_IO<br>　　do<br>　　!!io<br>　　io.put_string(“%N Hello, world!”)<br>　　end – make<br>　　end – class HELLO_WORLD</p>
+<p>Erlang语言的Hello World程序<br>　　-module(hello).<br>　　-export([hello_world/0]).<br>　　hello_world() -&gt; io:fwrite(“Hello, world!\n”).</p>
+<p>Forth语言的Hello World程序<br>　　.” Hello, world!” CR</p>
+<p>Fortran语言的Hello World程序<br>　　PROGRAM HELLO<br>　　WRITE(*,10)<br>　　10 FORMAT(‘Hello, world!’)<br>　　STOP<br>　　END</p>
+<p>Haskell语言的Hello World程序<br>　　module HelloWorld (main) where<br>　　main = putStr “Hello World\n”</p>
+<p>Iptscrae语言的Hello World程序<br>　　ON ENTER {<br>　　“Hello, “ “World!” &amp; SAY<br>　　}</p>
+<p>Java语言的Hello World程序<br>　　public class Example{<br>　　public static void main(String[] args) {<br>　　System.out.println(“Hello, world!”);<br>　　}<br>　　}</p>
+<p>Logo语言的Hello World程序<br>　　print [hello world!]</p>
+<p>Lua语言的Hello World程序<br>　　print “Hello, world!”</p>
+<p>MIXAL语言的Hello World程序<br>　　TERM EQU 19 the MIX console device number<br>　　ORIG 1000 start address<br>　　START OUT MSG(TERM) output data at address MSG<br>　　HLT halt execution<br>　　MSG ALF “MIXAL”<br>　　ALF “ HELL”<br>　　ALF “O WOR”<br>　　ALF “LD “<br>　　END START end of the program</p>
+<p>MSDOS batch语言的Hello World程序<br>　　@echo off<br>　　echo Hello, world!</p>
+<p>OCaml语言的Hello World程序<br>　　let _ =<br>　　print_endline “Hello world!”;;<br>　　OPL<br>　　PROC hello:<br>　　PRINT “Hello, World”<br>　　ENDP<br>　　Pascal<br>　　program Hello;<br>　　begin<br>　　writeln(‘Hello, world!’);<br>　　end.</p>
+<p>Pascal语言的Hello World程序<br>　　program hello_world;<br>　　begin<br>　　writeln(‘Hello World!’);<br>　　end.</p>
+<p>Perl语言的Hello World程序<br>　　print “Hello, world!\n”;</p>
+<p>PHP语言的Hello World程序<br>　　<?php
+　　print("Hello, world!");
+　　?></p>
+<p>Pike语言的Hello World程序<br>　　#!/usr/local/bin/pike<br>　　int main() {<br>　　write(“Hello, world!\n”);<br>　　return 0;<br>　　}</p>
+<p>PL/I语言的Hello World程序<br>　　Test: procedure options(main);<br>　　declare My_String char(20) varying initialize(‘Hello, world!’);<br>　　put skip list(My_String);<br>　　end Test;</p>
+<p>Python语言的Hello World程序<br>　　print “Hello, world!”</p>
+<p>REXX语言的Hello World程序<br>　　also NetRexx and Object REXX<br>　　say “Hello, world!”</p>
+<p>Ruby语言的Hello World程序<br>　　print “Hello, world!\n”</p>
+<p>Sather语言的Hello World程序<br>　　class HELLO_WORLD is<br>　　main is<br>　　#OUT+”Hello World\n”;<br>　　end;<br>　　end;</p>
+<p>Scheme语言的Hello World程序<br>　　(display “Hello, world!”)<br>　　(newline)</p>
+<p>sed语言的Hello World程序<br>　　(requires at least one line of input)<br>　　sed -ne ‘1s/.*/Hello, world!/p’</p>
+<p>Self语言的Hello World程序<br>　　‘Hello, World!’ uppercase print.</p>
+<p>Smalltalk语言的Hello World程序<br>　　Transcript show: ‘Hello, world!’</p>
+<p>SML语言的Hello World程序<br>　　print “Hello, world!\n”;</p>
+<p>SNOBOL语言的Hello World程序<br>　　OUTPUT = “Hello, world!”<br>　　END</p>
+<p>SQL语言的Hello World程序<br>　　create table MESSAGE (TEXT char(15));<br>　　insert into MESSAGE (TEXT) values (‘Hello, world!’);<br>　　select TEXT from MESSAGE;<br>　　drop table MESSAGE;<br>　　Or, more simply<br>　　print ‘Hello, World.’<br>　　StarOffice Basic<br>　　sub main<br>　　print “Hello, World”<br>　　end sub</p>
+<p>Tcl语言的Hello World程序<br>　　puts “Hello, world!”</p>
+<p>Turing语言的Hello World程序<br>　　put “Hello, world!”</p>
+<p>UNIX-style shell语言的Hello World程序<br>　　echo ‘Hello, world!’</p>
+<p>Romanian pseudocode语言的Hello World程序<br>　　(UBB Cluj-Napoca)Algoritmul Salut este:<br>　　fie s:=”Hello, world”;<br>　　tipareste s;<br>　　sf-Salut</p>
+<p>传统图形界面应用开发工具:<br>　　C++ bindings for GTK graphics toolkit<br>　　#include<br>　　#include<br>　　#include<br>　　#include<br>　　using namespace std;<br>　　class HelloWorld : public Gtk::Window {<br>　　public:<br>　　HelloWorld();<br>　　virtual <del>HelloWorld();<br>　　protected:<br>　　Gtk::Button m_button;<br>　　virtual void on_button_clicked();<br>　　};<br>　　HelloWorld::HelloWorld()<br>　　: m_button(“Hello, world!”) {<br>　　set_border_width(10);<br>　　m_button.signal_clicked().connect(SigC:lot(*this,<br>　　&amp;HelloWorld::on_button_clicked));<br>　　add(m_button);<br>　　m_button.show();<br>　　}<br>　　HelloWorld::</del>HelloWorld() {}<br>　　void HelloWorld::on_button_clicked() {<br>　　cout &lt;&lt; “Hello, world!” &lt;&lt; endl;<br>　　}<br>　　int main (int argc, char *argv[]) {<br>　　Gtk::Main kit(argc, argv);<br>　　HelloWorld helloworld;<br>　　Gtk::Main::run(helloworld);<br>　　return 0;<br>　　}</p>
+<p>Java语言的Hello World程序<br>　　import java.awt.<em>;<br>　　import java.awt.event.</em>;<br>　　public class HelloFrame extends Frame {<br>　　HelloFrame(String title) {<br>　　super(title);<br>　　}<br>　　public void paint(Graphics g) {<br>　　super.paint;<br>　　java.awt.Insets ins = this.getInsets();<br>　　g.drawString(“Hello, world!”, ins.left + 25, ins.top + 25);<br>　　}<br>　　public static void main(String args [])<br>　　{<br>　　HelloFrame fr = new HelloFrame(“Hello”);<br>　　fr.addWindowListener(<br>　　new WindowAdapter() {<br>　　public void windowClosing(WindowEvent e)<br>　　{<br>　　System.exit( 0 );<br>　　}<br>　　}<br>　　);<br>　　fr.setResizable(true);<br>　　fr.setSize(500, 100);<br>　　fr.setVisible(true);<br>　　}<br>　　}<br>　　Qt toolkit (in C++)<br>　　#include<br>　　#include<br>　　#include<br>　　#include<br>　　class HelloWorld : public QWidget<br>　　{<br>　　Q_OBJECT</p>
+<p>public语言的Hello World程序<br>　　HelloWorld();<br>　　virtual <del>HelloWorld();<br>　　public slots:<br>　　void handleButtonClicked();<br>　　QPushButton *mPushButton;<br>　　};<br>　　HelloWorld::HelloWorld() :<br>　　QWidget(),<br>　　mPushButton(new QPushButton(“Hello, World!”, this))<br>　　{<br>　　connect(mPushButton, SIGNAL(clicked()), this, SLOT(handleButtonClicked()));<br>　　}<br>　　HelloWorld::</del>HelloWorld() {}<br>　　void HelloWorld::handleButtonClicked()<br>　　{<br>　　std::cout &lt;&lt; “Hello, World!” &lt;&lt; std::endl;<br>　　}<br>　　int main(int argc, char *argv[])<br>　　{</p>
+<p>QApplication app语言的Hello World程序<br>　　(argc, argv);<br>　　HelloWorld helloWorld;<br>　　app.setMainWidget(&amp;helloWorld);<br>　　helloWorld.show();<br>　　return app.exec();<br>　　}</p>
+<p>Visual Basic语言的Hello World程序<br>　　1.信息框<br>　　MsgBox “Hello, world!”<br>　　2.输出到窗体<br>　　Print “Hello, world!”</p>
+<p>Windows API (in C)语言的Hello World程序<br>　　#include<br>　　LRESULT CALLBACK WindowProcedure(HWND, UINT, WPARAM, LPARAM);<br>　　char szClassName[] = “MainWnd”;<br>　　HINSTANCE hInstance;<br>　　int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)<br>　　{<br>　　HWND hwnd;<br>　　MSG msg;<br>　　WNDCLASSEX wincl;<br>　　hInstance = hInst;<br>　　wincl.cbSize = sizeof(WNDCLASSEX);<br>　　wincl.cbClsExtra = 0;<br>　　wincl.cbWndExtra = 0;<br>　　wincl.style = 0;<br>　　wincl.hInstance = hInstance;<br>　　wincl.lpszClassName = szClassName;<br>　　wincl.lpszMenuName = NULL; //No menu<br>　　wincl.lpfnWndProc = WindowProcedure;<br>　　wincl.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1); //Color of the window<br>　　wincl.hIcon = LoadIcon(NULL, IDI_APPLICATION); //EXE icon<br>　　wincl.hIconSm = LoadIcon(NULL, IDI_APPLICATION); //Small program icon<br>　　wincl.hCursor = LoadCursor(NULL, IDC_ARROW); //Cursor<br>　　if (!RegisterClassEx(&amp;wincl))<br>　　return 0;<br>　　hwnd = CreateWindowEx(0, //No extended window styles<br>　　szClassName, //Class name<br>　　“”, //Window caption<br>　　WS_OVERLAPPEDWINDOW &amp; ~WS_MAXIMIZEBOX,<br>　　CW_USEDEFAULT, CW_USEDEFAULT, //Let Windows decide the left and top positions of the window<br>　　120, 50, //Width and height of the window,<br>　　NULL, NULL, hInstance, NULL);<br>　　//Make the window visible on the screen<br>　　ShowWindow(hwnd, nCmdShow);<br>　　//Run the message loop<br>　　while (GetMessage(&amp;msg, NULL, 0, 0))<br>　　{<br>　　TranslateMessage(&amp;msg);<br>　　DispatchMessage(&amp;msg);<br>　　}<br>　　return msg.wParam;<br>　　}<br>　　LRESULT CALLBACK WindowProcedure(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)<br>　　{<br>　　PAINTSTRUCT ps;<br>　　HDC hdc;<br>　　switch (message)<br>　　{<br>　　case WM_PAINT:<br>　　hdc = BeginPaint(hwnd, &amp;ps);<br>　　TextOut(hdc, 15, 3, “Hello, world!”, 13);<br>　　EndPaint(hwnd, &amp;ps);<br>　　break;<br>　　case WM_DESTROY:<br>　　PostQuitMessage(0);<br>　　break;<br>　　default:<br>　　return DefWindowProc(hwnd, message, wParam, lParam);<br>　　}<br>　　return 0;<br>　　}</p>
+<p>基于web图形用户界面:
+　　</p>
+<p>Java applet语言的Hello World程序<br>　　Java applets work in conjunction with HTML files.<br>　　HelloWorld Program says:<br>　　import java.applet.<em>;<br>　　import java.awt.</em>;<br>　　public class HelloWorld extends Applet {<br>　　public void paint(Graphics g) {<br>　　g.drawString(“Hello, world!”, 100, 50);<br>　　}<br>　　}<br>　　JavaScript, aka ECMAScript语言的Hello World程序<br>　　JavaScript is a scripting language used in HTML files. To demo this program Cut and Paste the following code into any HTML file.<br>　　onclick=”javascript:helloWorld();”&gt;Hello World Example<br>　　An easier method uses JavaScript implicitly, calling the reserved alert function. Cut and paste the following line inside the …. HTML tags.<br>　　Hello World Example<br>　　An even easier method involves using popular browsers’ support for the virtual ‘javascript’ protocol to execute JavaScript code. Enter the following as an Internet address (usually by pasting into the address box):<br>　　javascript:alert(‘Hello, world!’)</p>
+<p>文档格式:
+　　</p>
+<p>ASCII语言的Hello World程序<br>　　The following sequence of characters, expressed in hexadecimal notation (with carriage return and newline characters at end of sequence):<br>　　48 65 6C 6C 6F 2C 20 77 6F 72 6C 64 21 0D 0A</p>
+<p>HTML语言的Hello World程序<br>　　<HTML><br>　　<body><br>　　<p>Hello, world!</p><br>　　</body><br>　　</HTML></p>
+<p>PostScript语言的Hello World程序<br>　　/font /Courier findfont 24 scalefont<br>　　font setfont<br>　　100 100 moveto<br>　　(Hello world!) show<br>　　showpage</p>
+<p>TeX语言的Hello World程序<br>　　\font\HW=cmr10 scaled 3000<br>　　\leftline{\HW Hello world}<br>　　\bye</p>
+<p>LaTeX语言的Hello World程序<br>　　\documentclass｛article｝<br>　　\begin｛document｝<br>　　Hello, world!<br>　　\end｛document｝</p>
+<p>批处理语言的Hello World程序<br>　　echo Hello World！</p>
+<p>易语言的Hello World程序<br>　　.子程序 __启动窗口_创建完毕<br>　　信息框 (“Hello, world!”, 0, )</p>
+<p>BiG299792458 2009-09-24 21:07:54<br>　C语言是目前世界上流行、使用最广泛的面向过程的高级程序设计语言。<br>　　C语言对操作系统和系统使用程序以及需要对硬件进行操作的场合，用C语言明显优于其它高级语言，许多大型应用软件都是用C语言编写的。<br>　　C语言具有绘图能力强，可移植性，并具备很强的数据处理能力，因此适于编写系统软件，三维，二维图形和动画它是数值计算的高级语言。<br>　　常用的编译软件有Microsoft Visual C++,Borland C++,Watcom C++ ,Borland C++, Borland C++ Builder,Borland C++ 3.1 for DOS,Watcom C++ 11.0 for DOS,GNU DJGPP C++, Lccwin32 C Compiler 3.1,Microsoft C,High C,TurboC等等……<br>　　C语言的发展历史<br>　　C语言的发展颇为有趣。它的原型ALGOL 60语言。（也成为A语言）<br>　　1963年，剑桥大学将ALGOL 60语言发展成为CPL(Combined Programming Language)语言。<br>　　1967年，剑桥大学的Matin Richards 对CPL语言进行了简化，于是产生了BCPL语言。<br>　　1970年，美国贝尔实验室的Ken Thompson将BCPL进行了修改，并为它起了一个有趣的名字“B语言”。意思是将CPL语言煮干，提炼出它的精华。并且他用B语言写了第一个UNIX操作系统。<br>　　而在1973年，B语言也给人“煮”了一下，美国贝尔实验室的D.M.RITCHIE在B语言的基础上最终设计出了一种新的语言，他取了BGPL的第二个字母作为这种语言的名字，这就是C语言。<br>　　为了使UNIX操作系统推广，1977年Dennis M.Ritchie 发表了不依赖于具体机器系统的C语言编译文本《可移植的C语言编译程序》。<br>　　1978年Brian W.Kernighian和Dennis M.Ritchie出版了名著《The C Programming Language》，从而使C语言成为目前世界上流行最广泛的高级程序设计语言。<br>　　1987年，随着微型计算机的日益普及, 出现了许多C语言版本。由于没有统一的标准,使得这些C语言之间出现了一些不一致的地方。为了改变这种情况,美国国家标准研究所(ANSI)为C语言制定了一套ANSI标准, 成为现行的C语言标准 3.C语言的主要特点 。C语言发展迅速, 而且成为最受欢迎的语言之一, 主要因为它具有强大的功能。许多著名的系统软件, 如DBASE Ⅲ PLUS、DBASE Ⅳ 都是由C 语言编写的。用C语言加上一些汇编语言子程序, 就更能显示C语言的优势了,象PC- DOS 、WORDSTAR等就是用这种方法编写的。<br>　　1990年，国际化标准组织ISO（Intrernational Standard Organization）接受了87 ANSI C为ISO C 的标准（ISO9899-1990）。1994年，ISO修订了C语言的标准。目前流行的C语言编译系统大多是以ANSI C 为基础进行开发的，但不同版本的C编译系统说实现的语言功能和语法规则有略有差别。<br>　　C语言的特点<br>　　1. 简洁紧凑、灵活方便<br>　　C语言一共只有32个关键字,9种控制语句，程序书写自由，主要用小写字母表示。它把高级语言的基本结构和语句与低级语言的实用性结合起来。 C 语言可以象汇编语言一样对位、字节和地址进行操作, 而这三者是计算机最基本的工作单元。<br>　　2. 运算符丰富<br>　　C的运算符包含的范围很广泛，共有种34个运算符。C语言把括号、赋值、强制类型转换等都作为运算符处理。从而使C的运算类型极其丰富表达式类型多样化，灵活使用各种运算符可以实现在其它高级语言中难以实现的运算。<br>　　3. 数据结构丰富<br>　　C的数据类型有：整型、实型、字符型、数组类型、指针类型、结构体类型、共用体类型等。能用来实现各种复杂的数据类型的运算。并引入了指针概念,使程序效率更高。另外C语言具有强大的图形功能, 支持多种显示器和驱动器。且计算功能、逻辑判断功能强大。<br>　　4. C是结构式语言<br>　　结构式语言的显著特点是代码及数据的分隔化,即程序的各个部分除了必要的信息交流外彼此独立。这种结构化方式可使程序层次清晰, 便于使用、维护以及调试。C语言是以函数形式提供给用户的,这些函数可方便的调用,并具有多种循环、条件语句控制程序流向,从而使程序完全结构化。<br>　　5. C语法限制不太严格、程序设计自由度大<br>　　一般的高级语言语法检查比较严，能够检查出几乎所有的语法错误。而C语言允许程序编写者有较大的自由度。<br>　　6. C语言允许直接访问物理地址，可以直接对硬件进行操作<br>　　因此既具有高级语言的功能，又具有低级语言的许多功能，能够象汇编语言一样对位、字节和地址进行操作,而这三者是计算机最基本的工作单元，可以用来写系统软件。<br>　　7. C语言程序生成代码质量高，程序执行效率高<br>　　一般只比汇编程序生成的目标代码效率低10へ20%。<br>　　8. C语言适用范围大，可移植性好<br>　　C语言有一个突出的优点就是适合于多种操作系统, 如DOS、UNIX,也适用于多种机型。<br>　　当然，C语言也有自身的不足，比如：C语言的语法限制不太严格，对变量的类型约束不严格，影响程序的安全性，对数族下标越界不作检查等。从应用的角度，C语言比其他高级语言较难掌握。<br>　　总之，C语言既有高级语言的特点，又具有汇编语言的特点；既是一个成功的系统设计语言，有时一个使用的程序设计语言；既能用来编写不依赖计算机硬件的应用程序，又能用来编写各种系统程序；是一种受欢迎、应用广泛的程序设计语言<br>　　C与VC的区别<br>　　[1]C是语言而VC是编译器，打个比喻，C如果是毛线的话，那么VC就是织毛衣的针，整件毛衣就是一个程序。</p>
+
+    
+    <section id="References">
+      <span id="References">References</span>
+      <span id="References-content">
+        <ol id="list">
+          <li>
+              Yao Qing-sheng&period;&nbsp; 多语言实现Hello World&period;&nbsp; FUTURE&nbsp; Natural Philosophy & Infomation Sciences&comma;&nbsp; 2019:1127&comma;&nbsp; https://yaoqs.github.io/2019/11/27/%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hello%20world/
+          </li>
+          <li>
+            版权声明：本文为「LordYao」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。 <br/>
+            原文链接： https://yaoqs.github.io/2019/11/27/%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0hello%20world/
+        </li>
+        </ol>
+      </span>
+
+    </section>
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+  <footer class="post-footer">
+    
+    <hr id="footerline"/>
+    <section class="author"><br/>
+      *Corresponding author: Yao Qing-sheng &lt;Email: <a href="mailto:350788415@qq.com" target="_blank" rel="noopener" title="350788415@qq.com">350788415@qq.com</a>&gt; 
+                
+        BY-NC-SA .
+         
+      <p></p>
+    </section>
+    
+  </footer>
+  <script text="script/javascript">//复制加版权
+    jQuery(document).on('copy', function(e)
+        {
+          var selected = window.getSelection();
+          var selectedText = selected.toString().replace(/\n/g, '<br>');  // Solve the line breaks conversion issue 处理换行转换的问题
+          var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>' 
+                                + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+                                + '<br>作者：'+document.getElementById('author').innerText
+                                + '<br>复制时间: '+Date.now()
+                                + '<br>原文链接：' + document.location.href
+                                + '<br>© 版权声明：本文为「'+document.getElementById('author').innerText+'」的原创文章，遵循 CC 4.0 BY-NC-SA 版权协议，转载请附上原文出处链接及本声明。';
+                                
+          var copyHolder = $('<div>', {id: 'temp', html: selectedText + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+          
+          $('body').append(copyHolder);
+          selected.selectAllChildren( copyHolder[0] );
+          window.setTimeout(function() {
+              copyHolder.remove();
+          },0);
+        });
+
+  </script>
+
+  <script text="script/javascript">//嵌入网页
+    
+
+  </script>
+</article>
+
+<nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2019/11/27/%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2/">
+        ← prev <!--文献检索-->
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2019/11/27/88%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97%E6%B8%B8%E6%88%8F%EF%BC%88%E5%90%AB%E8%AE%B2%E8%A7%A3%EF%BC%89/">
+        <!--88行代码实现俄罗斯方块游戏（含讲解）--> next →
+    </a>
+    
+    <a id="toTop" href="#top" title="回顶部" style="float: right;">Top</a>
+</nav>
+
+
+        </main>
+        
+
+<!--</div>-->
+</html>
+
+
