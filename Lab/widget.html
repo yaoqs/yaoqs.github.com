@@ -11,7 +11,203 @@
 
     <script src="jquery-3.4.1.min.js"></script>
 </head>
-<body>
+<body onload="startTimer(15,0)" OVERFLOW-X: hidden; OVERFLOW: auto;>
+<!--alert timer-->
+<style type="text/css">
+li{width:500px;height:500px;}
+</style>
+<script type="text/javascript"> 
+	var secondsleft, m, h, pretty;
+var inter;
+var clocktype;
+function pause() {
+	var p = document.getElementById("pause");
+	if (p.innerHTML == "Pause") {
+		clearInterval(inter);
+		p.innerHTML = "Continue";
+	} else {
+		inter = setInterval("update()",1000);
+		p.innerHTML = "Pause";
+	}
+}
+function addminute() {
+	secondsleft += 60;
+	updatedisplay();
+}
+function subminute() {
+	secondsleft -= Math.min(60, secondsleft);
+	updatedisplay();	
+}
+function startTimer(mins,type) {
+	clocktype = type; // 0 for countdown, 1 for stopwatch
+	secondsleft = mins*60;
+	clearInterval(inter);
+	updatedisplay();
+	inter = setInterval("update()",1000);
+}
+function updatedisplay() {
+	document.getElementById("clock").innerHTML = prettyTime(secondsleft);
+	document.title = prettyTime(secondsleft);
+	
+}
+function update() {
+	if (clocktype == 0) {
+		if (secondsleft > 0) {secondsleft -=  1} else {onTimeout()};
+	} else {
+		secondsleft += 1;
+	}
+	updatedisplay();	
+}
+function prettyTime(s) {
+Number(s);
+	m = Math.floor(s/60);
+	if (m >= 60) {
+		h = Math.floor(m/60);
+		pretty = pre_z(h) + ":" + pre_z(m % 60) + ":" + pre_z(s % 60);
+		} else {
+		pretty = m + ":" + pre_z(s % 60);
+	}
+//	Number(pretty);	
+	return pretty;
+}
+function pre_z(x) {
+	return (x < 10) ? "0" + x : x;
+}
+function onTimeout() {
+	pause();
+	alert("Time's up!");
+	opener=null;
+	window.close();
+}
+
+</script> 
+<script type="text/javascript">
+	var f = true;
+	window.onbeforeunload = function() {
+    	if (f) { 
+        return "*** Some webpages don't like frames very much. If you intended to close this page, please presss OK. Otherwise, press Cancel to use the timer ***";
+    } 
+}
+</script>
+<div id="topbar" style="border-top:groove;margin-top:10px;background-color:silver;border-bottom:ridge; padding-bottom:30px;padding-top:50px;"> 
+  	<div id="logo" style="float:left;font-weight:bold;margin-left:10px;margin-right:20px"><a href="#">111</a></div> 
+  
+  	<div id="buttons" style="float:right;margin-right:10px"> 
+  		<a href="#" id="pause" onclick="pause();">Pause</a> 
+  		<a href="#" onclick="addminute();">+</a> 
+  		<a href="#" onclick="subminute();">-</a> 
+  		<a href="javascript:void(s=prompt('Enter website address or search terms:','http://www.baidu.com/'));t=prompt('Number of minutes:','15');location.href=document.location.href+'/'+((s!=null)?s:'');">New Timer</a> 
+  	</div> 
+  	<div id="clock" style="float:right;font-weight:bold;margin-right:20px;"></div>
+</div>
+	<div onclick="javascript:window.open('','_parent',''); window.close();alert('11');" >12</div>
+==	 
+	 <a onclick="window.close();return false;" href="javascript:void(0)">close window</a>
+<br/><br/>
+<a onclick="window.open('#')" href="javascript:void(0)">JS : window.open('#')</a>
+<br/><br/>
+<a onclick="window.showModalDialog('#')" href="javascript:void(0)">
+    JS : window.showModalDialog('#')</a>
+<br/><br/>
+<a href="#" target="_blank">link(or Press ctrl)</a>
+<br/><br/>
+<div id="info"></div>
+<script>
+    window.onload = function() {
+        document.getElementById("info").innerHTML = "window.opener : " + window.opener;
+    }
+</script>
+	===
+
+	<script>
+ 
+var browserName=navigator.appName; 
+if (browserName=="Netscape")
+{ 
+    function closeme() 
+    { 
+        window.open('','_parent',''); 
+        window.close();
+    } 
+} 
+else 
+{ 
+    if (browserName=="Microsoft Internet Explorer") 
+    { 
+        function closynoshowsme() 
+        { 
+            window.opener = "whocares"; 
+            window.close(); 
+        } 
+    } 
+} 
+</script> 
+<input type="button" value="close me 3" onclick="closeme();"/>
+	<div>
+	<ul>
+	<li><div id="zhen" style="margin-top:50px;margin-left:100px;">
+	<iframe id="tom" name="tom" width="100%" height="100%" marginheight="0" marginwidth="0" frameborder="0" vspace="0" hspace="0" scrolling="auto" src="http://www.baidu.com/" style="position:relative;left:50%;" ></iframe>
+	</div>
+	</li>
+	<li>
+<div id="kingson" style="margin-top:50px;margin-left:100px;" >king11</div>
+</li>
+</ul>
+</div>
+
+<script type="text/javascript">
+//learn innerHTML
+document.getElementById("logo").onclick =function()
+{ alert("kingson");alert(document.getElementById("clock").innerHTML);
+}
+document.getElementById("kingson").innerHTML="11<br><iframe width=500px height=500px  style=\"position:relative;left:50%;\" src=\"http://www.baidu.com\"></iframe>";
+	document.getElementById("tom").onload = function() { 
+    f = false;
+}
+</script>
+<!--
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-13273402-1");
+pageTracker._setDomainName(".minutes.at");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+
+-->
+
+  <div id="footer" align="middle">
+    
+	<div id="nav" width=200px height=200px style="margin-top:50px;margin-left:100px;display:inline;" onclick='javascript:document.write("<div onclick="+"history.go(-1);"+"><br>11</div>");'>11</div>
+    <script type="text/javascript">//learn navigator and document,document.body and so on
+	document.getElementById("nav").innerHTML=navigator.appName+"<br>"+navigator.appCodeName+"<br>"+navigator.appVersion;</script>
+	<div id="bgbottom" onclick="win()">11</div>
+    <script type="text/javascript">//learn window
+	function win(){window.open(prompt(),"kingson","height=400px,width=400px,top=100px,left=100px,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no");}
+	</script>
+	<a href="#">#</a>
+  </div>
+  
+
+
+<!--skin-->
+<div id="skin"><div style="background-color:#198601;height:10px;width:10px" onclick="javascript:setBackground('198601');"></div>
+<div style="background-color:#000000;height:10px;width:10px" onclick="javascript:setBackground('000000');"></div>
+<div style="background-color:#E7F4FE;height:10px;width:10px" onclick="javascript:setBackground('E7F4FE');"></div>		<div style="background-color:#f6f6f6;height:10px;width:10px" onclick="javascript:setBackground('f6f6f6');"></div>		<div style="background-color:#ebf4ef;height:10px;width:10px" onclick="javascript:setBackground('ebf4ef');"></div>		<div style="background-color:#fef4f0;height:10px;width:10px" onclick="javascript:setBackground('fef4f0');"></div>		<div style="background-color:#eae8f7;height:10px;width:10px" onclick="javascript:setBackground('eae8f7');"></div>		<div style="background-color:#f5f1e7;height:10px;width:10px" onclick="javascript:setBackground('f5f1e7');"></div>		<div style="background-color:#edf6d0;height:10px;width:10px" onclick="javascript:setBackground('edf6d0');"></div>		<div style="background-color:#f6fafe;height:10px;width:10px" onclick="javascript:setBackground('f6fafe');"></div>		<div style="background-color:#eefaff;height:10px;width:10px" onclick="javascript:setBackground('eefaff');"></div>		<div style="border:none;width:95px;"><strong>选择背景颜色：</strong></div>
+<div onclick="bgimage();">bgimage</div>
+</div>
+<script>
+function setBackground(color){document.bgColor="#"+color};
+function bgskin(){
+document.write('<link href="red.css" rel="stylesheet" type="text\/css" media="all" \/><script>window.parent.div["skin"].location.reload();<\/script>');
+};
+//<link href="http:\/\/www.kenwen.com\/css\/read.css" rel="stylesheet" type="text\/css" media="all" \/>
+function bgimage(){document.body.style.background="no-repeat url(bg.jpg) 50% 50%"; }
+</script>
+
 <!-- http://jssdk.sinaapp.com/widget/weiboshow.php -->
 <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 <wb:show uid="1262655355" width="850" verifier="47bdb406" fans="0"></wb:show>

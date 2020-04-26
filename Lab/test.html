@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>nihao
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<title>test webpage</title>
+sssssssssss
+<div id="ttest"></div>
+<content></content>
+<script language="javascript">
+
+var url = "https://yaoqs.github.io/42/";	//https://www.dogedoge.com/
+var htmlobj= $.ajax({url:url,async:false});
+var dataString = htmlobj.responseText;
+//document.write(dataString );
+document.getElementById("ttest").innerHTML=dataString;
+</script>
+</body>
+</html>
