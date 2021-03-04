@@ -141,7 +141,7 @@ header h1 a:hover {
 	text-decoration:none;
 }
 header #avatar img {
-	margin-top: -0.578em;
+	margin-top: 4em;/*-0.578em;*/
 	margin-bottom: -1.73em;
 	width:9em;
 	/*height:9em;*/
