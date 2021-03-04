@@ -1,378 +1,408 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
-    <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="origin" />
-    <meta property="og:description" content=""/>
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="referrer" content="origin" />
+	<meta property="og:description" content="" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <script src="jquery-3.4.1.min.js"></script>
-</head>
-<body onload="startTimer(15,0)" OVERFLOW-X: hidden; OVERFLOW: auto;>
-<!--alert timer-->
-<style type="text/css">
-li{width:500px;height:500px;}
-</style>
-<script type="text/javascript"> 
-	var secondsleft, m, h, pretty;
-var inter;
-var clocktype;
-function pause() {
-	var p = document.getElementById("pause");
-	if (p.innerHTML == "Pause") {
-		clearInterval(inter);
-		p.innerHTML = "Continue";
-	} else {
-		inter = setInterval("update()",1000);
-		p.innerHTML = "Pause";
-	}
-}
-function addminute() {
-	secondsleft += 60;
-	updatedisplay();
-}
-function subminute() {
-	secondsleft -= Math.min(60, secondsleft);
-	updatedisplay();	
-}
-function startTimer(mins,type) {
-	clocktype = type; // 0 for countdown, 1 for stopwatch
-	secondsleft = mins*60;
-	clearInterval(inter);
-	updatedisplay();
-	inter = setInterval("update()",1000);
-}
-function updatedisplay() {
-	document.getElementById("clock").innerHTML = prettyTime(secondsleft);
-	document.title = prettyTime(secondsleft);
-	
-}
-function update() {
-	if (clocktype == 0) {
-		if (secondsleft > 0) {secondsleft -=  1} else {onTimeout()};
-	} else {
-		secondsleft += 1;
-	}
-	updatedisplay();	
-}
-function prettyTime(s) {
-Number(s);
-	m = Math.floor(s/60);
-	if (m >= 60) {
-		h = Math.floor(m/60);
-		pretty = pre_z(h) + ":" + pre_z(m % 60) + ":" + pre_z(s % 60);
-		} else {
-		pretty = m + ":" + pre_z(s % 60);
-	}
-//	Number(pretty);	
-	return pretty;
-}
-function pre_z(x) {
-	return (x < 10) ? "0" + x : x;
-}
-function onTimeout() {
-	pause();
-	alert("Time's up!");
-	opener=null;
-	window.close();
-}
-
-</script> 
-<script type="text/javascript">
-	var f = true;
-	window.onbeforeunload = function() {
-    	if (f) { 
-        return "*** Some webpages don't like frames very much. If you intended to close this page, please presss OK. Otherwise, press Cancel to use the timer ***";
-    } 
-}
-</script>
-<div id="topbar" style="border-top:groove;margin-top:10px;background-color:silver;border-bottom:ridge; padding-bottom:30px;padding-top:50px;"> 
-  	<div id="logo" style="float:left;font-weight:bold;margin-left:10px;margin-right:20px"><a href="#">111</a></div> 
-  
-  	<div id="buttons" style="float:right;margin-right:10px"> 
-  		<a href="#" id="pause" onclick="pause();">Pause</a> 
-  		<a href="#" onclick="addminute();">+</a> 
-  		<a href="#" onclick="subminute();">-</a> 
-  		<a href="javascript:void(s=prompt('Enter website address or search terms:','http://www.baidu.com/'));t=prompt('Number of minutes:','15');location.href=document.location.href+'/'+((s!=null)?s:'');">New Timer</a> 
-  	</div> 
-  	<div id="clock" style="float:right;font-weight:bold;margin-right:20px;"></div>
-</div>
-	<div onclick="javascript:window.open('','_parent',''); window.close();alert('11');" >12</div>
-==	 
-	 <a onclick="window.close();return false;" href="javascript:void(0)">close window</a>
-<br/><br/>
-<a onclick="window.open('#')" href="javascript:void(0)">JS : window.open('#')</a>
-<br/><br/>
-<a onclick="window.showModalDialog('#')" href="javascript:void(0)">
-    JS : window.showModalDialog('#')</a>
-<br/><br/>
-<a href="#" target="_blank">link(or Press ctrl)</a>
-<br/><br/>
-<div id="info"></div>
-<script>
-    window.onload = function() {
-        document.getElementById("info").innerHTML = "window.opener : " + window.opener;
-    }
-</script>
-	===
-
-	<script>
- 
-var browserName=navigator.appName; 
-if (browserName=="Netscape")
-{ 
-    function closeme() 
-    { 
-        window.open('','_parent',''); 
-        window.close();
-    } 
-} 
-else 
-{ 
-    if (browserName=="Microsoft Internet Explorer") 
-    { 
-        function closynoshowsme() 
-        { 
-            window.opener = "whocares"; 
-            window.close(); 
-        } 
-    } 
-} 
-</script> 
-<input type="button" value="close me 3" onclick="closeme();"/>
-	<div>
-	<ul>
-	<li><div id="zhen" style="margin-top:50px;margin-left:100px;">
-	<iframe id="tom" name="tom" width="100%" height="100%" marginheight="0" marginwidth="0" frameborder="0" vspace="0" hspace="0" scrolling="auto" src="http://www.baidu.com/" style="position:relative;left:50%;" ></iframe>
-	</div>
-	</li>
-	<li>
-<div id="kingson" style="margin-top:50px;margin-left:100px;" >king11</div>
-</li>
-</ul>
-</div>
-
-<script type="text/javascript">
-//learn innerHTML
-document.getElementById("logo").onclick =function()
-{ alert("kingson");alert(document.getElementById("clock").innerHTML);
-}
-document.getElementById("kingson").innerHTML="11<br><iframe width=500px height=500px  style=\"position:relative;left:50%;\" src=\"http://www.baidu.com\"></iframe>";
-	document.getElementById("tom").onload = function() { 
-    f = false;
-}
-</script>
-<!--
-<script type="text/javascript"> 
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script> 
-<script type="text/javascript"> 
-try {
-var pageTracker = _gat._getTracker("UA-13273402-1");
-pageTracker._setDomainName(".minutes.at");
-pageTracker._trackPageview();
-} catch(err) {}</script> 
-
--->
-
-  <div id="footer" align="middle">
-    
-	<div id="nav" width=200px height=200px style="margin-top:50px;margin-left:100px;display:inline;" onclick='javascript:document.write("<div onclick="+"history.go(-1);"+"><br>11</div>");'>11</div>
-    <script type="text/javascript">//learn navigator and document,document.body and so on
-	document.getElementById("nav").innerHTML=navigator.appName+"<br>"+navigator.appCodeName+"<br>"+navigator.appVersion;</script>
-	<div id="bgbottom" onclick="win()">11</div>
-    <script type="text/javascript">//learn window
-	function win(){window.open(prompt(),"kingson","height=400px,width=400px,top=100px,left=100px,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no");}
-	</script>
-	<a href="#">#</a>
-  </div>
-  
-
-
-<!--skin-->
-<div id="skin"><div style="background-color:#198601;height:10px;width:10px" onclick="javascript:setBackground('198601');"></div>
-<div style="background-color:#000000;height:10px;width:10px" onclick="javascript:setBackground('000000');"></div>
-<div style="background-color:#E7F4FE;height:10px;width:10px" onclick="javascript:setBackground('E7F4FE');"></div>		<div style="background-color:#f6f6f6;height:10px;width:10px" onclick="javascript:setBackground('f6f6f6');"></div>		<div style="background-color:#ebf4ef;height:10px;width:10px" onclick="javascript:setBackground('ebf4ef');"></div>		<div style="background-color:#fef4f0;height:10px;width:10px" onclick="javascript:setBackground('fef4f0');"></div>		<div style="background-color:#eae8f7;height:10px;width:10px" onclick="javascript:setBackground('eae8f7');"></div>		<div style="background-color:#f5f1e7;height:10px;width:10px" onclick="javascript:setBackground('f5f1e7');"></div>		<div style="background-color:#edf6d0;height:10px;width:10px" onclick="javascript:setBackground('edf6d0');"></div>		<div style="background-color:#f6fafe;height:10px;width:10px" onclick="javascript:setBackground('f6fafe');"></div>		<div style="background-color:#eefaff;height:10px;width:10px" onclick="javascript:setBackground('eefaff');"></div>		<div style="border:none;width:95px;"><strong>选择背景颜色：</strong></div>
-<div onclick="bgimage();">bgimage</div>
-</div>
-<script>
-function setBackground(color){document.bgColor="#"+color};
-function bgskin(){
-document.write('<link href="red.css" rel="stylesheet" type="text\/css" media="all" \/><script>window.parent.div["skin"].location.reload();<\/script>');
-};
-//<link href="http:\/\/www.kenwen.com\/css\/read.css" rel="stylesheet" type="text\/css" media="all" \/>
-function bgimage(){document.body.style.background="no-repeat url(bg.jpg) 50% 50%"; }
-</script>
-
-<!-- http://jssdk.sinaapp.com/widget/weiboshow.php -->
-<script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
-<wb:show uid="1262655355" width="850" verifier="47bdb406" fans="0"></wb:show>
-
-<!----- 老鼠 Start------->
-<div classname="sidebarMouse"><object width="190" height="150" data="mouse.swf?up_bodyColor=f0e9cc&amp;up_feetColor=D4C898&amp;up_eyeColor=000567&amp;up_wheelSpokeColor=DEDEDE&amp;up_wheelColor=FFFFFF&amp;up_waterColor=E0EFFF&amp;up_earColor=b0c4de&amp;up_wheelOuterColor=FF4D4D&amp;up_snoutColor=F7F4E9&amp;up_bgColor=F0E4E4&amp;up_foodColor=cba920&amp;up_wheelCenterColor=E4EB2F&amp;up_tailColor=E6DEBE&amp;" type="application/x-shockwave-flash" style=""><param name="movie" value="https://files.cnblogs.com/files/mq0036/mouse.swf?up_bodyColor=f0e9cc&amp;up_feetColor=D4C898&amp;up_eyeColor=000567&amp;up_wheelSpokeColor=DEDEDE&amp;up_wheelColor=FFFFFF&amp;up_waterColor=E0EFFF&amp;up_earColor=b0c4de&amp;up_wheelOuterColor=FF4D4D&amp;up_snoutColor=F7F4E9&amp;up_bgColor=F0E4E4&amp;up_foodColor=cba920&amp;up_wheelCenterColor=E4EB2E&amp;up_tailColor=E6DEBE&amp;"><param name="AllowScriptAccess" value="always"><param name="wmode" value="opaque"></object>
-<div style="text-align: center;">求喂食(点击投食)</div>
-</div>
-<!----- 老鼠 End ------->
-<!----- 围棋 Start------->
-<canvas width="160" height="160" id="myCanvas" style="border: 1px solid rgb(195, 195, 195); border-image: none;"></canvas>
-<p id="weiqi_title"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下棋</b></p>
-<script type="text/javascript">window['__document_write_ajax_callbacks__']['9']();</script><script type="text/javascript">window['__document_write_ajax_callbacks__']['2']();</script>
-
-<script type="text/javascript">
-//Written by Colin Cai(6679072@qq.com) -- 2018-01-20
-var Z=document.getElementById("weiqi_title");var a=new Array(19);
-var b=new Array(19);
-for(var i=0;i<19;i++)
-{
-    a[i]=new Array(19);b[i]=new Array(19);
-for(var j=0;j<19;j++)a[i][j]=0;
-}
-function D(c){var s="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var x="";var e=new Array(4);var i=0;c=c.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(i<c.length){for(var j=0;j<4;j++)e[j]=s.indexOf(c.charAt(i++));x+=String.fromCharCode((e[0]<<2)|(e[1]>>4));if(e[2]!=64)x+=String.fromCharCode(((e[1]&15)<<4)|(e[2]>>2));if(e[3]!=64)x+=String.fromCharCode(((e[2]&3)<<6)|e[3]);}return x;}
-var g=["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"];function X(){var s=D(g[M]);var f=new Array(3);var l=Math.floor(s.length*8/17);
-var o=new Array(l);for(var i=0;i<l;i++){var h,m;h=Math.floor(i*17/8);m=8-i*17%8;for(var j=0;j<3;j++)f[j]=s.charCodeAt(h+j);o[i]=(f[0]&((1<<m)-1))<<(17-m)|(f[1]<<(9-m))|(f[2]>>(m-1));}return o;}var F=0;var S=0;var M=Math.floor(10000*Math.random())%20;var Q;var p,q;var r=0;function u(){var n=(Q[Q.length-1]>=130321)?1:0;if(S>=Q.length*2-n)return 1;n=Q[Math.floor(S/2)];if(S%2)n=Math.floor(n/361);else n=n%361;var x=Math.floor(n/19);var y=n%19;if(a[x][y])return 1;var U=1+S%2;a[x][y]=U;var v=0;var w=0;var z,A;var T=new Array(360);var P=0;var d=[0,0,1,0,-1,0,0,1,0,-1];for(var i=0;i<5;i++){var W;var B=x+d[i*2];var E=y+d[i*2+1];W=i?3-U:U;if(B<0||B>18||E<0||E>18||a[B][E]!=W)continue;for(var k=0;k<19;k++)for(var j=0;j<19;j++)b[k][j]=a[k][j];P=1;T[0]=[B,E];b[B][E]=3;
-var C=1;while(P>0){B=T[--P][0];E=T[P][1];for(var k=1;k<5;k++){var G=B+d[k*2];var H=E+d[k*2+1];if(G<0||G>18||H<0||H>18||b[G][H]==3||b[G][H]==3-W)continue;if(!b[G][H]){P=-1;break;}T[P++]=[G,H];b[G][H]=3;C++;}}if(!P){if(!i){v=C;continue;}w+=C;z=B;A=E;for(var k=0;k<19;k++)for(var j=0;j<19;j++)if(b[k][j]==3)a[k][j]=0;}}if(v&&!w){a[x][y]=0;return 1;}if(v==1&&w==1){n=Q[Math.floor((S-1)/2)];if(S%2)n=n%361;else n=Math.floor(n/361);var B=Math.floor(n/19);var E=n%19;if(S==r+1&&B==z&&E==A&&x==p&&y==q){a[x][y]=0;a[B][E]=3-U;return 1;}}if(w==1){p=z;q=A;r=S;}S++;return 0;}function Y(){var c=document.getElementById("myCanvas").getContext("2d");c.fillStyle="#808080";c.fillRect(0,0,160,160);c.beginPath();c.strokeStyle="#000000";for(var i=0;i<19;i++){c.lineWidth=1;c.moveTo(8+i*8,8);c.lineTo(8+i*8,19*8);c.stroke();c.moveTo(8,8+i*8);c.lineTo(152,8+i*8);c.stroke();}for(var i=0;i<19;i++)for(var j=0;j<19;j++)if(a[i][j]){if(a[i][j]==1)c.fillStyle="#000000";else c.fillStyle="#FFFFFF";c.beginPath();c.arc(8+i*8,8+j*8,4,0,Math.PI*2,true);c.fill();}if(S){var n=Q[Math.floor((S-1)/2)];
-if(S%2)n=n%361;else n=Math.floor(n/361);
-var x=Math.floor(n/19);var y=n%19;c.fillStyle="#FF0000";c.fillRect(6+x*8,6+y*8,4,4);}for(var i=0;i<9;i++){var x=3+6*(i%3);var y=3+2*(i-i%3);if(!a[x][y]){c.fillStyle="#c0c0c0";c.fillRect(8+x*8,8+y*8,1,1);}}}function I(){if(++M>=20)M=0;Q=X();for(var i=0;i<19;i++)for(var j=0;j<19;j++)a[i][j]=0;S=0;r=0;var t=M+1;Z.innerHTML="<b>&nbsp;&nbsp;&nbsp;Zero vs Master (No."+t+")</b>";}function f(){if(F)return;if(u())I();Y();window.setTimeout(f,1000);}function J(ch){if(!ch){Y();return;}else if(ch==1)Y();var n=document.getElementById("myCanvas");var c=n.getContext("2d");var e=event||window.event;var x=e.PageX||e.clientX;var y=e.PageY||e.clientY;x+=document.documentElement.scrollLeft||document.body.scrollLeft;y+=document.documentElement.scrollTop||document.body.scrollTop;x-=n.offsetLeft;y-=n.offsetTop;x=Math.round(x/8-1);y=Math.round(y/8-1);var W=x>=0&&x<19&&y>=0&&y<19&&!a[x][y];if(ch==1){if(W){c.fillStyle="#FFFF00";c.beginPath();c.arc(8+x*8,8+y*8,4,0,Math.PI*2,true);c.fill();}}else{if(W){if(S%2){Q[(S-1)/2]=Q[(S-1)/2]%361+(19*x+y)*361;}else{Q[S/2]=19*x+y+130321;}u();}Y();}}function K(){var n=document.getElementById("myCanvas");var e=event||window.event;var x=e.PageX||e.clientX;var y=e.PageY||e.clientY;x+=document.documentElement.scrollLeft||document.body.scrollLeft;y+=document.documentElement.scrollTop||document.body.scrollTop;x-=n.offsetLeft;y-=n.offsetTop;x=Math.round(x/8-1);y=Math.round(y/8-1);if(x>=0&&x<19&&y>=0&&y<19)Z.innerHTML="<b>点击可以下棋，目前只支持<font color=\"red\">人人</font>对弈，<font color=\"red\">AI</font>博主正在考虑中</b>";else{var t=M+1;Z.innerHTML="<b>&nbsp;&nbsp;&nbsp;Zero vs Master (No."+t+")</b>";}}function L(){if(!F)K();if(F==3)J(1);}function O(){if(++F!=2){F=2;J(2);}}function N(){if(!F){F=1;S=0;r=0;Q=new Array();for(var i=0;i<19;i++)for(var j=0;j<19;j++)a[i][j]=0;Z.innerHTML="<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下棋</b>";J(0);return;}F=3;J(1);}function R(){var c=document.getElementById("myCanvas");c.onmousedown=N;c.onmousemove=L;c.onmouseup=O;document.onmousemove=null;document.onmouseup=null;}R();I();f();
-
-</script>
-<!----- 围棋 End  ------->
-
-
-<style type="text/css">
-
-/****************************** 回到顶部功能样式 *********************************************/
-#rocket-to-top div {
-    left: 0;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 149px;
-}
-#rocket-to-top .level-2 {
-    background: url("o_rocket_button_up.png") no-repeat scroll -149px 0 transparent;
-    display: none;
-    height: 250px;
-    opacity: 0;
-    z-index: 1;
-}
-#rocket-to-top .level-3 {
-    background: none repeat scroll 0 0 transparent;
-    cursor: pointer;
-    display: block;
-    height: 150px;
-    z-index: 2;
-}
-#rocket-to-top {
-    background: url("o_rocket_button_up.png") no-repeat scroll 0 0 transparent;
-    cursor: default;
-    display: block;
-    height: 250px;
-    margin: -125px 0 0;
-    overflow: hidden;
-    padding: 0;
-    position: fixed;
-    right: 0;
-    top: 80%;
-    width: 149px;
-    z-index: 11;
-}
-    
-</style>
-<script type="text/javascript">
-
-// jQuery火箭图标返回顶部代码
-
-$(function() {
-	var e = $("#rocket-to-top"),
-	t = $(document).scrollTop(),
-	n,
-	r,
-	i = !0;
-	$(window).scroll(function() {
-		var t = $(document).scrollTop();
-		t == 0 ? e.css("background-position") == "0px 0px" ? e.fadeOut("slow") : i && (i = !1, $(".level-2").css("opacity", 1), e.delay(100).animate({
-			marginTop: "-1000px"
-		},
-		"normal",
-		function() {
-			e.css({
-				"margin-top": "-125px",
-				display: "none"
-			}),
-			i = !0
-		})) : e.fadeIn("slow")
-	}),
-	e.hover(function() {
-		$(".level-2").stop(!0).animate({
-			opacity: 1
-		})
-	},
-	function() {
-		$(".level-2").stop(!0).animate({
-			opacity: 0
-		})
-	}),
-	$(".level-3").click(function() {
-		function t() {
-			var t = e.css("background-position");
-			if (e.css("display") == "none" || i == 0) {
-				clearInterval(n),
-				e.css("background-position", "0px 0px");
-				return
-			}
-			switch (t){
-			case "0px 0px":
-				e.css("background-position", "-298px 0px");
-				break;
-			case "-298px 0px":
-				e.css("background-position", "-447px 0px");
-				break;
-			case "-447px 0px":
-				e.css("background-position", "-596px 0px");
-				break;
-			case "-596px 0px":
-				e.css("background-position", "-745px 0px");
-				break;
-			case "-745px 0px":
-				e.css("background-position", "-298px 0px");
-			}
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+			display: grid;
+			grid-template-rows: 100px auto 100px;
 		}
-		if (!i) return;
-		n = setInterval(t, 50),
-		$("html,body").animate({scrollTop: 0},"slow");
-	});
-});
 
-</script>
-<!-- 火箭 -->
-<div style="display: none;" id="rocket-to-top">
-	<div style="opacity:0;display: block;" class="level-2"></div>
-	<div class="level-3"></div>
-</div>
+		#content {
+			display: grid;
+			grid-template-columns: 50% 50%;
+		}
 
-<!--数字雨-->
-<image width="100%" height="100%" style="display: block;background: #000000 url(digitalrain.gif) no-repeat fixed center;">
-</image>
+		.frame {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			/*grid-template-rows: 100px auto 100px;*/
+			grid-row-gap: 20px;
+			grid-column-gap: 20px;
+			/*	grid-auto-flow: column dense;*/
+		}
+	</style>
+</head>
 
-<span>hello world</span>
-<div position="absolute">
-<!--clock-->
-<embed width="100%" height="100%" src="MotionClock2.swf"/>
-</div>
+<body onload="startTimer(15,0)" OVERFLOW-X: hidden; OVERFLOW: auto;>
+	<!--div 布局 http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html -->
+	<div id="header">
+		<div id="topbar"
+			style="border-top:groove;margin-top:10px;background-color:silver;border-bottom:ridge; padding-bottom:30px;padding-top:50px;">
+			<div id="logo" style="float:left;font-weight:bold;margin-left:10px;margin-right:20px"><a href="#">111</a>
+			</div>
+
+			<div id="buttons" style="float:right;margin-right:10px">
+				<a href="#" id="pause" onclick="pause();">Pause</a>
+				<a href="#" onclick="addminute();">+</a>
+				<a href="#" onclick="subminute();">-</a>
+				<a
+					href="javascript:void(s=prompt('Enter website address or search terms:','https://yaoqs.github.io'));t=prompt('Number of minutes:','15');location.href=document.location.href+'/'+((s!=null)?s:'');">New
+					Timer</a>
+			</div>
+			<div id="clock" style="float:right;font-weight:bold;margin-right:20px;"></div>
+			<script type="text/javascript">
+				var secondsleft, m, h, pretty;
+				var inter;
+				var clocktype;
+				function pause() {
+					var p = document.getElementById("pause");
+					if (p.innerHTML == "Pause") {
+						clearInterval(inter);
+						p.innerHTML = "Continue";
+					} else {
+						inter = setInterval("update()", 1000);
+						p.innerHTML = "Pause";
+					}
+				}
+				function addminute() {
+					secondsleft += 60;
+					updatedisplay();
+				}
+				function subminute() {
+					secondsleft -= Math.min(60, secondsleft);
+					updatedisplay();
+				}
+				function startTimer(mins, type) {
+					clocktype = type; // 0 for countdown, 1 for stopwatch
+					secondsleft = mins * 60;
+					clearInterval(inter);
+					updatedisplay();
+					inter = setInterval("update()", 1000);
+				}
+				function updatedisplay() {
+					document.getElementById("clock").innerHTML = prettyTime(secondsleft);
+					document.title = prettyTime(secondsleft);
+
+				}
+				function update() {
+					if (clocktype == 0) {
+						if (secondsleft > 0) { secondsleft -= 1 } else { onTimeout() };
+					} else {
+						secondsleft += 1;
+					}
+					updatedisplay();
+				}
+				function prettyTime(s) {
+					Number(s);
+					m = Math.floor(s / 60);
+					if (m >= 60) {
+						h = Math.floor(m / 60);
+						pretty = pre_z(h) + ":" + pre_z(m % 60) + ":" + pre_z(s % 60);
+					} else {
+						pretty = m + ":" + pre_z(s % 60);
+					}
+					//	Number(pretty);	
+					return pretty;
+				}
+				function pre_z(x) {
+					return (x < 10) ? "0" + x : x;
+				}
+				function onTimeout() {
+					pause();
+					alert("Time's up!");
+					opener = null;
+					window.close();
+				}
+
+			</script>
+			<script type="text/javascript">
+				var f = true;
+				window.onbeforeunload = function () {
+					if (f) {
+						return "*** Some webpages don't like frames very much. If you intended to close this page, please presss OK. Otherwise, press Cancel to use the timer ***";
+					}
+				}
+			</script>
+		</div>
+	</div>
 
 
+	<div id="content">
+		<!-- grid on-->
+		<div class="frame">
+			<textarea id="show"></textarea>
+
+			<div onclick="javascript:window.open('','_parent',''); window.close();alert($('#show').val());">
+			</div>
+			<button id="bgbottom" onclick="win()">popwin</button>
+			<script type="text/javascript">//learn window
+				function win() { window.open(prompt("https://yaoqs.github.io", "https://yaoqs.github.io"), "https://yaoqs.github.io", "height=400px,width=400px,top=100px,left=100px,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no"); }
+			</script>
+			<a href="#">#</a>
+			<div>
+				<a onclick="window.close();return false;" href="javascript:void(0)">close window</a>
+				<br />
+				<a onclick="window.open('#')" href="javascript:void(0)">JS : window.open('#')</a>
+				<br />
+				<a onclick="window.showModalDialog('#')" href="javascript:void(0)">
+					JS : window.showModalDialog('#')</a>
+				<br />
+				<a href="#" target="_blank">link(or Press ctrl)</a>
+			</div>
 
 
+			<div id="info"></div>
+			<script>
+				window.onload = function () {
+					if (window.opener != null) {
+						document.getElementById("info").innerHTML = "window.opener : " + window.opener;
+					}
+				}
+			</script>
+
+
+			<script>
+				var browserName = navigator.appName;
+				if (browserName == "Netscape") {
+					function closeme() {
+						window.open('', '_parent', '');
+						window.close();
+					}
+				}
+				else {
+					if (browserName == "Microsoft Internet Explorer") {
+						function closynoshowsme() {
+							window.opener = "whocares";
+							window.close();
+						}
+					}
+				} 
+			</script>
+
+
+			<div>
+				<div id="nav" width=200px height=200px style="margin-top:50px;margin-left:100px;display:inline;"
+					onclick='javascript:document.write("<div onclick="+"history.go(-1);"+"><br>11</div>");'>11</div>
+				<script
+					type="text/javascript">//learn navigator and document,document.body and so on
+						document.getElementById("nav").innerHTML = navigator.appName + "<br>" + navigator.appCodeName + "<br>" + navigator.appVersion;</script>
+			</div>
+
+
+			<input type="button" value="close me 3" onclick="closeme();" />
+
+			<!--skin-->
+			<div class="frame"
+				style="grid-template-rows: 1fr 1fr;grid-auto-flow: row dense;grid-template-areas: 'a a' 'b c';">
+				<span style="border:none;width:95px;"><strong>选择背景：</strong></span>
+				<div></div>
+				<div id="skin"
+					style="display: inline-grid;grid-template-columns: repeat(auto-fill, 20px);grid-template-rows: repeat(auto-fill, 20px);">
+
+					<div style="background-color:#198601;height:10px;width:10px"
+						onclick="javascript:setBackground('198601');">
+					</div>
+					<div style="background-color:#000000;height:10px;width:10px"
+						onclick="javascript:setBackground('000000');">
+					</div>
+					<div style="background-color:#098df3;height:10px;width:10px"
+						onclick="javascript:setBackground('098df3');">
+					</div>
+					<div style="background-color:#f10a0a;height:10px;width:10px"
+						onclick="javascript:setBackground('f10a0a');">
+					</div>
+					<div style="background-color:#f10a0a;height:10px;width:10px"
+						onclick="javascript:setBackground('f10a0a');">
+					</div>
+					<div style="background-color:#f5be08;height:10px;width:10px"
+						onclick="javascript:setBackground('f5be08');">
+					</div>
+					<div style="background-color:#ce0c7d;height:10px;width:10px"
+						onclick="javascript:setBackground('ce0c7d');">
+					</div>
+					<div style="background-color:#72e712;height:10px;width:10px"
+						onclick="javascript:setBackground('72e712');">
+					</div>
+					<div style="background-color:#882df0;height:10px;width:10px"
+						onclick="javascript:setBackground('882df0');">
+					</div>
+					<div style="background-color:#e98706;height:10px;width:10px"
+						onclick="javascript:setBackground('e98706');">
+					</div>
+					<div style="background-color:#eefaff;height:10px;width:10px"
+						onclick="javascript:setBackground('eefaff');">
+					</div>
+
+				</div>
+
+				<div onclick="javascript:bgimage();">bgimage</div>
+				<script>
+					function setBackground(color) { document.bgColor = "#" + color; document.body.style.background = null; };
+					function bgskin() {
+						document.write('<link href="red.css" rel="stylesheet" type="text\/css" media="all" \/><script>window.parent.div["skin"].location.reload();<\/script>');
+					};
+					//<link href="http:\/\/www.kenwen.com\/css\/read.css" rel="stylesheet" type="text\/css" media="all" \/>
+					function bgimage() {
+						document.body.style.background = "no-repeat url(bg_02.jpg) 50% 50%";
+						//document.body.style.background ="display: block;background: #000000 url(digitalrain.gif) no-repeat fixed center;";
+					};
+				</script>
+			</div>
+
+		</div>
+
+		<div>
+			<!-- http://jssdk.sinaapp.com/widget/weiboshow.php -->
+			<script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+			<wb:show uid="1262655355" width="auto" verifier="47bdb406" fans="0"></wb:show>
+
+		</div>
+	</div>
+	<!--content end-->
+	<div id="footer" align="middle"
+		style="background-color: black;vertical-align: -webkit-baseline-middle;padding-top: 10px;;">
+		<font color="silver">
+			Copyleft © 2019 - <span id="year">2020</span> LordYao.<br>
+			Powered by <a href="https://yaoqs.github.io">LordYao.</a>
+			<script>
+				var year = new Date(Date.now()).getFullYear();
+				document.getElementById("year").innerText = year;
+			</script>
+		</font>
+	</div>
+
+	<!--huojian-->
+	<style type="text/css">
+		/****************************** 回到顶部功能样式 *********************************************/
+		#rocket-to-top div {
+			left: 0;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			width: 149px;
+		}
+
+		#rocket-to-top .level-2 {
+			background: url("o_rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+			display: none;
+			height: 250px;
+			opacity: 0;
+			z-index: 1;
+		}
+
+		#rocket-to-top .level-3 {
+			background: none repeat scroll 0 0 transparent;
+			cursor: pointer;
+			display: block;
+			height: 150px;
+			z-index: 2;
+		}
+
+		#rocket-to-top {
+			background: url("o_rocket_button_up.png") no-repeat scroll 0 0 transparent;
+			cursor: default;
+			display: block;
+			height: 250px;
+			margin: -125px 0 0;
+			overflow: hidden;
+			padding: 0;
+			position: fixed;
+			right: 0;
+			top: 80%;
+			width: 149px;
+			z-index: 11;
+		}
+	</style>
+	<script type="text/javascript">
+
+		// jQuery火箭图标返回顶部代码
+
+		$(function () {
+			var e = $("#rocket-to-top"),
+				t = $(document).scrollTop(),
+				n,
+				r,
+				i = !0;
+			$(window).scroll(function () {
+				var t = $(document).scrollTop();
+				t == 0 ? e.css("background-position") == "0px 0px" ? e.fadeOut("slow") : i && (i = !1, $(".level-2").css("opacity", 1), e.delay(100).animate({
+					marginTop: "-1000px"
+				},
+					"normal",
+					function () {
+						e.css({
+							"margin-top": "-125px",
+							display: "none"
+						}),
+							i = !0
+					})) : e.fadeIn("slow")
+			}),
+				e.hover(function () {
+					$(".level-2").stop(!0).animate({
+						opacity: 1
+					})
+				},
+					function () {
+						$(".level-2").stop(!0).animate({
+							opacity: 0
+						})
+					}),
+				$(".level-3").click(function () {
+					function t() {
+						var t = e.css("background-position");
+						if (e.css("display") == "none" || i == 0) {
+							clearInterval(n),
+								e.css("background-position", "0px 0px");
+							return
+						}
+						switch (t) {
+							case "0px 0px":
+								e.css("background-position", "-298px 0px");
+								break;
+							case "-298px 0px":
+								e.css("background-position", "-447px 0px");
+								break;
+							case "-447px 0px":
+								e.css("background-position", "-596px 0px");
+								break;
+							case "-596px 0px":
+								e.css("background-position", "-745px 0px");
+								break;
+							case "-745px 0px":
+								e.css("background-position", "-298px 0px");
+						}
+					}
+					if (!i) return;
+					n = setInterval(t, 50),
+						$("html,body").animate({ scrollTop: 0 }, "slow");
+				});
+		});
+
+	</script>
+	<!-- 火箭 -->
+	<div style="display: none;" id="rocket-to-top">
+		<div style="opacity:0;display: block;" class="level-2"></div>
+		<div class="level-3"></div>
+	</div>
+
+	<!--右下角人物 -->
+	<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+	<!--小帅哥： https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json-->
+	<!--萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json-->
+	<!--小可爱（女）：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json-->
+	<!--小可爱（男）：https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json-->
+	<!--初音：https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json-->
+	<!-- 上边的不同链接显示的是不同的小人，这个可以根据需要来选择 下边的初始化部分，可以修改宽高来修改小人的大小，或者是鼠标移动到小人上的透明度，也可以修改小人在页面出现的位置。 -->
+	<script>    /*https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json*/
+		L2Dwidget.init({
+			"model": { jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json", "scale": 1 },
+			"display": { "position": "left", "width": 66, "height": 88, "hOffset": 10, "vOffset": 20 },
+			"mobile": { "show": true, "scale": 0.5 },
+			"react": { "opacityDefault": 0.8, "opacityOnHover": 0.1 }
+		});  
+	</script>
 </body>
+
 </html>

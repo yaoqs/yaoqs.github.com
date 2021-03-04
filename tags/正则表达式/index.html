@@ -2,121 +2,181 @@
 
 
 <html lang="en">
-  <!---->
-    <head>
-        
-		
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="A scholar magazine/journal like blog">
-        <link rel="shortcut icon" href="/images/githubavatar.png"/>
-        <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
-        <title>Tag: 正则表达式 | Scholar</title>
-        <meta name="description" content="{{meta_description}}">
+<!---->
 
-        <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/styles/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="/styles/future.css">
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
+<head>
+
+  
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="A scholar magazine/journal like blog">
+    <link rel="shortcut icon" href="/images/githubavatar.png" />
+    <link rel="alternate" type="application/rss+xml" title="LordYao" href="/atom.xml">
+    <title>
+      
+        Tag: 正则表达式 | 
+            LordYao
+    </title>
+    <meta name="description" content="{{meta_description}}">
+<!--引用cdn服务的时候，，怎么做到cdn加载不到之后用本地的
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="jquery/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script>!window.jQuery.ui && document.write(unescape('%3Cscript src="jquery/jquery-ui-1.8.21.custom.min.js"%3E%3C/script%3E'))</script>
+-->
+    <link href="https://cdn.staticfile.org/font-awesome/5.15.2/css/fontawesome.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f2ad64ea31.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="/styles/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="/styles/future.css">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
-        <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
-        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        
-    </head>
-    <header id="header">
-        <div id="fork_me_on_github"></div>
-        <script text="script/javascript">
-          //以下函数返回 min（包含）～ max（包含）之间的数字：
-          function getRndInteger(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) ) + min;
-          }
-          var id=getRndInteger(0,5);
-          var color='red_aa0000'
-          switch(id)
-          {
-            default:
-            color='red_aa0000';
-            break;
-            case 1:
-            color='darkblue_121621'
-            break;
-            case 2:
-            color='orange_ff7600'
-            break;
-            case 3:
-            color='gray_6d6d6d'
-            break;
-            case 4:
-            color='white_ffffff'
-          }
-          var code='<a href="https://github.com/https://yaoqs.github.io/" target="_blank" rel="noopener"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></script>-->
+    <!--<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<header id="header">
+  <div id="fork_me_on_github"></div>
+  <script text="script/javascript">
+    //以下函数返回 min（包含）～ max（包含）之间的数字：
+    function getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var id = getRndInteger(0, 5);
+    var color = 'red_aa0000'
+    switch (id) {
+      default:
+        color = 'red_aa0000';
+        break;
+      case 1:
+        color = 'darkblue_121621'
+        break;
+      case 2:
+        color = 'orange_ff7600'
+        break;
+      case 3:
+        color = 'gray_6d6d6d'
+        break;
+      case 4:
+        color = 'white_ffffff'
+    }
+    var code = '<a href="https://yaoqs.github.io/"><img width="123" height="123" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_'
+    //https://github.blog/wp-content
+    //https://tholman.com/github-corners/
+    var code2 = '.png?resize=' + '123' + '%2C' + '123' + '" class="attachment-full size-full" alt="" data-recalc-dims="1" onerror="document.getElementById("fork_me_on_github").innerHTML ="<a href="https://yaoqs.github.io/" class="github-corner" aria-label="View source on GitHub"><svg width="123" height="123" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>";"/></a>'
+    document.getElementById("fork_me_on_github").innerHTML = code + color + code2;
+    //this.style.display=\'none\';document.getElementById(\'avatar img\').style.marginTop=\'4em\'
+
+  </script>
+
+  <script type="text/javascript">
+
+    function asyncLoad() {
+      //async load github
+      var i = document.createElement("iframe");
+      i.src = "https://ghbtns.com/github-btn.html?user=yaoqs&type=follow&count=true";
+      i.scrolling = "no";
+      i.frameborder = "0";
+      i.border = "0";
+      i.setAttribute("frameborder", "0", 0);
+      i.width = "100px";
+      i.height = "20px";
+      document.getElementById("github-iframe").appendChild(i);
+    }
+    function loadGitHubBtn() {
+      if (window.addEventListener) { window.addEventListener("load", asyncLoad, false); }
+      else if (window.attachEvent) { window.attachEvent("onload", asyncLoad); }
+      else { window.onload = asyncLoad; }
+    }
+
+    loadGitHubBtn();
+  </script>
+
+  
+    <a id="avatar" href="/"><img id="avatar img" src="/images/avatar_sx_lite.png" alt="LordYao" /></a>
+    
+      <h1><a id="author" href="/">
+          LordYao
+        </a></h1>
+      <div id="github-iframe"></div>
+              <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+        <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
           
-          var code2='.png?resize='+'123'+'%2C'+'123'+'" class="attachment-full size-full" alt="" data-recalc-dims="1"></a>'
-          document.getElementById("fork_me_on_github").innerHTML=code+color+code2;
-      
-        </script>
-        
-        
-        <a id="avatar" href="/"><img src="/images/avatar_sx_lite.png" alt="Scholar" /></a>
-        
-        <h1><a id="author" href="/">LordYao</a></h1>        
-                  <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
-            <wb:follow-button uid="1262655355" type="red_1" width="63" height="24" ></wb:follow-button>
-                
-      <div id="follow-icons">
-        <a href="http://weibo.com/lordyao" target="_blank" rel="noopener"><i class="fa fa-weibo fa-2x"></i></a>
+            <div id="follow-icons">
+<!--
+  http://www.fontawesome.com.cn/faicons/#web-application
+-->  
+        <a target="_blank" rel="noopener" href="http://weibo.com/lordyao"><i class="fa fa-weibo fa-2x"></i></a>
                   <a href="https://yaoqs.github.io/"><i class="fa fa-github-square fa-2x"></i></a>
-          <a href="http://twitter.com/Lord_Honor_Yao" target="_blank" rel="noopener"><i class="fa fa-twitter-square fa-2x"></i></a>
-          <a href="https://blog.csdn.net/yaokingson" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
-        <a href="https://www.douban.com/people/2307961/" target="_blank" rel="noopener"><i class="fa fa-common-square fa-2x"></i></a>
-            <a id="rss" href="/atom.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+          <a target="_blank" rel="noopener" href="http://twitter.com/Lord_Honor_Yao"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a target="_blank" rel="noopener" href="https://blog.csdn.net/yaokingson"><i class="fa fa-share fa-2x"></i></a>
+        <a target="_blank" rel="noopener" href="https://www.douban.com/people/2307961/"><i class="fa fa-imdb fa-2x"></i></a>
+      
+
+
+      <a id="rss" href="/atom.xml"><i class="fa fa-rss fa-2x"></i></a>
   </div>
 
-        <span id="donate">Slogan: 解放思想，发展生产力</span>
-        <h6><a href="/about.html">About</a>
-                    &middot;
-          <a href="/resume.html">Resume</a>
-                              &middot;
-          <a href="/Lab.html">Lab</a>
-                  </h6>
-        <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span>
-        
-        <footer>
-          <section id="footer-message">&copy;  
-          2019 - 
-                    2020          
-          LordYao.<br/>
-                    
-          BY-NC-SA .
-           
-           All rights reserved. <br/>
-          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a href="https://github.com/yaoqs/hexo-theme-scholar-future" target="_blank">scholar-future</a> theme by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</section>
-        </footer>
-        <div id="Statistics">
+              <span id="donate">Slogan: 解放思想，发展生产力</span>
+              <h6><a href="/about.html">About</a>
+                                  &middot;
+                  <a href="/resume.html">Resume</a>
+                                                            &middot;
+                      <a href="/Lab.html">Lab</a>
+                                    </h6>
+              <span id="donate"><a href="/about.html#Donate" title="大吉大利 今晚吃鸡">Donate
+                  & Reward </a></span>
+
+              <footer>
+                <section id="footer-message">&copy;                     2019 -
+                                              <span id="year">2020</span>
+                        LordYao.<br />
+                          
+                              BY-NC-SA .
+                                
+                                  All rights reserved. <br />
+                                  Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. <a
+                                    href="https://github.com/yaoqs/hexo-theme-scholar-future" target="_blank">
+                                    scholar-future
+                                  </a> theme by <a href="https://yaoqs.github.io" target="_blank">
+                                    LordYao
+                                  </a>.</section>
+                <script>
+                  var year = new Date(Date.now()).getFullYear();
+                  document.getElementById("year").innerText = year;
+                </script>
+              </footer>
+              <div id="Statistics">
     
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278269244'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278269244%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://tajs.qq.com/stats?sId=66496804" charset="UTF-8"></script>
     <script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "https://hm.baidu.com/hm.js?2023f967cb85513ede1b6a3d58177776";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>
-    <a href="https://info.flagcounter.com/tQfY" target="_blank" rel="noopener"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
-    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="http://s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
-    <script type="text/javascript" src="http://js.users.51.la/20526175.js"></script>
+    <a target="_blank" rel="noopener" href="https://info.flagcounter.com/tQfY"><img src="https://s11.flagcounter.com/mini/tQfY/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+    <script>(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)})(window,document,"script","_qha",332983,false);</script>
+    <script type="text/javascript" src="https://js.users.51.la/20526175.js"></script>
 
 </div>
 
-      </header>
-   <!---->   
-      <div id="journal-name">FUTURE <br>Natural Philosophy & Infomation Sciences</div>
-              
-      
+</header>
+<!---->
+<div id="journal-name">
+  FUTURE & CIVILIZATION <br>
+    Natural/Social Philosophy & Infomation Sciences
+</div>
+
+  
 	<h1 class="post-title">正则表达式</h1> 
 
 
@@ -133,9 +193,9 @@
     <span class="taglist"> 
     
     
-      <a href='/tags/draft/'>Draft</a> 
-    
       <a href='/tags/reprint/'>Reprint</a> 
+    
+      <a href='/tags/draft/'>Draft</a> 
     
       <a href='/tags/正则表达式/'>正则表达式</a> 
     
@@ -202,10 +262,9 @@
   
 </nav>
 <div>Tag Cloud:</div>
-<a href="/tags/BitTorrent/" style="font-size: 10px;">BitTorrent</a> <a href="/tags/Dota/" style="font-size: 10px;">Dota</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Raspberry/" style="font-size: 10px;">Raspberry</a> <a href="/tags/Reprint/" style="font-size: 18.33px;">Reprint</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Virtual-PC/" style="font-size: 11.67px;">Virtual PC</a> <a href="/tags/c-c/" style="font-size: 15px;">c/c++</a> <a href="/tags/code/" style="font-size: 10px;">code</a> <a href="/tags/code-snippets/" style="font-size: 15px;">code snippets</a> <a href="/tags/draft/" style="font-size: 20px;">draft</a> <a href="/tags/github/" style="font-size: 11.67px;">github</a> <a href="/tags/helloworld/" style="font-size: 11.67px;">helloworld</a> <a href="/tags/hexo/" style="font-size: 11.67px;">hexo</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/jass/" style="font-size: 10px;">jass</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/matlab/" style="font-size: 10px;">matlab</a> <a href="/tags/music-player/" style="font-size: 10px;">music player</a> <a href="/tags/reprint/" style="font-size: 16.67px;">reprint</a> <a href="/tags/scholar/" style="font-size: 10px;">scholar</a> <a href="/tags/windows-hook/" style="font-size: 10px;">windows hook</a> <a href="/tags/%E4%B8%AD%E5%AD%A6/" style="font-size: 10px;">中学</a> <a href="/tags/%E4%B9%A6%E7%B1%8D/" style="font-size: 10px;">书籍</a> <a href="/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/" style="font-size: 10px;">傅里叶变换</a> <a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 10px;">小说</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BA%95%E5%B1%82/" style="font-size: 10px;">操作系统底层</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">数学</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/" style="font-size: 13.33px;">数据恢复</a> <a href="/tags/%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2/" style="font-size: 10px;">文献检索</a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 10px;">正则表达式</a> <a href="/tags/%E6%B1%87%E7%BC%96wasm/" style="font-size: 10px;">汇编wasm</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E6%8A%80%E5%B7%A7/" style="font-size: 13.33px;">生活小技巧</a> <a href="/tags/%E7%94%B5%E6%B1%A0/" style="font-size: 10px;">电池</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">网络</a> <a href="/tags/%E8%87%AA%E5%BE%8B/" style="font-size: 10px;">自律</a> <a href="/tags/%E8%8B%B1%E6%96%87%E6%AD%8C/" style="font-size: 10px;">英文歌</a> <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 10px;">英语</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 11.67px;">虚拟机</a> <a href="/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/" style="font-size: 10px;">语音识别</a> <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E6%91%98%E5%BD%95/" style="font-size: 10px;">读书笔记摘录</a> <a href="/tags/%E9%87%8F%E5%AD%90/" style="font-size: 10px;">量子</a> <a href="/tags/%E9%92%A2%E7%90%B4%E6%9B%B2/" style="font-size: 10px;">钢琴曲</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 13.33px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/" style="font-size: 10px;">音乐播放器</a> 
+<a href="/tags/Raspberry/" style="font-size: 10px;">Raspberry</a> <a href="/tags/Reprint/" style="font-size: 18px;">Reprint</a> <a href="/tags/c-c/" style="font-size: 16px;">c/c++</a> <a href="/tags/code-snippets/" style="font-size: 16px;">code snippets</a> <a href="/tags/draft/" style="font-size: 20px;">draft</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/helloworld/" style="font-size: 10px;">helloworld</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/matlab/" style="font-size: 10px;">matlab</a> <a href="/tags/reprint/" style="font-size: 14px;">reprint</a> <a href="/tags/scholar/" style="font-size: 10px;">scholar</a> <a href="/tags/windows-hook/" style="font-size: 10px;">windows hook</a> <a href="/tags/%E4%B8%AD%E5%AD%A6/" style="font-size: 10px;">中学</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">数学</a> <a href="/tags/%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2/" style="font-size: 10px;">文献检索</a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 10px;">正则表达式</a> <a href="/tags/%E6%B1%87%E7%BC%96wasm/" style="font-size: 10px;">汇编wasm</a> <a href="/tags/%E7%94%B5%E6%B1%A0/" style="font-size: 10px;">电池</a>
     
 
-<!--</div>-->
+        <!--</div>-->
+      </body>
 </html>
-
-

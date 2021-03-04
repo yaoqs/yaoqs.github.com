@@ -1,20 +1,30 @@
 <!doctype html>
 <html>
-<head>nihao
-        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-<title>test webpage</title>
-sssssssssss
-<div id="ttest"></div>
-<content></content>
-<script language="javascript">
 
-var url = "https://yaoqs.github.io/42/";	//https://www.dogedoge.com/
-var htmlobj= $.ajax({url:url,async:false});
-var dataString = htmlobj.responseText;
-//document.write(dataString );
-document.getElementById("ttest").innerHTML=dataString;
-</script>
+<head>
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+</head>
+
+<body>
+        <title>https://yaoqs.github.io/42/</title>
+        https://yaoqs.github.io/42/<br>
+        <div id="ttest"></div>
+
+        <script language="javascript">
+
+                var url = "https://yaoqs.github.io/42/";
+                var htmlobj = $.ajax({ url: url, async: false });
+                var dataString = htmlobj.responseText;
+
+                $("#ttest").get(0).innerHTML = dataString;
+
+        </script>
+
+
+        <!---->
+        <div id="test"></div>
+        
 </body>
+
 </html>

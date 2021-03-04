@@ -1,8 +1,66 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head></head>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style type="text/css">
+        body {
+            display: grid;;
+            grid-template-columns: [c1] 1fr [c2] 4fr;
+            
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+
+    
+</head>
+
+
 <body>
 
+    <div id="header"></div>
+   
+    <div>
+        <ul>软件著作权
+            <li>船载无线数据传输与融合显示软件 软件著作权 2021SR0256847</li>
+            <li>船载式水下目标定位跟踪系统显控处理软件 软件著作权 2021SR0175434</li>
+            <li>大范围水声跟踪测量系统状态显控软件 软件著作权 2018SR124669</li>
+            <li>船载电罗经航迹航向显示软件 软件著作权 2018SR125516</li>
+        </ul>
+        <ul> 论文
+            <li>一种长基线阵阵元标定及位置校准方法 《鱼雷靶场》 2017，3</li>
+            <li>基于OpenGL的水下弹道处理图形控制软件的设计 《鱼雷靶场》 2017，4</li>
+            <li>基于同步式合作信标的水声跟踪测量系统弹道处理显控软件设计 场50周年庆征文</li>
+            <li>[1]张庆国,黄其培,要庆生,连莉.深远海水下多目标定位跟踪技术研究[J].电子测量技术,2019,42(22):67-72.</li>
+            <li>[2]张庆国,匡彪,要庆生,连莉.船载水声定位系统自动校准技术研究[J].声学技术,2018,37(06):535-539.</li>
+            <li>[3]匡彪,王琨,袁春姗,要庆生.平面阵分裂波束DOA估计技术研究[J].声学与电子工程,2018(04):28-31.</li>
+            <li>[4]张庆国,要庆生,黄其培,连莉.座底式长基线水声跟踪系统校阵方法研究[J].声学技术,2016,35(05):408-413.</li>
+            <li>[5]要庆生.四阶累积量谱线增强方法的改进仿真研究[J].电子设计工程,2014,22(18):52-54.</li>
+            <li>[6]何会会,李钢虎,要庆生,贺晓凯,石超雄.用慢特征分析算法实现水声信号盲分离[J].声学技术,2014,33(03):270-274.</li>
+            <li>[7]要庆生,李钢虎,曾渊,赵亚楠,何会会. 最小方差无失真响应基础上的语音信号处理方法研究[A].
+                中国声学会超声电子学分会、四川省声学学会、上海市声学学会、山东声学学会、陕西省声学学会、重庆市声学学会、西安市声学会、中国力学学会电子电磁器件力学工作组.2012'中国西部声学学术交流会论文集(Ⅱ)[C].中国声学会超声电子学分会、四川省声学学会、上海市声学学会、山东声学学会、陕西省声学学会、重庆市声学学会、西安市声学会、中国力学学会电子电磁器件力学工作组:《声学技术》编辑部,2012:4.
+            </li>
+        </ul>
+    </div>
+    <script language="javascript">
 
+        var url = "https://yaoqs.github.io/";
+        var htmlobj = $.ajax({ url: url, async: false });
+        var dataString = htmlobj.responseText;
+        var header = $(dataString)[41].innerHTML;
+
+        $("#header").html(header);
+        //$("#header").html(dataString) ;
+        //$("#header").get(0).innerHTML = dataString;
+        //$($(dataString)("#header")).appendTo("#header");
+
+    </script>
 </body>
+
 </html>
