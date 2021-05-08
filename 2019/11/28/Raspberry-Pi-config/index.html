@@ -234,7 +234,7 @@
                   
               
               
-                Raspberry
+                GitHub Page
                 
                 
                 
@@ -258,12 +258,20 @@
     <div id="rasp"></div>
 <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 <script>
-var url = "https://yaoqs.github.io/Raspberry-Pi-config/";    
-var htmlobj= $.ajax({url:url,async:false});
-var dataString = htmlobj.responseText;
-//document.write(dataString );
-$("#rasp").get(0).innerHTML=dataString ;
-</script>
+    var url = "https://yaoqs.github.io/Raspberry-Pi-config/";    
+    $.ajax({url:url,
+    async:false,
+    sucess:function(data){
+        $("#rasp").get(0).innerHTML=data ;
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+     /*错误信息处理*/
+    }
+});
+
+
+<p></script></p>
+
     
     <section id="References">
       <span id="References">References</span>

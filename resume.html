@@ -10,28 +10,30 @@
 
     <style type="text/css">
         body {
-            display: grid;;
+            display: grid;
+            ;
             grid-template-columns: [c1] 1fr [c2] 4fr;
-            
+
         }
     </style>
     <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
-    
+
 </head>
 
 
 <body>
 
     <div id="header"></div>
-   
+
     <div>
         <ul>软件著作权
-            <li>船载无线数据传输与融合显示软件.软件著作权.2021SR0256847.</li>
-            <li>船载式水下目标定位跟踪系统显控处理软件.软件著作权.2021SR0175434.</li>
-            <li>大范围水声跟踪测量系统状态显控软件.软件著作权.2018SR124669.</li>
-            <li>船载电罗经航迹航向显示软件.软件著作权.2018SR125516.</li>
+            <li>船载无线数据传输与融合显示软件.软件著作权.流水号：2020R11L2297901.登记号：2021SR0256847.</li>
+            <li>船载式水下目标定位跟踪系统显控处理软件.软件著作权.流水号：2020R11L2297774.登记号：2021SR0175434.</li>
+            <li>大范围水声跟踪测量系统状态显控软件.软件著作权.流水号：2017R11L1127526.登记号：2018SR124669.</li>
+            <li>船载电罗经航迹航向显示软件.软件著作权.流水号：2017R11L1127484.登记号：2018SR125516.</li>
+            <li>大范围水声跟踪测量系统弹道处理显控软件.流水号：2016R11L016562.登记号：2016SR090272.</li>
         </ul>
         <ul> 论文
             <li>一种长基线阵阵元标定及位置校准方法.《鱼雷靶场》.2017，3.</li>
@@ -51,16 +53,21 @@
     <script language="javascript">
 
         var url = "https://yaoqs.github.io/";
-        var htmlobj = $.ajax({ url: url, async: false });
-        var dataString = htmlobj.responseText;
-        var jq=$(dataString);
-        var header1 = jq.filter("#header").html();
+        $.ajax({
+            url: url, async: false,
+            success: function (data) {
+                var jq = $(data);
+                var header1 = jq.filter("#header").html();
 
-        $("#header").html(header1);
-        //$("#header").html(dataString) ;
-        //$("#header").get(0).innerHTML = dataString;
-        //$($(dataString)("#header")).appendTo("#header");
-
+                $("#header").html(header1);
+                //$("#header").html(dataString) ;
+                //$("#header").get(0).innerHTML = dataString;
+                //$($(dataString)("#header")).appendTo("#header");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                /*错误信息处理*/
+            }
+        });
     </script>
 </body>
 

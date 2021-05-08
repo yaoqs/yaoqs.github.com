@@ -1,0 +1,52 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>怎样用HTML5的FileReader生成Data Url</title>
+<meta name="keywords" content="Data Url,HTML5,FileReader"/>
+<meta name="description" content="怎样用HTML5的FileReader生成Data Url"/>
+<script type="text/javascript">
+
+function buildDataUrl() {
+    var input=document.querySelector('.file');
+    var file = input.files[0];
+    if(window.FileReader) {
+        var fr = new FileReader();
+        fr.readAsDataURL(file);
+        fr.onloadend = function(e) {
+            document.getElementById("txtBase64").value = fr.result;
+            document.getElementById("imgView").src = e.target.result;
+        };
+        //document.getElementById("txtBase64").value = fr.result;
+    }
+}
+
+function getBase64(url){
+        //通过构造函数来创建的 img 实例，在赋予 src 值后就会立刻下载图片，相比 createElement() 创建 <img> 省去了 append()，也就避免了文档冗余和污染
+        var Img = new Image(),
+            dataURL='';
+        Img.setAttribute('crossOrigin', 'anonymous');
+        Img.src=url;
+        Img.onload=function(){ //要先确保图片完整获取到，这是个异步事件
+            var canvas = document.createElement("canvas"), //创建canvas元素
+                width=Img.width, //确保canvas的尺寸和图片一样
+                height=Img.height;
+            canvas.width=width;
+            canvas.height=height;
+            canvas.getContext("2d").drawImage(Img,0,0,width,height); //将图片绘制到canvas中
+            dataURL=canvas.toDataURL('image/jpeg'); //转换图片为dataURL
+            document.getElementById("txtBase64").value = dataURL;
+        };
+    }
+
+    //getBase64('https://pic1.zhimg.com/80/v2-3f48ffbd7b6e9b7735f76119ee9e17b1_720w.jpg?source=1940ef5c');
+</script>
+</head>
+
+<body>
+<p>怎样用HTML5的FileReader生成Data Url</p>
+<input type="file" class='file' value="" onchange="buildDataUrl()" style="border:1px solid #808080; width:300px;" /><br />
+<textarea id="txtBase64" cols="50" rows="20"></textarea>
+<img id="imgView" src="" style="width:300px;" />
+</body>
+</html>
