@@ -38,7 +38,7 @@
     };
 
     htmlspecialchars = function(str) {
-      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      return str.replace(/&/g, '&amp;').replace(//g, '&gt;').replace(/"/g, '&quot;');
     };
 
     trim = function(str, ch) {
@@ -48,135 +48,17 @@
       }
       if (ch != null) {
         search = '';
-        for (i = j = 0, ref = ch.length - 1; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
-          c = ch[i];
-          c = preg_quote(c);
-          search += c;
-        }
-        search = '[' + search + ']*';
-        return str.replace(new RegExp('^' + search), '').replace(new RegExp(search + '$'), '');
-      } else {
-        return str.replace(/^\s*/, '').replace(/\s*$/, '');
-      }
-    };
-
-    array_keys = function(arr) {
-      var _, j, k, len, result;
-      result = [];
-      if (arr instanceof Array) {
-        for (k = j = 0, len = arr.length; j < len; k = ++j) {
-          _ = arr[k];
-          result.push(k);
-        }
-      } else {
-        for (k in arr) {
-          result.push(k);
-        }
-      }
-      return result;
-    };
-
-    array_values = function(arr) {
-      var _, j, len, result, v;
-      result = [];
-      if (arr instanceof Array) {
-        for (j = 0, len = arr.length; j < len; j++) {
-          v = arr[j];
-          result.push(v);
-        }
-      } else {
-        for (_ in arr) {
-          v = arr[_];
-          result.push(v);
-        }
-      }
-      return result;
-    };
-
-    function Parser() {
-      this.commonWhiteList = 'kbd|b|i|strong|em|sup|sub|br|code|del|a|hr|small';
-      this.blockHtmlTags = 'p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|address|form|fieldset|iframe|hr|legend|article|section|nav|aside|hgroup|header|footer|figcaption|svg|script|noscript';
-      this.specialWhiteList = {
-        table: 'table|tbody|thead|tfoot|tr|td|th'
-      };
-      this.hooks = {};
-      this.html = false;
-      this.line = false;
-      this.blockParsers = [['code', 10], ['shtml', 20], ['pre', 30], ['ahtml', 40], ['shr', 50], ['list', 60], ['math', 70], ['html', 80], ['footnote', 90], ['definition', 100], ['quote', 110], ['table', 120], ['sh', 130], ['mh', 140], ['dhr', 150], ['default', 9999]];
-      this.parsers = {};
-    }
-
-    Parser.prototype.makeHtml = function(text) {
-      var html, j, len, name, parser, ref;
-      this.footnotes = [];
-      this.definitions = {};
-      this.holders = {};
-      this.uniqid = (Math.ceil(Math.random() * 10000000)) + (Math.ceil(Math.random() * 10000000));
-      this.id = 0;
-      this.blockParsers.sort(function(a, b) {
-        if (a[1] < b[1]) {
-          return -1;
-        } else {
-          return 1;
-        }
-      });
-      ref = this.blockParsers;
-      for (j = 0, len = ref.length; j < len; j++) {
-        parser = ref[j];
-        name = parser[0];
-        if (parser[2] !== void 0) {
-          this.parsers[name] = parser[2];
-        } else {
-          this.parsers[name] = this['parseBlock' + (ucfirst(name))].bind(this);
-        }
-      }
-      text = this.initText(text);
-      html = this.parse(text);
-      html = this.makeFootnotes(html);
-      html = this.optimizeLines(html);
-      return this.call('makeHtml', html);
-    };
-
-    Parser.prototype.enableHtml = function(html1) {
-      this.html = html1 != null ? html1 : true;
-    };
-
-    Parser.prototype.enableLine = function(line1) {
-      this.line = line1 != null ? line1 : true;
-    };
-
-    Parser.prototype.hook = function(type, cb) {
-      if (this.hooks[type] == null) {
-        this.hooks[type] = [];
-      }
-      return this.hooks[type].push(cb);
-    };
-
-    Parser.prototype.makeHolder = function(str) {
-      var key;
-      key = "|\r" + this.uniqid + this.id + "\r|";
-      this.id += 1;
-      this.holders[key] = str;
-      return key;
-    };
-
-    Parser.prototype.initText = function(text) {
-      return text.replace(/\t/g, '    ').replace(/\r/g, '').replace(/(\u000A|\u000D|\u2028|\u2029)/g, "\n");
-    };
-
-    Parser.prototype.makeFootnotes = function(html) {
-      var index, val;
-      if (this.footnotes.length > 0) {
+        for (i = j = 0, ref = ch.length - 1; 0 <= ref ? j <="ref" :>= ref; i = 0 <= ref ? ++j : --j) { c="ch[i];" search +="c;" } ']*'; return str.replace(new regexp('^' search), '').replace(new regexp(search '$'), ''); else str.replace( ^\s* , '').replace( \s*$ }; array_keys="function(arr)" var _, j, k, len, result; result="[];" if (arr instanceof array) for (k="j" = 0, len="arr.length;" j < len; k="++j)" _="arr[k];" result.push(k); in arr) array_values="function(arr)" result, v; (j="0," j++) v="arr[j];" result.push(v); (_ function parser() this.commonwhitelist="kbd|b|i|strong|em|sup|sub|br|code|del|a|hr|small" ; this.blockhtmltags="p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|address|form|fieldset|iframe|hr|legend|article|section|nav|aside|hgroup|header|footer|figcaption|svg|script|noscript" this.specialwhitelist="{" table: 'table|tbody|thead|tfoot|tr|td|th' this.hooks="{};" this.html="false;" this.line="false;" this.blockparsers="[['code'," 10], ['shtml', 20], ['pre', 30], ['ahtml', 40], ['shr', 50], ['list', 60], ['math', 70], ['html', 80], ['footnote', 90], ['definition', 100], ['quote', 110], ['table', 120], ['sh', 130], ['mh', 140], ['dhr', 150], ['default', 9999]]; this.parsers="{};" parser.prototype.makehtml="function(text)" html, name, parser, ref; this.footnotes="[];" this.definitions="{};" this.holders="{};" this.uniqid="(Math.ceil(Math.random()" * 10000000)) (math.ceil(math.random() 10000000)); this.id="0;" this.blockparsers.sort(function(a, b) (a[1] b[1]) -1; 1; }); parser="ref[j];" name="parser[0];" (parser[2] !="=" void 0) this.parsers[name]="parser[2];" (ucfirst(name))].bind(this); text="this.initText(text);" html="this.parse(text);" this.call('makehtml', html); parser.prototype.enablehtml="function(html1)" html1 true; parser.prototype.enableline="function(line1)" line1 parser.prototype.hook="function(type," cb) (this.hooks[type]="=" null) this.hooks[type]="[];" this.hooks[type].push(cb); parser.prototype.makeholder="function(str)" key; key="|\r" "\r|"; this.holders[key]="str;" parser.prototype.inittext="function(text)" text.replace( \t g, ' ').replace( \r (\u000a|\u000d|\u2028|\u2029) "\n"); parser.prototype.makefootnotes="function(html)" index, val; (this.footnotes.length> 0) {
         html += '<div class="footnotes"><hr><ol>';
         index = 1;
         while (val = this.footnotes.shift()) {
           if (typeof val === 'string') {
-            val += " <a href=\"#fnref-" + index + "\" class=\"footnote-backref\">&#8617;</a>";
+            val += " <a href="\"#fnref-"" + index "\" class="\"footnote-backref\"">&#8617;</a>";
           } else {
-            val[val.length - 1] += " <a href=\"#fnref-" + index + "\" class=\"footnote-backref\">&#8617;</a>";
+            val[val.length - 1] += " <a href="\"#fnref-"" + index "\" class="\"footnote-backref\"">&#8617;</a>";
             val = val.length > 1 ? this.parse(val.join("\n")) : this.parseInline(val[0]);
           }
-          html += "<li id=\"fn-" + index + "\">" + val + "</li>";
+          html += "<li id="\"fn-"" + index "\">" + val + "</li>";
           index += 1;
         }
         html += '</ol></div>';
@@ -213,27 +95,7 @@
 
     Parser.prototype.call = function() {
       var args, callback, j, len, ref, type, value;
-      type = arguments[0], args = 2 <= arguments.length ? slice.call(arguments, 1) : [];
-      value = args[0];
-      if (this.hooks[type] == null) {
-        return value;
-      }
-      ref = this.hooks[type];
-      for (j = 0, len = ref.length; j < len; j++) {
-        callback = ref[j];
-        value = callback.apply(this, args);
-        args[0] = value;
-      }
-      return value;
-    };
-
-    Parser.prototype.releaseHolder = function(text, clearHolders) {
-      var deep;
-      if (clearHolders == null) {
-        clearHolders = true;
-      }
-      deep = 0;
-      while ((text.indexOf("\r")) >= 0 && deep < 10) {
+      type = arguments[0], args = 2 <= arguments.length ? slice.call(arguments, 1) : []; value="args[0];" if (this.hooks[type]="=" null) { return value; } ref="this.hooks[type];" for (j="0," len="ref.length;" j < len; j++) callback="ref[j];" args); args[0]="value;" }; parser.prototype.releaseholder="function(text," clearholders) var deep; (clearholders="=" clearholders="true;" deep="0;" while ((text.indexof("\r"))>= 0 && deep < 10) {
         text = str_replace(array_keys(this.holders), array_values(this.holders), text);
         deep += 1;
       }
@@ -276,69 +138,22 @@
       if (this.line) {
         return html.replace(regex, function() {
           var matches, replace;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          if (last !== parseInt(matches[1])) {
-            replace = 'class="line" data-start="' + last + '" data-start-original="' + matches[1] + '" data-end="' + matches[2] + '" ' + matches[3];
-          } else {
-            replace = matches[0];
-          }
-          last = 1 + parseInt(matches[2]);
-          return replace;
-        });
-      } else {
-        return html;
-      }
-    };
-
-    Parser.prototype.parseInline = function(text, whiteList, clearHolders, enableAutoLink) {
-      var regex;
-      if (whiteList == null) {
-        whiteList = '';
-      }
-      if (clearHolders == null) {
-        clearHolders = true;
-      }
-      if (enableAutoLink == null) {
-        enableAutoLink = true;
-      }
-      text = this.call('beforeParseInline', text);
-      text = text.replace(/(^|[^\\])(`+)(.+?)\2/mg, (function(_this) {
-        return function() {
-          var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return matches[1] + _this.makeHolder('<code>' + (htmlspecialchars(matches[3])) + '</code>');
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; if (last !="=" parseint(matches[1])) { replace="class="line" data-start="" + last '" data-start-original="' + matches[1] + '" data-end="' + matches[2] + '" ' matches[3]; } else parseint(matches[2]); return replace; }); html; }; parser.prototype.parseinline="function(text," whitelist, clearholders, enableautolink) var regex; (whitelist="=" null) whitelist ; (clearholders="=" clearholders="true;" (enableautolink="=" enableautolink="true;" text="this.call('beforeParseInline'," text); (function(_this) function() matches; matches="1" <="arguments.length" matches[1] _this.makeholder('<code>' + (htmlspecialchars(matches[3])) + '');
         };
       })(this));
       text = text.replace(/(^|[^\\])(\$+)(.+?)\2/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return matches[1] + _this.makeHolder(matches[2] + (htmlspecialchars(matches[3])) + matches[2]);
-        };
-      })(this));
-      text = text.replace(/\\(.)/g, (function(_this) {
-        return function() {
-          var escaped, matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          escaped = htmlspecialchars(matches[1]);
-          escaped = escaped.replace(/\$/g, '&dollar;');
-          return _this.makeHolder(escaped);
-        };
-      })(this));
-      text = text.replace(/<(https?:\/\/.+)>/ig, (function(_this) {
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return matches[1] + _this.makeholder(matches[2] (htmlspecialchars(matches[3])) matches[2]); }; })(this)); text="text.replace(/\\(.)/g," (function(_this) { function() var escaped, matches; matches="1" <="arguments.length" escaped="htmlspecialchars(matches[1]);" '&dollar;'); _this.makeholder(escaped);>/ig, (function(_this) {
         return function() {
           var link, matches, url;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          url = _this.cleanUrl(matches[1]);
-          link = _this.call('parseLink', matches[1]);
-          return _this.makeHolder("<a href=\"" + url + "\">" + link + "</a>");
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; url="_this.cleanUrl(matches[1]);" link="_this.call('parseLink'," matches[1]); return _this.makeholder("<a href="\""" + "\">" + link + "");
         };
       })(this));
-      text = text.replace(/<(\/?)([a-z0-9-]+)(\s+[^>]*)?>/ig, (function(_this) {
+      text = text.replace(/<(\ ?)([a-z0-9-]+)(\s+[^>]*)?>/ig, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          if (_this.html || (('|' + _this.commonWhiteList + '|' + whiteList + '|').indexOf('|' + matches[2].toLowerCase() + '|')) >= 0) {
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; if (_this.html || (('|' + _this.commonwhitelist '|' whitelist '|').indexof('|' matches[2].tolowercase() '|'))>= 0) {
             return _this.makeHolder(matches[0]);
           } else {
             return htmlspecialchars(matches[0]);
@@ -349,59 +164,36 @@
         text = text.replace(/<!\-\-(.*?)\-\->/g, (function(_this) {
           return function() {
             var matches;
-            matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-            return _this.makeHolder(matches[0]);
-          };
-        })(this));
-      }
-      text = str_replace(['<', '>'], ['&lt;', '&gt;'], text);
+            matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return _this.makeholder(matches[0]); }; })(this)); } text="str_replace(['<'," '>'], ['&lt;', '&gt;'], text);
       text = text.replace(/\[\^((?:[^\]]|\\\]|\\\[)+?)\]/g, (function(_this) {
         return function() {
           var id, matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          id = _this.footnotes.indexOf(matches[1]);
-          if (id < 0) {
-            id = _this.footnotes.length + 1;
-            _this.footnotes.push(_this.parseInline(matches[1], '', false));
-          }
-          return _this.makeHolder("<sup id=\"fnref-" + id + "\"><a href=\"#fn-" + id + "\" class=\"footnote-ref\">" + id + "</a></sup>");
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; id="_this.footnotes.indexOf(matches[1]);" if (id < { + 1; _this.footnotes.push(_this.parseinline(matches[1], '', false)); } return _this.makeholder("<sup "\"><a href="\"#fn-"" + id "\" class="\"footnote-ref\"">" + id + "</a>");
         };
       })(this));
       text = text.replace(/!\[((?:[^\]]|\\\]|\\\[)*?)\]\(((?:[^\)]|\\\)|\\\()+?)\)/g, (function(_this) {
         return function() {
           var escaped, matches, url;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          escaped = htmlspecialchars(_this.escapeBracket(matches[1]));
-          url = _this.escapeBracket(matches[2]);
-          url = _this.cleanUrl(url);
-          return _this.makeHolder("<img src=\"" + url + "\" alt=\"" + escaped + "\" title=\"" + escaped + "\">");
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; escaped="htmlspecialchars(_this.escapeBracket(matches[1]));" url="_this.escapeBracket(matches[2]);" return _this.makeholder("<img src="\""" + "\" alt="\""" title="\""">");
         };
       })(this));
       text = text.replace(/!\[((?:[^\]]|\\\]|\\\[)*?)\]\[((?:[^\]]|\\\]|\\\[)+?)\]/g, (function(_this) {
         return function() {
           var escaped, matches, result;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          escaped = htmlspecialchars(_this.escapeBracket(matches[1]));
-          result = _this.definitions[matches[2]] != null ? "<img src=\"" + _this.definitions[matches[2]] + "\" alt=\"" + escaped + "\" title=\"" + escaped + "\">" : escaped;
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; escaped="htmlspecialchars(_this.escapeBracket(matches[1]));" result="_this.definitions[matches[2]]" !="null" "<img src="\""" + _this.definitions[matches[2]] "\" alt="\""" title="\""">" : escaped;
           return _this.makeHolder(result);
         };
       })(this));
       text = text.replace(/\[((?:[^\]]|\\\]|\\\[)+?)\]\(((?:[^\)]|\\\)|\\\()+?)\)/g, (function(_this) {
         return function() {
           var escaped, matches, url;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          escaped = _this.parseInline(_this.escapeBracket(matches[1]), '', false, false);
-          url = _this.escapeBracket(matches[2]);
-          url = _this.cleanUrl(url);
-          return _this.makeHolder("<a href=\"" + url + "\">" + escaped + "</a>");
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; escaped="_this.parseInline(_this.escapeBracket(matches[1])," '', false, false); url="_this.escapeBracket(matches[2]);" return _this.makeholder("<a href="\""" + "\">" + escaped + "");
         };
       })(this));
       text = text.replace(/\[((?:[^\]]|\\\]|\\\[)+?)\]\[((?:[^\]]|\\\]|\\\[)+?)\]/g, (function(_this) {
         return function() {
           var escaped, matches, result;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          escaped = _this.parseInline(_this.escapeBracket(matches[1]), '', false, false);
-          result = _this.definitions[matches[2]] != null ? "<a href=\"" + _this.definitions[matches[2]] + "\">" + escaped + "</a>" : escaped;
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; escaped="_this.parseInline(_this.escapeBracket(matches[1])," '', false, false); result="_this.definitions[matches[2]]" !="null" "<a href="\""" + _this.definitions[matches[2]] "\">" + escaped + "" : escaped;
           return _this.makeHolder(result);
         };
       })(this));
@@ -412,9 +204,7 @@
         text = text.replace(regex, (function(_this) {
           return function() {
             var link, matches;
-            matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-            link = _this.call('parseLink', matches[2]);
-            return matches[1] + "<a href=\"" + matches[2] + "\">" + link + "</a>" + matches[4];
+            matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; link="_this.call('parseLink'," matches[2]); return matches[1] + "<a href="\""" matches[2] "\">" + link + "" + matches[4];
           };
         })(this));
       }
@@ -428,50 +218,43 @@
       text = text.replace(/(\*{3})((?:.|\r)+?)\1/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return '<strong><em>' + (_this.parseInlineCallback(matches[2])) + '</em></strong>';
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return '<strong><em>' + (_this.parseInlineCallback(matches[2])) + '</em>';
         };
       })(this));
       text = text.replace(/(\*{2})((?:.|\r)+?)\1/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return '<strong>' + (_this.parseInlineCallback(matches[2])) + '</strong>';
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return '<strong>' + (_this.parseInlineCallback(matches[2])) + '';
         };
       })(this));
       text = text.replace(/(\*)((?:.|\r)+?)\1/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return '<em>' + (_this.parseInlineCallback(matches[2])) + '</em>';
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return '<em>' + (_this.parseInlineCallback(matches[2])) + '';
         };
       })(this));
       text = text.replace(/(\s+|^)(_{3})((?:.|\r)+?)\2(\s+|$)/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return matches[1] + '<strong><em>' + (_this.parseInlineCallback(matches[3])) + '</em></strong>' + matches[4];
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return matches[1] + '<strong><em>' + (_this.parseInlineCallback(matches[3])) + '</em>' + matches[4];
         };
       })(this));
       text = text.replace(/(\s+|^)(_{2})((?:.|\r)+?)\2(\s+|$)/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return matches[1] + '<strong>' + (_this.parseInlineCallback(matches[3])) + '</strong>' + matches[4];
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return matches[1] + '<strong>' + (_this.parseInlineCallback(matches[3])) + '' + matches[4];
         };
       })(this));
       text = text.replace(/(\s+|^)(_)((?:.|\r)+?)\2(\s+|$)/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return matches[1] + '<em>' + (_this.parseInlineCallback(matches[3])) + '</em>' + matches[4];
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return matches[1] + '<em>' + (_this.parseInlineCallback(matches[3])) + '' + matches[4];
         };
       })(this));
       text = text.replace(/(~{2})((?:.|\r)+?)\1/mg, (function(_this) {
         return function() {
           var matches;
-          matches = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-          return '<del>' + (_this.parseInlineCallback(matches[2])) + '</del>';
+          matches = 1 <= arguments.length ? slice.call(arguments, 0) : []; return '<del>' + (_this.parseInlineCallback(matches[2])) + '';
         };
       })(this));
       return text;
@@ -530,7 +313,7 @@
         }
         return false;
       } else if ((this.isBlock('list')) && !line.match(/^\s*\[((?:[^\]]|\\\]|\\\[)+?)\]:\s*(.+)$/)) {
-        if ((state.empty <= 1) && !!(matches = line.match(/^(\s+)/)) && matches[1].length > block[3]) {
+        if ((state.empty <= 1) && !!(matches="line.match(/^(\s+)/))" matches[1].length> block[3]) {
           state.empty = 0;
           this.setBlock(key);
           return false;
@@ -590,14 +373,14 @@
     Parser.prototype.parseBlockAhtml = function(block, key, line, state) {
       var htmlTagAllRegExp, htmlTagRegExp, lastMatch, m, matches;
       if (this.html) {
-        htmlTagRegExp = new RegExp("^\\s*<(" + this.blockHtmlTags + ")(\\s+[^>]*)?>", 'i');
+        htmlTagRegExp = new RegExp("^\\s*<(" + this.blockhtmltags ")(\\s+[^>]*)?>", 'i');
         if (matches = line.match(htmlTagRegExp)) {
           if (this.isBlock('ahtml')) {
             this.setBlock(key);
             return false;
           } else if (matches[2] === void 0 || matches[2] !== '/') {
             this.startBlock('ahtml', key);
-            htmlTagAllRegExp = new RegExp("\\s*<(" + this.blockHtmlTags + ")(\\s+[^>]*)?>", 'ig');
+            htmlTagAllRegExp = new RegExp("\\s*<(" + this.blockhtmltags ")(\\s+[^>]*)?>", 'ig');
             while (true) {
               m = htmlTagAllRegExp.exec(line);
               if (!m) {
@@ -605,14 +388,14 @@
               }
               lastMatch = m[1];
             }
-            if (0 <= line.indexOf("</" + lastMatch + ">")) {
+            if (0 <= line.indexof("< " + lastmatch>")) {
               this.endBlock();
             } else {
               state.html = lastMatch;
             }
             return false;
           }
-        } else if (!!state.html && 0 <= line.indexOf("</" + state.html + ">")) {
+        } else if (!!state.html && 0 <= line.indexof("< " + state.html>")) {
           this.setBlock(key).endBlock();
           state.html = false;
           return false;
@@ -660,13 +443,13 @@
 
     Parser.prototype.parseBlockHtml = function(block, key, line, state) {
       var matches, tag;
-      if (!!(matches = line.match(new RegExp("^\\s*<(" + state.special + ")(\\s+[^>]*)?>", 'i')))) {
+      if (!!(matches = line.match(new RegExp("^\\s*<(" + state.special ")(\\s+[^>]*)?>", 'i')))) {
         tag = matches[1].toLowerCase();
         if (!(this.isBlock('html', tag)) && !(this.isBlock('pre'))) {
           this.startBlock('html', key, tag);
         }
         return false;
-      } else if (!!(matches = line.match(new RegExp("</(" + state.special + ")>\\s*$", 'i')))) {
+      } else if (!!(matches = line.match(new RegExp("</(">\\s*$", 'i')))) {
         tag = matches[1].toLowerCase();
         if (this.isBlock('html', tag)) {
           this.setBlock(key).endBlock();
@@ -807,52 +590,7 @@
           this.startBlock('normal', key);
         }
       } else if (this.isBlock('table')) {
-        if (0 <= line.indexOf('|')) {
-          block[3][2] += 1;
-          this.setBlock(key, block[3]);
-        } else {
-          this.startBlock('normal', key);
-        }
-      } else if (this.isBlock('quote')) {
-        if (!line.match(/^(\s*)$/)) {
-          this.setBlock(key);
-        } else {
-          this.startBlock('normal', key);
-        }
-      } else {
-        if ((block == null) || block[0] !== 'normal') {
-          this.startBlock('normal', key);
-        } else {
-          this.setBlock(key);
-        }
-      }
-      return true;
-    };
-
-    Parser.prototype.optimizeBlocks = function(_blocks, _lines) {
-      var block, blocks, from, isEmpty, key, lines, moved, nextBlock, prevBlock, to, type, types;
-      blocks = _blocks.slice(0);
-      lines = _lines.slice(0);
-      blocks = this.call('beforeOptimizeBlocks', blocks, lines);
-      key = 0;
-      while (blocks[key] != null) {
-        moved = false;
-        block = blocks[key];
-        prevBlock = blocks[key - 1] != null ? blocks[key - 1] : null;
-        nextBlock = blocks[key + 1] != null ? blocks[key + 1] : null;
-        type = block[0], from = block[1], to = block[2];
-        if ('pre' === type) {
-          isEmpty = (lines.slice(block[1], block[2] + 1)).reduce(function(result, line) {
-            return (line.match(/^\s*$/)) && result;
-          }, true);
-          if (isEmpty) {
-            block[0] = type = 'normal';
-          }
-        }
-        if ('normal' === type) {
-          types = ['list', 'quote'];
-          if (from === to && (lines[from].match(/^\s*$/)) && (prevBlock != null) && (nextBlock != null)) {
-            if (prevBlock[0] === nextBlock[0] && (types.indexOf(prevBlock[0])) >= 0) {
+        if (0 <= line.indexof('|')) { block[3][2] +="1;" this.setblock(key, block[3]); } else this.startblock('normal', key); if (this.isblock('quote')) (!line.match( ^(\s*)$ )) this.setblock(key); ((block="=" null) || block[0] !="=" 'normal') return true; }; parser.prototype.optimizeblocks="function(_blocks," _lines) var block, blocks, from, isempty, key, lines, moved, nextblock, prevblock, to, type, types; blocks="_blocks.slice(0);" lines="_lines.slice(0);" lines); key="0;" while (blocks[key] moved="false;" block="blocks[key];" prevblock="blocks[key" - 1] ? blocks[key : null; nextblock="blocks[key" type="block[0]," from="block[1]," to="block[2];" ('pre'="==" type) isempty="(lines.slice(block[1]," block[2] 1)).reduce(function(result, line) (line.match( ^\s*$ && result; }, true); (isempty) = 'normal'; ('normal'="==" types="['list'," 'quote']; (from="==" (lines[from].match( (prevblock (nextblock (prevblock[0]="==" nextblock[0] (types.indexof(prevblock[0]))>= 0) {
               blocks[key - 1] = [prevBlock[0], prevBlock[1], nextBlock[2], null];
               blocks.splice(key, 2);
               moved = true;
@@ -893,7 +631,7 @@
       if (isEmpty) {
         return '';
       } else {
-        return '<pre><code' + (!!lang ? " class=\"" + lang + "\"" : '') + (!!rel ? " rel=\"" + rel + "\"" : '') + '>' + str + '</code></pre>';
+        return '<pre><code' + (!!lang ? " class="\""" lang "\"" : '') (!!rel rel="\""" '>' + str + '</code'></pre>';
       }
     };
 
@@ -928,7 +666,7 @@
       if (line.match(/^\s*$/)) {
         return '';
       } else {
-        return "<h" + num + ">" + line + "</h" + num + ">";
+        return "<h" + num ">" + line + "</h">";
       }
     };
 
@@ -961,10 +699,7 @@
         line = lines[key];
         if (matches = line.match(/^(\s*)((?:[0-9]+\.?)|\-|\+|\*)(\s+)(.*)$/i)) {
           space = matches[1].length;
-          type = 0 <= '+-*'.indexOf(matches[2]) ? 'ul' : 'ol';
-          minSpace = Math.min(space, minSpace);
-          found = true;
-          if (space > 0) {
+          type = 0 <= '+-*'.indexof(matches[2]) ? 'ul' : 'ol'; minspace="Math.min(space," minspace); found="true;" if (space> 0) {
             secondMinSpace = Math.min(space, secondMinSpace);
             secondFound = true;
           }
@@ -997,9 +732,9 @@
             }
             if (lastType !== type) {
               if (!!lastType) {
-                html += "</" + lastType + ">";
+                html += "";
               }
-              html += "<" + type + ">";
+              html += "<" + type ">";
             }
             leftStart = key;
             leftLines = [text];
@@ -1010,7 +745,7 @@
         }
       }
       if (leftLines.length > 0) {
-        html += '<li>' + (this.parse(leftLines.join("\n"), true, start + leftStart)) + ("</li></" + lastType + ">");
+        html += '<li>' + (this.parse(leftLines.join("\n"), true, start + leftStart)) + ("</li></">");
       }
       return html;
     };
@@ -1026,33 +761,7 @@
       output = false;
       for (key = j = 0, len = lines.length; j < len; key = ++j) {
         line = lines[key];
-        if (0 <= ignores.indexOf(key)) {
-          if (head && output) {
-            head = false;
-            body = true;
-          }
-          continue;
-        }
-        line = trim(line);
-        output = true;
-        if (line[0] === '|') {
-          line = line.substring(1);
-          if (line[line.length - 1] === '|') {
-            line = line.substring(0, line.length - 1);
-          }
-        }
-        rows = line.split('|').map(function(row) {
-          if (row.match(/^\s*$/)) {
-            return ' ';
-          } else {
-            return trim(row);
-          }
-        });
-        columns = {};
-        last = -1;
-        for (l = 0, len1 = rows.length; l < len1; l++) {
-          row = rows[l];
-          if (row.length > 0) {
+        if (0 <= ignores.indexof(key)) { if (head && output) head="false;" body="true;" } continue; line="trim(line);" output="true;" (line[0]="==" '|') (line[line.length - 1]="==" line.length 1); rows="line.split('|').map(function(row)" (row.match( ^\s*$ )) return ' '; else trim(row); }); columns="{};" last="-1;" for (l="0," len1="rows.length;" l < len1; l++) row="rows[l];" (row.length> 0) {
             last += 1;
             columns[last] = [(columns[last] != null ? columns[last][0] + 1 : 1), row];
           } else if (columns[last] != null) {
@@ -1066,35 +775,25 @@
         } else if (body) {
           html += '<tbody>';
         }
-        html += '<tr';
-        if (this.line) {
-          html += ' class="line" data-start="' + (start + key) + '" data-end="' + (start + key) + '" data-id="' + this.uniqid + '"';
-        }
-        html += '>';
-        for (key in columns) {
-          column = columns[key];
-          num = column[0], text = column[1];
-          tag = head ? 'th' : 'td';
-          html += "<" + tag;
-          if (num > 1) {
+        html += '<tr'; if (this.line) { html +=" class="line" data-start="" (start key) '" data-end="' + (start + key) + '" data-id="' + this.uniqid + '" '; } ; for (key in columns) column="columns[key];" num="column[0]," text="column[1];" tag="head" ? 'th' : 'td'; tag; (num> 1) {
             html += " colspan=\"" + num + "\"";
           }
           if ((aligns[key] != null) && aligns[key] !== 'none') {
             html += " align=\"" + aligns[key] + "\"";
           }
-          html += '>' + (this.parseInline(text)) + ("</" + tag + ">");
+          html += '>' + (this.parseInline(text)) + ("");
         }
-        html += '</tr>';
+        html += '';
         if (head) {
-          html += '</thead>';
+          html += '</tr';></tbody></thead>';
         } else if (body) {
           body = false;
         }
       }
       if (body !== null) {
-        html += '</tbody>';
+        html += '';
       }
-      return html += '</table>';
+      return html += '</=></table>';
     };
 
     Parser.prototype.parseHr = function(lines, value, start) {
@@ -1122,7 +821,7 @@
         };
       })(this));
       str = trim(lines.join("\n"));
-      str = str.replace(/(\n\s*){2,}/g, '</p><p>');
+      str = str.replace(/(\n\s*){2,}/g, '<p></p><p>');
       str = str.replace(/\n/g, '<br>');
       if (str.match(/^\s*$/)) {
         return '';
@@ -1130,7 +829,7 @@
         if (inline) {
           return str;
         } else {
-          return "<p>" + str + "</p>";
+          return "</p><p>" + str + "</p>";
         }
       }
     };
@@ -1234,39 +933,4 @@
       last = this.blocks[this.pos][2];
       this.blocks[this.pos][2] = last - step;
       item = [type, last - step + 1, last, value];
-      if (this.blocks[this.pos][1] <= this.blocks[this.pos][2]) {
-        this.pos += 1;
-        this.blocks.push(item);
-      } else {
-        this.blocks[this.pos] = item;
-      }
-      this.current = type;
-      return this;
-    };
-
-    Parser.prototype.combineBlock = function() {
-      var current, prev;
-      if (this.pos < 1) {
-        return this;
-      }
-      prev = this.blocks[this.pos - 1].slice(0);
-      current = this.blocks[this.pos].slice(0);
-      prev[2] = current[2];
-      this.blocks[this.pos - 1] = prev;
-      this.current = prev[0];
-      this.blocks = this.blocks.slice(0, -1);
-      this.pos -= 1;
-      return this;
-    };
-
-    return Parser;
-
-  })();
-
-  if (typeof module !== "undefined" && module !== null) {
-    module.exports = Parser;
-  } else if (typeof window !== "undefined" && window !== null) {
-    window.HyperDown = Parser;
-  }
-
-}).call(this);
+      if (this.blocks[this.pos][1] </=></=></=></=></("></("></=></=></=></=></=></=></=></=></=></([_a-z0-9-\.\+]+@[^@]+\.[a-z]{2,})></=></=></=></=></=></=></=></(\></=></=></=></=></=></=>

@@ -1,0 +1,230 @@
+/*@import url();*/
+/* header begin */
+header {
+  border-right: 1px #eee solid;
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 13.5em;
+}
+#content {
+  display: block;
+  width: 100%;
+}
+header h1 {
+  font-size: 1.9em;
+  margin-top: 0.8em;
+  margin-bottom: 0.6em;
+}
+header h1 a {
+  color: #444;
+}
+header h1 a:hover {
+  text-decoration: none;
+}
+header #avatar img {
+  margin-top: 4em; /*-0.578em;*/
+  margin-bottom: -1.73em;
+  width: 9em;
+/*height:9em;*/
+  border-radius: 4.5em;
+  -webkit-border-radius: 4.5em;
+  border: none;
+}
+#follow-icons {
+  font-size: 0.7em;
+  margin-top: -0.7em;
+  margin-bottom: 0em;
+}
+#follow-icons a {
+  color: #ccc;
+}
+#follow-icons span {
+  vertical-align: top;
+  margin-left: -0.15em;
+  margin-right: -0.15em;
+}
+#follow-icons span .fa-stack-1x {
+  font-size: 1.05em;
+  line-height: 1.9em;
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+footer {
+  padding: 1em 0em 2.5em 0em;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: #000;
+}
+footer a {
+  font-weight: 300;
+  color: #6495ed;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #444;
+  text-decoration: none;
+}
+div#fork_me_on_github {
+  margin-top: -2em;
+  margin-left: -2em;
+  margin-bottom: -5em;
+}
+header h6 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+span#donate {
+  font-size: 0.8em;
+  margin-bottom: -2em;
+}
+#rss/*能旋转的rss图标*/ {
+  transition: all 2s;
+}
+#rss:hover {
+  transform: rotate(360deg);
+}
+/* header end */
+/*================================*/
+/* navbar begin */
+.navbar {
+  border-bottom: 1px #eee solid;
+  margin-bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3em;
+  background: #fff;
+/*filter:alpha(opacity=60);*/
+  display: block;
+  z-index: 1;
+  opacity: 1;
+}
+#custom_html_list {
+  padding-left: 1em;
+}
+#repos {
+  text-align: right;
+  padding-right: 1em;
+  float: right;
+}
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+/*filter:alpha(opacity=60);*/
+  opacity: 1;
+}
+.dropdown-content a {
+  font-size: 0.6em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  color: #000;
+}
+.show {
+  display: block;
+}
+/* navbar end */
+/*================================*/
+/*toc begin* /
+.toc-article {
+    background: #eee;
+    margin: 0 0 0 0.2em;
+    padding: 1em;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 1.5em;
+    font-size: 1em;
+    float: right;
+    max-width: 32%;
+    min-width: 200px;
+    border: 1px solid #C0C0C0;
+    white-space: nowrap;
+    overflow: hidden; 
+    strong {
+        padding: 0.3em 0;
+    }
+    ol,
+    li {
+        margin: 0 0 0 0.2em;
+        list-style-type: none;
+    }
+    ol li:before {
+        display: none;
+    }
+    /*下级目录的缩进量 * /
+    .toc-child {
+        margin-left: 0.8em;
+    }
+}
+/* toc end*/
+@-moz-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-o-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
