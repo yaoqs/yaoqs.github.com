@@ -1,3 +1,16 @@
+/*!
+* showPDF JavaScript Library v1.0.0
+* http://github.com/yaoqs
+*
+* Copyright 2022-, yaoqs[LordYao]
+* Released under the MIT license
+*
+* 3rd Party Library:
+* 1.pdf.js 
+* 
+*
+* Date: 2022-03-01
+*/
 var container, pageDiv;
 function showPDF(label,url) {
   var loadingTask =pdfjsLib.getDocument(url);
@@ -32,6 +45,9 @@ function renderPDF(pdf,num) {
         transform:transform,
         viewport:viewport
       };
+      let line=document.createElement("p");
+      line.innerHTML="<center>-------"+num+"-------</center>";
+      pageDiv.appendChild(line);
       page.render(renderContext);
   });
 }

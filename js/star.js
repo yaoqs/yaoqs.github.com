@@ -1,3 +1,16 @@
+/*!
+* JavaScript Library v1.0.0
+* http://github.com/yaoqs
+*
+* Copyright 2021-, yaoqs[LordYao]
+* Released under the MIT license
+*
+* 3rd Party Library:
+* 1.Jquery
+* 2.Jquery.qrcode
+*
+* Date: 2021-10-01
+*/
 function background() {
     $("#xingkong").prepend('<canvas id="canvas" style="position:absolute;z-index:-2;">Your browser can not support canvas</canvas>');
     //在body中插入canvas画布，并置于底层

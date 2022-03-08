@@ -1,6 +1,19 @@
 /*****************************************************************
                   jQuery Ajax封装通用类       
 *****************************************************************/
+/*!
+* ax JavaScript Library v1.0.0
+* http://github.com/yaoqs
+*
+* Copyright 2021-, yaoqs[LordYao]
+* Released under the MIT license
+*
+* 3rd Party Library:
+* 1.Jquery
+* 
+*
+* Date: 2021-12-01
+*/
 $(function(){
     /**
      * ajax封装

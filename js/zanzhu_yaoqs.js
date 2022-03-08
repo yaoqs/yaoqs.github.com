@@ -329,8 +329,8 @@ $(function(){
         alert("Need 3rd Party Lib:1.Jquery 2.Jquery.qrcode!");
         addScript("https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js");
         addScript("https://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js")
-        !window.jQuery && document.write(unescape('%3Cscript src="lib/jquery-3.4.1.min.js"%3E%3C/script%3E'));
-        !window.jQuery && document.write(unescape('%3Cscript src="lib/jquery.qrcode.min.js"%3E%3C/script%3E'));
+        !window.jQuery && document.write(unescape('%3Cscript type="text/javascript" src="/lib/jquery-3.4.1.min.js"%3E%3C/script%3E'));
+        !window.jQuery && document.write(unescape('%3Cscript type="text/javascript" src="/lib/jquery.qrcode.min.js"%3E%3C/script%3E'));
     }
     let zanzhu=" #zanzhu { position: fixed; float: right; top: 38.2%; width: 10px; right: 0; box-sizing: content-box; }";
     let donate_sider=".donate_sider { background-color: red; width: 10px; height: 30px;  }";
