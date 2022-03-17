@@ -55,3 +55,7 @@ Journal:
 <image alt="wechat" src="https://yaoqs.github.io/images/微信收款码.png" width="200"/><br>
 <image alt="wechat" src="https://yaoqs.github.io/images/微信打赏码.png" width="200"/>
 
+<div id="qrcode"></div>
+<script>
+    $('#qrcode').qrcode({width: 173,height: 173,text:"<%- url_for(page.permalink) %>"});
+</script>
