@@ -18,8 +18,8 @@
   
   <entry>
     <title>JavaScript语言精髓与编程实践</title>
-    <link href="https://yaoqs.github.io/2022/03/15/javascript-yu-yan-jing-sui-yu-bian-cheng-shi-jian/"/>
-    <id>https://yaoqs.github.io/2022/03/15/javascript-yu-yan-jing-sui-yu-bian-cheng-shi-jian/</id>
+    <link href="https://yaoqs.github.io/20220315/javascript-yu-yan-jing-sui-yu-bian-cheng-shi-jian/"/>
+    <id>https://yaoqs.github.io/20220315/javascript-yu-yan-jing-sui-yu-bian-cheng-shi-jian/</id>
     <published>2022-03-15T11:40:56.000Z</published>
     <updated>2022-03-15T11:40:56.000Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>解读javascript的计时器(转载)</title>
-    <link href="https://yaoqs.github.io/2022/01/08/jie-du-javascript-de-ji-shi-qi-zhuan-zai/"/>
-    <id>https://yaoqs.github.io/2022/01/08/jie-du-javascript-de-ji-shi-qi-zhuan-zai/</id>
+    <link href="https://yaoqs.github.io/20220108/jie-du-javascript-de-ji-shi-qi-zhuan-zai/"/>
+    <id>https://yaoqs.github.io/20220108/jie-du-javascript-de-ji-shi-qi-zhuan-zai/</id>
     <published>2022-01-08T01:06:36.000Z</published>
     <updated>2022-01-08T01:06:36.000Z</updated>
     
@@ -58,6 +58,8 @@
     
     
     
+    <category term="Reprint" scheme="https://yaoqs.github.io/tags/Reprint/"/>
+    
     <category term="javascript" scheme="https://yaoqs.github.io/tags/javascript/"/>
     
     <category term="pdf" scheme="https://yaoqs.github.io/tags/pdf/"/>
@@ -66,8 +68,8 @@
   
   <entry>
     <title>html网站常用代码</title>
-    <link href="https://yaoqs.github.io/2022/01/05/html-wang-zhan-chang-yong-dai-ma/"/>
-    <id>https://yaoqs.github.io/2022/01/05/html-wang-zhan-chang-yong-dai-ma/</id>
+    <link href="https://yaoqs.github.io/20220105/html-wang-zhan-chang-yong-dai-ma/"/>
+    <id>https://yaoqs.github.io/20220105/html-wang-zhan-chang-yong-dai-ma/</id>
     <published>2022-01-05T08:57:52.000Z</published>
     <updated>2022-01-05T08:57:52.000Z</updated>
     
@@ -93,8 +95,8 @@
   
   <entry>
     <title>matllab读txt文件</title>
-    <link href="https://yaoqs.github.io/2022/01/05/matllab-du-txt-wen-jian/"/>
-    <id>https://yaoqs.github.io/2022/01/05/matllab-du-txt-wen-jian/</id>
+    <link href="https://yaoqs.github.io/20220105/matllab-du-txt-wen-jian/"/>
+    <id>https://yaoqs.github.io/20220105/matllab-du-txt-wen-jian/</id>
     <published>2022-01-05T01:52:13.000Z</published>
     <updated>2022-01-05T01:52:13.000Z</updated>
     
@@ -110,12 +112,292 @@
     
     
     
+    <category term="matllab" scheme="https://yaoqs.github.io/tags/matllab/"/>
+    
   </entry>
   
   <entry>
-    <title>C# codesnippet</title>
-    <link href="https://yaoqs.github.io/2021/10/27/c-16-jin-zhi-yu-zi-fu-chuan-zi-jie-shu-zu-zhi-jian-de-zhuan-huan/"/>
-    <id>https://yaoqs.github.io/2021/10/27/c-16-jin-zhi-yu-zi-fu-chuan-zi-jie-shu-zu-zhi-jian-de-zhuan-huan/</id>
+    <title>42</title>
+    <link href="https://yaoqs.github.io/20220101/42/"/>
+    <id>https://yaoqs.github.io/20220101/42/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">From the Internet, To the Internet.</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Acoustics</title>
+    <link href="https://yaoqs.github.io/20220101/acoustics/"/>
+    <id>https://yaoqs.github.io/20220101/acoustics/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Awesome-Github-Roster</title>
+    <link href="https://yaoqs.github.io/20220101/awesome-github-roster/"/>
+    <id>https://yaoqs.github.io/20220101/awesome-github-roster/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">Awesome Github Roster</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Defence-Technology</title>
+    <link href="https://yaoqs.github.io/20220101/defence-technology/"/>
+    <id>https://yaoqs.github.io/20220101/defence-technology/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">Defence technology/防务技术</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Machine-learning-Related</title>
+    <link href="https://yaoqs.github.io/20220101/machine-learning-related/"/>
+    <id>https://yaoqs.github.io/20220101/machine-learning-related/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">本人收集的机器学习(Machine Learning, ML)相关资料</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NWPU-Open-Course-Sharing</title>
+    <link href="https://yaoqs.github.io/20220101/nwpu-open-course-sharing/"/>
+    <id>https://yaoqs.github.io/20220101/nwpu-open-course-sharing/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">西北工业大学开源课程共享</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+    <category term="resource" scheme="https://yaoqs.github.io/tags/resource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raspberry-Pi-config</title>
+    <link href="https://yaoqs.github.io/20220101/raspberry-pi-config/"/>
+    <id>https://yaoqs.github.io/20220101/raspberry-pi-config/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">关于树莓派安装、配置、使用等的技巧、工具;About the skills and toolkits of installing, configuring raspbian and handbook for raspberry</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scholar</title>
+    <link href="https://yaoqs.github.io/20220101/scholar/"/>
+    <id>https://yaoqs.github.io/20220101/scholar/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">Scientific/Academic/Scholarly Research. 科研学术.Document Retrieval; Documentation Retrieval; Literature Search; Literature Retrieval.文献检索</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Termux-config</title>
+    <link href="https://yaoqs.github.io/20220101/termux-config/"/>
+    <id>https://yaoqs.github.io/20220101/termux-config/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">Termux Manual</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>donate-plugin</title>
+    <link href="https://yaoqs.github.io/20220101/donate-plugin/"/>
+    <id>https://yaoqs.github.io/20220101/donate-plugin/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">Donate &amp; Reward 大吉大利，今晚吃鸡</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo-theme-scholar-future</title>
+    <link href="https://yaoqs.github.io/20220101/hexo-theme-scholar-future/"/>
+    <id>https://yaoqs.github.io/20220101/hexo-theme-scholar-future/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">A scholar magazine/journal like blog,基于hexo的博客模板</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>keys</title>
+    <link href="https://yaoqs.github.io/20220101/keys/"/>
+    <id>https://yaoqs.github.io/20220101/keys/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">个人收藏的常用软件的key、注册码、license及注册机等</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>open-ebook</title>
+    <link href="https://yaoqs.github.io/20220101/open-ebook/"/>
+    <id>https://yaoqs.github.io/20220101/open-ebook/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">免费电子书</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+    <category term="resource" scheme="https://yaoqs.github.io/tags/resource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>resource-navigator</title>
+    <link href="https://yaoqs.github.io/20220101/resource-navigator/"/>
+    <id>https://yaoqs.github.io/20220101/resource-navigator/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    
+    
+    <summary type="html">个人收藏资源导航</summary>
+    
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
+    
+    
+    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
+    
+    <category term="resource" scheme="https://yaoqs.github.io/tags/resource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C-16进制与字符串、字节数组之间的转换</title>
+    <link href="https://yaoqs.github.io/20211027/c-16-jin-zhi-yu-zi-fu-chuan-zi-jie-shu-zu-zhi-jian-de-zhuan-huan/"/>
+    <id>https://yaoqs.github.io/20211027/c-16-jin-zhi-yu-zi-fu-chuan-zi-jie-shu-zu-zhi-jian-de-zhuan-huan/</id>
     <published>2021-10-27T15:33:45.000Z</published>
     <updated>2021-10-27T15:33:45.000Z</updated>
     
@@ -131,12 +413,16 @@
     
     
     
+    <category term="C#" scheme="https://yaoqs.github.io/tags/C/"/>
+    
+    <category term="codesnippet" scheme="https://yaoqs.github.io/tags/codesnippet/"/>
+    
   </entry>
   
   <entry>
     <title>各领域最值得推荐的入门书籍</title>
-    <link href="https://yaoqs.github.io/2021/05/26/ge-ling-yu-zui-zhi-de-tui-jian-de-ru-men-shu-ji/"/>
-    <id>https://yaoqs.github.io/2021/05/26/ge-ling-yu-zui-zhi-de-tui-jian-de-ru-men-shu-ji/</id>
+    <link href="https://yaoqs.github.io/20210526/ge-ling-yu-zui-zhi-de-tui-jian-de-ru-men-shu-ji/"/>
+    <id>https://yaoqs.github.io/20210526/ge-ling-yu-zui-zhi-de-tui-jian-de-ru-men-shu-ji/</id>
     <published>2021-05-26T07:59:06.000Z</published>
     <updated>2021-05-26T07:59:06.000Z</updated>
     
@@ -151,352 +437,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>程序员练手小项目</title>
-    <link href="https://yaoqs.github.io/2021/05/19/cheng-xu-yuan-lian-shou-xiao-xiang-mu/"/>
-    <id>https://yaoqs.github.io/2021/05/19/cheng-xu-yuan-lian-shou-xiao-xiang-mu/</id>
-    <published>2021-05-19T15:05:14.000Z</published>
-    <updated>2021-05-19T15:05:14.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="code" scheme="https://yaoqs.github.io/tags/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于cookie</title>
-    <link href="https://yaoqs.github.io/2021/05/19/guan-yu-cookie/"/>
-    <id>https://yaoqs.github.io/2021/05/19/guan-yu-cookie/</id>
-    <published>2021-05-19T12:38:34.000Z</published>
-    <updated>2021-05-19T12:38:34.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
-    
-    <category term="javascript" scheme="https://yaoqs.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机视觉牛人博客和代码汇总</title>
-    <link href="https://yaoqs.github.io/2021/05/06/ji-suan-ji-shi-jue-niu-ren-bo-ke-he-dai-ma-hui-zong/"/>
-    <id>https://yaoqs.github.io/2021/05/06/ji-suan-ji-shi-jue-niu-ren-bo-ke-he-dai-ma-hui-zong/</id>
-    <published>2021-05-06T12:24:57.000Z</published>
-    <updated>2021-05-06T12:24:57.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="计算机视觉" scheme="https://yaoqs.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
-    
-    <category term="Computer Vision Resources" scheme="https://yaoqs.github.io/tags/Computer-Vision-Resources/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常见的C++数学计算库</title>
-    <link href="https://yaoqs.github.io/2021/05/06/chang-jian-de-c-shu-xue-ji-suan-ku/"/>
-    <id>https://yaoqs.github.io/2021/05/06/chang-jian-de-c-shu-xue-ji-suan-ku/</id>
-    <published>2021-05-06T11:29:37.000Z</published>
-    <updated>2021-05-06T11:29:37.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="c++" scheme="https://yaoqs.github.io/tags/c/"/>
-    
-    <category term="数学计算库" scheme="https://yaoqs.github.io/tags/%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win10-BitLocker专题</title>
-    <link href="https://yaoqs.github.io/2021/04/30/win10-bitlocker-zhuan-ti/"/>
-    <id>https://yaoqs.github.io/2021/04/30/win10-bitlocker-zhuan-ti/</id>
-    <published>2021-04-30T11:08:49.000Z</published>
-    <updated>2021-04-30T11:08:49.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
-    
-    <category term="BitLocker" scheme="https://yaoqs.github.io/tags/BitLocker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c++ stl中容器使用的小技巧及坑1</title>
-    <link href="https://yaoqs.github.io/2021/04/22/c-stl-zhong-rong-qi-shi-yong-de-xiao-ji-qiao-ji-keng-1/"/>
-    <id>https://yaoqs.github.io/2021/04/22/c-stl-zhong-rong-qi-shi-yong-de-xiao-ji-qiao-ji-keng-1/</id>
-    <published>2021-04-22T07:32:28.000Z</published>
-    <updated>2021-04-22T07:32:28.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="c++" scheme="https://yaoqs.github.io/tags/c/"/>
-    
-    <category term="stl" scheme="https://yaoqs.github.io/tags/stl/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vs2017离线激活脚本</title>
-    <link href="https://yaoqs.github.io/2021/04/21/vs2017-chi-xian-ji-huo-jiao-ben/"/>
-    <id>https://yaoqs.github.io/2021/04/21/vs2017-chi-xian-ji-huo-jiao-ben/</id>
-    <published>2021-04-21T13:55:23.000Z</published>
-    <updated>2021-04-21T13:55:23.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="visual studio" scheme="https://yaoqs.github.io/tags/visual-studio/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近 7 百本免费中文编程教程电子书汇总 - 程序员开发入门学习资源大搜集</title>
-    <link href="https://yaoqs.github.io/2021/04/21/jin-7-bai-ben-mian-fei-zhong-wen-bian-cheng-jiao-cheng-dian-zi-shu-hui-zong-cheng-xu-yuan-kai-fa-ru-men-xue-xi-zi-yuan-da-sou-ji/"/>
-    <id>https://yaoqs.github.io/2021/04/21/jin-7-bai-ben-mian-fei-zhong-wen-bian-cheng-jiao-cheng-dian-zi-shu-hui-zong-cheng-xu-yuan-kai-fa-ru-men-xue-xi-zi-yuan-da-sou-ji/</id>
-    <published>2021-04-21T13:44:08.000Z</published>
-    <updated>2021-04-21T13:44:08.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="编程电子书" scheme="https://yaoqs.github.io/tags/%E7%BC%96%E7%A8%8B%E7%94%B5%E5%AD%90%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vs2019专题</title>
-    <link href="https://yaoqs.github.io/2021/04/20/vs2019-zhuan-ti/"/>
-    <id>https://yaoqs.github.io/2021/04/20/vs2019-zhuan-ti/</id>
-    <published>2021-04-20T06:41:44.000Z</published>
-    <updated>2021-04-20T06:41:44.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
-    
-    <category term="visual studio" scheme="https://yaoqs.github.io/tags/visual-studio/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ssh专题</title>
-    <link href="https://yaoqs.github.io/2021/04/11/ssh-zhuan-ti/"/>
-    <id>https://yaoqs.github.io/2021/04/11/ssh-zhuan-ti/</id>
-    <published>2021-04-11T13:10:45.000Z</published>
-    <updated>2021-04-11T13:10:45.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
-    
-    <category term="ssh" scheme="https://yaoqs.github.io/tags/ssh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo专题</title>
-    <link href="https://yaoqs.github.io/2021/04/11/hexo-zhuan-ti/"/>
-    <id>https://yaoqs.github.io/2021/04/11/hexo-zhuan-ti/</id>
-    <published>2021-04-11T11:11:27.000Z</published>
-    <updated>2021-04-11T11:11:27.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
-    
-    <category term="hexo" scheme="https://yaoqs.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker专题</title>
-    <link href="https://yaoqs.github.io/2021/04/11/docker-zhuan-ti/"/>
-    <id>https://yaoqs.github.io/2021/04/11/docker-zhuan-ti/</id>
-    <published>2021-04-11T10:55:46.000Z</published>
-    <updated>2021-04-11T10:55:46.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Docker" scheme="https://yaoqs.github.io/tags/Docker/"/>
-    
-    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>tmux使用教程</title>
-    <link href="https://yaoqs.github.io/2021/04/04/tmux-shi-yong-jiao-cheng/"/>
-    <id>https://yaoqs.github.io/2021/04/04/tmux-shi-yong-jiao-cheng/</id>
-    <published>2021-04-04T10:02:47.000Z</published>
-    <updated>2021-04-04T10:02:47.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Linux" scheme="https://yaoqs.github.io/tags/Linux/"/>
-    
-    <category term="Tmux" scheme="https://yaoqs.github.io/tags/Tmux/"/>
-    
-    <category term="terminal" scheme="https://yaoqs.github.io/tags/terminal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows Terminal专题</title>
-    <link href="https://yaoqs.github.io/2021/04/02/windowsterminal-zhuan-ti/"/>
-    <id>https://yaoqs.github.io/2021/04/02/windowsterminal-zhuan-ti/</id>
-    <published>2021-04-01T16:41:05.000Z</published>
-    <updated>2021-04-01T16:41:05.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
-    
-    <category term="Windows Terminal" scheme="https://yaoqs.github.io/tags/Windows-Terminal/"/>
     
   </entry>
   
