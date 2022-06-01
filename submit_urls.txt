@@ -1,10 +1,10 @@
+https://yaoqs.github.io/20220426/csharp-zhuan-ti/
+https://yaoqs.github.io/20220425/mu-biao-gen-zong-suan-fa/
+https://yaoqs.github.io/20220424/ei-qi-kan-cha-xun/
+https://yaoqs.github.io/20220424/html-zhuan-ti/
+https://yaoqs.github.io/20220424/javascript-zhuan-ti/
+https://yaoqs.github.io/20220424/xamarin-zhuan-ti/
 https://yaoqs.github.io/20220401/awesome-github-roster/
 https://yaoqs.github.io/20220401/acoustics/
 https://yaoqs.github.io/20220401/42/
 https://yaoqs.github.io/20220401/visual-studio-code-zhuan-ti/
-https://yaoqs.github.io/20220330/shu-zi-xin-hao-chu-li-matlab-zuo-fft-shi-dian-shu-n-zen-me-xuan-qu/
-https://yaoqs.github.io/20220315/javascript-yu-yan-jing-sui-yu-bian-cheng-shi-jian/
-https://yaoqs.github.io/20220108/jie-du-javascript-de-ji-shi-qi-zhuan-zai/
-https://yaoqs.github.io/20220105/html-wang-zhan-chang-yong-dai-ma/
-https://yaoqs.github.io/20220105/matllab-du-txt-wen-jian/
-https://yaoqs.github.io/20220101/scholar/

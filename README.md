@@ -1,5 +1,7 @@
 # [yaoqs.github.com](https://yaoqs.github.com)
 
+[gh-page](https://yaoqs.github.io/yaoqs.github.com)
+
 Journal:
 
 + title: *FUTURE*
@@ -16,35 +18,45 @@ Journal:
 ## Contact
 
 ### Social accounts
+
 #### 开发
-- github_page: <https://yaoqs.github.io/>
-- github: <https://github.com/yaoqs>
-- gitee: <https://gitee.com/yaoqs>
-- dockerhub: <https://hub.docker.com/u/lordyao>
-- Azure:
-- StackOverflow:
-- greasyfork: https://greasyfork.org/zh-CN/users/806993-lordyao
-- csdn: <https://blog.csdn.net/yaokingson>
-- cnblog:
-#### 学术/scholar
-- arxiv: <https://arxiv.org>
+
++ github_page: <https://yaoqs.github.io/>
++ github: <https://github.com/yaoqs>
++ gitee: <https://gitee.com/yaoqs>
++ sourceforge.net: <https://sourceforge.net/>
++ coding.net:
++ dockerhub: <https://hub.docker.com/u/lordyao>
++ Azure:
++ StackOverflow:
++ greasyfork: <https://greasyfork.org/zh-CN/users/806993-lordyao>
++ csdn: <https://blog.csdn.net/yaokingson>
++ cnblog:
++ dclound.io: <https://www.dcloud.io/>
+
 #### 媒体
-- weibo: <http://weibo.com/lordyao>
-- 哔哩哔哩/bilibili：<https://space.bilibili.com/19354848>
-- twitter: <http://twitter.com/Lord_Honor_Yao>
-- douban: <https://www.douban.com/people/2307961/>
-- 知乎:
+
++ weibo: <http://weibo.com/lordyao>
++ 哔哩哔哩/bilibili：<https://space.bilibili.com/19354848>
++ twitter: <http://twitter.com/Lord_Honor_Yao>
++ douban: <https://www.douban.com/people/2307961/>
++ 知乎:
+
 #### IM
-- wechat:
-- QQ: 350788415
-- Telegram:
-- dingding:
-- instagram:
-- pinterest:
-- facebook:
-- linkedin:
+
++ wechat:
+
++ QQ: 350788415
++ Telegram:
++ dingding:
++ instagram:
++ pinterest:
++ facebook:
++ linkedin:
+
 #### Email list
-- Email: 350788415@qq.com
+
++ Email: 350788415@qq.com
 
 ## Donate
 
@@ -55,6 +67,10 @@ Journal:
 <image alt="wechat" src="https://yaoqs.github.io/images/微信收款码.png" width="200"/><br>
 <image alt="wechat" src="https://yaoqs.github.io/images/微信打赏码.png" width="200"/>
 
+## 以下代码用于在GitHub page 中显示
+
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <div id="qrcode"></div>
 <script>
     $('#qrcode').qrcode({width: 173,height: 173,text:"<%- url_for(page.permalink) %>"});

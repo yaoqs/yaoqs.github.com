@@ -16,14 +16,14 @@
 </head>
 
 <body>
-<ol>
-        <li><a href="/">home</a></li>
-        <li><a href="./admin.html">admin</a></li>
-        <li><a href="./base64andhex.html">base64andhex</a></li>
-        <li><a href="./datauribuilder.html">datauribuilder.html</a></li>
-        <li><a href="./Markdown.Parser.html">Markdown.Parser.html</a></li>
-        <li><a href="./test1.html">test1.html</a></li>
-</ol>
+        <ol>
+                <li><a href="/">home</a></li>
+                <li><a href="./admin.html">admin</a></li>
+                <li><a href="./base64andhex.html">base64andhex</a></li>
+                <li><a href="./datauribuilder.html">datauribuilder.html</a></li>
+                <li><a href="./Markdown.Parser.html">Markdown.Parser.html</a></li>
+                <li><a href="./test1.html">test1.html</a></li>
+        </ol>
         <!---->
         <style type="text/css">
                 body {
@@ -552,7 +552,7 @@
 
                 <!--[if IE 7]>
 <style type="text/css">
-                .menuItem{ margin-left:-130px; } 
+                .menuItem{ margin-left:-130px; }
         </style>
 <![endif]-->
 
@@ -601,18 +601,31 @@
 
                 </script>
                 <!-------------------------------------------------------------------------------------->
+                <script src="../lib/echarts.min.js"></script>
+                <script src="https://cdn.staticfile.org/echarts/5.3.2/echarts.common.min.js"></script>
                 city:<input id="cityname" type="text" name="cityname" /><input id="submit" type="submit"
                         value="Submit" />
 
 
                 <div id="test"></div>
                 <div id="test1"></div>
+                <style>
+                        .box {
+                                width: 600px;
+                                height: 300px;
+
+                        }
+                </style>
+                <div class="box"></div>
+
                 <div id="test2"
                         style="display: grid;grid-template-rows: auro 1fr;grid-template-columns: repeat(5, 1fr);"></div>
                 <canvas id="diagonal" style="position: absolute;">
                         Your browser does not support the HTML5 canvas tag.
                 </canvas>
                 <script language="javascript">
+                        //3.初始化实例对象 echarts.init(dom容器)
+                        var myChart = echarts.init(document.querySelector(".box"));
                         $("#submit").on('click', function (e) {
                                 if ($('input[name="cityname"]').val() == '') {
                                         alert("未输入待查询城市名！");
@@ -647,6 +660,7 @@
                                 }
                                 cityname = encodeURI(cityname);
                                 var url = "http://wthrcdn.etouch.cn/weather_mini?city=" + cityname;
+                                console.log(url)
                                 $.ajax({
                                         url: url,
                                         async: false,
@@ -654,7 +668,10 @@
                                         crossDomain: true,
                                         success: function (dataString) {
                                                 //    $("#test").get(0).innerHTML = dataString;
+                                                console.log(dataString)
+                                                /* {"data":{"yesterday":{"date":"27日星期五","high":"高温 24℃","fx":"南风","low":"低温 17℃","fl":"<![CDATA[2级]]>","type":"中雨"},"city":"昆明","forecast":[{"date":"28日星期六","high":"高温 26℃","fengli":"<![CDATA[2级]]>","low":"低温 16℃","fengxiang":"西南风","type":"小雨"},{"date":"29日星期天","high":"高温 25℃","fengli":"<![CDATA[2级]]>","low":"低温 15℃","fengxiang":"南风","type":"多云"},{"date":"30日星期一","high":"高温 23℃","fengli":"<![CDATA[2级]]>","low":"低温 15℃","fengxiang":"东风","type":"中雨"},{"date":"31日星期二","high":"高温 24℃","fengli":"<![CDATA[2级]]>","low":"低温 16℃","fengxiang":"东南风","type":"小雨"},{"date":"1日星期三","high":"高温 25℃","fengli":"<![CDATA[2级]]>","low":"低温 17℃","fengxiang":"南风","type":"中雨"}],"ganmao":"感冒易发期，外出请适当调整衣物，注意补充水分。","wendu":"26"},"status":1000,"desc":"OK"}*/
                                                 var obj = JSON.parse(dataString);
+                                                console.log(obj)
                                                 if (obj.status == 1000) {
 
                                                         function setTime() {
@@ -680,87 +697,156 @@
                                                         var div = document.querySelector("#test2");
 
                                                         $("#test1").get(0).innerHTML = "<span>" + obj.data.city + "</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>" + obj.data.wendu + "℃</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>" + obj.data.ganmao + "</span>";
-                                                        var arrh = new Array();
-                                                        var arrl = new Array();
+                                                        var arrh = [], arrl = [],
+                                                                xdate = [], feng = [], type = [];
                                                         var smg = obj.data.forecast;
-                                                        var i = 0;
                                                         for (var s of smg) {
-
-                                                                var date = s.date;
-                                                                var high = s.high;
-                                                                //       console.log(high.replace(/[^\d]/g, ''));
-                                                                arrh[i] = parseInt(high.replace(/[^\d]/g, ''));
-                                                                //console.log(arrh[i]);
-                                                                var fengli = s.fengli;
-                                                                var low = s.low;
-                                                                //      console.log(low.replace(/[^\d]/g, ''));
-                                                                arrl[i] = parseInt(low.replace(/[^\d]/g, ''));
-                                                                var fengxiang = s.fengxiang;
-                                                                var type = s.type;
-                                                                var p = document.createElement("p");
-                                                                p.innerHTML = date + "<br>" + type + "<br>" + high + "<br>" + low + "<br>" + fengxiang + "<br>" + fengli;
-                                                                div.appendChild(p);
-                                                                i++;
+                                                                xdate.push(s.date);
+                                                                arrh.push(parseInt(s.high.replace(/[^\d]/g, '')));
+                                                                arrl.push(parseInt(s.low.replace(/[^\d]/g, '')));
+                                                                feng.push(s.fengxiang + '' + s.fengli.replace(/[^\d]/g, '') + '级');
+                                                                type.push(s.type);
                                                         }
-                                                        var canvasw = $('#test2')[0].clientWidth;
-                                                        var canvash = $('#test2')[0].clientHeight;
-                                                        $("#diagonal")[0].width = canvasw;
-                                                        $("#diagonal")[0].height = canvash;
-                                                        $("#diagonal")[0].style.left = $('#test2')[0].offsetLeft.toString() + "px";
-                                                        //$("#diagonal")[0].style.top = $("#test2")[0].offsetTop.toString() + "px";
-                                                        $("#diagonal")[0].style.marginTop = (-$("#test2")[0].offsetHeight).toString() + "px";
+                                                        //echarts
+                                                        //4.指定配置项和数据
+                                                        var option = {
+                                                                grid: {
+                                                                        show: true,
+                                                                        backgroundColor: 'transparent',
+                                                                        opacity: 0.3,
+                                                                        borderWidth: '0'
+                                                                },
+                                                                tooltip: {
+                                                                        trigger: 'axis'
+                                                                },
+                                                                legend: {
+                                                                        show: false
+                                                                },
+                                                                title: {
+                                                                        text: obj.data.city
+                                                                },
+                                                                xAxis: [
+                                                                        // 日期
+                                                                        {
+                                                                                type: 'category',
+                                                                                boundaryGap: true,
 
-                                                        var canvas = document.getElementById('diagonal'); //获取canvas对象
-                                                        var context = canvas.getContext('2d');    //获取canvas的上下文
-                                                        canvas.innerText = "";
-                                                        context.globalAlpha = 0.8;
+                                                                                zlevel: 100,
+                                                                                axisLine: {
+                                                                                        show: true
+                                                                                },
+                                                                                axisTick: {
+                                                                                        show: false
+                                                                                },
+                                                                                axisLabel: {
+                                                                                        interval: 0,
+                                                                                        formatter: [
+                                                                                                '{a|{value}}'
+                                                                                        ].join('\n'),
+                                                                                        rich: {
+                                                                                                a: {
+                                                                                                        // color: 'white',
+                                                                                                        //fontSize: 18
+                                                                                                }
+                                                                                        }
+                                                                                },
+                                                                                nameTextStyle: {
 
-                                                        context.fillStyle = "#ff0000";
-                                                        context.strokeStyle = 'rgba(255,0,0,1)';
-                                                        var maxN = Math.max.apply(null, arrh);
-                                                        var minN = Math.min.apply(null, arrl);
-                                                        var offset = 0;
-                                                        var maxdeltat = maxN - minN;
+                                                                                },
+                                                                                data: xdate
+                                                                        },
 
-                                                        context.beginPath();
-                                                        context.strokeStyle = 'rgba(255,0,0,1)';
-                                                        context.fillStyle = "red";
-                                                        context.moveTo(canvasw / 40, -arrh[0] * canvash / maxdeltat + maxN * canvash / maxdeltat + offset);//
+                                                                        {
+                                                                                type: 'category',
+                                                                                boundaryGap: false,
+                                                                                position: 'top',
+                                                                                offset: '30',
 
-                                                        for (var i = 1; i < 5; i++) {
-                                                                context.lineTo(canvasw / 40 + canvasw / 5 * i, -arrh[i] * canvash / maxdeltat + maxN * canvash / maxdeltat + offset);
-                                                        }
-                                                        context.lineCap = "round";
-                                                        context.lineWidth = 1;
+                                                                                axisLine: {
+                                                                                        show: false
+                                                                                },
+                                                                                axisTick: {
+                                                                                        show: false
+                                                                                },
+                                                                                axisLabel: {
+                                                                                        interval: 0,
+                                                                                        formatter: function (value, index) {
+                                                                                                return '{' + index + '| }\n{b|' + value + '}'
+                                                                                        },
+                                                                                        rich: {
 
-                                                        context.stroke();
+                                                                                        }
+                                                                                },
+                                                                                nameTextStyle: {
+                                                                                        fontWeight: 'bold',
+                                                                                        fontSize: 19
+                                                                                },
+                                                                                // data: this.weatherdata.weather
+                                                                                data: type
+                                                                        },
 
-                                                        context.closePath();
-
-                                                        /*context.beginPath();
-                                                        for(var i = 0; i < 5; i++)
-                                                        {
-                                                             context.arc(canvasw / 40 + canvasw / 5 * i, -arrh[i] * canvash / maxdeltat + maxN * canvash / maxdeltat + offset,3,0,2 * Math.PI,false);
-                                                             //   
-                                                        }
-                                                        //context.fill();
-                                                        */
-
-                                                        context.beginPath();
-                                                        context.strokeStyle = 'rgba(0,144,206,1)';
-                                                        context.fillStyle = 'blue';
-
-                                                        context.moveTo(canvasw / 40, -arrl[0] * canvash / maxdeltat + maxN * canvash / maxdeltat - offset);//
-                                                        //("+",canvasw/40, -arrl[0]*canvash/maxdeltat+canvash*canvash/2/maxdeltat,paint);
-                                                        for (var i = 1; i < 5; i++) {
-                                                                context.lineTo(canvasw / 40 + canvasw / 5 * i, -arrl[i] * canvash / maxdeltat + maxN * canvash / maxdeltat - offset);
-                                                        }
-
-                                                        context.lineCap = "round";
-                                                        context.lineWidth = 1;
-                                                        context.stroke();
+                                                                        {
+                                                                                type: 'category',
+                                                                                boundaryGap: false,
 
 
+                                                                                axisLine: {
+                                                                                        show: false
+                                                                                },
+                                                                                axisTick: {
+                                                                                        show: false
+                                                                                },
+                                                                                axisLabel: {
+                                                                                        interval: 0,
+                                                                                        formatter: function (value, index) {
+                                                                                                return '{' + index + '| }\n{b|' + value + '}'
+                                                                                        },
+                                                                                        rich: {
+
+                                                                                        }
+                                                                                },
+                                                                                nameTextStyle: {
+                                                                                        fontWeight: 'bold',
+                                                                                        fontSize: 19
+                                                                                },
+                                                                                // data: this.weatherdata.weather
+                                                                                data: feng
+                                                                        }
+                                                                ],
+                                                                yAxis: {
+                                                                        axisLine: {
+                                                                                show: false
+                                                                        },
+                                                                        axisLabel: {
+                                                                                show: false
+                                                                        }
+                                                                },
+                                                                series: [{
+                                                                        name: '最高气温',
+                                                                        type: 'line',
+                                                                        data: arrh,
+                                                                        label: {
+                                                                                show: true,
+                                                                                position: 'bottom',
+                                                                                // color: 'white',
+                                                                                formatter: '{c} °C'
+                                                                        },
+                                                                },
+                                                                {
+                                                                        name: '最低气温',
+                                                                        type: 'line',
+                                                                        data: arrl,
+                                                                        label: {
+                                                                                show: true,
+                                                                                position: 'bottom',
+                                                                                // color: 'white',
+                                                                                formatter: '{c} °C'
+                                                                        },
+                                                                }]
+                                                        };
+                                                        //5.将配置项设置给echarts实例对象，使用刚指定的配置项和数据显示图表。
+                                                        myChart.setOption(option);
+                                                        console.log(option.dataset)
                                                 }
                                                 else {
                                                         alert("待查询城市不可用");
@@ -933,7 +1019,7 @@
                         <div class="level-3"></div>
                 </div>
 
-                
+
 </body>
 
 </html>

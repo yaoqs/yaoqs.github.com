@@ -176,7 +176,7 @@
 							window.close();
 						}
 					}
-				} 
+				}
 			</script>
 
 
@@ -258,7 +258,7 @@
 
 		</div>
 	</div>
-	
+
 
 	<!--右下角人物 -->
 	<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
@@ -274,7 +274,7 @@
 			"display": { "position": "left", "width": 66, "height": 88, "hOffset": 10, "vOffset": 20 },
 			"mobile": { "show": true, "scale": 0.5 },
 			"react": { "opacityDefault": 0.8, "opacityOnHover": 0.1 }
-		});  
+		});
 	</script>
 <div onclick="sAlert('d')">nihao</div>
 	<script>
@@ -286,8 +286,8 @@
 			titleheight=25; //提示窗口标题高度
 			bordercolor="#007ECE";//提示窗口的边框颜色
 			titlecolor="#99CCFF";//提示窗口的标题颜色
-			
-			
+
+
 			var sWidth,sHeight;
 			sWidth=document.body.offsetWidth-25;
 			sHeight=document.body.scrollHeight;
@@ -303,8 +303,8 @@
 			bgObj.style.height=sHeight + "px";
 			bgObj.style.zIndex = "10000";
 			document.body.appendChild(bgObj);
-			
-			
+
+
 			var msgObj=document.createElement("div")
 			msgObj.setAttribute("id","msgDiv");
 			msgObj.setAttribute("align","center");
@@ -321,7 +321,7 @@
 			msgObj.style.textAlign = "center";
 			msgObj.style.lineHeight ="25px";
 			msgObj.style.zIndex = "10001";
-			
+
 			var title=document.createElement("h4");
 			title.setAttribute("id","msgTitle");
 			title.setAttribute("align","right");
@@ -337,20 +337,20 @@
 			title.style.cursor="pointer";
 			title.innerHTML="关闭";
 			title.onclick=function(){
-				 document.body.removeChild(bgObj);
-					   document.getElementById("msgDiv").removeChild(title);
-					   document.body.removeChild(msgObj);
-					   }
+document.body.removeChild(bgObj);
+document.getElementById("msgDiv").removeChild(title);
+document.body.removeChild(msgObj);
+}
 			document.body.appendChild(msgObj);
 			document.getElementById("msgDiv").appendChild(title);
 			var txt=document.createElement("p");
 			txt.style.margin="1em 0"
 			txt.setAttribute("id","msgTxt");
 			txt.innerHTML=str;
-				  document.getElementById("msgDiv").appendChild(txt);
-				   }
+document.getElementById("msgDiv").appendChild(txt);
+}
 			{}
-			
+
 	</script>
 </body>
 
