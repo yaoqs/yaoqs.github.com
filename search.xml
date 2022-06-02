@@ -432,6 +432,7 @@
 <h3><span id="html">html</span></h3><ul>
 <li>Live Server:Launch a development local Server with live reload feature for static &amp; dynamic pages</li>
 <li>Prettier: 一键美化 JavaScript/TypeScript/CSS 代码</li>
+<li>HTML Snippets: Full HTML tags including HTML5 Snippets</li>
 <li>HTML CSS Support: Visual Studio Code CSS Intellisense for HTML</li>
 <li>IntelliSense for CSS class names in HTML:基于你的项目以及通过link标签引用的外部文件，该智能插件提供 HTML 中 CSS class 名字的补全</li>
 <li>Beautify:Beautify javascript, JSON, CSS, Sass, and HTML in Visual Studio Code</li>
@@ -444,6 +445,8 @@
 <li>jQuery Code Snippets: Over 130 jQuery Code Snippets for JavaScript code.Just type the letters ‘jq’ to get a list of all available jQuery Code Snippets.</li>
 <li>Beautify css/sass/scss/less: Command “beautify.format”</li>
 <li>Easy LESS: Auto-compile LESS to CSS on save,”Compile-on-save” for LESS stylesheets without using a build task.</li>
+<li>HTML Preview: Provides ability to preview HTML documents.</li>
+<li>Microsoft Edge Tools for VS Code: Show the browser’s Elements and Network tool inside the Visual Studio Code editor and use it to fix CSS issues with your site and inspect network activity.</li>
 </ul>
 <h3><span id="docker">Docker</span></h3><ul>
 <li>Docker:Makes it easy to create, manage, and debug containerized applications.</li>
@@ -453,6 +456,7 @@
 <li>Markdown All in One：All you need for Markdown (keyboard shortcuts, table of contents, auto preview and more).</li>
 <li>Markdown Preview Github Styling:Changes VS Code’s built-in markdown preview to match Github’s style</li>
 <li>markdownlint:Markdown linting and style checking for Visual Studio Code</li>
+<li>Turndown-VSCode: Convert HTML to Markdown.This extension employs the excellent Turndown (<a href="http://domchristie.github.io/turndown/">http://domchristie.github.io/turndown/</a>) library</li>
 </ul>
 <h3><span id="python">python</span></h3><ul>
 <li>Sourcery: 实时重构Python 代码,会自动审查和重构代码。</li>

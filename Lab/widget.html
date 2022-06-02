@@ -1,7 +1,7 @@
-<!doctype html>
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<html>
+<!DOCTYPE html>
+<title>widget</title>
+
+<html lang="en">
 
 <head>
         <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
@@ -12,6 +12,8 @@
         <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
         -->
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 </head>
 
@@ -559,9 +561,7 @@
                 <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
                 </div>
                 <!-------------------------------------------------------------------------------------->
-                <div id="demo" height="50px">
-
-                </div>
+                <div id="demo" height="50px"></div>
 
                 <script>
 
@@ -617,12 +617,6 @@
                         }
                 </style>
                 <div class="box"></div>
-
-                <div id="test2"
-                        style="display: grid;grid-template-rows: auro 1fr;grid-template-columns: repeat(5, 1fr);"></div>
-                <canvas id="diagonal" style="position: absolute;">
-                        Your browser does not support the HTML5 canvas tag.
-                </canvas>
                 <script language="javascript">
                         //3.初始化实例对象 echarts.init(dom容器)
                         var myChart = echarts.init(document.querySelector(".box"));
@@ -692,9 +686,6 @@
                                                                 $("#test").text("最近更新时间 " + HH + ":" + MM + ":" + SS);
                                                         }
                                                         setTime();
-                                                        $("#test2").text('');
-
-                                                        var div = document.querySelector("#test2");
 
                                                         $("#test1").get(0).innerHTML = "<span>" + obj.data.city + "</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>" + obj.data.wendu + "℃</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>" + obj.data.ganmao + "</span>";
                                                         var arrh = [], arrl = [],
