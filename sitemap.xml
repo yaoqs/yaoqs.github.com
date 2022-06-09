@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yaoqs.github.io/20220609/git-zhuan-ti/</loc>
+    
+    <lastmod>2022-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yaoqs.github.io/Music.html</loc>
     
     <lastmod>2022-06-09</lastmod>
@@ -833,6 +842,13 @@
   </url>
   
   <url>
+    <loc>https://yaoqs.github.io/tags/git/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yaoqs.github.io/tags/helloworld/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -924,14 +940,14 @@
   </url>
   
   <url>
-    <loc>https://yaoqs.github.io/tags/%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93/</loc>
+    <loc>https://yaoqs.github.io/tags/github/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yaoqs.github.io/tags/github/</loc>
+    <loc>https://yaoqs.github.io/tags/%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -966,6 +982,13 @@
   </url>
   
   <url>
+    <loc>https://yaoqs.github.io/tags/%E4%BC%A0%E7%BB%9F%E6%96%87%E5%8C%96/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yaoqs.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -974,13 +997,6 @@
   
   <url>
     <loc>https://yaoqs.github.io/tags/Computer-Vision-Resources/</loc>
-    <lastmod>2022-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaoqs.github.io/tags/%E4%BC%A0%E7%BB%9F%E6%96%87%E5%8C%96/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1039,6 +1055,20 @@
   
   <url>
     <loc>https://yaoqs.github.io/categories/visual-studio/%E4%B8%93%E9%A2%98/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaoqs.github.io/categories/git/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaoqs.github.io/categories/git/%E4%B8%93%E9%A2%98/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

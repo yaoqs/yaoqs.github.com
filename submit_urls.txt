@@ -1,3 +1,4 @@
+https://yaoqs.github.io/20220609/git-zhuan-ti/
 https://yaoqs.github.io/20220607/tian-qi-yu-bao-jie-kou/
 https://yaoqs.github.io/20220426/csharp-zhuan-ti/
 https://yaoqs.github.io/20220425/mu-biao-gen-zong-suan-fa/
@@ -7,4 +8,3 @@ https://yaoqs.github.io/20220424/javascript-zhuan-ti/
 https://yaoqs.github.io/20220424/xamarin-zhuan-ti/
 https://yaoqs.github.io/20220401/awesome-github-roster/
 https://yaoqs.github.io/20220401/acoustics/
-https://yaoqs.github.io/20220401/42/

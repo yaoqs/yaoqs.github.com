@@ -6,7 +6,7 @@
   <link href="https://yaoqs.github.io/atom.xml" rel="self"/>
   
   <link href="https://yaoqs.github.io/"/>
-  <updated>2022-06-07T06:15:32.000Z</updated>
+  <updated>2022-06-09T11:22:08.000Z</updated>
   <id>https://yaoqs.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git专题</title>
+    <link href="https://yaoqs.github.io/20220609/git-zhuan-ti/"/>
+    <id>https://yaoqs.github.io/20220609/git-zhuan-ti/</id>
+    <published>2022-06-09T11:22:08.000Z</published>
+    <updated>2022-06-09T11:22:08.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="https://yaoqs.github.io/categories/git/"/>
+    
+    <category term="专题" scheme="https://yaoqs.github.io/categories/git/%E4%B8%93%E9%A2%98/"/>
+    
+    
+    <category term="专题" scheme="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/"/>
+    
+    <category term="git" scheme="https://yaoqs.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>天气预报接口</title>
@@ -466,25 +495,6 @@
     <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
     
     <category term="resource" scheme="https://yaoqs.github.io/tags/resource/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Raspberry-Pi-config</title>
-    <link href="https://yaoqs.github.io/20220101/raspberry-pi-config/"/>
-    <id>https://yaoqs.github.io/20220101/raspberry-pi-config/</id>
-    <published>2022-01-01T00:00:00.000Z</published>
-    <updated>2022-01-01T00:00:00.000Z</updated>
-    
-    
-    <summary type="html">关于树莓派安装、配置、使用等的技巧、工具;About the skills and toolkits of installing, configuring raspbian and handbook for raspberry</summary>
-    
-    
-    
-    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
-    
-    
-    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
     
   </entry>
   
