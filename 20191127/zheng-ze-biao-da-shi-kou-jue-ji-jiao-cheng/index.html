@@ -42,7 +42,7 @@ PHPer都知道， ！是取反的意思；
 两个问号老规矩，0次1次团团转；
 花括号后跟个？，贪婪变成不贪婪；
 还有很多装不下，等着以后来增加
-</pre>常用正则表达式<pre>
+</pre><p>常用正则表达式</p><pre>
 1. ^\d+$ //匹配非负整数（正整数 + 0）
 2. ^[0-9]*[1-9][0-9]*$ //匹配正整数
 3. ^((-\d+) ?(0+))$ //匹配非正整数（负整数 + 0）
@@ -67,7 +67,7 @@ String.prototype.len=function(){return this.replace([^\x00-\xff]/g,"aa").length;
 21. 匹配空行的正则表达式：\n[\s ? ]*\r
 22. 匹配HTML标记的正则表达式：/ &lt;(.*)&gt;./\1&gt; ? &lt;(.*) \/&gt;/
 23. 匹配首尾空格的正则表达式：(^\s*) ?(\s*$)
-</pre>表达式用例<pre>
+</pre><p>表达式用例</p><pre>
 ^\S+[a-z A-Z]$ 不能为空 不能有空格 只能是英文字母
 \S{6,} 不能为空 六位以上
 ^\d+$ 不能有空格 不能非数字
@@ -175,7 +175,7 @@ String.prototype.len=function(){return this.replace([^\x00-\xff]/g,"aa").length;
 ^\w+$ //匹配由数字、26个英文字母或者下划线组成的字符串
 "^[\\w-]+(\\.[\\w-]+)*@[\\w-]+(\\.[\\w-]+)+___FCKpd___0quot; //email地址
 "^[a-zA-z]+://(\\w+(-\\w+)*)(\\.(\\w+(-\\w+)*))*(\\?\\S*)?___FCKpd___0quot; //urlview plaincopy to clipboardprint?
-</pre>正则几个基本概念：<pre>
+</pre><p>正则几个基本概念：</p><pre>
 1. 贪婪：+,*,?,{m,n}等默认是贪婪匹配，即尽可能多匹配，也叫最大匹配
 如果后面加上?，就转化为非贪婪匹配，需要高版本支持
 2. 贪婪：+,*,?,{m,n}等默认是贪婪匹配，即尽可能多匹配，也叫最大匹配
@@ -200,7 +200,7 @@ String.prototype.len=function(){return this.replace([^\x00-\xff]/g,"aa").length;
 例如，’(.)\1\1′ 匹配AAA型。’(.)(.)\2\1′ 匹配ABBA型。
 12. 引用：\num 对所获取的第num个匹配的引用。
 例如，’(.)\1\1′ 匹配AAA型。’(.)(.)\2\1′ 匹配ABBA型。view plaincopy to clipboardprint?
-</pre>正则表达式保留字<pre>
+</pre><p>正则表达式保留字</p><pre>
 ^ (carat)
 . (period)
 [ (left bracket}
