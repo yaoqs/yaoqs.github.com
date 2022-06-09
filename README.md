@@ -67,11 +67,4 @@ Journal:
 <image alt="wechat" src="https://yaoqs.github.io/images/微信收款码.png" width="200"/><br>
 <image alt="wechat" src="https://yaoqs.github.io/images/微信打赏码.png" width="200"/>
 
-## 以下代码用于在GitHub page 中显示
 
-<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-<div id="qrcode"></div>
-<script>
-    $('#qrcode').qrcode({width: 173,height: 173,text:"<%- url_for(page.permalink) %>"});
-</script>
