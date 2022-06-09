@@ -6,7 +6,7 @@
   <link href="https://yaoqs.github.io/atom.xml" rel="self"/>
   
   <link href="https://yaoqs.github.io/"/>
-  <updated>2022-04-26T03:10:05.000Z</updated>
+  <updated>2022-06-07T06:15:32.000Z</updated>
   <id>https://yaoqs.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>天气预报接口</title>
+    <link href="https://yaoqs.github.io/20220607/tian-qi-yu-bao-jie-kou/"/>
+    <id>https://yaoqs.github.io/20220607/tian-qi-yu-bao-jie-kou/</id>
+    <published>2022-06-07T06:15:32.000Z</published>
+    <updated>2022-06-07T06:15:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>csharp专题</title>
@@ -457,25 +478,6 @@
     
     
     <summary type="html">关于树莓派安装、配置、使用等的技巧、工具;About the skills and toolkits of installing, configuring raspbian and handbook for raspberry</summary>
-    
-    
-    
-    <category term="github page" scheme="https://yaoqs.github.io/categories/github-page/"/>
-    
-    
-    <category term="github page" scheme="https://yaoqs.github.io/tags/github-page/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scholar</title>
-    <link href="https://yaoqs.github.io/20220101/scholar/"/>
-    <id>https://yaoqs.github.io/20220101/scholar/</id>
-    <published>2022-01-01T00:00:00.000Z</published>
-    <updated>2022-01-01T00:00:00.000Z</updated>
-    
-    
-    <summary type="html">Scientific/Academic/Scholarly Research. 科研学术.Document Retrieval; Documentation Retrieval; Literature Search; Literature Retrieval.文献检索</summary>
     
     
     

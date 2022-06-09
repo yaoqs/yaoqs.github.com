@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<title>widget</title>
-
-<html lang="en">
+<html lang="zh-cn">
 
 <head>
-        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+
+        <!--cdn-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript"
                 src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
-        <!--
-        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-        -->
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+                <title>widget</title>
 </head>
 
 <body>
@@ -558,10 +556,10 @@
         </style>
 <![endif]-->
 
-                <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-                </div>
                 <!-------------------------------------------------------------------------------------->
-                <div id="demo" height="50px"></div>
+                <div id="demo" height="50px">
+
+                </div>
 
                 <script>
 
@@ -603,7 +601,7 @@
                 <!-------------------------------------------------------------------------------------->
                 <script src="../lib/echarts.min.js"></script>
                 <script src="https://cdn.staticfile.org/echarts/5.3.2/echarts.common.min.js"></script>
-                city:<input id="cityname" type="text" name="cityname" /><input id="submit" type="submit"
+                city:<input title="cityname" id="cityname" type="text" name="cityname" /><input id="submit" type="submit"
                         value="Submit" />
 
 
@@ -617,6 +615,8 @@
                         }
                 </style>
                 <div class="box"></div>
+
+
                 <script language="javascript">
                         //3.初始化实例对象 echarts.init(dom容器)
                         var myChart = echarts.init(document.querySelector(".box"));
@@ -882,17 +882,6 @@
                 <!-------------------------------------------------------------------------------------->
 
                 <!--content end-->
-                <div id="footer" align="middle"
-                        style="background-color: black;vertical-align: -webkit-baseline-middle;padding-top: 10px;;">
-                        <font color="silver">
-                                Copyleft © 2019 - <span id="year">2020</span> LordYao.<br>
-                                Powered by <a href="https://yaoqs.github.io">LordYao.</a>
-                                <script>
-                                        var year = new Date(Date.now()).getFullYear();
-                                        document.getElementById("year").innerText = year;
-                                </script>
-                        </font>
-                </div>
 
                 <!--huojian-->
                 <style type="text/css">
