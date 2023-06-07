@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<title>widget</title>
+
+<html lang="en">
 
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,15 +10,13 @@
         <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
         <!--cdn-->
-        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.7.0/jquery.min.js"></script>
         <script type="text/javascript"
                 src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-
-                <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
 
         <link href="widget.css"  rel="stylesheet">
         <script type="text/javascript" src="widget.js"></script>
-        <title>widget</title>
 </head>
 
 <body>
@@ -70,10 +70,14 @@
                                 CalendarHandler.initialize();
                         });
                 </script>
-                <div class="bg">
-                Hex Clock 是一个简单的网站，它使用十六进制的颜色代码 #000000 ～ #235959 来表示一天 24 小时，并且会在背景展示当前颜色代码的具体颜色
-        </div>
-        <p id="hex">#861001</p>
+
+                <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+                </div>
+                <!-------------------------------------------------------------------------------------->
+                <div id="demo" height="50px">
+
+                </div>
+
                 <script>
                         $(d3.timer(()=>
                         {
@@ -85,7 +89,7 @@
                         if (m<=9) {m = '0'+m};
                         if (s<=9) {s = '0'+s};
 
-                        $("div.bg").css("background-color", '#'+h*5+m*2+s*2 );
+                        $("div#Timesphere").css("width","100px").height("100px").css("border-radius","50%").css("background","radial-gradient(circle at 70px 70px,"+'#'+(h*10).toString(16)+(m*4).toString(16)+(s*4).toString(16)+",#000000)").css("position","float");
                         $("p#hex").text('#'+h+m+s);
                         }),1000);
 
@@ -126,15 +130,6 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
 
                 <script language="javascript">
                         let cityname="昆明";
-                        //3.初始化实例对象 echarts.init(dom容器)
-                        var myChart = echarts.init(document.querySelector(".box"),null,{width:600,height:300});
-                        window.onresize = function() {
-                                myChart.resize({
-                                        width: $("body").width(),
-                                        height: 300
-                                });
-                                console.log($("body").width())
-                                };
 
                         $("#submit").on('click', function (e) {
                                 if ($('input[name="cityname"]').val() == '') {
@@ -202,6 +197,28 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                 if (obj.status == 1000) {
                                                         $("#test").text(setTime());
 
+                                                        function setTime() {
+                                                                var date = new Date();
+                                                                var HH = date.getHours(),
+                                                                        MM = date.getMinutes(),
+                                                                        SS = date.getSeconds(),
+                                                                        date = date.getDate();
+                                                                if (SS < 10) {
+                                                                        SS = "0" + SS
+                                                                }
+                                                                if (MM < 10) {
+                                                                        MM = "0" + MM;
+                                                                }
+                                                                if (HH < 10) {
+                                                                        HH = "0" + HH;
+                                                                }
+                                                                $("#test").text("最近更新时间 " + HH + ":" + MM + ":" + SS);
+                                                        }
+                                                        setTime();
+                                                        $("#test2").text('');
+
+                                                        var div = document.querySelector("#test2");
+
                                                         $("#test1").get(0).innerHTML = "<span>" + obj.data.city + "</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>" + obj.data.wendu + "℃</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>" + obj.data.ganmao + "</span>";
                                                         var arrh = [], arrl = [],
                                                                 xdate = [], feng = [], type = [];
@@ -214,6 +231,15 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                                 type.push(s.type);
                                                         }
                                                         //echarts
+                                                        //3.初始化实例对象 echarts.init(dom容器)
+                                                        var myChart = echarts.init(document.querySelector(".box"),null,{width:600,height:300});
+                                                        window.onresize = function() {
+                                                                myChart.resize({
+                                                                        width: $("body").width(),
+                                                                        height: 300
+                                                                });
+                                                                console.log($("body").width())
+                                                                };
                                                         //4.指定配置项和数据
                                                         var option = {
                                                                 grid: {
@@ -419,6 +445,15 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
         </script>
                 <!-------------------------------------------------------------------------------------->
                 <div id="position" height="50px"></div>
+                <style>
+                        #position{
+                        background: rgba(255, 255, 255, 0.2);
+                        -webkit-backdrop-filter: blur(8px);
+                        backdrop-filter: blur(8px);
+                        border-radius: 25px;
+                        box-shadow:inset 0 0 6px rgba(255, 255, 255, 0.2);
+                        }
+                </style>
                 <div id="caiyunapp">
                         <div id="tip"></div>
                         <div id="chart_minutely"></div>
@@ -429,32 +464,36 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                 </div>
                 <script>
                         $(async ()=>{
-                                var x = document.getElementById("position");
+                                var location=d3.select("body").select("#position")
+
                                 if (navigator.geolocation) {
                                         navigator.geolocation.getCurrentPosition(position=>{
-                                                x.innerHTML = "纬度: " + position.coords.latitude + "<br>经度: " + position.coords.longitude;
+                                                location.append("br")
+                                                location.append("text").text( "纬度: " + position.coords.latitude)
+                                                location.append("br")
+                                                location.append("text").text("经度: " + position.coords.longitude);
                                                 $.cookie("latitude",position.coords.latitude);
                                                 $.cookie("longitude",position.coords.longitude);
                                         },
                                         error=>{
                                                 switch (error.code) {
                                                 case error.PERMISSION_DENIED:
-                                                        x.innerHTML = "用户拒绝对获取地理位置的请求。"
+                                                        location.append("text").text("用户拒绝对获取地理位置的请求。")
                                                         break;
                                                 case error.POSITION_UNAVAILABLE:
-                                                        x.innerHTML = "位置信息是不可用的。"
+                                                        location.append("text").text("位置信息是不可用的。")
                                                         break;
                                                 case error.TIMEOUT:
-                                                        x.innerHTML = "请求用户地理位置超时。"
+                                                        location.append("text").text("请求用户地理位置超时。")
                                                         break;
                                                 case error.UNKNOWN_ERROR:
-                                                        x.innerHTML = "未知错误。"
+                                                        location.append("text").text("未知错误。")
                                                         break;
                                                 }
                                         })
                                 }
                                 else {
-                                        x.innerHTML = "该浏览器不支持获取地理位置。";
+                                        location.append("text").text("该浏览器不支持获取地理位置。");
                                 }
                         });
 
@@ -470,19 +509,48 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                 var PosapiURL = "https://restapi.amap.com/v3/geocode/regeo?key=127caacaa204cc855a9bcdbc8ca06a49&location=" + $.cookie("longitude")  + "," + $.cookie("latitude");
                                 var caiyunapp=d3.select("body").select("#caiyunapp");
                                 $(async ()=>{
-                                $.ajax({
-                                dataType: 'jsonp',
-                                url: WeatherapiURL,
-                                async: false,
-                                method: "GET",
-                                crossDomain: true,
-                                success: function (dataString) {
-                                        console.log(dataString)
-                                        //var obj = JSON.parse(dataString);
-                                        var obj=$.parseJSON(JSON.stringify(dataString));
+                                        $.ajax({
+                                                dataType: 'jsonp',
+                                                url: PosapiURL,
+                                                async: false,
+                                                method: "GET",
+                                                crossDomain: true,
+                                                success: function (dataString) {
+                                                        var obj=$.parseJSON(JSON.stringify(dataString));
+                                                        if(obj.status=="1")
+                                                        {
+                                                                d3.select("body").select("#position").append("br")
+                                                                d3.select("body").select("#position").append("text").text(obj.regeocode.formatted_address)
+                                                        }
+                                                },
+                                                error: function (jqXHR, textStatus, errorThrown) {
+                                                        /*错误信息处理*/
+                                                        d3.select("body").select("#position").append("br")
+                                                        d3.select("body").select("#position").append("text").text("...")
+                                                }
+                                        });
+                                        $.ajax({
+                                                dataType: 'jsonp',
+                                                url: WeatherapiURL,
+                                                async: false,
+                                                method: "GET",
+                                                crossDomain: true,
+                                                success: function (dataString) {
+                                                        console.log(dataString)
+                                                        //var obj = JSON.parse(dataString);
+                                                        var obj=$.parseJSON(JSON.stringify(dataString));
 
                                         if (obj.status == "ok") {
-                                                caiyunapp.select("#tip").text(()=>{return setTime()+obj.result.forecast_keypoint+" alert:"+obj.result.alert.content})
+                                                caiyunapp.append("text").text(()=>{return setTime()})
+                                                caiyunapp.append("br")
+                                                caiyunapp.append("text").text(()=>{return obj.result.forecast_keypoint})
+                                                if(obj.result.alert.content!=null)
+                                                {
+                                                        caiyunapp.append("br")
+                                                        caiyunapp.append("text").text(()=>{return " alert:"+obj.result.alert.content})
+                                                }
+
+
                                                 var minutely=obj.result.minutely;
                                                 var hourly=obj.result.hourly;
                                                 var daily=obj.result.daily;
@@ -493,7 +561,7 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                 const marginRight = 30;
                                                 const marginBottom = 30;
                                                 const marginLeft = 50;
-                                                caiyunapp.append("p").text("Daily Forecast:")
+                                                caiyunapp.append("p").text("Daily Forecast-15日内预报:")
                                                 const svg_daily = caiyunapp.append('svg').attr('width', width / 2).attr('height', 200).append("g");
                                                 // 定义坐标轴
                                                 var xScale_daily = d3.scaleTime().domain(d3.extent(daily.temperature.map(d=>d3.timeParse("%Y-%m-%d")(d.date)))).range([0, width/2-padding*2])
@@ -809,7 +877,7 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                 t.data(daily.pm25).append('td').text(d=>"["+d.min+"]["+d.avg+"]["+d.max+"]")
 
                                                 //============================================
-                                                caiyunapp.append("p").text("Hourly Forecast:")
+                                                caiyunapp.append("p").text("Hourly Forecast(48h)-小时级预报（48小时）:")
                                                 const svg_hourly = caiyunapp.append('svg').attr('width', width / 2).attr('height', 200);
                                                 // 定义坐标轴
                                                 var xScale_hourly= d3.scaleTime().domain(d3.extent(hourly.temperature.map(d=>d3.timeParse("%Y-%m-%d %H:%M")(d.datetime)))).range([0, width/2-padding*2])
@@ -933,7 +1001,7 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                 .attr('text-anchor', 'middle')
                                                 .attr('dy', '0.03em')
 
-                                                var tn2=["datetime","skycon","humidity","aqi","cloudrate","pm25"]
+                                                var tn2=["datetime","Temperature(℃)","Precipitation(mm)","skycon","humidity","aqi","cloudrate","pm25","wind/风","press/气压(Pa)"]
                                                 caiyunapp.append("table").attr("id","hourly").attr("border","1px solid").attr("border-color","#96D4D4").append("tr").attr("id","name").selectAll("td").data(tn2).enter().append("td").text(d=>d)
                                                 var t=caiyunapp.select("table#hourly")
                                                 .selectAll("tr").filter((d,i)=>{return i>1})
@@ -941,14 +1009,18 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                 .join("tr");
 
                                                 t.append("td").text(d=>d.datetime)
+                                                t.data(hourly.temperature).append('td').text(d=>d.value+"℃")
+                                                t.data(hourly.precipitation).append('td').text(d=>d.value)
                                                 t.data(hourly.skycon).append('td').text(d=>d.value)
                                                 t.data(hourly.humidity).append('td').text(d=>d.value)
                                                 t.data(hourly.aqi).append('td').text(d=>d.value)
                                                 t.data(hourly.cloudrate).append('td').text(d=>d.value)
                                                 t.data(hourly.pm25).append('td').text(d=>d.value)
+                                                t.data(hourly.wind).append('td').text(d=>"["+d.speed+"m/s]["+d.direction+"°]")
+                                                t.data(hourly.pres).append('td').text(d=>d.value)
 
                                                 //======================================
-                                                caiyunapp.append("p").text("Minutely Forecast:")
+                                                caiyunapp.append("p").text("Minutely Forecast(1h/2h)-分钟级预报（1小时/2小时）:")
                                                 const svg_minutely = caiyunapp.append('svg').attr('width', width / 2).attr('height', 200);
                                                 // 定义坐标轴
                                                 var xScale_minutely = d3.scaleLinear().domain([0,120]).range([0, width/2-padding*2])
@@ -969,7 +1041,7 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                 line_minutely.append('path')
                                                 .datum(minutely.precipitation)
                                                 .attr('fill', 'none')
-                                                .attr('stroke', 'blue')
+                                                .attr('stroke', 'red')
                                                 .attr('stroke-width', 1)
                                                 .attr('d', d3.line().x((d,i) => {
                                                         return xScale_minutely(i)
@@ -979,7 +1051,7 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                                 line_minutely.append('path')
                                                 .datum(minutely.precipitation_2h)
                                                 .attr('fill', 'none')
-                                                .attr('stroke', 'yellow')
+                                                .attr('stroke', 'black')
                                                 .attr('stroke-width', 1)
                                                 .attr('d', d3.line().x((d,i) => {
                                                         return xScale_minutely(i)
@@ -1013,7 +1085,7 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
                                 },
                                 error: function (jqXHR, textStatus, errorThrown) {
                                         /*错误信息处理*/
-                                        $("#caiyunapp>#tip").text("网络连接异常或浏览器已阻止载入混合活动内容（请用http协议访问）"+textStatus);
+                                        caiyunapp.append("text").text("网络连接异常或浏览器已阻止载入混合活动内容（请用http协议访问）"+textStatus);
                                 }
                         });
                         //d3 test
@@ -1026,7 +1098,119 @@ window.location.href="https://www.bing.com/search?q="+searchValue;
 
                 </script>
                 <!-------------------------------------------------------------------------------------->
+                <div>three.js demo</div>
+                <script src="https://threejs.org/build/three.js"></script>
+                <script src='https://mrdoob.github.io/stats.js/build/stats.min.js'></script>
+                <div id="mainCanvas" style="width:600px;height:450px;background-image: linear-gradient(rgb(0, 0, 1), rgb(119, 119, 237));" ></div>
+                <script>
+                        var canvasContainer = document.getElementById('mainCanvas');
+                        var cwidth = canvasContainer.clientWidth;  //获取画布的宽
+                        var cheight = canvasContainer.clientHeight;  //获取画布的高
+                        var renderer = new THREE.WebGLRenderer({
+                                antialias: true,  //抗锯齿开
+                                alpha: true, // canvas是否包含alpha (透明度) 默认为 false
+                                precision: 'highp',
+                        });
+                        renderer.setPixelRatio(window.devicePixelRatio);
+                        renderer.setSize(cwidth, cheight);  //设置渲染器的宽和高
+                        renderer.setClearColor(0x000000); //设置渲染器的背景颜色为黑色
+                        renderer.setClearAlpha(0.0) // 设置alpha，合法参数是一个 0.0 到 1.0 之间的浮点数
+                        var canvas = renderer.domElement; //获取渲染器的画布元素
+                        canvasContainer.appendChild(canvas); //将画布写入html元素中
+                        var scene = new THREE.Scene();
+                        const fov = 40 // 视野范围
+                        const aspect = 2 // 相机默认值 画布的宽高比
+                        const near = 0.1 // 近平面
+                        const far = 10000 // 远平面
+                        var camera = new THREE.OrthographicCamera(-6, 6, 4.5, -4.5, 0, 50); //创建照相机
+                        camera.position.set(35, 15, 25);  //设置照相机的位置
+                        camera.lookAt(new THREE.Vector3(0, 0, 0)); //设置照相机面向(0,0,0)坐标观察照相机默认坐标为(0,0,0);默认面向为沿z轴向里观察;
+                        var light = new THREE.PointLight(0xffffff, 1, 100);  //创建光源
+                        light.position.set(12, 15, 10);  //设置光源的位置
+                        scene.add(light);  //在场景中添加光源
+                        // 顶点着色器
+                        const vertexShader = `
+                        varying vec2 vUv;
+                        varying vec3 vPosition;
 
+                        void main(){
+                                gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0);
+
+                                vUv=uv;
+                                vPosition=position;
+                        }
+                        `
+                        // 片元着色器
+                        const fragmentShader = `
+                        precision mediump int;
+                        precision highp float;
+
+                        uniform float uTime;
+                        varying vec2 vUv;
+                        uniform vec3 u_resolution;
+                        varying vec3 vPosition;
+
+                        void main(){
+                                vec3 topleft = vec3( 2.5,2.5,2.5 );
+                                vec3 bottomright=vec3(-2.5,-2.5,-2.5);
+                                float dist=  distance(topleft,bottomright);
+
+                                float r = vPosition.x/dist+0.5;
+                                float g = vPosition.y/dist+0.5;
+                                float b = vPosition.z/dist+0.5;
+                                gl_FragColor = vec4(r, g, b, 1);
+
+                        }
+                        `
+                        var geometry = new THREE.BoxGeometry (5, 5, 5);
+
+                        var material = new THREE.ShaderMaterial({
+                                vertexShader: vertexShader,
+                                fragmentShader: fragmentShader,
+                                side: THREE.DoubleSide,
+                                uniforms: {
+                                        uTime: {
+                                                value: 0
+                                                },
+                                                ratio:{
+                                                        value:0
+                                                }
+                                        }
+                                });
+                        //创建形状和材质之后，就可以创建该物体了：
+                        //创建物体
+                        var cube = new THREE.Mesh(geometry, material);
+                        scene.add(cube);
+                        renderer.render(scene, camera);
+
+                        // Clock
+                        const clock = new THREE.Clock()
+
+                        // Animations
+                        const tick = () => {
+                       // stats.begin()
+
+                        const elapsedTime = clock.getElapsedTime()
+
+                        cube.position.y = Math.sin(elapsedTime)
+                        cube.position.x = Math.cos(elapsedTime)
+                        cube.rotation.y += 0.01
+                        cube.rotation.x += 0.01
+
+                        //material.color.set(100,100,100)
+                        //material.uniforms.uTime.value+=0.01
+                        material.uniforms.ratio.value += 10;
+
+                        // Render
+                        renderer.render(scene, camera)
+                        //stats.end()
+                        requestAnimationFrame(tick)
+                        }
+
+                tick()
+
+                </script>
+                <!-------------------------------------------------------------------------------------->
                 <!--content end-->
 
                 <!-- 火箭 -->

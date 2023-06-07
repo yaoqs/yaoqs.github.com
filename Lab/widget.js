@@ -1,11 +1,3 @@
-/*
- * @Author: yaoqs 243292490@qq.com
- * @Date: 2022-08-12 10:46:13
- * @LastEditors: yaoqs 243292490@qq.com
- * @LastEditTime: 2022-08-13 20:41:20
- * @FilePath: \YaoGit\hexo\source\Lab\widget.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 /******************* Calendar ****************************/
 var CalendarHandler = {
     currentYear: 0,

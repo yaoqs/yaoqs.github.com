@@ -4708,6 +4708,8 @@
 <h3><span id="wechat">Wechat</span></h3><ul>
 <li>小程序开发助手：微信小程序开发助手 for VSCode，代码提示 + 语法高亮</li>
 <li>微信小程序开发工具：提供预览、打包上传、代码补全、语法高亮、依赖分析、项目模版等功能。</li>
+<li>HTML Preview: Provides ability to preview HTML documents.</li>
+<li>Microsoft Edge Tools for VS Code: Show the browser’s Elements and Network tool inside the Visual Studio Code editor and use it to fix CSS issues with your site and inspect network activity.</li>
 </ul>
 <h3><span id="docker">Docker</span></h3><ul>
 <li>Docker:Makes it easy to create, manage, and debug containerized applications.</li>
@@ -4723,6 +4725,7 @@
 <h3><span id="sql">SQL</span></h3><ul>
 <li>SQL Server (mssql):Develop Microsoft SQL Server, Azure SQL Database and SQL Data Warehouse everywhere</li>
 <li>SQLTools: Database management done right. Connection explorer, query runner, intellisense, bookmarks, query history. Feel like a database hero!</li>
+<li>Turndown-VSCode: Convert HTML to Markdown.This extension employs the excellent Turndown (<a href="http://domchristie.github.io/turndown/">http://domchristie.github.io/turndown/</a>) library</li>
 </ul>
 <h3><span id="python">python</span></h3><ul>
 <li>Sourcery: 实时重构Python 代码,会自动审查和重构代码。</li>
