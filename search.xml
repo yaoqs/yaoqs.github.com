@@ -4544,9 +4544,9 @@
         <category>专题</category>
       </categories>
       <tags>
-        <tag>专题</tag>
         <tag>js</tag>
         <tag>JavaScript</tag>
+        <tag>专题</tag>
       </tags>
   </entry>
   <entry>
@@ -4603,6 +4603,13 @@
 <p><a href="https://marketplace.visualstudio.com/vscode">https://marketplace.visualstudio.com/vscode</a></p>
 <p><a href="http://code.visualstudio.com/docs">http://code.visualstudio.com/docs</a></p>
 <p>官网下载地址：<a href="http://code.visualstudio.com/">http://code.visualstudio.com/</a></p>
+<h2><span id="设置">设置</span></h2><ul>
+<li>editor.tabCompletion用来在出现推荐值时，按下Tab键是否自动填入最佳推荐值，推荐设置为on</li>
+<li>editor.codeActionsOnSave中的source.organizeImports属性，这个属性能够在保存时，自动调整 import 语句相关顺序，能够让你的 import 语句按照字母顺序进行排列，推荐设置为true,即”editor.codeActionsOnSave”: { “source.organizeImports”: true }；</li>
+<li>禁用自动更新：文件 &gt; 首选项 &gt; 设置（macOS：代码 &gt; 首选项 &gt; 设置，搜索update mode并将设置更改为none。</li>
+<li>开启代码提示设置：setting &gt; 到搜索框里搜索“prevent”—&gt;并取消此项的勾选</li>
+<li>设置同步</li>
+</ul>
 <h2><span id="插件">插件</span></h2><h3><span id="general">General</span></h3><ul>
 <li>Chinese (Simplified) (简体中文) Language Pack for Visual Studio:</li>
 <li>PowerShell:Develop PowerShell modules, commands and scripts in Visual Studio Code!</li>
@@ -4684,6 +4691,7 @@
 <li>deno: A language server client for Deno.</li>
 </ul>
 <h3><span id="html">html</span></h3><ul>
+<li>open in browser:在浏览器里预览网页必备。运行html文件</li>
 <li>Live Server:Launch a development local Server with live reload feature for static &amp; dynamic pages</li>
 <li>Prettier: 一键美化 JavaScript/TypeScript/CSS 代码</li>
 <li>HTML Snippets: Full HTML tags including HTML5 Snippets</li>
@@ -4735,6 +4743,7 @@
 </ul>
 <h2><span id="references">References</span></h2><ol>
 <li><a href="https://blog.csdn.net/somenzz/article/details/123587772">这 14 个 VSCode 插件，让你写代码如同神一般</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/113222681">史上最全vscode配置使用教程</a></li>
 </ol>
 ]]></content>
       <categories>
@@ -6640,8 +6649,8 @@ volumes:
         <category>专题</category>
       </categories>
       <tags>
-        <tag>Docker</tag>
         <tag>专题</tag>
+        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>
@@ -6993,8 +7002,8 @@ Ctrl+b ,：窗口重命名。
         <category>专题</category>
       </categories>
       <tags>
-        <tag>专题</tag>
         <tag>js</tag>
+        <tag>专题</tag>
         <tag>jQuery</tag>
       </tags>
   </entry>
