@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<title>widget</title>
+
+<html lang="en">
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+
+        <!--cdn-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+
+        <link href="./widget.css" rel="stylesheet">
+        <script type="text/javascript" src="./widget.js"></script>
+
+
+</head>
+
+<body>
+        <ol>
+                <li><a href="/">home</a></li>
+                <li><a href="./admin.html">admin</a></li>
+                <li><a href="./Markdown.Parser.html">Markdown.Parser.html</a></li>
+                <li><a href="./test1.html">test1.html</a></li>
+                <li><a href="./jsTimeTest.htm">jsTimeTest.htm</a></li>
+        </ol>
+        <!---->
+        <div id="Demo">
+                <div id="CalendarMain">
+                        <div id="title">
+                                <a class="selectBtn month" href="javascript:"
+                                        onClick="CalendarHandler.CalculateLastMonthDays();">&lt;</a>
+                                <a class="selectBtn selectYear" href="javascript:"
+                                        onClick="CalendarHandler.CreateSelectYear(CalendarHandler.showYearStart);">2014年</a>
+                                <a class="selectBtn selectMonth" onClick="CalendarHandler.CreateSelectMonth()">6月</a>
+                                <a class="selectBtn nextMonth" href="javascript:"
+                                        onClick="CalendarHandler.CalculateNextMonthDays();">&gt;</a>
+                                <a class="selectBtn currentDay" href="javascript:"
+                                        onClick="CalendarHandler.CreateCurrentCalendar(0,0,0);">今天</a>
+                        </div>
+                        <div id="context">
+                                <div class="week">
+                                        <h3> 一 </h3>
+                                        <h3> 二 </h3>
+                                        <h3> 三 </h3>
+                                        <h3> 四 </h3>
+                                        <h3> 五 </h3>
+                                        <h3> 六 </h3>
+                                        <h3> 日 </h3>
+                                </div>
+                                <div id="center">
+                                        <div id="centerMain">
+                                                <div id="selectYearDiv"></div>
+                                                <div id="centerCalendarMain">
+                                                        <div id="Container"></div>
+                                                </div>
+                                                <div id="selectMonthDiv"></div>
+                                        </div>
+                                </div>
+                                <div id="foots"><a id="footNow"></a></div>
+                        </div>
+                </div>
+
+                <script type="text/javascript">
+                        $(document).ready(function (e) {
+                                CalendarHandler.initialize();
+                        });
+                </script>
+
+
+                <!-------------------------------------------------------------------------------------->
+                <div class="bg">
+                        Hex Clock 是一个简单的网站，它使用十六进制的颜色代码 #000000 ～ #235959 来表示一天 24 小时，并且会在背景展示当前颜色代码的具体颜色
+                </div>
+                <p id="hex">#861001</p>
+                <div id="Timesphere"></div>
+
+                <script>
+                        $(d3.timer(() => {
+                                var d = new Date()
+                                var h = d.getHours();
+                                var m = d.getMinutes();
+                                var s = d.getSeconds();
+                                if (h <= 9) { h = '0' + h };
+                                if (m <= 9) { m = '0' + m };
+                                if (s <= 9) { s = '0' + s };
+
+                                $("div#Timesphere").css("width", "100px").height("100px").css("border-radius", "50%").css("background", "radial-gradient(circle at 70px 70px," + '#' + (h * 10).toString(16) + (m * 4).toString(16) + (s * 4).toString(16) + ",#000000)").css("position", "float");
+                                $("p#hex").text('#' + h + m + s);
+                        }), 1000);
+
+                </script>
+                <!--------------------------------------------->
+
+                <div class="search-inner-wrapper">
+
+                        <form action="https://www.bing.com/search" method="get">
+                                <input type="text" name="q" id="fake-editable" placeholder="在Bing中搜索...">
+                                <input type="submit" id="btn" value="搜索">
+                        </form>
+
+                        <script>
+                                // 按Enter键,执行事件
+                                document.getElementById("fake-editable").addEventListener("keydown", function (event) { if (event.keyCode == 13) { jmp(); } }, false)
+                                document.getElementById("btn").addEventListener("submit", function (event) { jmp(); }, false)
+                                // 按钮点击触发函
+                                function jmp() {
+                                        var searchValue = document.getElementById("fake-editable").value;
+                                        //console.log(searchValue)
+                                        //jumpPage(searchValue);
+                                        window.location.href = "https://www.bing.com/search?q=" + searchValue;
+                                        //alert(searchValue);
+                                }
+                        </script>
+                </div>
+                <!-------------------------------------------------------------------------------------->
+                <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"
+                        integrity="sha256-6EJwvQzVvfYP78JtAMKjkcsugfTSanqe4WGFpUdzo88="
+                        crossorigin="anonymous"></script>
+
+                <div id="test"></div>
+                <div id="test1"></div>
+                <div class="box"></div>
+
+                <!-------------------------------------------------------------------------------------->
+                <div id="location">
+                city:<input title="cityname" id="cityname" type="text" name="cityname" />
+                <input id="submit" type="submit" value="Submit" />
+                <button id="currentPosition">返回当前位置</button>
+                <div id="position" height="50px"></div>
+
+                <style>
+                        #position {
+                                background: rgba(255, 255, 255, 0.2);
+                                -webkit-backdrop-filter: blur(8px);
+                                backdrop-filter: blur(8px);
+                                border-radius: 25px;
+                                box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.2);
+                        }
+                </style>
+                </div>
+                <div id="weather">
+                        <div id="tip" onclick="divshowAlert('<a href=about:blank> 测试效果</a>');"></div>
+                        <div id="chart_minutely"></div>
+                        <div id="hourly_tip"></div>
+                        <div id="chart_hourly"></div>
+                        <div id="chart_daily"></div>
+
+                </div>
+                <script type="text/javascript" src="./weather.js"></script>
+                <!-------------------------------------------------------------------------------------->
+                <div>three.js demo</div>
+                <script type="importmap">
+                        {
+                          "imports": {
+                            "three": "https://cdn.jsdelivr.net/npm/three@v0.168.0/build/three.module.js",
+                            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.168.0/examples/jsm/"
+                          }
+                        }
+                </script>
+                <script type="module" src="./threejs.js"></script>
+                <script src='https://mrdoob.github.io/stats.js/build/stats.min.js'></script>
+                <div id="mainCanvas"
+                        style="width:600px;height:450px;background-image: linear-gradient(rgb(0, 0, 1), rgb(119, 119, 237));">
+                </div>
+                <!-------------------------------------------------------------------------------------->
+                <!--content end-->
+
+                <!-- 火箭 -->
+                <div style="display: none;" id="rocket-to-top">
+                        <div style="opacity:0;display: block;" class="level-2"></div>
+                        <div class="level-3"></div>
+                </div>
+
+
+</body>
+
+</html>
