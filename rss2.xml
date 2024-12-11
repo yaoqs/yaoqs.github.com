@@ -1,0 +1,2897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LordYao</title>
+    <link>https://yaoqs.github.io/</link>
+    
+    <atom:link href="https://yaoqs.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>A scholar magazine/journal-like blog,要庆生的blog</description>
+    <pubDate>Wed, 11 Dec 2024 03:20:38 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>cookie 专题</title>
+      <link>https://yaoqs.github.io/20241211/cookie-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20241211/cookie-zhuan-ti/</guid>
+      <pubDate>Wed, 11 Dec 2024 03:20:38 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/javascript/">javascript</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>游戏设计制作时是否会用到类似 ACM 中的算法设计？</title>
+      <link>https://yaoqs.github.io/20240808/you-xi-she-ji-zhi-zuo-shi-shi-fou-hui-yong-dao-lei-si-acm-zhong-de-suan-fa-she-ji/</link>
+      <guid>https://yaoqs.github.io/20240808/you-xi-she-ji-zhi-zuo-shi-shi-fou-hui-yong-dao-lei-si-acm-zhong-de-suan-fa-she-ji/</guid>
+      <pubDate>Thu, 08 Aug 2024 08:40:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/acm/">acm</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/acm/">acm</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>单线程实现同时监听多个端口（windows 平台 c++ 代码）</title>
+      <link>https://yaoqs.github.io/20240808/dan-xian-cheng-shi-xian-tong-shi-jian-ting-duo-ge-duan-kou-windows-ping-tai-c-dai-ma/</link>
+      <guid>https://yaoqs.github.io/20240808/dan-xian-cheng-shi-xian-tong-shi-jian-ting-duo-ge-duan-kou-windows-ping-tai-c-dai-ma/</guid>
+      <pubDate>Thu, 08 Aug 2024 07:13:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>采用完成端口（IOCP）实现高性能网络服务器（Windows c++ 版）</title>
+      <link>https://yaoqs.github.io/20240808/cai-yong-wan-cheng-duan-kou-iocp-shi-xian-gao-xing-neng-wang-luo-fu-wu-qi-windows-c-ban/</link>
+      <guid>https://yaoqs.github.io/20240808/cai-yong-wan-cheng-duan-kou-iocp-shi-xian-gao-xing-neng-wang-luo-fu-wu-qi-windows-c-ban/</guid>
+      <pubDate>Thu, 08 Aug 2024 07:02:19 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/iocp/">iocp</category>
+      
+      <category domain="https://yaoqs.github.io/categories/iocp/c/">c++</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/iocp/">iocp</category>
+      
+      <category domain="https://yaoqs.github.io/tags/c/">c++</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>使用 C# 开发 pdf 阅读器初探（基于 WPF，没有使用开源库）</title>
+      <link>https://yaoqs.github.io/20240808/shi-yong-c-kai-fa-pdf-yue-du-qi-chu-tan-ji-yu-wpf-mei-you-shi-yong-kai-yuan-ku/</link>
+      <guid>https://yaoqs.github.io/20240808/shi-yong-c-kai-fa-pdf-yue-du-qi-chu-tan-ji-yu-wpf-mei-you-shi-yong-kai-yuan-ku/</guid>
+      <pubDate>Thu, 08 Aug 2024 06:40:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/pdf/">pdf</category>
+      
+      <category domain="https://yaoqs.github.io/categories/pdf/wpf/">wpf</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/pdf/">pdf</category>
+      
+      <category domain="https://yaoqs.github.io/tags/wpf/">wpf</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>基于 opencv 识别、定位二维码 （c++ 版）</title>
+      <link>https://yaoqs.github.io/20240808/ji-yu-opencv-shi-bie-ding-wei-er-wei-ma-c-ban/</link>
+      <guid>https://yaoqs.github.io/20240808/ji-yu-opencv-shi-bie-ding-wei-er-wei-ma-c-ban/</guid>
+      <pubDate>Thu, 08 Aug 2024 03:39:53 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/opencv/">opencv</category>
+      
+      <category domain="https://yaoqs.github.io/categories/opencv/qrcode/">qrcode</category>
+      
+      <category domain="https://yaoqs.github.io/categories/opencv/qrcode/c/">c++</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/opencv/">opencv</category>
+      
+      <category domain="https://yaoqs.github.io/tags/c/">c++</category>
+      
+      <category domain="https://yaoqs.github.io/tags/qrcode/">qrcode</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>自建数字签名证书</title>
+      <link>https://yaoqs.github.io/20240808/zi-jian-shu-zi-qian-ming-zheng-shu/</link>
+      <guid>https://yaoqs.github.io/20240808/zi-jian-shu-zi-qian-ming-zheng-shu/</guid>
+      <pubDate>Thu, 08 Aug 2024 02:53:07 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/">数字签名证书</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/Let%E2%80%99s-Encrypt%E8%AF%81%E4%B9%A6/">Let’s Encrypt证书</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/Let%E2%80%99s-Encrypt%E8%AF%81%E4%B9%A6/SSL%E8%AF%81%E4%B9%A6/">SSL证书</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/">数字签名证书</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Let%E2%80%99s-Encrypt%E8%AF%81%E4%B9%A6/">Let’s Encrypt证书</category>
+      
+      <category domain="https://yaoqs.github.io/tags/SSL%E8%AF%81%E4%B9%A6/">SSL证书</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>MFC 集成 CEF3 窗口</title>
+      <link>https://yaoqs.github.io/20240808/mfc-ji-cheng-cef3-chuang-kou/</link>
+      <guid>https://yaoqs.github.io/20240808/mfc-ji-cheng-cef3-chuang-kou/</guid>
+      <pubDate>Thu, 08 Aug 2024 02:26:47 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/MFC/">MFC</category>
+      
+      <category domain="https://yaoqs.github.io/categories/MFC/cef/">cef</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/MFC/">MFC</category>
+      
+      <category domain="https://yaoqs.github.io/tags/cef/">cef</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>只有神才能写出的代码</title>
+      <link>https://yaoqs.github.io/20240808/zhi-you-shen-cai-neng-xie-chu-de-dai-ma/</link>
+      <guid>https://yaoqs.github.io/20240808/zhi-you-shen-cai-neng-xie-chu-de-dai-ma/</guid>
+      <pubDate>Thu, 08 Aug 2024 01:53:38 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>Cesium 生成 terrain 地形数据 ----CTB 方式及步骤</title>
+      <link>https://yaoqs.github.io/20240808/cesium-sheng-cheng-terrain-di-xing-shu-ju-ctb-fang-shi-ji-bu-zou/</link>
+      <guid>https://yaoqs.github.io/20240808/cesium-sheng-cheng-terrain-di-xing-shu-ju-ctb-fang-shi-ji-bu-zou/</guid>
+      <pubDate>Thu, 08 Aug 2024 01:40:34 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/Cesium/">Cesium</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Cesium/">Cesium</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>ThreeJS 集成地图瓦片</title>
+      <link>https://yaoqs.github.io/20240808/threejs-ji-cheng-di-tu-wa-pian/</link>
+      <guid>https://yaoqs.github.io/20240808/threejs-ji-cheng-di-tu-wa-pian/</guid>
+      <pubDate>Thu, 08 Aug 2024 01:22:10 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/threejs/">threejs</category>
+      
+      <category domain="https://yaoqs.github.io/categories/threejs/Cesium/">Cesium</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Cesium/">Cesium</category>
+      
+      <category domain="https://yaoqs.github.io/tags/threejs/">threejs</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>阿里云人脸识别 C# 调用示例参考</title>
+      <link>https://yaoqs.github.io/20240807/a-li-yun-ren-lian-shi-bie-c-diao-yong-shi-li-can-kao/</link>
+      <guid>https://yaoqs.github.io/20240807/a-li-yun-ren-lian-shi-bie-c-diao-yong-shi-li-can-kao/</guid>
+      <pubDate>Wed, 07 Aug 2024 02:53:33 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>Bjarne Stroustrup&#39;s FAQ（中文版）</title>
+      <link>https://yaoqs.github.io/20240807/bjarne-stroustrup-s-faq-zhong-wen-ban/</link>
+      <guid>https://yaoqs.github.io/20240807/bjarne-stroustrup-s-faq-zhong-wen-ban/</guid>
+      <pubDate>Wed, 07 Aug 2024 02:22:29 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/c/">c++</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/c/">c++</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Understanding Convolution in Deep Learning</title>
+      <link>https://yaoqs.github.io/20240806/understanding-convolution-in-deep-learning/</link>
+      <guid>https://yaoqs.github.io/20240806/understanding-convolution-in-deep-learning/</guid>
+      <pubDate>Tue, 06 Aug 2024 08:24:51 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Deep-Learning/">Deep Learning</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>二维码的生成细节和原理</title>
+      <link>https://yaoqs.github.io/20240806/er-wei-ma-de-sheng-cheng-xi-jie-he-yuan-li/</link>
+      <guid>https://yaoqs.github.io/20240806/er-wei-ma-de-sheng-cheng-xi-jie-he-yuan-li/</guid>
+      <pubDate>Tue, 06 Aug 2024 07:24:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%BA%8C%E7%BB%B4%E7%A0%81/">二维码</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%BA%8C%E7%BB%B4%E7%A0%81/">二维码</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>使用 Next.js + Hexo 重构我的博客</title>
+      <link>https://yaoqs.github.io/20240711/shi-yong-next-js-hexo-chong-gou-wo-de-bo-ke/</link>
+      <guid>https://yaoqs.github.io/20240711/shi-yong-next-js-hexo-chong-gou-wo-de-bo-ke/</guid>
+      <pubDate>Thu, 11 Jul 2024 03:08:40 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/nextjs/">nextjs</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/nextjs/">nextjs</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>使用 NextJS 和 TailwindCSS 重构我的博客</title>
+      <link>https://yaoqs.github.io/20240711/shi-yong-nextjs-he-tailwindcss-chong-gou-wo-de-bo-ke/</link>
+      <guid>https://yaoqs.github.io/20240711/shi-yong-nextjs-he-tailwindcss-chong-gou-wo-de-bo-ke/</guid>
+      <pubDate>Thu, 11 Jul 2024 03:05:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/nextjs/">nextjs</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/nextjs/">nextjs</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>使用 Next.js 搭建个人博客</title>
+      <link>https://yaoqs.github.io/20240711/shi-yong-next-js-da-jian-ge-ren-bo-ke/</link>
+      <guid>https://yaoqs.github.io/20240711/shi-yong-next-js-da-jian-ge-ren-bo-ke/</guid>
+      <pubDate>Thu, 11 Jul 2024 01:16:47 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/nextjs/">nextjs</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/nextjs/">nextjs</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>pnpm 教程</title>
+      <link>https://yaoqs.github.io/20240623/pnpm-jiao-cheng/</link>
+      <guid>https://yaoqs.github.io/20240623/pnpm-jiao-cheng/</guid>
+      <pubDate>Sun, 23 Jun 2024 11:29:21 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>IOCP 专题</title>
+      <link>https://yaoqs.github.io/20240603/iocp-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20240603/iocp-zhuan-ti/</guid>
+      <pubDate>Mon, 03 Jun 2024 08:15:09 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/iocp/">iocp</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/iocp/">iocp</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>WireGuard 学习</title>
+      <link>https://yaoqs.github.io/20240530/wireguard-xue-xi/</link>
+      <guid>https://yaoqs.github.io/20240530/wireguard-xue-xi/</guid>
+      <pubDate>Thu, 30 May 2024 02:44:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>poco 库学习</title>
+      <link>https://yaoqs.github.io/20240522/poco-ku-xue-xi/</link>
+      <guid>https://yaoqs.github.io/20240522/poco-ku-xue-xi/</guid>
+      <pubDate>Wed, 22 May 2024 08:28:11 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;POCO</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>中华人民共和国国民经济和社会发展第十四个五年规划和 2035 年远景目标纲要</title>
+      <link>https://yaoqs.github.io/20240513/zhong-hua-ren-min-gong-he-guo-guo-min-jing-ji-he-she-hui-fa-zhan-di-shi-si-ge-wu-nian-gui-hua-he-2035-nian-yuan-jing-mu-biao-gang-yao/</link>
+      <guid>https://yaoqs.github.io/20240513/zhong-hua-ren-min-gong-he-guo-guo-min-jing-ji-he-she-hui-fa-zhan-di-shi-si-ge-wu-nian-gui-hua-he-2035-nian-yuan-jing-mu-biao-gang-yao/</guid>
+      <pubDate>Mon, 13 May 2024 03:40:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 新华社.</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>P 范数单位圆的绘制 --matlab</title>
+      <link>https://yaoqs.github.io/20240509/p-fan-shu-dan-wei-yuan-de-hui-zhi-matlab/</link>
+      <guid>https://yaoqs.github.io/20240509/p-fan-shu-dan-wei-yuan-de-hui-zhi-matlab/</guid>
+      <pubDate>Thu, 09 May 2024 15:36:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>矩阵求导</title>
+      <link>https://yaoqs.github.io/20240509/ju-zhen-qiu-dao/</link>
+      <guid>https://yaoqs.github.io/20240509/ju-zhen-qiu-dao/</guid>
+      <pubDate>Thu, 09 May 2024 15:26:30 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h1&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>λ 演算</title>
+      <link>https://yaoqs.github.io/20240428/lyan-suan/</link>
+      <guid>https://yaoqs.github.io/20240428/lyan-suan/</guid>
+      <pubDate>Sun, 28 Apr 2024 08:10:27 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>理解矩阵</title>
+      <link>https://yaoqs.github.io/20240428/li-jie-ju-zhen/</link>
+      <guid>https://yaoqs.github.io/20240428/li-jie-ju-zhen/</guid>
+      <pubDate>Sun, 28 Apr 2024 07:12:07 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>LOFAR and DEMON analysis: technical description</title>
+      <link>https://yaoqs.github.io/20240410/lofar-and-demon-analysis-technical-description/</link>
+      <guid>https://yaoqs.github.io/20240410/lofar-and-demon-analysis-technical-description/</guid>
+      <pubDate>Wed, 10 Apr 2024 07:29:29 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>无人水面艇国内外现状</title>
+      <link>https://yaoqs.github.io/20240408/wu-ren-shui-mian-ting-guo-nei-wai-xian-zhuang/</link>
+      <guid>https://yaoqs.github.io/20240408/wu-ren-shui-mian-ting-guo-nei-wai-xian-zhuang/</guid>
+      <pubDate>Mon, 08 Apr 2024 06:48:13 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>智能硬件入门</title>
+      <link>https://yaoqs.github.io/20240324/zhi-neng-ying-jian-ru-men/</link>
+      <guid>https://yaoqs.github.io/20240324/zhi-neng-ying-jian-ru-men/</guid>
+      <pubDate>Sun, 24 Mar 2024 14:26:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>实例解析蠕虫病毒的原理 (ZT)</title>
+      <link>https://yaoqs.github.io/20240324/shi-li-jie-xi-ruan-chong-bing-du-de-yuan-li-zt/</link>
+      <guid>https://yaoqs.github.io/20240324/shi-li-jie-xi-ruan-chong-bing-du-de-yuan-li-zt/</guid>
+      <pubDate>Sun, 24 Mar 2024 12:51:04 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>无耻的驱动加载法 (ZT)</title>
+      <link>https://yaoqs.github.io/20240324/wu-chi-de-qu-dong-jia-zai-fa-zt/</link>
+      <guid>https://yaoqs.github.io/20240324/wu-chi-de-qu-dong-jia-zai-fa-zt/</guid>
+      <pubDate>Sun, 24 Mar 2024 12:43:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>用 C++ 修改本地安全策略</title>
+      <link>https://yaoqs.github.io/20240324/yong-c-xiu-gai-ben-di-an-quan-ce-lue/</link>
+      <guid>https://yaoqs.github.io/20240324/yong-c-xiu-gai-ben-di-an-quan-ce-lue/</guid>
+      <pubDate>Sun, 24 Mar 2024 12:34:55 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>简单认识 Anti-RootKit (ZT)</title>
+      <link>https://yaoqs.github.io/20240324/jian-dan-ren-shi-anti-rootkit-zt/</link>
+      <guid>https://yaoqs.github.io/20240324/jian-dan-ren-shi-anti-rootkit-zt/</guid>
+      <pubDate>Sun, 24 Mar 2024 12:08:15 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>【Windows 核心编程学习笔记】远程注入ＤＬＬ</title>
+      <link>https://yaoqs.github.io/20240324/windows-he-xin-bian-cheng-xue-xi-bi-ji-yuan-cheng-zhu-ru-dll/</link>
+      <guid>https://yaoqs.github.io/20240324/windows-he-xin-bian-cheng-xue-xi-bi-ji-yuan-cheng-zhu-ru-dll/</guid>
+      <pubDate>Sun, 24 Mar 2024 10:49:28 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>3 个著名加密算法 (MD5、RSA、DES) 的解析</title>
+      <link>https://yaoqs.github.io/20240322/3-ge-zhu-ming-jia-mi-suan-fa-md5-rsa-des-de-jie-xi/</link>
+      <guid>https://yaoqs.github.io/20240322/3-ge-zhu-ming-jia-mi-suan-fa-md5-rsa-des-de-jie-xi/</guid>
+      <pubDate>Fri, 22 Mar 2024 03:08:25 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>Python 网页爬虫 &amp; 文本处理 &amp; 科学计算 &amp; 机器学习 &amp; 数据挖掘兵器谱</title>
+      <link>https://yaoqs.github.io/20240322/python-wang-ye-pa-chong-wen-ben-chu-li-ke-xue-ji-suan-ji-qi-xue-xi-shu-ju-wa-jue-bing-qi-pu/</link>
+      <guid>https://yaoqs.github.io/20240322/python-wang-ye-pa-chong-wen-ben-chu-li-ke-xue-ji-suan-ji-qi-xue-xi-shu-ju-wa-jue-bing-qi-pu/</guid>
+      <pubDate>Fri, 22 Mar 2024 02:41:52 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/python/">python</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/python/">python</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Dll 的基本原理和使用方法</title>
+      <link>https://yaoqs.github.io/20240321/dll-de-ji-ben-yuan-li-he-shi-yong-fang-fa/</link>
+      <guid>https://yaoqs.github.io/20240321/dll-de-ji-ben-yuan-li-he-shi-yong-fang-fa/</guid>
+      <pubDate>Thu, 21 Mar 2024 16:07:51 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>C++ 可视化库推荐</title>
+      <link>https://yaoqs.github.io/20231225/c-ke-shi-hua-ku-tui-jian/</link>
+      <guid>https://yaoqs.github.io/20231225/c-ke-shi-hua-ku-tui-jian/</guid>
+      <pubDate>Mon, 25 Dec 2023 03:10:53 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>各系列职称的翻译</title>
+      <link>https://yaoqs.github.io/20231225/ge-xi-lie-zhi-cheng-de-fan-yi/</link>
+      <guid>https://yaoqs.github.io/20231225/ge-xi-lie-zhi-cheng-de-fan-yi/</guid>
+      <pubDate>Mon, 25 Dec 2023 02:12:54 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>github 专题</title>
+      <link>https://yaoqs.github.io/20221206/github-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20221206/github-zhuan-ti/</guid>
+      <pubDate>Tue, 06 Dec 2022 16:22:02 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>游戏开发资源 GameDevResource</title>
+      <link>https://yaoqs.github.io/20220705/you-xi-kai-fa-zi-yuan-gamedevresource/</link>
+      <guid>https://yaoqs.github.io/20220705/you-xi-kai-fa-zi-yuan-gamedevresource/</guid>
+      <pubDate>Tue, 05 Jul 2022 07:38:40 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>OpenGL 超级宝典学习笔记操作像素</title>
+      <link>https://yaoqs.github.io/20220628/opengl-chao-ji-bao-dian-xue-xi-bi-ji-cao-zuo-xiang-su/</link>
+      <guid>https://yaoqs.github.io/20220628/opengl-chao-ji-bao-dian-xue-xi-bi-ji-cao-zuo-xiang-su/</guid>
+      <pubDate>Tue, 28 Jun 2022 12:06:13 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;OpenGL</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/OpenGL/">OpenGL</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/OpenGL/">OpenGL</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>kali 专题</title>
+      <link>https://yaoqs.github.io/20220628/kali-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20220628/kali-zhuan-ti/</guid>
+      <pubDate>Tue, 28 Jun 2022 08:50:42 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%B8%97%E9%80%8F/">渗透</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%B8%97%E9%80%8F/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/kali/">kali</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%B8%97%E9%80%8F/">渗透</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Windows 安全工具锦集</title>
+      <link>https://yaoqs.github.io/20220628/windows-an-quan-gong-ju-jin-ji/</link>
+      <guid>https://yaoqs.github.io/20220628/windows-an-quan-gong-ju-jin-ji/</guid>
+      <pubDate>Tue, 28 Jun 2022 08:06:57 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/">安全工具</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/">安全工具</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>OpenCV 在 Csharp 中应用 OpenCVSharp</title>
+      <link>https://yaoqs.github.io/20220628/opencv-zai-csharp-zhong-ying-yong-opencvsharp/</link>
+      <guid>https://yaoqs.github.io/20220628/opencv-zai-csharp-zhong-ying-yong-opencvsharp/</guid>
+      <pubDate>Tue, 28 Jun 2022 07:53:01 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/opencv/">opencv</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/opencv/">opencv</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>关于 PPT</title>
+      <link>https://yaoqs.github.io/20220628/guan-yu-ppt/</link>
+      <guid>https://yaoqs.github.io/20220628/guan-yu-ppt/</guid>
+      <pubDate>Tue, 28 Jun 2022 07:50:09 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>手把手教你使用 C# 及 WPF 调用 dll</title>
+      <link>https://yaoqs.github.io/20220617/shou-ba-shou-jiao-ni-shi-yong-c-ji-wpf-diao-yong-dll/</link>
+      <guid>https://yaoqs.github.io/20220617/shou-ba-shou-jiao-ni-shi-yong-c-ji-wpf-diao-yong-dll/</guid>
+      <pubDate>Fri, 17 Jun 2022 06:46:21 GMT</pubDate>
+      
+      <description>个人笔记，仅供个人查阅</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>EI 收录的中国（中文）期刊（2022 版）</title>
+      <link>https://yaoqs.github.io/20220616/ei-shou-lu-de-zhong-guo-zhong-wen-qi-kan-2022-ban/</link>
+      <guid>https://yaoqs.github.io/20220616/ei-shou-lu-de-zhong-guo-zhong-wen-qi-kan-2022-ban/</guid>
+      <pubDate>Thu, 16 Jun 2022 07:39:18 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>js 函数中如何使用可选参数（包括可选回调函数）</title>
+      <link>https://yaoqs.github.io/20220615/js-han-shu-zhong-ru-he-shi-yong-ke-xuan-can-shu-bao-gua-ke-xuan-hui-diao-han-shu/</link>
+      <guid>https://yaoqs.github.io/20220615/js-han-shu-zhong-ru-he-shi-yong-ke-xuan-can-shu-bao-gua-ke-xuan-hui-diao-han-shu/</guid>
+      <pubDate>Wed, 15 Jun 2022 03:01:11 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/js/">js</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/js/">js</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Lua 设计与实现 -- 虚拟机篇</title>
+      <link>https://yaoqs.github.io/20220615/lua-she-ji-yu-shi-xian-xu-ni-ji-pian/</link>
+      <guid>https://yaoqs.github.io/20220615/lua-she-ji-yu-shi-xian-xu-ni-ji-pian/</guid>
+      <pubDate>Wed, 15 Jun 2022 01:44:54 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/lua/">lua</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>服务器安全常用软件</title>
+      <link>https://yaoqs.github.io/20220614/fu-wu-qi-an-quan-chang-yong-ruan-jian/</link>
+      <guid>https://yaoqs.github.io/20220614/fu-wu-qi-an-quan-chang-yong-ruan-jian/</guid>
+      <pubDate>Tue, 14 Jun 2022 14:40:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>初尝制作树莓派最简单的 rootfs</title>
+      <link>https://yaoqs.github.io/20220613/chu-chang-zhi-zuo-shu-mei-pai-zui-jian-dan-de-rootfs/</link>
+      <guid>https://yaoqs.github.io/20220613/chu-chang-zhi-zuo-shu-mei-pai-zui-jian-dan-de-rootfs/</guid>
+      <pubDate>Mon, 13 Jun 2022 16:12:20 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/%E6%A0%91%E8%8E%93%E6%B4%BE/">树莓派</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/">树莓派</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>黄帝阴符经</title>
+      <link>https://yaoqs.github.io/20220613/huang-di-yin-fu-jing/</link>
+      <guid>https://yaoqs.github.io/20220613/huang-di-yin-fu-jing/</guid>
+      <pubDate>Mon, 13 Jun 2022 07:33:17 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E5%9B%BD%E5%AD%A6/">国学</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>海洋数据三维可视化</title>
+      <link>https://yaoqs.github.io/20220613/hai-yang-shu-ju-san-wei-ke-shi-hua/</link>
+      <guid>https://yaoqs.github.io/20220613/hai-yang-shu-ju-san-wei-ke-shi-hua/</guid>
+      <pubDate>Mon, 13 Jun 2022 07:16:30 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>劝学 - 荀子</title>
+      <link>https://yaoqs.github.io/20220613/quan-xue-xun-zi/</link>
+      <guid>https://yaoqs.github.io/20220613/quan-xue-xun-zi/</guid>
+      <pubDate>Mon, 13 Jun 2022 04:25:40 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E5%9B%BD%E5%AD%A6/">国学</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>共产党宣言</title>
+      <link>https://yaoqs.github.io/20220613/gong-chan-dang-xuan-yan/</link>
+      <guid>https://yaoqs.github.io/20220613/gong-chan-dang-xuan-yan/</guid>
+      <pubDate>Mon, 13 Jun 2022 02:14:12 GMT</pubDate>
+      
+      <description>个人笔记，仅供个人查阅</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>如何制作透明背景的 OpenGL 渲染上下文？</title>
+      <link>https://yaoqs.github.io/20220613/ru-he-zhi-zuo-tou-ming-bei-jing-de-opengl-xuan-ran-shang-xia-wen/</link>
+      <guid>https://yaoqs.github.io/20220613/ru-he-zhi-zuo-tou-ming-bei-jing-de-opengl-xuan-ran-shang-xia-wen/</guid>
+      <pubDate>Mon, 13 Jun 2022 01:46:57 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/OpenGL/">OpenGL</category>
+      
+      <category domain="https://yaoqs.github.io/tags/C/">C++</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>50 种最棒的开源爬虫框架 / 项目</title>
+      <link>https://yaoqs.github.io/20220609/50-chong-zui-bang-de-kai-yuan-pa-chong-kuang-jia-xiang-mu/</link>
+      <guid>https://yaoqs.github.io/20220609/50-chong-zui-bang-de-kai-yuan-pa-chong-kuang-jia-xiang-mu/</guid>
+      <pubDate>Thu, 09 Jun 2022 15:40:26 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E7%88%AC%E8%99%AB/">爬虫</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E7%88%AC%E8%99%AB/">爬虫</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>git 专题</title>
+      <link>https://yaoqs.github.io/20220609/git-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20220609/git-zhuan-ti/</guid>
+      <pubDate>Thu, 09 Jun 2022 11:22:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h1&gt;Git</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/git/">git</category>
+      
+      <category domain="https://yaoqs.github.io/categories/git/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/git/">git</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>天气预报接口</title>
+      <link>https://yaoqs.github.io/20220607/tian-qi-yu-bao-jie-kou/</link>
+      <guid>https://yaoqs.github.io/20220607/tian-qi-yu-bao-jie-kou/</guid>
+      <pubDate>Tue, 07 Jun 2022 06:15:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>csharp 专题</title>
+      <link>https://yaoqs.github.io/20220426/csharp-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20220426/csharp-zhuan-ti/</guid>
+      <pubDate>Tue, 26 Apr 2022 03:10:05 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/c/">c#</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>目标跟踪算法</title>
+      <link>https://yaoqs.github.io/20220425/mu-biao-gen-zong-suan-fa/</link>
+      <guid>https://yaoqs.github.io/20220425/mu-biao-gen-zong-suan-fa/</guid>
+      <pubDate>Mon, 25 Apr 2022 07:51:44 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/%E7%9B%AE%E6%A0%87%E8%B7%9F%E8%B8%AA/">目标跟踪</category>
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>EI 期刊查询</title>
+      <link>https://yaoqs.github.io/20220424/ei-qi-kan-cha-xun/</link>
+      <guid>https://yaoqs.github.io/20220424/ei-qi-kan-cha-xun/</guid>
+      <pubDate>Sun, 24 Apr 2022 06:31:28 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;关于 EI</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E6%9C%AF/">科研学术</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E7%A7%91%E7%A0%94%E5%AD%A6%E6%9C%AF/">科研学术</category>
+      
+      <category domain="https://yaoqs.github.io/tags/EI/">EI</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>html 专题</title>
+      <link>https://yaoqs.github.io/20220424/html-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20220424/html-zhuan-ti/</guid>
+      <pubDate>Sun, 24 Apr 2022 01:12:44 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/html/">html</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C/">网页制作</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>JavaScript 专题</title>
+      <link>https://yaoqs.github.io/20220424/javascript-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20220424/javascript-zhuan-ti/</guid>
+      <pubDate>Sun, 24 Apr 2022 01:10:24 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/js/">js</category>
+      
+      <category domain="https://yaoqs.github.io/tags/JavaScript/">JavaScript</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Xamarin 专题</title>
+      <link>https://yaoqs.github.io/20220424/xamarin-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20220424/xamarin-zhuan-ti/</guid>
+      <pubDate>Sun, 24 Apr 2022 01:07:26 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h1&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Xamarin/">Xamarin</category>
+      
+      <category domain="https://yaoqs.github.io/tags/c/">c#</category>
+      
+      <category domain="https://yaoqs.github.io/tags/net/">.net</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Awesome-Github-Roster</title>
+      <link>https://yaoqs.github.io/20220401/awesome-github-roster/</link>
+      <guid>https://yaoqs.github.io/20220401/awesome-github-roster/</guid>
+      <pubDate>Fri, 01 Apr 2022 11:33:55 GMT</pubDate>
+      
+      <description>Awesome Github Roster</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Acoustics</title>
+      <link>https://yaoqs.github.io/20220401/acoustics/</link>
+      <guid>https://yaoqs.github.io/20220401/acoustics/</guid>
+      <pubDate>Fri, 01 Apr 2022 11:32:25 GMT</pubDate>
+      
+      <description>Acoustics，声学</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>42</title>
+      <link>https://yaoqs.github.io/20220401/42/</link>
+      <guid>https://yaoqs.github.io/20220401/42/</guid>
+      <pubDate>Fri, 01 Apr 2022 11:31:06 GMT</pubDate>
+      
+      <description>From the Internet, To the Internet.</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Visual Studio Code 专题</title>
+      <link>https://yaoqs.github.io/20220401/visual-studio-code-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20220401/visual-studio-code-zhuan-ti/</guid>
+      <pubDate>Fri, 01 Apr 2022 10:59:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;VsCode</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/visual-studio/">visual studio</category>
+      
+      <category domain="https://yaoqs.github.io/categories/visual-studio/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>【数字信号处理】Matlab 做 fft 时点数 N 怎么选取</title>
+      <link>https://yaoqs.github.io/20220330/shu-zi-xin-hao-chu-li-matlab-zuo-fft-shi-dian-shu-n-zen-me-xuan-qu/</link>
+      <guid>https://yaoqs.github.io/20220330/shu-zi-xin-hao-chu-li-matlab-zuo-fft-shi-dian-shu-n-zen-me-xuan-qu/</guid>
+      <pubDate>Wed, 30 Mar 2022 13:35:26 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">数字信号处理</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Matlab/">Matlab</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>JavaScript 语言精髓与编程实践</title>
+      <link>https://yaoqs.github.io/20220315/javascript-yu-yan-jing-sui-yu-bian-cheng-shi-jian/</link>
+      <guid>https://yaoqs.github.io/20220315/javascript-yu-yan-jing-sui-yu-bian-cheng-shi-jian/</guid>
+      <pubDate>Tue, 15 Mar 2022 11:40:56 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/javascript/">javascript</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>解读 javascript 的计时器 (转载)</title>
+      <link>https://yaoqs.github.io/20220108/jie-du-javascript-de-ji-shi-qi-zhuan-zai/</link>
+      <guid>https://yaoqs.github.io/20220108/jie-du-javascript-de-ji-shi-qi-zhuan-zai/</guid>
+      <pubDate>Sat, 08 Jan 2022 01:06:36 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;!--
+&lt;embed</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Reprint/">Reprint</category>
+      
+      <category domain="https://yaoqs.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://yaoqs.github.io/tags/pdf/">pdf</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>html 网站常用代码</title>
+      <link>https://yaoqs.github.io/20220105/html-wang-zhan-chang-yong-dai-ma/</link>
+      <guid>https://yaoqs.github.io/20220105/html-wang-zhan-chang-yong-dai-ma/</guid>
+      <pubDate>Wed, 05 Jan 2022 08:57:52 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;1.</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://yaoqs.github.io/tags/code-snippets/">code snippets</category>
+      
+      <category domain="https://yaoqs.github.io/tags/html/">html</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>matllab 读 txt 文件</title>
+      <link>https://yaoqs.github.io/20220105/matllab-du-txt-wen-jian/</link>
+      <guid>https://yaoqs.github.io/20220105/matllab-du-txt-wen-jian/</guid>
+      <pubDate>Wed, 05 Jan 2022 01:52:13 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;matlab</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/matllab/">matllab</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Defence-Technology</title>
+      <link>https://yaoqs.github.io/20220101/defence-technology/</link>
+      <guid>https://yaoqs.github.io/20220101/defence-technology/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>Defence technology/防务技术</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Machine-learning-Related</title>
+      <link>https://yaoqs.github.io/20220101/machine-learning-related/</link>
+      <guid>https://yaoqs.github.io/20220101/machine-learning-related/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>本人收集的机器学习(Machine Learning, ML)相关资料</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>NWPU-Open-Course-Sharing</title>
+      <link>https://yaoqs.github.io/20220101/nwpu-open-course-sharing/</link>
+      <guid>https://yaoqs.github.io/20220101/nwpu-open-course-sharing/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>西北工业大学开源课程共享</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      <category domain="https://yaoqs.github.io/tags/resource/">resource</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Raspberry-Pi-config</title>
+      <link>https://yaoqs.github.io/20220101/raspberry-pi-config/</link>
+      <guid>https://yaoqs.github.io/20220101/raspberry-pi-config/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>关于树莓派安装、配置、使用等的技巧、工具;About the skills and toolkits of installing, configuring raspbian and handbook for raspberry</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Scholar</title>
+      <link>https://yaoqs.github.io/20220101/scholar/</link>
+      <guid>https://yaoqs.github.io/20220101/scholar/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>Scientific/Academic/Scholarly Research. 科研学术.Document Retrieval; Documentation Retrieval; Literature Search; Literature Retrieval.文献检索</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Termux-config</title>
+      <link>https://yaoqs.github.io/20220101/termux-config/</link>
+      <guid>https://yaoqs.github.io/20220101/termux-config/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>Termux Manual</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/Termux/">Termux</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Termux/">Termux</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>donate-plugin</title>
+      <link>https://yaoqs.github.io/20220101/donate-plugin/</link>
+      <guid>https://yaoqs.github.io/20220101/donate-plugin/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>Donate &amp; Reward 大吉大利，今晚吃鸡</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>hexo-theme-scholar-future</title>
+      <link>https://yaoqs.github.io/20220101/hexo-theme-scholar-future/</link>
+      <guid>https://yaoqs.github.io/20220101/hexo-theme-scholar-future/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>A scholar magazine/journal-like blog theme,基于hexo的博客模板主题</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>keys</title>
+      <link>https://yaoqs.github.io/20220101/keys/</link>
+      <guid>https://yaoqs.github.io/20220101/keys/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>个人收藏的常用软件的key、注册码、license及注册机等</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/keys/">keys</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>open-ebook</title>
+      <link>https://yaoqs.github.io/20220101/open-ebook/</link>
+      <guid>https://yaoqs.github.io/20220101/open-ebook/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>免费电子书</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      <category domain="https://yaoqs.github.io/tags/resource/">resource</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>resource-navigator</title>
+      <link>https://yaoqs.github.io/20220101/resource-navigator/</link>
+      <guid>https://yaoqs.github.io/20220101/resource-navigator/</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+      
+      <description>个人收藏资源导航</description>
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/github-page/">github page</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/github-page/">github page</category>
+      
+      <category domain="https://yaoqs.github.io/tags/resource/">resource</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>C-16 进制与字符串、字节数组之间的转换</title>
+      <link>https://yaoqs.github.io/20211027/c-16-jin-zhi-yu-zi-fu-chuan-zi-jie-shu-zu-zhi-jian-de-zhuan-huan/</link>
+      <guid>https://yaoqs.github.io/20211027/c-16-jin-zhi-yu-zi-fu-chuan-zi-jie-shu-zu-zhi-jian-de-zhuan-huan/</guid>
+      <pubDate>Wed, 27 Oct 2021 15:33:45 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;16</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/C/">C#</category>
+      
+      <category domain="https://yaoqs.github.io/tags/codesnippet/">codesnippet</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>各领域最值得推荐的入门书籍</title>
+      <link>https://yaoqs.github.io/20210526/ge-ling-yu-zui-zhi-de-tui-jian-de-ru-men-shu-ji/</link>
+      <guid>https://yaoqs.github.io/20210526/ge-ling-yu-zui-zhi-de-tui-jian-de-ru-men-shu-ji/</guid>
+      <pubDate>Wed, 26 May 2021 07:59:06 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>程序员练手小项目</title>
+      <link>https://yaoqs.github.io/20210519/cheng-xu-yuan-lian-shou-xiao-xiang-mu/</link>
+      <guid>https://yaoqs.github.io/20210519/cheng-xu-yuan-lian-shou-xiao-xiang-mu/</guid>
+      <pubDate>Wed, 19 May 2021 15:05:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;本文转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/code/">code</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>计算机视觉牛人博客和代码汇总</title>
+      <link>https://yaoqs.github.io/20210506/ji-suan-ji-shi-jue-niu-ren-bo-ke-he-dai-ma-hui-zong/</link>
+      <guid>https://yaoqs.github.io/20210506/ji-suan-ji-shi-jue-niu-ren-bo-ke-he-dai-ma-hui-zong/</guid>
+      <pubDate>Thu, 06 May 2021 12:24:57 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Computer-Vision-Resources/">Computer Vision Resources</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>常见的 C++ 数学计算库</title>
+      <link>https://yaoqs.github.io/20210506/chang-jian-de-c-shu-xue-ji-suan-ku/</link>
+      <guid>https://yaoqs.github.io/20210506/chang-jian-de-c-shu-xue-ji-suan-ku/</guid>
+      <pubDate>Thu, 06 May 2021 11:29:37 GMT</pubDate>
+      
+      <description>常见的C++数学计算库</description>
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/c/">c++</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93/">数学计算库</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>win10-BitLocker 专题</title>
+      <link>https://yaoqs.github.io/20210430/win10-bitlocker-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210430/win10-bitlocker-zhuan-ti/</guid>
+      <pubDate>Fri, 30 Apr 2021 11:08:49 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;BitLocker</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/BitLocker/">BitLocker</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>c++ stl 中容器使用的小技巧及坑 1</title>
+      <link>https://yaoqs.github.io/20210422/c-stl-zhong-rong-qi-shi-yong-de-xiao-ji-qiao-ji-keng-1/</link>
+      <guid>https://yaoqs.github.io/20210422/c-stl-zhong-rong-qi-shi-yong-de-xiao-ji-qiao-ji-keng-1/</guid>
+      <pubDate>Thu, 22 Apr 2021 07:32:28 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;以 vector</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/c/">c++</category>
+      
+      <category domain="https://yaoqs.github.io/tags/stl/">stl</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>vs2017 离线激活脚本</title>
+      <link>https://yaoqs.github.io/20210421/vs2017-chi-xian-ji-huo-jiao-ben/</link>
+      <guid>https://yaoqs.github.io/20210421/vs2017-chi-xian-ji-huo-jiao-ben/</guid>
+      <pubDate>Wed, 21 Apr 2021 13:55:23 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/visual-studio/">visual studio</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/visual-studio/">visual studio</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>近 7 百本免费中文编程教程电子书汇总 - 程序员开发入门学习资源大搜集</title>
+      <link>https://yaoqs.github.io/20210421/jin-7-bai-ben-mian-fei-zhong-wen-bian-cheng-jiao-cheng-dian-zi-shu-hui-zong-cheng-xu-yuan-kai-fa-ru-men-xue-xi-zi-yuan-da-sou-ji/</link>
+      <guid>https://yaoqs.github.io/20210421/jin-7-bai-ben-mian-fei-zhong-wen-bian-cheng-jiao-cheng-dian-zi-shu-hui-zong-cheng-xu-yuan-kai-fa-ru-men-xue-xi-zi-yuan-da-sou-ji/</guid>
+      <pubDate>Wed, 21 Apr 2021 13:44:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E7%BC%96%E7%A8%8B%E7%94%B5%E5%AD%90%E4%B9%A6/">编程电子书</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>vs2019 专题</title>
+      <link>https://yaoqs.github.io/20210420/vs2019-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210420/vs2019-zhuan-ti/</guid>
+      <pubDate>Tue, 20 Apr 2021 06:41:44 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h1&gt;安装 /</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/visual-studio/">visual studio</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/visual-studio/">visual studio</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>ssh 专题</title>
+      <link>https://yaoqs.github.io/20210411/ssh-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210411/ssh-zhuan-ti/</guid>
+      <pubDate>Sun, 11 Apr 2021 13:10:45 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/ssh/">ssh</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>hexo 专题</title>
+      <link>https://yaoqs.github.io/20210411/hexo-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210411/hexo-zhuan-ti/</guid>
+      <pubDate>Sun, 11 Apr 2021 11:11:27 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/hexo/">hexo</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Docker 专题</title>
+      <link>https://yaoqs.github.io/20210411/docker-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210411/docker-zhuan-ti/</guid>
+      <pubDate>Sun, 11 Apr 2021 10:55:46 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Docker/">Docker</category>
+      
+      
+      <comments>https://yaoqs.github.io/20210411/docker-zhuan-ti/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>tmux 使用教程</title>
+      <link>https://yaoqs.github.io/20210404/tmux-shi-yong-jiao-cheng/</link>
+      <guid>https://yaoqs.github.io/20210404/tmux-shi-yong-jiao-cheng/</guid>
+      <pubDate>Sun, 04 Apr 2021 10:02:47 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;相似软件</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Linux/">Linux</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Tmux/">Tmux</category>
+      
+      <category domain="https://yaoqs.github.io/tags/terminal/">terminal</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Windows Terminal 专题</title>
+      <link>https://yaoqs.github.io/20210401/windowsterminal-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210401/windowsterminal-zhuan-ti/</guid>
+      <pubDate>Thu, 01 Apr 2021 16:41:05 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Windows-Terminal/">Windows Terminal</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>WSL2 专题</title>
+      <link>https://yaoqs.github.io/20210401/wsl2-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210401/wsl2-zhuan-ti/</guid>
+      <pubDate>Thu, 01 Apr 2021 15:47:53 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h1&gt;安装</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/WSL/">WSL</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Windows-Subsystem-Linux/">Windows Subsystem Linux</category>
+      
+      <category domain="https://yaoqs.github.io/tags/Linux/">Linux</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Windows 右键 hash 菜单</title>
+      <link>https://yaoqs.github.io/20210329/windows-you-jian-hash-cai-dan/</link>
+      <guid>https://yaoqs.github.io/20210329/windows-you-jian-hash-cai-dan/</guid>
+      <pubDate>Mon, 29 Mar 2021 03:01:23 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;将以下代码另存为</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>jQuery 专题</title>
+      <link>https://yaoqs.github.io/20210327/jquery-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210327/jquery-zhuan-ti/</guid>
+      <pubDate>Sat, 27 Mar 2021 07:58:47 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/js/">js</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/jQuery/">jQuery</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>c++ 专题</title>
+      <link>https://yaoqs.github.io/20210220/c-zhuan-ti/</link>
+      <guid>https://yaoqs.github.io/20210220/c-zhuan-ti/</guid>
+      <pubDate>Sat, 20 Feb 2021 06:22:42 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;h1&gt;C++</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%B8%93%E9%A2%98/">专题</category>
+      
+      <category domain="https://yaoqs.github.io/tags/code-snippets/">code snippets</category>
+      
+      <category domain="https://yaoqs.github.io/tags/c-c/">c/c++</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>PSD 的单位及计算方法</title>
+      <link>https://yaoqs.github.io/20191218/psd-de-dan-wei-ji-ji-suan-fang-fa/</link>
+      <guid>https://yaoqs.github.io/20191218/psd-de-dan-wei-ji-ji-suan-fang-fa/</guid>
+      <pubDate>Wed, 18 Dec 2019 06:17:17 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>论六家要指</title>
+      <link>https://yaoqs.github.io/20191203/lun-liu-jia-yao-zhi/</link>
+      <guid>https://yaoqs.github.io/20191203/lun-liu-jia-yao-zhi/</guid>
+      <pubDate>Tue, 03 Dec 2019 12:58:05 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/%E5%9B%BD%E5%AD%A6/">国学</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Hook_Windows_NT</title>
+      <link>https://yaoqs.github.io/20191203/hook-windows-nt/</link>
+      <guid>https://yaoqs.github.io/20191203/hook-windows-nt/</guid>
+      <pubDate>Tue, 03 Dec 2019 12:38:01 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;Reprint</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Reprint/">Reprint</category>
+      
+      <category domain="https://yaoqs.github.io/tags/windows-hook/">windows hook</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>如何将本地项目上传到 Github</title>
+      <link>https://yaoqs.github.io/20191202/ru-he-jiang-ben-di-xiang-mu-shang-chuan-dao-github/</link>
+      <guid>https://yaoqs.github.io/20191202/ru-he-jiang-ben-di-xiang-mu-shang-chuan-dao-github/</guid>
+      <pubDate>Mon, 02 Dec 2019 01:38:36 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;Reprint</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Reprint/">Reprint</category>
+      
+      <category domain="https://yaoqs.github.io/tags/github/">github</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>SVCHOST 启动技术</title>
+      <link>https://yaoqs.github.io/20191201/svchost-qi-dong-ji-zhu/</link>
+      <guid>https://yaoqs.github.io/20191201/svchost-qi-dong-ji-zhu/</guid>
+      <pubDate>Sun, 01 Dec 2019 13:20:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/code-snippets/">code snippets</category>
+      
+      <category domain="https://yaoqs.github.io/tags/reprint/">reprint</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>汇编语言 win32asm</title>
+      <link>https://yaoqs.github.io/20191201/hui-bian-yu-yan-win32asm/</link>
+      <guid>https://yaoqs.github.io/20191201/hui-bian-yu-yan-win32asm/</guid>
+      <pubDate>Sun, 01 Dec 2019 13:16:51 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;先安装 MASM,</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Reprint/">Reprint</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%B1%87%E7%BC%96wasm/">汇编wasm</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>关于微分方程</title>
+      <link>https://yaoqs.github.io/20191201/guan-yu-wei-fen-fang-cheng/</link>
+      <guid>https://yaoqs.github.io/20191201/guan-yu-wei-fen-fang-cheng/</guid>
+      <pubDate>Sun, 01 Dec 2019 13:07:47 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;本帖是在苹果的</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/Reprint/">Reprint</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%95%B0%E5%AD%A6/">数学</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>hexo about</title>
+      <link>https://yaoqs.github.io/20191130/hexo-about/</link>
+      <guid>https://yaoqs.github.io/20191130/hexo-about/</guid>
+      <pubDate>Sat, 30 Nov 2019 12:16:13 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;hexo</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/hexo/">hexo</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>正则表达式口诀及教程</title>
+      <link>https://yaoqs.github.io/20191127/zheng-ze-biao-da-shi-kou-jue-ji-jiao-cheng/</link>
+      <guid>https://yaoqs.github.io/20191127/zheng-ze-biao-da-shi-kou-jue-ji-jiao-cheng/</guid>
+      <pubDate>Wed, 27 Nov 2019 15:32:57 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/reprint/">reprint</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>多语言实现 hello world</title>
+      <link>https://yaoqs.github.io/20191127/duo-yu-yan-shi-xian-hello-world/</link>
+      <guid>https://yaoqs.github.io/20191127/duo-yu-yan-shi-xian-hello-world/</guid>
+      <pubDate>Wed, 27 Nov 2019 07:00:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot;</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/c-c/">c/c++</category>
+      
+      <category domain="https://yaoqs.github.io/tags/matlab/">matlab</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Hexo 建站过程总结</title>
+      <link>https://yaoqs.github.io/20191122/hexo-jian-zhan-guo-cheng-zong-jie/</link>
+      <guid>https://yaoqs.github.io/20191122/hexo-jian-zhan-guo-cheng-zong-jie/</guid>
+      <pubDate>Fri, 22 Nov 2019 08:12:06 GMT</pubDate>
+      
+      <description>hexo建站</description>
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://yaoqs.github.io/tags/%E5%BB%BA%E7%AB%99/">建站</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>HTML5 炫酷动画及源码 DEMO 演示</title>
+      <link>https://yaoqs.github.io/20191121/html5-xuan-ku-dong-hua-ji-yuan-ma-demo-yan-shi/</link>
+      <guid>https://yaoqs.github.io/20191121/html5-xuan-ku-dong-hua-ji-yuan-ma-demo-yan-shi/</guid>
+      <pubDate>Thu, 21 Nov 2019 08:15:53 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/categories/html/">html</category>
+      
+      
+      <category domain="https://yaoqs.github.io/tags/html5/">html5</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://yaoqs.github.io/20191116/hello-world/</link>
+      <guid>https://yaoqs.github.io/20191116/hello-world/</guid>
+      <pubDate>Sat, 16 Nov 2019 10:10:38 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;p&gt;Welcome</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://yaoqs.github.io/tags/helloworld/">helloworld</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>创刊</title>
+      <link>https://yaoqs.github.io/19861001/chuang-kan/</link>
+      <guid>https://yaoqs.github.io/19861001/chuang-kan/</guid>
+      <pubDate>Wed, 01 Oct 1986 03:00:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;iframe</description>
+          
+        
+      
+      
+      
+      
+      
+      
+    </item>
+    
+  </channel>
+</rss>
